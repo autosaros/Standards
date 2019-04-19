@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="preserve">English</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>Tier1</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>ARPlatform1</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>System</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>FlatMaps</SHORT-NAME>
+                  <ELEMENTS>
+                    <FLAT-MAP>
+                      <SHORT-NAME>FlatMap_SystemU_EcuExtract</SHORT-NAME>
+                      <INSTANCES>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>Arr1dComAxis_Temp_Lin_K_uint16</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD_par</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD_par/P_Arr1dComAxis_Temp_Lin_K_uint16</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Arr1dComAxis_Temp_Lin_K_uint16/Arr1dComAxis_Temp_Lin_K_uint16</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>Arr1dComAxis_Temp_Lin_K_uint16_FrontLeft</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD_par</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD_par/P_Arr1dComAxis_Temp_Lin_K_uint16</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Arr1dComAxis_Temp_Lin_K_uint16/Arr1dComAxis_Temp_Lin_K_uint16</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="APPLICATION-ARRAY-ELEMENT" INDEX="0">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/ComAxis_Temp_Lin_K_uint16_ScNoOfWheels/ComAxis_Temp_Lin_K_uint16_ScNoOfWheels</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>Arr1dComAxis_Temp_Lin_K_uint16_FrontRight</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD_par</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD_par/P_Arr1dComAxis_Temp_Lin_K_uint16</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Arr1dComAxis_Temp_Lin_K_uint16/Arr1dComAxis_Temp_Lin_K_uint16</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="APPLICATION-ARRAY-ELEMENT" INDEX="1">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/ComAxis_Temp_Lin_K_uint16_ScNoOfWheels/ComAxis_Temp_Lin_K_uint16_ScNoOfWheels</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>Arr1dComAxis_Temp_Lin_K_uint16_RearLeft</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD_par</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD_par/P_Arr1dComAxis_Temp_Lin_K_uint16</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Arr1dComAxis_Temp_Lin_K_uint16/Arr1dComAxis_Temp_Lin_K_uint16</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="APPLICATION-ARRAY-ELEMENT" INDEX="2">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/ComAxis_Temp_Lin_K_uint16_ScNoOfWheels/ComAxis_Temp_Lin_K_uint16_ScNoOfWheels</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>Arr1dComAxis_Temp_Lin_K_uint16_RearRight</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD_par</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD_par/P_Arr1dComAxis_Temp_Lin_K_uint16</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Arr1dComAxis_Temp_Lin_K_uint16/Arr1dComAxis_Temp_Lin_K_uint16</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="APPLICATION-ARRAY-ELEMENT" INDEX="3">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/ComAxis_Temp_Lin_K_uint16_ScNoOfWheels/ComAxis_Temp_Lin_K_uint16_ScNoOfWheels</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>Arr1dMap_Time_Lnr_s_uint16</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD_par</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD_par/P_Arr1dMap_Time_Lnr_s_uint16</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Arr1dMap_Time_Lnr_s_uint16/Arr1dMap_Time_Lnr_s_uint16</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>Arr1dMap_Time_Lnr_s_uint16_FrontLeft</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD_par</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD_par/P_Arr1dMap_Time_Lnr_s_uint16</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Arr1dMap_Time_Lnr_s_uint16/Arr1dMap_Time_Lnr_s_uint16</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="APPLICATION-ARRAY-ELEMENT" INDEX="0">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/Map_Time_Lnr_s_uint16_ScNoOfWheels/Map_Time_Lnr_s_uint16_ScNoOfWheels</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>Arr1dMap_Time_Lnr_s_uint16_FrontRight</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD_par</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD_par/P_Arr1dMap_Time_Lnr_s_uint16</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Arr1dMap_Time_Lnr_s_uint16/Arr1dMap_Time_Lnr_s_uint16</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="APPLICATION-ARRAY-ELEMENT" INDEX="1">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/Map_Time_Lnr_s_uint16_ScNoOfWheels/Map_Time_Lnr_s_uint16_ScNoOfWheels</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>Arr1dMap_Time_Lnr_s_uint16_RearLeft</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD_par</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD_par/P_Arr1dMap_Time_Lnr_s_uint16</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Arr1dMap_Time_Lnr_s_uint16/Arr1dMap_Time_Lnr_s_uint16</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="APPLICATION-ARRAY-ELEMENT" INDEX="2">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/Map_Time_Lnr_s_uint16_ScNoOfWheels/Map_Time_Lnr_s_uint16_ScNoOfWheels</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>Arr1dMap_Time_Lnr_s_uint16_RearRight</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD_par</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD_par/P_Arr1dMap_Time_Lnr_s_uint16</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Arr1dMap_Time_Lnr_s_uint16/Arr1dMap_Time_Lnr_s_uint16</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="APPLICATION-ARRAY-ELEMENT" INDEX="3">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/Map_Time_Lnr_s_uint16_ScNoOfWheels/Map_Time_Lnr_s_uint16_ScNoOfWheels</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>Arr1dPrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD/P_Arr1dPrimData_Temperature_Lin_K_C_uint16</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Arr1dPrimData_Temperature_Lin_K_C_uint16/Arr1dPrimData_Temperature_Lin_K_C_uint16</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>Arr1dPrimData_Temperature_Lin_K_C_uint16_FrontLeft</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD/P_Arr1dPrimData_Temperature_Lin_K_C_uint16</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Arr1dPrimData_Temperature_Lin_K_C_uint16/Arr1dPrimData_Temperature_Lin_K_C_uint16</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="APPLICATION-ARRAY-ELEMENT" INDEX="0">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16_ScNoOfWheels/K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16_ScNoOfWheels</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>Arr1dPrimData_Temperature_Lin_K_C_uint16_FrontRight</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD/P_Arr1dPrimData_Temperature_Lin_K_C_uint16</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Arr1dPrimData_Temperature_Lin_K_C_uint16/Arr1dPrimData_Temperature_Lin_K_C_uint16</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="APPLICATION-ARRAY-ELEMENT" INDEX="1">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16_ScNoOfWheels/K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16_ScNoOfWheels</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>Arr1dPrimData_Temperature_Lin_K_C_uint16_RearLeft</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD/P_Arr1dPrimData_Temperature_Lin_K_C_uint16</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Arr1dPrimData_Temperature_Lin_K_C_uint16/Arr1dPrimData_Temperature_Lin_K_C_uint16</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="APPLICATION-ARRAY-ELEMENT" INDEX="2">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16_ScNoOfWheels/K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16_ScNoOfWheels</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>Arr1dPrimData_Temperature_Lin_K_C_uint16_RearRight</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD/P_Arr1dPrimData_Temperature_Lin_K_C_uint16</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Arr1dPrimData_Temperature_Lin_K_C_uint16/Arr1dPrimData_Temperature_Lin_K_C_uint16</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="APPLICATION-ARRAY-ELEMENT" INDEX="3">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16_ScNoOfWheels/K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16_ScNoOfWheels</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>CMscC_nvm</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscC_nvm</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>ComAxis_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB_par</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_par/P_ComAxis_Mass_Lnr_Kg_uint8</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Mass_Lnr_Kg_uint8/ComAxis_Mass_Lnr_Kg_uint8</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>ComAxis_Steps_Txt_sint8</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB_par</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_par/P_ComAxis_Steps_Txt_sint8</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Steps_Txt_sint8/ComAxis_Steps_Txt_sint8</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>ComAxis_Temp_Lin_K_uint16</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB_par</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_par/P_ComAxis_Temp_Lin_K_uint16</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Temp_Lin_K_uint16/ComAxis_Temp_Lin_K_uint16</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>Curve_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB_par</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_par/P_Curve_Mass_Lnr_Kg_uint8</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Curve_Mass_Lnr_Kg_uint8/Curve_Mass_Lnr_Kg_uint8</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>Map_Time_Lnr_s_uint16</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB_par</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_par/P_Map_Time_Lnr_s_uint16</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Map_Time_Lnr_s_uint16/Map_Time_Lnr_s_uint16</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>PrimCal_Mass_Lnr_Kg</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscA_par</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA_par/P_PrimCal_Mass_Lnr_Kg</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimCal_Mass_Lnr_Kg/PrimCal_Mass_Lnr_Kg</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>PrimData_MassCorrected_Lnr_Kg_uint8</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/P_PrimData_MassCorrected_Lnr_Kg_uint8</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_MassCorrected_Lnr_Kg_uint8/PrimData_MassCorrected_Lnr_Kg_uint8</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>PrimData_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscA</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_PrimData_Mass_Lnr_Kg_uint8</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Mass_Lnr_Kg_uint8/PrimData_Mass_Lnr_Kg_uint8</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscC_nvm</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscC/CMscC_nvm/P_PrimData_StepsSpeed_Txt_sint8</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_StepsSpeed_Txt_sint8/PrimData_StepsSpeed_Txt_sint8</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>PrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscA</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_PrimData_Temperature_Lin_K_C_uint16</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Temperature_Lin_K_C_uint16/PrimData_Temperature_Lin_K_C_uint16</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>PrimData_Time_Lnr_s_uint16</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/P_PrimData_Time_Lnr_s_uint16</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Time_Lnr_s_uint16/PrimData_Time_Lnr_s_uint16</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>PrimData_ValidState_Txt_noUnit_boolean</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Tier1/ARPlatform1/System/SystemU_System/SystemU</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/P_PrimData_ValidState_Txt_noUnit_boolean</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_ValidState_Txt_noUnit_boolean/PrimData_ValidState_Txt_noUnit_boolean</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                      </INSTANCES>
+                    </FLAT-MAP>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

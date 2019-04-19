@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>McInt</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>PortInterfaces</SHORT-NAME>
+          <ELEMENTS>
+            <SENDER-RECEIVER-INTERFACE>
+              <SHORT-NAME>TemperatureSRIF</SHORT-NAME>
+              <DESC>
+                <L-2 L="EN">Interface type for transferring temperatures in [°C]</L-2>
+              </DESC>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE>
+                  <SHORT-NAME>T</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/McInt/SwAddrMethods/VAR</SW-ADDR-METHOD-REF>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/McInt/ApplicationDataTypes/Temperature_C</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+            </SENDER-RECEIVER-INTERFACE>
+            <PARAMETER-INTERFACE>
+              <SHORT-NAME>ControllerPIF</SHORT-NAME>
+              <DESC>
+                <L-2 L="EN">Interface with all parameters for the controller</L-2>
+              </DESC>
+              <IS-SERVICE>false</IS-SERVICE>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE>
+                  <SHORT-NAME>ctrl_SetPoint</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Set point for the temperature of the plant</L-2>
+                  </DESC>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/McInt/SwAddrMethods/CALIB</SW-ADDR-METHOD-REF>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/McInt/ApplicationDataTypes/Temperature_C</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+                <PARAMETER-DATA-PROTOTYPE>
+                  <SHORT-NAME>ctrl_K</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Amplification factor for the I-controller</L-2>
+                  </DESC>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/McInt/SwAddrMethods/CALIB</SW-ADDR-METHOD-REF>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/McInt/ApplicationDataTypes/Amplification</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+                <PARAMETER-DATA-PROTOTYPE>
+                  <SHORT-NAME>ctrl_MaxESum</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Upper limit of the integal part of the I-controller</L-2>
+                  </DESC>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/McInt/SwAddrMethods/CALIB</SW-ADDR-METHOD-REF>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/McInt/ApplicationDataTypes/ESum</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+            <SENDER-RECEIVER-INTERFACE>
+              <SHORT-NAME>CurrentSRIF</SHORT-NAME>
+              <DESC>
+                <L-2 L="EN">Interface type for transferring a current in [mA]</L-2>
+              </DESC>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE>
+                  <SHORT-NAME>I</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/McInt/SwAddrMethods/VAR</SW-ADDR-METHOD-REF>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/McInt/ApplicationDataTypes/Current</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+            </SENDER-RECEIVER-INTERFACE>
+            <PARAMETER-INTERFACE>
+              <SHORT-NAME>PlantPIF</SHORT-NAME>
+              <DESC>
+                <L-2 L="EN">Interface with all parameters for the plant</L-2>
+              </DESC>
+              <IS-SERVICE>false</IS-SERVICE>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE>
+                  <SHORT-NAME>plnt_EnvFactor</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Proportionality factor for the heat flow between plant and environment</L-2>
+                  </DESC>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/McInt/SwAddrMethods/CALIB</SW-ADDR-METHOD-REF>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/McInt/ApplicationDataTypes/EnvFactor</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+                <PARAMETER-DATA-PROTOTYPE>
+                  <SHORT-NAME>plnt_HeaterFactor</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Proportionality factor for the heat flow between plant and the electrical heater</L-2>
+                  </DESC>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/McInt/SwAddrMethods/CALIB</SW-ADDR-METHOD-REF>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/McInt/ApplicationDataTypes/HeaterFactor</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+            <PARAMETER-INTERFACE>
+              <SHORT-NAME>EnvironmentPIF</SHORT-NAME>
+              <DESC>
+                <L-2 L="EN">Interface with all parameters for the environment</L-2>
+              </DESC>
+              <IS-SERVICE>false</IS-SERVICE>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE>
+                  <SHORT-NAME>env_TLowLimit</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Lower limit of the generated temeprature profile</L-2>
+                  </DESC>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/McInt/SwAddrMethods/CALIB</SW-ADDR-METHOD-REF>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/McInt/ApplicationDataTypes/Temperature_C</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+                <PARAMETER-DATA-PROTOTYPE>
+                  <SHORT-NAME>env_TStepSize</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">The maximal temperature diffenrence of the environment in one time step</L-2>
+                  </DESC>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/McInt/SwAddrMethods/CALIB</SW-ADDR-METHOD-REF>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/McInt/ApplicationDataTypes/Temperature_K</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+                <PARAMETER-DATA-PROTOTYPE>
+                  <SHORT-NAME>env_THighLimitDistance</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Distance of the upper limit from the lower limit for the generated temeprature profile.</L-2>
+                  </DESC>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/McInt/SwAddrMethods/CALIB</SW-ADDR-METHOD-REF>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/McInt/ApplicationDataTypes/Temperature_K</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+            <PARAMETER-INTERFACE>
+              <SHORT-NAME>DtPIF</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE>
+                  <SHORT-NAME>Dt</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Scheduling time of the components</L-2>
+                  </DESC>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/McInt/SwAddrMethods/CALIB</SW-ADDR-METHOD-REF>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/McInt/ApplicationDataTypes/Time</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

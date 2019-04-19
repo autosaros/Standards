@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="default">English</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR</SHORT-NAME>
+      <LONG-NAME>
+        <L-4 L="EN">AUTOSAR</L-4>
+      </LONG-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>AISpecification</SHORT-NAME>
+          <LONG-NAME>
+            <L-4 L="EN">AISpecification</L-4>
+          </LONG-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>Collections_Blueprint</SHORT-NAME>
+              <CATEGORY>BLUEPRINT</CATEGORY>
+              <REFERENCE-BASES>
+                <REFERENCE-BASE>
+                  <SHORT-LABEL>PortPrototypeBlueprints</SHORT-LABEL>
+                  <IS-DEFAULT>false</IS-DEFAULT>
+                  <IS-GLOBAL>false</IS-GLOBAL>
+                  <BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+                  <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/AISpecification/PortPrototypeBlueprints_Blueprint</PACKAGE-REF>
+                </REFERENCE-BASE>
+                <REFERENCE-BASE>
+                  <SHORT-LABEL>ApplicationDataTypes</SHORT-LABEL>
+                  <IS-DEFAULT>false</IS-DEFAULT>
+                  <IS-GLOBAL>false</IS-GLOBAL>
+                  <BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+                  <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/AISpecification/ApplicationDataTypes_Blueprint</PACKAGE-REF>
+                </REFERENCE-BASE>
+                <REFERENCE-BASE>
+                  <SHORT-LABEL>ARKeywordSet</SHORT-LABEL>
+                  <IS-DEFAULT>false</IS-DEFAULT>
+                  <IS-GLOBAL>false</IS-GLOBAL>
+                  <BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+                  <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/AISpecification/KeywordSets_Blueprint</PACKAGE-REF>
+                </REFERENCE-BASE>
+                <REFERENCE-BASE>
+                  <SHORT-LABEL>Collections_Blueprint</SHORT-LABEL>
+                  <IS-DEFAULT>false</IS-DEFAULT>
+                  <IS-GLOBAL>false</IS-GLOBAL>
+                  <BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+                  <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/AISpecification/Collections_Blueprint</PACKAGE-REF>
+                </REFERENCE-BASE>
+                <REFERENCE-BASE>
+                  <SHORT-LABEL>PortInterfaces_Blueprint</SHORT-LABEL>
+                  <IS-DEFAULT>false</IS-DEFAULT>
+                  <IS-GLOBAL>false</IS-GLOBAL>
+                  <BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+                  <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/AISpecification/PortInterfaces_Blueprint</PACKAGE-REF>
+                </REFERENCE-BASE>
+              </REFERENCE-BASES>
+              <ELEMENTS>
+                <COLLECTION>
+                  <SHORT-NAME>MmedTelmHmiRefAll</SHORT-NAME>
+                  <CATEGORY>SET</CATEGORY>
+                  <AUTO-COLLECT>REF-ALL</AUTO-COLLECT>
+                  <ELEMENT-ROLE>PART_OF_SUBSET</ELEMENT-ROLE>
+                  <ELEMENT-REFS>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TankFlapHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BackliteWinHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">LidReFromHmiInt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">LidReFromHmiExt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">GlvBoxHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EmgyLockg</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TintgAutReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjAutOfDrvrSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjAutOfSeatRowFirstMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjAutOfPassSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjAutOfSeatRowSecLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjAutOfSeatRowSecMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjAutOfSeatRowSecRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjAutOfSeatRowThrdLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjAutOfSeatRowThrdMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjAutOfSeatRowThrdRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcsOfSeatReByDrvrSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcsOfSeatReBySeatRowFirstMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcsOfSeatReByPassSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcsOfSeatReBySeatRowSecLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcsOfSeatReBySeatRowSecMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcsOfSeatReBySeatRowSecRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcsOfSeatReBySeatRowThrdLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcsOfSeatReBySeatRowThrdMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcsOfSeatReBySeatRowThrdRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjManOfDrvrSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjManOfSeatRowFirstMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjManOfPassSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjManOfSeatRowSecLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjManOfSeatRowSecMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjManOfSeatRowSecRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjManOfSeatRowThrdLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjManOfSeatRowThrdMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjManOfSeatRowThrdRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgAdjOfDrvrSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgAdjOfSeatRowFirstMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgAdjOfPassSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgAdjOfSeatRowSecLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgAdjOfSeatRowSecMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgAdjOfSeatRowSecRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgAdjOfSeatRowThrdLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgAdjOfSeatRowThrdMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgAdjOfSeatRowThrdRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MirrMovmtManFromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MirrAdjAutToStoreProf0FromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MirrAdjAutToRestoreProf0FromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MirrAdjAutToStoreProf1FromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MirrAdjAutToRestoreProf1FromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MirrAdjAutToStoreProf2FromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MirrAdjAutToRestoreProf2FromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MirrAdjAutToStoreProf3FromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MirrAdjAutToRestoreProf3FromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DshbBri</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">NightPanActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">ActvtWipgAutFromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WshngFrntFromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WipgFrntFromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">HdlampWshngFromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WipgSpdIntlFromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WshngReFromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WipgReFromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WiprPosnReqFromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">HtlModSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TintgAutSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgStOfDrvrSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgStOfSeatRowFirstMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgStOfPassSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgStOfSeatRowSecLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgStOfSeatRowSecMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgStOfSeatRowSecRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgStOfSeatRowThrdLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgStOfSeatRowThrdMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgStOfSeatRowThrdRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SteerTqSuppsnBascSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SteerAgSuppsnBascSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WhlSteerReBascSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">ActvSuspSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SwilSprgSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DamprSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">StabrSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BodyLvlMod</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">ActrBodyLvlSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BodyLvlCtrl</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispRainSnsrActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BtnSimple</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BtnMplSt4</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BtnMplSt8</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BtnMplSt256</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TogSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">OutpMplSt4</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">OutpMplSt8</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">OutpMplSt256</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">KnobRotyBndlsStep7</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">KnobRotyBndlsStep15</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SprgCtrlTunActvReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockAck</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockStOfDrvr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockStOfRowFirstMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockStOfPass</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockStOfRowSecLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockStOfRowSecMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockStOfRowSecRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockStOfRowThrdLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockStOfRowThrdMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockStOfRowThrdRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SeatBltRmnAcoustWarnReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBucdStOfDrvr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBucdStOfOccptAtRowFirstMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBucdStOfPass</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBucdStOfOccptAtRowSecLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBucdStOfOccptAtRowSecMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBucdStOfOccptAtRowSecRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBucdStOfOccptAtRowThrdLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBucdStOfOccptAtRowThrdMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBucdStOfOccptAtRowThrdRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SeatBltRmnOpticWarnReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SetSpdInc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SetSpdDec</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VehSpdDispd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccVehDetdIndcn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlCtrlActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccCtrlActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePMonRstReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePThdPerAxle</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePMonAcptOfWhlNewReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MonrPReqForTirePMon</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MonrPTarReqForTirePMon</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePMonSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePMonWarnIndcn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePMonWarnIndcnPerWhl</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePMonRstAckd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePMonCalStIndcnPerWhl</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePMonIndcnOfWhlNewRcnd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WhlSpdWarnIndcn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePMeasdPerWhl</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TireTMeasdPerWhl</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePThdPerAxleIndcn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SeatBltRmnLdnCtrlAcoustWarn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SeatBltRmnFrqCtrlAcoustWarn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlAndAccSetTiGapInc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlAndAccSetTiGapDec</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlAndAccSwtStEngd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SetSpdIndcn</ELEMENT-REF>
+                  </ELEMENT-REFS>
+                </COLLECTION>
+                <COLLECTION>
+                  <SHORT-NAME>MmedTelmHmi</SHORT-NAME>
+                  <CATEGORY>SET</CATEGORY>
+                  <AUTO-COLLECT>REF-NONE</AUTO-COLLECT>
+                  <ELEMENT-ROLE>PART_OF_SUBSET</ELEMENT-ROLE>
+                  <ELEMENT-REFS>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccCtrlActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AccCtrlActv1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AccVehDetd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccVehDetdIndcn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcsOfSeatReByDrvrSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcsOfSeatReByPassSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcsOfSeatReBySeatRowFirstMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcsOfSeatReBySeatRowSecLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcsOfSeatReBySeatRowSecMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcsOfSeatReBySeatRowSecRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcsOfSeatReBySeatRowThrdLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcsOfSeatReBySeatRowThrdMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcsOfSeatReBySeatRowThrdRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">ActrBodyLvlSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">ActrBodyLvlSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">ActvSuspSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">ActvSuspSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">ActvtWipgAutFromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">ActvtWipgAutReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BackliteWinHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BodyLvlCtrl</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">BodyLvlCtrl1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BodyLvlMod</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">BodyLvlMod1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">BriReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">BtnMplSt256</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BtnMplSt256</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">BtnMplSt4</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BtnMplSt4</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">BtnMplSt8</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BtnMplSt8</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BtnSimple</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">BtnSimple1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">CrsCtrlActv1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlAndAccSetTiGapDec</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlAndAccSetTiGapInc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlAndAccSwtStEngd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">CrsCtrlAndAccSwtStEngd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlCtrlActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">CrsCtrlCtrlActv1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DamprSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">DamprSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockAck</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">DispBltLockAck1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">DispBltLockReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">DispBltLockSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockStOfDrvr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockStOfPass</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockStOfRowFirstMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockStOfRowSecLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockStOfRowSecMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockStOfRowSecRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockStOfRowThrdLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockStOfRowThrdMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBltLockStOfRowThrdRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBucdStOfDrvr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">DispBucdStOfOccpt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBucdStOfOccptAtRowFirstMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBucdStOfOccptAtRowSecLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBucdStOfOccptAtRowSecMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBucdStOfOccptAtRowSecRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBucdStOfOccptAtRowThrdLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBucdStOfOccptAtRowThrdMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBucdStOfOccptAtRowThrdRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispBucdStOfPass</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">DispRainSnsr1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DispRainSnsrActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DshbBri</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EmgyLockg</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EntryReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">GlvBoxHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">HdlampWshngFromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">HtlModSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">HtlModSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">KnobRotyBndlsStep15</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">KnobRotyBndlsStep15</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">KnobRotyBndlsStep7</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">KnobRotyBndlsStep7</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">LidReFromHmiExt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">LidReFromHmiInt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">LockUnlckReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">LtchRelsReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgAdjOfDrvrSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgAdjOfPassSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgAdjOfSeatRowFirstMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgAdjOfSeatRowSecLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgAdjOfSeatRowSecMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgAdjOfSeatRowSecRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgAdjOfSeatRowThrdLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgAdjOfSeatRowThrdMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgAdjOfSeatRowThrdRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">MassgAdjReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">MassgAdjSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgStOfDrvrSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgStOfPassSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgStOfSeatRowFirstMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgStOfSeatRowSecLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgStOfSeatRowSecMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgStOfSeatRowSecRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgStOfSeatRowThrdLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgStOfSeatRowThrdMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MassgStOfSeatRowThrdRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MirrAdjAutToRestoreProf0FromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MirrAdjAutToRestoreProf1FromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MirrAdjAutToRestoreProf2FromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MirrAdjAutToRestoreProf3FromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MirrAdjAutToStoreProf0FromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MirrAdjAutToStoreProf1FromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MirrAdjAutToStoreProf2FromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MirrAdjAutToStoreProf3FromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MirrMovmtManFromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">MirrPanAdjAutReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MonrPReqForTirePMon</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">MonrPReqForTirePMon1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">MonrPTarReqForTirePMon</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">MonrPTarReqForTirePMon1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">NightPanActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">NightPanReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">OutpMplSt256</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">OutpMplSt256</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">OutpMplSt4</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">OutpMplSt4</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">OutpMplSt8</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">OutpMplSt8</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjAutOfDrvrSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjAutOfPassSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjAutOfSeatRowFirstMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjAutOfSeatRowSecLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjAutOfSeatRowSecMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjAutOfSeatRowSecRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjAutOfSeatRowThrdLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjAutOfSeatRowThrdMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjAutOfSeatRowThrdRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjManOfDrvrSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjManOfPassSeat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjManOfSeatRowFirstMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjManOfSeatRowSecLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjManOfSeatRowSecMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjManOfSeatRowSecRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjManOfSeatRowThrdLe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjManOfSeatRowThrdMid</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PanAdjManOfSeatRowThrdRi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PanAdjmtManReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">SeatAdjAut1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">SeatAdjMan1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SeatBltRmnAcoustWarnReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">SeatBltRmnAcoustWarnReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SeatBltRmnFrqCtrlAcoustWarn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">SeatBltRmnFrqCtrlAcoustWarn1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SeatBltRmnLdnCtrlAcoustWarn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">SeatBltRmnLdnCtrlAcoustWarn1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SeatBltRmnOpticWarnReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">SeatBltRmnOpticWarnReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SetSpdDec</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">SetSpdDec1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SetSpdInc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">SetSpdInc1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SetSpdIndcn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">SetSpdIndcn1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SprgCtrlTunActvReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">SprgCtrlTunActvReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">StabrSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">StabrSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SteerAgSuppsnBascSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">SteerSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SteerTqSuppsnBascSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SwilSprgSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">SwilSprgSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TankFlapHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TiGapDec1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TiGapInc1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TintgAutReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TintgAutReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TintgAutSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TintgAutSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePMeasdPerWhl</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TirePMeasdPerWhl1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePMonAcptOfWhlNewReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TirePMonAcptOfWhlNewReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePMonCalStIndcnPerWhl</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TirePMonCalStIndcnPerWhl1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePMonIndcnOfWhlNewRcnd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TirePMonIndcnOfWhlNewRcnd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePMonRstAckd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TirePMonRstAckd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePMonRstReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TirePMonRstReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePMonSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TirePMonSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePMonWarnIndcn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TirePMonWarnIndcn1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePMonWarnIndcnPerWhl</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TirePMonWarnIndcnPerWhl1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePThdPerAxle</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TirePThdPerAxle1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TirePThdPerAxleIndcn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TireTMeasdPerWhl</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TireTMeasdPerWhl1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TogReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TogSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TogSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VehSpdDispd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">VehSpdDispd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WhlSpdWarnIndcn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">WhlSpdWarnIndcn1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WhlSteerReBascSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WipgFrntFromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WipgReFromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">WipgReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WipgSpdIntlFromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">WipgSpdIntlReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">WiprPosnCmd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WiprPosnReqFromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WshngFrntFromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WshngReFromHmi</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">WshngReq1</ELEMENT-REF>
+                  </ELEMENT-REFS>
+                </COLLECTION>
+                <COLLECTION>
+                  <SHORT-NAME>MmedTelmHmiRefAllToMmedTelmHmi</SHORT-NAME>
+                  <CATEGORY>RELATION</CATEGORY>
+                  <ELEMENT-ROLE>AUTO_COLLECTED_FROM</ELEMENT-ROLE>
+                  <ELEMENT-REFS>
+                    <ELEMENT-REF BASE="Collections_Blueprint" DEST="COLLECTION">MmedTelmHmi</ELEMENT-REF>
+                  </ELEMENT-REFS>
+                  <SOURCE-ELEMENT-REFS>
+                    <SOURCE-ELEMENT-REF BASE="Collections_Blueprint" DEST="COLLECTION">MmedTelmHmiRefAll</SOURCE-ELEMENT-REF>
+                  </SOURCE-ELEMENT-REFS>
+                </COLLECTION>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>AUTOSAR_PhysicalUnits</SHORT-NAME>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

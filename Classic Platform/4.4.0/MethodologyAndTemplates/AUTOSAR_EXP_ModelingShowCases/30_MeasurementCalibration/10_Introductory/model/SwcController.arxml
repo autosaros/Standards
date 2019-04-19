@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>McInt</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>SwComponents</SHORT-NAME>
+          <ELEMENTS>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>Controller</SHORT-NAME>
+              <PORTS>
+                <R-PORT-PROTOTYPE>
+                  <SHORT-NAME>TemperatureRPP</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Port to receive the temperature of the plant</L-2>
+                  </DESC>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/McInt/PortInterfaces/TemperatureSRIF</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <P-PORT-PROTOTYPE>
+                  <SHORT-NAME>CurrentPPP</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Port for sending out the current output by this controller</L-2>
+                  </DESC>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/McInt/PortInterfaces/CurrentSRIF</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE>
+                  <SHORT-NAME>ControllerParamsRPP</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Port to get the parameters for the controller</L-2>
+                  </DESC>
+                  <REQUIRED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/McInt/PortInterfaces/ControllerPIF</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE>
+                  <SHORT-NAME>DtRPP</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Port to get delta t, i.e. time of one time step</L-2>
+                  </DESC>
+                  <REQUIRED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/McInt/PortInterfaces/DtPIF</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>ControllerInternalBehavior</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/McInt/DataTypeMappings/DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <AR-TYPED-PER-INSTANCE-MEMORYS>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>E</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">
+							Measurement point for the control error, the deviation between set point and acutal temperature of the plant,
+             				in the current time step
+						</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/McInt/SwAddrMethods/CODE</SW-ADDR-METHOD-REF>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/McInt/ApplicationDataTypes/Temperature_K</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </AR-TYPED-PER-INSTANCE-MEMORYS>
+                  <EVENTS>
+                    <TIMING-EVENT>
+                      <SHORT-NAME>controller100ms</SHORT-NAME>
+                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/McInt/SwComponents/Controller/ControllerInternalBehavior/ControllerRE</START-ON-EVENT-REF>
+                      <PERIOD>0.1</PERIOD>
+                    </TIMING-EVENT>
+                  </EVENTS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <IMPLICIT-INTER-RUNNABLE-VARIABLES>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>ESum</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Internal state of the controller: the sum of control errors</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/McInt/SwAddrMethods/CODE</SW-ADDR-METHOD-REF>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/McInt/ApplicationDataTypes/ESum</TYPE-TREF>
+                      <INIT-VALUE>
+                        <APPLICATION-VALUE-SPECIFICATION>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-VALUE-CONT>
+                            <UNIT-REF DEST="UNIT">/McInt/Units/KelvinSecond</UNIT-REF>
+                            <SW-VALUES-PHYS>
+                              <V>0.0</V>
+                            </SW-VALUES-PHYS>
+                          </SW-VALUE-CONT>
+                        </APPLICATION-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </IMPLICIT-INTER-RUNNABLE-VARIABLES>
+                  <RUNNABLES>
+                    <RUNNABLE-ENTITY>
+                      <SHORT-NAME>ControllerRE</SHORT-NAME>
+                      <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/McInt/SwAddrMethods/CODE</SW-ADDR-METHOD-REF>
+                      <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                      <DATA-READ-ACCESSS>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>DRA_temperature</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/McInt/SwComponents/Controller/TemperatureRPP</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/PortInterfaces/TemperatureSRIF/T</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </DATA-READ-ACCESSS>
+                      <DATA-WRITE-ACCESSS>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>DWA_current</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/McInt/SwComponents/Controller/CurrentPPP</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/PortInterfaces/CurrentSRIF/I</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </DATA-WRITE-ACCESSS>
+                      <PARAMETER-ACCESSS>
+                        <PARAMETER-ACCESS>
+                          <SHORT-NAME>PA_SetPoint</SHORT-NAME>
+                          <ACCESSED-PARAMETER>
+                            <AUTOSAR-PARAMETER-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/McInt/SwComponents/Controller/ControllerParamsRPP</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/McInt/PortInterfaces/ControllerPIF/ctrl_SetPoint</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-PARAMETER-IREF>
+                          </ACCESSED-PARAMETER>
+                        </PARAMETER-ACCESS>
+                        <PARAMETER-ACCESS>
+                          <SHORT-NAME>PA_K</SHORT-NAME>
+                          <ACCESSED-PARAMETER>
+                            <AUTOSAR-PARAMETER-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/McInt/SwComponents/Controller/ControllerParamsRPP</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/McInt/PortInterfaces/ControllerPIF/ctrl_K</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-PARAMETER-IREF>
+                          </ACCESSED-PARAMETER>
+                        </PARAMETER-ACCESS>
+                        <PARAMETER-ACCESS>
+                          <SHORT-NAME>PA_MaxESum</SHORT-NAME>
+                          <ACCESSED-PARAMETER>
+                            <AUTOSAR-PARAMETER-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/McInt/SwComponents/Controller/ControllerParamsRPP</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/McInt/PortInterfaces/ControllerPIF/ctrl_MaxESum</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-PARAMETER-IREF>
+                          </ACCESSED-PARAMETER>
+                        </PARAMETER-ACCESS>
+                        <PARAMETER-ACCESS>
+                          <SHORT-NAME>PA_Dt</SHORT-NAME>
+                          <ACCESSED-PARAMETER>
+                            <AUTOSAR-PARAMETER-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/McInt/SwComponents/Controller/DtRPP</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/McInt/PortInterfaces/DtPIF/Dt</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-PARAMETER-IREF>
+                          </ACCESSED-PARAMETER>
+                        </PARAMETER-ACCESS>
+                      </PARAMETER-ACCESSS>
+                      <READ-LOCAL-VARIABLES>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>ReadLocalVariables_ESum</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/SwComponents/Controller/ControllerInternalBehavior/ESum</LOCAL-VARIABLE-REF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </READ-LOCAL-VARIABLES>
+                      <SYMBOL>controllerRE_func</SYMBOL>
+                      <WRITTEN-LOCAL-VARIABLES>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>WrittenLocalVariables_ESum</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/SwComponents/Controller/ControllerInternalBehavior/ESum</LOCAL-VARIABLE-REF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </WRITTEN-LOCAL-VARIABLES>
+                    </RUNNABLE-ENTITY>
+                  </RUNNABLES>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

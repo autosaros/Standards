@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd" xmlns="http://autosar.org/schema/r4.0">
+  <!-- AUTOSAR General Blueprints -->
+  <!--
+    Document Owner:                 AUTOSAR
+    Document Responsibility:        AUTOSAR
+    Document Identification Number: 621
+    Document Status:                Final
+    Part of AUTOSAR Standard:       Classic Platform
+    Part of Standard Release:       4.4.0
+  -->
+  <!--
+    Disclaimer
+    
+    This work (specification and/or software implementation) and the material
+    contained in it, as released by AUTOSAR, is for the purpose of information
+    only. AUTOSAR and the companies that have contributed to it shall not be liable
+    for any use of the work.
+
+    The material contained in this work is protected by copyright and other types
+    of intellectual property rights. The commercial exploitation of the material
+    contained in this work requires a license to such intellectual property rights.
+
+    This work may be utilized or reproduced without any modification, in any form
+    or by any means, for informational purposes only. For any other purpose, no
+    part of the work may be utilized or reproduced, in any form or by any means,
+    without permission in writing from the publisher.
+
+    The work has been developed for automotive applications only. It has neither
+    been developed, nor tested for non-automotive applications.
+
+    The word AUTOSAR and the AUTOSAR logo are registered trademarks.
+  -->
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="preserve">EN</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>GenDef</SHORT-NAME>
+          <REFERENCE-BASES>
+            <REFERENCE-BASE>
+              <IS-DEFAULT>true</IS-DEFAULT>
+              <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/GenDef</PACKAGE-REF>
+            </REFERENCE-BASE>
+          </REFERENCE-BASES>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>SwRecordLayouts_Blueprint</SHORT-NAME>
+              <CATEGORY>BLUEPRINT</CATEGORY>
+              <ELEMENTS>
+                <!-- SW-RECORD-LAYOUT: Cuboid_s16s16s16_s16 COLUMN_DIR -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">Cuboid_s16s16s16_s16</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-V>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Nx</SHORT-LABEL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>1</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>COUNT</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                    <SW-RECORD-LAYOUT-V>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Ny</SHORT-LABEL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>2</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>COUNT</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                    <SW-RECORD-LAYOUT-V>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Nz</SHORT-LABEL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>3</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>COUNT</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">X</SHORT-LABEL>
+                      <CATEGORY>INDEX_INCR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-AXIS>1</SW-RECORD-LAYOUT-GROUP-AXIS>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>X</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                        <SW-RECORD-LAYOUT-V-AXIS>1</SW-RECORD-LAYOUT-V-AXIS>
+                        <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                      </SW-RECORD-LAYOUT-V>
+                    </SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Y</SHORT-LABEL>
+                      <CATEGORY>INDEX_INCR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-AXIS>2</SW-RECORD-LAYOUT-GROUP-AXIS>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>Y</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                        <SW-RECORD-LAYOUT-V-AXIS>2</SW-RECORD-LAYOUT-V-AXIS>
+                        <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                      </SW-RECORD-LAYOUT-V>
+                    </SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Z</SHORT-LABEL>
+                      <CATEGORY>INDEX_INCR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-AXIS>3</SW-RECORD-LAYOUT-GROUP-AXIS>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>Z</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                        <SW-RECORD-LAYOUT-V-AXIS>3</SW-RECORD-LAYOUT-V-AXIS>
+                        <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                      </SW-RECORD-LAYOUT-V>
+                    </SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                      <CATEGORY>COLUMN_DIR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-AXIS>3</SW-RECORD-LAYOUT-GROUP-AXIS>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>Z</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-GROUP>
+                        <CATEGORY>COLUMN_DIR</CATEGORY>
+                        <SW-RECORD-LAYOUT-GROUP-AXIS>1</SW-RECORD-LAYOUT-GROUP-AXIS>
+                        <SW-RECORD-LAYOUT-GROUP-INDEX>X</SW-RECORD-LAYOUT-GROUP-INDEX>
+                        <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                        <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                        <SW-RECORD-LAYOUT-GROUP>
+                          <SW-RECORD-LAYOUT-GROUP-AXIS>2</SW-RECORD-LAYOUT-GROUP-AXIS>
+                          <SW-RECORD-LAYOUT-GROUP-INDEX>Y</SW-RECORD-LAYOUT-GROUP-INDEX>
+                          <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                          <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                          <SW-RECORD-LAYOUT-V>
+                            <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                            <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                            <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                            <SW-RECORD-LAYOUT-V-INDEX>Z X Y</SW-RECORD-LAYOUT-V-INDEX>
+                          </SW-RECORD-LAYOUT-V>
+                        </SW-RECORD-LAYOUT-GROUP>
+                      </SW-RECORD-LAYOUT-GROUP>
+                    </SW-RECORD-LAYOUT-GROUP>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: Cuboid_s8s16s16_s16 ROW-DIR -->
+                <SW-RECORD-LAYOUT>
+                <SHORT-NAME NAME-PATTERN="{blueprintName}">Cuboid_s8s8s8_s16</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-V>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Nx</SHORT-LABEL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint8</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>1</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>COUNT</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                    <SW-RECORD-LAYOUT-V>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Ny</SHORT-LABEL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint8</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>2</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>COUNT</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                    <SW-RECORD-LAYOUT-V>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Nz</SHORT-LABEL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint8</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>3</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>COUNT</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">X</SHORT-LABEL>
+                      <CATEGORY>INDEX_INCR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-AXIS>1</SW-RECORD-LAYOUT-GROUP-AXIS>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>X</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint8</BASE-TYPE-REF>
+                        <SW-RECORD-LAYOUT-V-AXIS>1</SW-RECORD-LAYOUT-V-AXIS>
+                        <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                      </SW-RECORD-LAYOUT-V>
+                    </SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Y</SHORT-LABEL>
+                      <CATEGORY>INDEX_INCR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-AXIS>2</SW-RECORD-LAYOUT-GROUP-AXIS>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>Y</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                        <SW-RECORD-LAYOUT-V-AXIS>2</SW-RECORD-LAYOUT-V-AXIS>
+                        <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                      </SW-RECORD-LAYOUT-V>
+                    </SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Z</SHORT-LABEL>
+                      <CATEGORY>INDEX_INCR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-AXIS>3</SW-RECORD-LAYOUT-GROUP-AXIS>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>Z</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                        <SW-RECORD-LAYOUT-V-AXIS>3</SW-RECORD-LAYOUT-V-AXIS>
+                        <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                      </SW-RECORD-LAYOUT-V>
+                    </SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                      <CATEGORY>ROW_DIR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-AXIS>3</SW-RECORD-LAYOUT-GROUP-AXIS>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>Z</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-GROUP>
+                        <CATEGORY>ROW_DIR</CATEGORY>
+                        <SW-RECORD-LAYOUT-GROUP-AXIS>2</SW-RECORD-LAYOUT-GROUP-AXIS>
+                        <SW-RECORD-LAYOUT-GROUP-INDEX>Y</SW-RECORD-LAYOUT-GROUP-INDEX>
+                        <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                        <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                        <SW-RECORD-LAYOUT-GROUP>
+                          <SW-RECORD-LAYOUT-GROUP-AXIS>1</SW-RECORD-LAYOUT-GROUP-AXIS>
+                          <SW-RECORD-LAYOUT-GROUP-INDEX>X</SW-RECORD-LAYOUT-GROUP-INDEX>
+                          <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                          <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                          <SW-RECORD-LAYOUT-V>
+                            <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                            <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                            <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                            <SW-RECORD-LAYOUT-V-INDEX>Z X Y</SW-RECORD-LAYOUT-V-INDEX>
+                          </SW-RECORD-LAYOUT-V>
+                        </SW-RECORD-LAYOUT-GROUP>
+                      </SW-RECORD-LAYOUT-GROUP>
+                    </SW-RECORD-LAYOUT-GROUP>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: Cube_4_s16s16s16s16_s16 COLUMN_DIR -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">Cube_4_s16s16s16s16_s16</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-V>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Nx</SHORT-LABEL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>1</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>COUNT</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                    <SW-RECORD-LAYOUT-V>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Ny</SHORT-LABEL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>2</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>COUNT</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                    <SW-RECORD-LAYOUT-V>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Nz1</SHORT-LABEL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>3</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>COUNT</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                    <SW-RECORD-LAYOUT-V>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Nz2</SHORT-LABEL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>4</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>COUNT</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">X</SHORT-LABEL>
+                      <CATEGORY>INDEX_INCR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-AXIS>1</SW-RECORD-LAYOUT-GROUP-AXIS>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>X</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                        <SW-RECORD-LAYOUT-V-AXIS>1</SW-RECORD-LAYOUT-V-AXIS>
+                        <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                      </SW-RECORD-LAYOUT-V>
+                    </SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Y</SHORT-LABEL>
+                      <CATEGORY>INDEX_INCR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-AXIS>2</SW-RECORD-LAYOUT-GROUP-AXIS>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>Y</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                        <SW-RECORD-LAYOUT-V-AXIS>2</SW-RECORD-LAYOUT-V-AXIS>
+                        <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                      </SW-RECORD-LAYOUT-V>
+                    </SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Z1</SHORT-LABEL>
+                      <CATEGORY>INDEX_INCR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-AXIS>3</SW-RECORD-LAYOUT-GROUP-AXIS>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>Z1</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                        <SW-RECORD-LAYOUT-V-AXIS>3</SW-RECORD-LAYOUT-V-AXIS>
+                        <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                      </SW-RECORD-LAYOUT-V>
+                    </SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Z2</SHORT-LABEL>
+                      <CATEGORY>INDEX_INCR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-AXIS>4</SW-RECORD-LAYOUT-GROUP-AXIS>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>Z2</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                        <SW-RECORD-LAYOUT-V-AXIS>4</SW-RECORD-LAYOUT-V-AXIS>
+                        <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                      </SW-RECORD-LAYOUT-V>
+                    </SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                      <CATEGORY>COLUMN_DIR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-AXIS>4</SW-RECORD-LAYOUT-GROUP-AXIS>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>Z2</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-GROUP>
+                        <CATEGORY>COLUMN_DIR</CATEGORY>
+                        <SW-RECORD-LAYOUT-GROUP-AXIS>3</SW-RECORD-LAYOUT-GROUP-AXIS>
+                        <SW-RECORD-LAYOUT-GROUP-INDEX>Z1</SW-RECORD-LAYOUT-GROUP-INDEX>
+                        <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                        <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                        <SW-RECORD-LAYOUT-GROUP>
+                          <CATEGORY>COLUMN_DIR</CATEGORY>
+                          <SW-RECORD-LAYOUT-GROUP-AXIS>1</SW-RECORD-LAYOUT-GROUP-AXIS>
+                          <SW-RECORD-LAYOUT-GROUP-INDEX>X</SW-RECORD-LAYOUT-GROUP-INDEX>
+                          <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                          <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                          <SW-RECORD-LAYOUT-GROUP>
+                            <SW-RECORD-LAYOUT-GROUP-AXIS>2</SW-RECORD-LAYOUT-GROUP-AXIS>
+                            <SW-RECORD-LAYOUT-GROUP-INDEX>Y</SW-RECORD-LAYOUT-GROUP-INDEX>
+                            <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                            <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                            <SW-RECORD-LAYOUT-V>
+                              <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                              <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                              <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                              <SW-RECORD-LAYOUT-V-INDEX>Z2 Z1 X Y</SW-RECORD-LAYOUT-V-INDEX>
+                            </SW-RECORD-LAYOUT-V>
+                          </SW-RECORD-LAYOUT-GROUP>
+                        </SW-RECORD-LAYOUT-GROUP>
+                      </SW-RECORD-LAYOUT-GROUP>
+                    </SW-RECORD-LAYOUT-GROUP>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: Cube_5_u8s16s16s16s16_s16 COLUMN_DIR -->
+                <SW-RECORD-LAYOUT>
+                 <SHORT-NAME NAME-PATTERN="{blueprintName}">Cube_5_u8s16s16s16s16_s16</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-V>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Nx</SHORT-LABEL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint8</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>1</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>COUNT</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                    <SW-RECORD-LAYOUT-V>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Ny</SHORT-LABEL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>2</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>COUNT</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                    <SW-RECORD-LAYOUT-V>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Nz1</SHORT-LABEL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>3</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>COUNT</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                    <SW-RECORD-LAYOUT-V>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Nz2</SHORT-LABEL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>4</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>COUNT</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                    <SW-RECORD-LAYOUT-V>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Nz3</SHORT-LABEL>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>5</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>COUNT</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">X</SHORT-LABEL>
+                      <CATEGORY>INDEX_INCR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-AXIS>1</SW-RECORD-LAYOUT-GROUP-AXIS>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>X</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint8</BASE-TYPE-REF>
+                        <SW-RECORD-LAYOUT-V-AXIS>1</SW-RECORD-LAYOUT-V-AXIS>
+                        <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                      </SW-RECORD-LAYOUT-V>
+                    </SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Y</SHORT-LABEL>
+                      <CATEGORY>INDEX_INCR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-AXIS>2</SW-RECORD-LAYOUT-GROUP-AXIS>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>Y</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                        <SW-RECORD-LAYOUT-V-AXIS>2</SW-RECORD-LAYOUT-V-AXIS>
+                        <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                      </SW-RECORD-LAYOUT-V>
+                    </SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Z1</SHORT-LABEL>
+                      <CATEGORY>INDEX_INCR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-AXIS>3</SW-RECORD-LAYOUT-GROUP-AXIS>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>Z1</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                        <SW-RECORD-LAYOUT-V-AXIS>3</SW-RECORD-LAYOUT-V-AXIS>
+                        <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                      </SW-RECORD-LAYOUT-V>
+                    </SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Z2</SHORT-LABEL>
+                      <CATEGORY>INDEX_INCR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-AXIS>4</SW-RECORD-LAYOUT-GROUP-AXIS>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>Z2</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                        <SW-RECORD-LAYOUT-V-AXIS>4</SW-RECORD-LAYOUT-V-AXIS>
+                        <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                      </SW-RECORD-LAYOUT-V>
+                    </SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Z3</SHORT-LABEL>
+                      <CATEGORY>INDEX_INCR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-AXIS>5</SW-RECORD-LAYOUT-GROUP-AXIS>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>Z3</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                        <SW-RECORD-LAYOUT-V-AXIS>5</SW-RECORD-LAYOUT-V-AXIS>
+                        <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                      </SW-RECORD-LAYOUT-V>
+                    </SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                      <CATEGORY>COLUMN_DIR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-AXIS>5</SW-RECORD-LAYOUT-GROUP-AXIS>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>Z3</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-GROUP>
+                        <CATEGORY>COLUMN_DIR</CATEGORY>
+                        <SW-RECORD-LAYOUT-GROUP-AXIS>4</SW-RECORD-LAYOUT-GROUP-AXIS>
+                        <SW-RECORD-LAYOUT-GROUP-INDEX>Z2</SW-RECORD-LAYOUT-GROUP-INDEX>
+                        <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                        <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                        <SW-RECORD-LAYOUT-GROUP>
+                          <CATEGORY>COLUMN_DIR</CATEGORY>
+                          <SW-RECORD-LAYOUT-GROUP-AXIS>3</SW-RECORD-LAYOUT-GROUP-AXIS>
+                          <SW-RECORD-LAYOUT-GROUP-INDEX>Z1</SW-RECORD-LAYOUT-GROUP-INDEX>
+                          <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                          <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                          <SW-RECORD-LAYOUT-GROUP>
+                            <CATEGORY>COLUMN_DIR</CATEGORY>
+                            <SW-RECORD-LAYOUT-GROUP-AXIS>1</SW-RECORD-LAYOUT-GROUP-AXIS>
+                            <SW-RECORD-LAYOUT-GROUP-INDEX>X</SW-RECORD-LAYOUT-GROUP-INDEX>
+                            <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                            <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                            <SW-RECORD-LAYOUT-GROUP>
+                              <SW-RECORD-LAYOUT-GROUP-AXIS>2</SW-RECORD-LAYOUT-GROUP-AXIS>
+                              <SW-RECORD-LAYOUT-GROUP-INDEX>Y</SW-RECORD-LAYOUT-GROUP-INDEX>
+                              <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                              <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                              <SW-RECORD-LAYOUT-V>
+                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                                <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                                <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                                <SW-RECORD-LAYOUT-V-INDEX>Z3 Z2 Z1 X Y</SW-RECORD-LAYOUT-V-INDEX>
+                              </SW-RECORD-LAYOUT-V>
+                            </SW-RECORD-LAYOUT-GROUP>
+                          </SW-RECORD-LAYOUT-GROUP>
+                        </SW-RECORD-LAYOUT-GROUP>
+                      </SW-RECORD-LAYOUT-GROUP>
+                    </SW-RECORD-LAYOUT-GROUP>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

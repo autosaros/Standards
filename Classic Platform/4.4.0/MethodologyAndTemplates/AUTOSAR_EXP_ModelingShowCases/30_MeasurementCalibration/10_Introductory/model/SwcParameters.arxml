@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>McInt</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>SwComponents</SHORT-NAME>
+          <ELEMENTS>
+            <PARAMETER-SW-COMPONENT-TYPE>
+              <SHORT-NAME>Parameters</SHORT-NAME>
+              <DESC>
+                <L-2 L="EN">Type for providing the parameters to the ApplicationSwCompoments</L-2>
+              </DESC>
+              <PORTS>
+                <P-PORT-PROTOTYPE>
+                  <SHORT-NAME>ControllerPPP</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Port for providing the parameters for the controller</L-2>
+                  </DESC>
+                  <PROVIDED-COM-SPECS>
+                    <PARAMETER-PROVIDE-COM-SPEC>
+                      <INIT-VALUE>
+                        <APPLICATION-VALUE-SPECIFICATION>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-VALUE-CONT>
+                            <UNIT-REF DEST="UNIT">/McInt/Units/MilliAmperePerKelvinSecond</UNIT-REF>
+                            <SW-VALUES-PHYS>
+                              <V>20</V>
+                            </SW-VALUES-PHYS>
+                          </SW-VALUE-CONT>
+                        </APPLICATION-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                      <PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/McInt/PortInterfaces/ControllerPIF/ctrl_K</PARAMETER-REF>
+                    </PARAMETER-PROVIDE-COM-SPEC>
+                    <PARAMETER-PROVIDE-COM-SPEC>
+                      <INIT-VALUE>
+                        <APPLICATION-VALUE-SPECIFICATION>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-VALUE-CONT>
+                            <UNIT-REF DEST="UNIT">/McInt/Units/KelvinSecond</UNIT-REF>
+                            <SW-VALUES-PHYS>
+                              <V>2000</V>
+                            </SW-VALUES-PHYS>
+                          </SW-VALUE-CONT>
+                        </APPLICATION-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                      <PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/McInt/PortInterfaces/ControllerPIF/ctrl_MaxESum</PARAMETER-REF>
+                    </PARAMETER-PROVIDE-COM-SPEC>
+                    <PARAMETER-PROVIDE-COM-SPEC>
+                      <INIT-VALUE>
+                        <APPLICATION-VALUE-SPECIFICATION>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-VALUE-CONT>
+                            <UNIT-REF DEST="UNIT">/McInt/Units/DegreeCelsius</UNIT-REF>
+                            <SW-VALUES-PHYS>
+                              <V>768</V>
+                            </SW-VALUES-PHYS>
+                          </SW-VALUE-CONT>
+                        </APPLICATION-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                      <PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/McInt/PortInterfaces/ControllerPIF/ctrl_SetPoint</PARAMETER-REF>
+                    </PARAMETER-PROVIDE-COM-SPEC>
+                  </PROVIDED-COM-SPECS>
+                  <PROVIDED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/McInt/PortInterfaces/ControllerPIF</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+                <P-PORT-PROTOTYPE>
+                  <SHORT-NAME>PlantPPP</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Port for providing the parameters for the plant</L-2>
+                  </DESC>
+                  <PROVIDED-COM-SPECS>
+                    <PARAMETER-PROVIDE-COM-SPEC>
+                      <INIT-VALUE>
+                        <APPLICATION-VALUE-SPECIFICATION>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-VALUE-CONT>
+                            <UNIT-REF DEST="UNIT">/McInt/Units/JoulePerKelvinSecond</UNIT-REF>
+                            <SW-VALUES-PHYS>
+                              <V>1.0</V>
+                            </SW-VALUES-PHYS>
+                          </SW-VALUE-CONT>
+                        </APPLICATION-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                      <PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/McInt/PortInterfaces/PlantPIF/plnt_EnvFactor</PARAMETER-REF>
+                    </PARAMETER-PROVIDE-COM-SPEC>
+                    <PARAMETER-PROVIDE-COM-SPEC>
+                      <INIT-VALUE>
+                        <APPLICATION-VALUE-SPECIFICATION>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-VALUE-CONT>
+                            <UNIT-REF DEST="UNIT">/McInt/Units/JoulePerMilliAmpereSecond</UNIT-REF>
+                            <SW-VALUES-PHYS>
+                              <V>5.0</V>
+                            </SW-VALUES-PHYS>
+                          </SW-VALUE-CONT>
+                        </APPLICATION-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                      <PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/McInt/PortInterfaces/PlantPIF/plnt_HeaterFactor</PARAMETER-REF>
+                    </PARAMETER-PROVIDE-COM-SPEC>
+                  </PROVIDED-COM-SPECS>
+                  <PROVIDED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/McInt/PortInterfaces/PlantPIF</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+                <P-PORT-PROTOTYPE>
+                  <SHORT-NAME>EnvironmentPPP</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Port for providing the parameters for the environment</L-2>
+                  </DESC>
+                  <PROVIDED-COM-SPECS>
+                    <PARAMETER-PROVIDE-COM-SPEC>
+                      <INIT-VALUE>
+                        <APPLICATION-VALUE-SPECIFICATION>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-VALUE-CONT>
+                            <UNIT-REF DEST="UNIT">/McInt/Units/DegreeCelsius</UNIT-REF>
+                            <SW-VALUES-PHYS>
+                              <V>300</V>
+                            </SW-VALUES-PHYS>
+                          </SW-VALUE-CONT>
+                        </APPLICATION-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                      <PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/McInt/PortInterfaces/EnvironmentPIF/env_TLowLimit</PARAMETER-REF>
+                    </PARAMETER-PROVIDE-COM-SPEC>
+                    <PARAMETER-PROVIDE-COM-SPEC>
+                      <INIT-VALUE>
+                        <APPLICATION-VALUE-SPECIFICATION>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-VALUE-CONT>
+                            <UNIT-REF DEST="UNIT">/McInt/Units/Kelvin</UNIT-REF>
+                            <SW-VALUES-PHYS>
+                              <V>10</V>
+                            </SW-VALUES-PHYS>
+                          </SW-VALUE-CONT>
+                        </APPLICATION-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                      <PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/McInt/PortInterfaces/EnvironmentPIF/env_TStepSize</PARAMETER-REF>
+                    </PARAMETER-PROVIDE-COM-SPEC>
+                    <PARAMETER-PROVIDE-COM-SPEC>
+                      <INIT-VALUE>
+                        <APPLICATION-VALUE-SPECIFICATION>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-VALUE-CONT>
+                            <UNIT-REF DEST="UNIT">/McInt/Units/Kelvin</UNIT-REF>
+                            <SW-VALUES-PHYS>
+                              <V>200</V>
+                            </SW-VALUES-PHYS>
+                          </SW-VALUE-CONT>
+                        </APPLICATION-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                      <PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/McInt/PortInterfaces/EnvironmentPIF/env_THighLimitDistance</PARAMETER-REF>
+                    </PARAMETER-PROVIDE-COM-SPEC>
+                  </PROVIDED-COM-SPECS>
+                  <PROVIDED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/McInt/PortInterfaces/EnvironmentPIF</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+                <P-PORT-PROTOTYPE>
+                  <SHORT-NAME>DtPPP</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Time of one time step</L-2>
+                  </DESC>
+                  <PROVIDED-COM-SPECS>
+                    <PARAMETER-PROVIDE-COM-SPEC>
+                      <INIT-VALUE>
+                        <APPLICATION-VALUE-SPECIFICATION>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-VALUE-CONT>
+                            <UNIT-REF DEST="UNIT">/McInt/Units/Second</UNIT-REF>
+                            <SW-VALUES-PHYS>
+                              <V>0.1</V>
+                            </SW-VALUES-PHYS>
+                          </SW-VALUE-CONT>
+                        </APPLICATION-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                      <PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/McInt/PortInterfaces/DtPIF/Dt</PARAMETER-REF>
+                    </PARAMETER-PROVIDE-COM-SPEC>
+                  </PROVIDED-COM-SPECS>
+                  <PROVIDED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/McInt/PortInterfaces/DtPIF</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+              </PORTS>
+              <DATA-TYPE-MAPPING-REFS>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/McInt/DataTypeMappings/DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+              </DATA-TYPE-MAPPING-REFS>
+            </PARAMETER-SW-COMPONENT-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,1936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <!-- AUTOSAR General Blueprints -->
+  <!--
+    Document Owner:                 AUTOSAR
+    Document Responsibility:        AUTOSAR
+    Document Identification Number: 621
+    Document Status:                Final
+    Part of AUTOSAR Standard:       Classic Platform
+    Part of Standard Release:       4.4.0
+  -->
+  <!--
+    Disclaimer
+    
+    This work (specification and/or software implementation) and the material
+    contained in it, as released by AUTOSAR, is for the purpose of information
+    only. AUTOSAR and the companies that have contributed to it shall not be liable
+    for any use of the work.
+
+    The material contained in this work is protected by copyright and other types
+    of intellectual property rights. The commercial exploitation of the material
+    contained in this work requires a license to such intellectual property rights.
+
+    This work may be utilized or reproduced without any modification, in any form
+    or by any means, for informational purposes only. For any other purpose, no
+    part of the work may be utilized or reproduced, in any form or by any means,
+    without permission in writing from the publisher.
+
+    The work has been developed for automotive applications only. It has neither
+    been developed, nor tested for non-automotive applications.
+
+    The word AUTOSAR and the AUTOSAR logo are registered trademarks.
+  -->
+	<ADMIN-DATA>
+		<USED-LANGUAGES>
+			<L-10 L="EN" xml:space="default">English</L-10>
+		</USED-LANGUAGES>
+	</ADMIN-DATA>
+	<AR-PACKAGES>
+		<AR-PACKAGE>
+			<SHORT-NAME>AUTOSAR</SHORT-NAME>
+			<AR-PACKAGES>
+				<AR-PACKAGE>
+					<SHORT-NAME>PredefinedNames_Blueprint</SHORT-NAME>
+					<CATEGORY>BLUEPRINT</CATEGORY>
+					<AR-PACKAGES>
+						<AR-PACKAGE>
+							<SHORT-NAME>KeywordSets</SHORT-NAME>
+							<ELEMENTS>
+								<KEYWORD-SET>
+									<SHORT-NAME>VirtualModules</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Virtual Modules</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This keyword set defines virtual modules which take the role of module designators in naming conventions but do not exist as e.g. C-implementations.</L-2>
+									</DESC>
+									<INTRODUCTION>
+										<TRACE>
+											<SHORT-NAME>TR_PDN_00001</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Definition of Virtual Modules</L-4>
+											</LONG-NAME>
+											<P>
+												<L-1 L="EN">This keyword set contains two keyword classifications:</L-1>
+											</P>
+											<LIST>
+												<ITEM>
+													<P>
+														<L-1 L="EN">
+															<E TYPE="BOLD">ModuleDesignator</E>: The 
+<TT TYPE="ARMetaClassRole">Keyword.abbrName</TT> represents a valid module designator defined by AUTOSAR (see <TT TYPE="ARTraceRefExt">TPS_GST_00017</TT> in
+																<TT TYPE="Cite">TPS_2d_GenericStructureTemplate</TT>
+															). </L-1>
+													</P>
+												</ITEM>
+												<ITEM>
+													<P>
+														<L-1 L="EN">
+															<E TYPE="BOLD">AUTOSAR-Document</E>: The 
+<TT TYPE="ARMetaClassRole">Referrable.shortName</TT> represents a module name for the implementation of a specification provided by AUTOSAR (see 
+<TT TYPE="ARTraceRefExt">TR_IOAT_00069</TT> 
+						in 
+						<TT TYPE="Cite">TR_2d_InteroperabilityOfAutosarTools</TT>
+															).</L-1>
+													</P>
+												</ITEM>
+											</LIST>
+										</TRACE>
+									</INTRODUCTION>
+									<KEYWORDS>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AISpecification</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">XML Specification of Application Interfaces</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This represents the Appplication Interfaces.</L-2>
+											</DESC>
+											<ABBR-NAME>AISpecification</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>AUTOSAR-Document</CLASSIFICATION>
+												<CLASSIFICATION>ModuleDesignator</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">EcuC</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Ecu Configuration</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">EcuC is a pseudo module which defines parameters applicable to all other BSW modules.</L-2>
+											</DESC>
+											<ABBR-NAME>EcuC</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>ModuleDesignator</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">GeneralBlueprints</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">General Blueprints</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Collection of blueprints for AUTOSAR M1 models.</L-2>
+											</DESC>
+											<ABBR-NAME>GenBlpr</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>ModuleDesignator</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">GeneralDefinitions</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">General Definitions</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This represents general elements that can be applied for both, basic (BSW) and application software (ASW), but for which no explicit AUTOSAR Document is maintained. Example for objects in this virtual module are elements such as life cycle definitions, role definitions etc.</L-2>
+											</DESC>
+											<ABBR-NAME>GenDef</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>ModuleDesignator</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">V2X</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Vehicle-2-X</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">V2X is used as a cluster abbreviation by all cross module types used by the Vehicle-2-X communication modules.</L-2>
+											</DESC>
+											<ABBR-NAME>V2X</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>ModuleDesignator</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+									</KEYWORDS>
+								</KEYWORD-SET>
+								<KEYWORD-SET>
+									<SHORT-NAME>InformationCategories</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">AUTOSAR Information Categories</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This keyword set denotes abbreviations used e.g. in filenames respectively in trace tags.</L-2>
+									</DESC>
+									<INTRODUCTION>
+										<TRACE>
+											<SHORT-NAME>TR_PDN_00002</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Definition of AUTOSAR Information Categories</L-4>
+											</LONG-NAME>
+											<P>
+												<L-1 L="EN">This keyword set contains the following keyword classifications:</L-1>
+											</P>
+											<LIST>
+												<ITEM>
+													<P>
+														<L-1 L="EN">
+															<E TYPE="BOLD">DocumentCategory</E>: The keyword (<TT TYPE="ARMetaClassRole">Keyword.abbrName</TT>) represents a valid category of a document provided by AUTOSAR (see <TT TYPE="ARTraceRefExt">TPS_STDT_00050</TT> in 
+																<TT TYPE="Cite">TPS_2d_StandardizationTemplate</TT>
+															).</L-1>
+													</P>
+												</ITEM>
+												<ITEM>
+													<P>
+														<L-1 L="EN">
+															<E TYPE="BOLD">TraceCategory</E>: The keyword (<TT TYPE="ARMetaClassRole">Keyword.abbrName</TT>) represents a valid category of a traceable text within a document provided by AUTOSAR (see <TT TYPE="ARTraceRefExt">TPS_STDT_00042</TT> in
+																<TT TYPE="Cite">TPS_2d_StandardizationTemplate</TT>
+															).</L-1>
+													</P>
+												</ITEM>
+												<ITEM>
+													<P>
+														<L-1 L="EN">
+															<E TYPE="BOLD">InternalDocumentCategory</E>: The keyword (
+<TT TYPE="ARMetaClassRole">Keyword.abbrName</TT>) represents a valid category of a document internal to AUTOSAR which is not published but still follows the conventions.</L-1>
+													</P>
+												</ITEM>
+											</LIST>
+										</TRACE>
+									</INTRODUCTION>
+									<KEYWORDS>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ASWS</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Abstract SWS Software Specification</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">General Specification of AUTOSAR Basic Software Modules</L-2>
+											</DESC>
+											<ABBR-NAME>ASWS</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentCategory</CLASSIFICATION>
+												<CLASSIFICATION>TraceCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ATR</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Acceptance Test Requirement</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Specification of requirements for acceptance tests</L-2>
+											</DESC>
+											<ABBR-NAME>ATR</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentCategory</CLASSIFICATION>
+												<CLASSIFICATION>TraceCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ATS</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Acceptance Test Specification</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Test specification and scripts for the execution of acceptance tests</L-2>
+											</DESC>
+											<ABBR-NAME>ATS</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentCategory</CLASSIFICATION>
+												<CLASSIFICATION>TraceCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">CONC</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Concept Document</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Concept describing planned changes for the next minor or major release</L-2>
+											</DESC>
+											<ABBR-NAME>CONC</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentCategory</CLASSIFICATION>
+												<CLASSIFICATION>TraceCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">CTCF</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Configuration Settings</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Configuration settings for the execution of conformance Tests</L-2>
+											</DESC>
+											<ABBR-NAME>CTCF</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentCategory</CLASSIFICATION>
+												<CLASSIFICATION>TraceCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">CTSP</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Conformance Test Specification</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Test specification and scripts for the execution of conformance tests</L-2>
+											</DESC>
+											<ABBR-NAME>CTSP</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentCategory</CLASSIFICATION>
+												<CLASSIFICATION>TraceCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">EXP</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Explanation</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Explanatory material discussiong contents already shown in other documents</L-2>
+											</DESC>
+											<ABBR-NAME>EXP</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentCategory</CLASSIFICATION>
+												<CLASSIFICATION>TraceCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">MMOD</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">MetaModel</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Modeled contents (a model or generated from a model) on meta level 2 (Meta-Model)</L-2>
+											</DESC>
+											<ABBR-NAME>MMOD</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentCategory</CLASSIFICATION>
+												<CLASSIFICATION>TraceCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">MOD</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Model</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Modeled contents (a model or generated from a model) on meta level 1 (Model)</L-2>
+											</DESC>
+											<ABBR-NAME>MOD</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentCategory</CLASSIFICATION>
+												<CLASSIFICATION>TraceCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">PD</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Process Description</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Description of process applied within AUTOSAR standardization activities</L-2>
+											</DESC>
+											<ABBR-NAME>PD</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentCategory</CLASSIFICATION>
+												<CLASSIFICATION>TraceCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">PDEP</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Profile of Data Exchange Point</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Contains models that tailor AUTOSAR specifications and templates for specific data exchange points</L-2>
+											</DESC>
+											<ABBR-NAME>PDEP</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentCategory</CLASSIFICATION>
+												<CLASSIFICATION>TraceCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">PRS</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Protocol Specification</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Specification of Protocols standardized by AUTOSAR</L-2>
+											</DESC>
+										  <ABBR-NAME>PRS</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentCategory</CLASSIFICATION>
+												<CLASSIFICATION>TraceCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">RS</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Requirement Specification</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Specification of requirements other than for software specifications</L-2>
+											</DESC>
+											<ABBR-NAME>RS</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentCategory</CLASSIFICATION>
+												<CLASSIFICATION>TraceCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">SRS</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Software Requirement Specification</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Specification of requirements for software specifications</L-2>
+											</DESC>
+											<ABBR-NAME>SRS</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentCategory</CLASSIFICATION>
+												<CLASSIFICATION>TraceCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">SWS</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Software Specification</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Specification of AUTOSAR Software</L-2>
+											</DESC>
+											<ABBR-NAME>SWS</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentCategory</CLASSIFICATION>
+												<CLASSIFICATION>TraceCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">TMPL</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Template</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Predefined documentation templates</L-2>
+											</DESC>
+											<ABBR-NAME>TMPL</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>InternalDocumentCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">TPS</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Template Specification</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Specification of AUTOSAR Templates, containing Meta model information, constraints etc.</L-2>
+											</DESC>
+											<ABBR-NAME>TPS</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentCategory</CLASSIFICATION>
+												<CLASSIFICATION>TraceCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">TR</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Technical Report</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">A general technical report describing arbitrary AUTOSAR related topics</L-2>
+											</DESC>
+											<ABBR-NAME>TR</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentCategory</CLASSIFICATION>
+												<CLASSIFICATION>TraceCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">UC</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Use Case Specification</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Specification of use cases from which requirements are derived. Note that there are documents which maintain the use cases in their requirement spec. So this documentCategory may exist, even if it is not an own artifact.</L-2>
+											</DESC>
+											<ABBR-NAME>UC</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>TraceCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ZAUX</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Auxilary material</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Auxillary files used internally for the creation of the standard. May be merged with ZSUPP.</L-2>
+											</DESC>
+											<ABBR-NAME>ZAUX</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>InternalDocumentCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ZGEN</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Generated intermediate material</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Generated intermediate products which are maintained in the SCM system of AUTOSAR and used internally for the creation of the standard</L-2>
+											</DESC>
+											<ABBR-NAME>ZGEN</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>InternalDocumentCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ZSUPP</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Supplemental material</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Supplementary material used internally for the creation of the standard</L-2>
+											</DESC>
+											<ABBR-NAME>ZSUPP</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>InternalDocumentCategory</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+									</KEYWORDS>
+								</KEYWORD-SET>
+								<KEYWORD-SET>
+									<SHORT-NAME>DocumentAbbreviations</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">AUTOSAR Document Abbreviations for Trace Prefixes</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">These keywords represent the abbreviations to indicate documents e.g. in the requirements tags</L-2>
+									</DESC>
+									<INTRODUCTION>
+										<TRACE>
+											<SHORT-NAME>TR_PDN_00003</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Document Abbreviations for Trace Prefixes</L-4>
+											</LONG-NAME>
+											<P>
+												<L-1 L="EN">This keyword set contains the keyword classifications:</L-1>
+											</P>
+											<LIST>
+												<ITEM>
+													<P>
+														<L-1 L="EN">
+															<E TYPE="BOLD">DocumentAbbreviation</E>: The 
+<TT TYPE="ARMetaClassRole">Keyword.abbrName</TT> represents a valid document abbreviation in tracing tags (see <TT TYPE="ARTraceRefExt">TPS_STDT_00042</TT> in 
+												<TT TYPE="Cite">TPS_2d_GenericStructureTemplate</TT>
+															). </L-1>
+													</P>
+												</ITEM>
+											</LIST>
+											<P>
+												<L-1 L="EN">Note that there are cases where one document uses more than one abbreviation (e.g. [SWMC, SWNR], [MCM, MCG, MCA]). There are also cases where one abbreviation is used across multiple documents (e.g. [BSW]).</L-1>
+											</P>
+										</TRACE>
+									</INTRODUCTION>
+									<KEYWORDS>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AIBodyAndComfort</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Application Interfaces "Body and Comfort"</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document explains Application Interfaces for "Body and Comfort".</L-2>
+											</DESC>
+											<ABBR-NAME>AIBC</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AIChassis</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Application Interfaces "Chassis"</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document explains Application Interfaces for "Chassis".</L-2>
+											</DESC>
+											<ABBR-NAME>AICS</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AIDesignPatternCatalogue</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Application Interface Design Pattern Catalogue</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document contains Application Interface Design Pattern Catalogue.</L-2>
+											</DESC>
+											<ABBR-NAME>AIDPC</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AIHMIMultimediaAndTelematics</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Application Interfaces "HMI Multimedia and Telematics"</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document explains Application Interfaces for "HMI Multimedia And Telematics".</L-2>
+											</DESC>
+											<ABBR-NAME>AIHMI</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AIOccupantAndPedestrianSafety</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Application Interfaces "Occupant and pedestrian Safety"</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document explains Application Interfaces for "Application Interface Occupant and pedestrian Safety".</L-2>
+											</DESC>
+											<ABBR-NAME>AIOPS</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AIPowertrain</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Application Interfaces "Powertrain"</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document document explains Application Interfaces for "Powertrain".</L-2>
+											</DESC>
+											<ABBR-NAME>AIPT</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AISpecificationExamples</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">XML Examples of Application Interfaces</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This represents XML Examples of Appplication Interfaces.</L-2>
+											</DESC>
+											<ABBR-NAME>AISE</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<!-- <KEYWORD>
+                      <SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AITable</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">Application Interface Table</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">This document represents the table of Application Interfaces.</L-2>
+                      </DESC>
+                      <ABBR-NAME>AITAB</ABBR-NAME>
+                      <CLASSIFICATIONS>
+                        <CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+                      </CLASSIFICATIONS>
+                    </KEYWORD>  -->
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AIUserGuide</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Application Interfaces User Guide</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document aims at explaining all relevant details about the AI Table.</L-2>
+											</DESC>
+											<ABBR-NAME>AIUG</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ApplicationLevelErrorHandling</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Application Level Error Handling</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document explains the Application Level Error Handling.</L-2>
+											</DESC>
+											<ABBR-NAME>ALEH</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AdaptiveNetworkManagement</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Adaptive Network Management</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Adaptive Platform - to be filled correclty</L-2>
+											</DESC>
+											<ABBR-NAME>ANM</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AdaptivePlatformTypes</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">ARXML Serialization Rules</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document explains how to serialize AUTOSAR models into ARXML files and vice versa.</L-2>
+											</DESC>
+											<ABBR-NAME>ASR</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AutosarModelConstraints</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Autosar Model Constraints</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document explains Autosar Model Constraints.</L-2>
+											</DESC>
+											<ABBR-NAME>ArModC</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ARXMLSerializationRules</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">ARXML Serialization Rules</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document explains how to serialize AUTOSAR models into ARXML files and vice versa.</L-2>
+											</DESC>
+											<ABBR-NAME>ASR</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>										
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ATBM</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Interaction with Behavioral Models</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document describes interaction with behavioral models.</L-2>
+											</DESC>
+											<ABBR-NAME>ATBM</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">BSWAndRTEFeatures</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">AUTOSAR BSW and RTE Features</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document specifies the features of the BSW Architecture and the RTE.</L-2>
+											</DESC>
+											<ABBR-NAME>BRF</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">BSW</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Basic Software</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This abbreviation represents the superset of all BSW software requirement specifications. This means that this abbreviation is used throughout all Basic Software Specifications.</L-2>
+											</DESC>
+											<ABBR-NAME>BSW</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">BSWModuleDescriptionTemplate</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Basic Software Module Description Template</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document specifies how to describe a Basic Software </L-2>
+											</DESC>
+											<ABBR-NAME>BSWMDT</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">BSWModuleList</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Basic Software Module List</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document lists the BSW modules.</L-2>
+											</DESC>
+											<ABBR-NAME>BSWML</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>																			
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">BSWUMLModelModelingGuide</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">BSW UML Model Modeling Guide</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This guideline describes the BSW UML Model modeling.</L-2>
+											</DESC>
+											<ABBR-NAME>BSWUMG</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">BSWUML</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Basic Software UML model</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This abbreviation represents the BSW UML model. This means that this abbreviation is used throughout all elements maintained in the BSW UML model.</L-2>
+											</DESC>
+											<ABBR-NAME>BSWUML</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">BWCStatement</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">BWC Statement</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document describes the backward compatibility statement.</L-2>
+											</DESC>
+											<ABBR-NAME>BWC</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">CDDDesignAndIntegrationGuideline</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">CDD Design And Integration Guideline</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This guideline describes the Design and the Integration of CDD.</L-2>
+											</DESC>
+											<ABBR-NAME>CDDG</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">CommunicationCan</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Communication on Can</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Relevant for communication on CAN.</L-2>
+											</DESC>
+											<ABBR-NAME>COMCAN</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">CommunicationFlexray</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Communication on Flexray</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Relevant for communication on Flexray.</L-2>
+											</DESC>
+											<ABBR-NAME>COMFR</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">CommunicationLin</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Communication on Lin</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Relevant for communication on LIN.</L-2>
+											</DESC>
+											<ABBR-NAME>COMLIN</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">CommunicationManagement</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Communication Management</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Relevant for communication management.</L-2>
+											</DESC>
+											<ABBR-NAME>COMMGMT</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">CommunicationViaBus</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Communication via a bus</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Relevant for communication via a bus.</L-2>
+											</DESC>
+											<ABBR-NAME>COMVB</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">Diagnostic</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Requirements on Diagnostic</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">The goal of AUTOSAR WP Diagnostics and this document is to define to what extent elements of the diagnostic basic software have to be configurable and what preliminaries they shall comply with to meet the tailoring requirements. The handling of the legislated OBD and enhanced Diagnostics shall also be achieved. </L-2>
+											</DESC>
+											<ABBR-NAME>DIAG</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AdaptiveDiagnostics</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Adaptive Diagnostics</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Adaptive Platform - to be filled correclty</L-2>
+											</DESC>
+											<ABBR-NAME>DM</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ECUConfiguration</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Specification of ECU Configuration</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document specifies the technical details of the ECU configuration</L-2>
+											</DESC>
+											<ABBR-NAME>ECUC</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ECUConfigurationParameters</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">ECU Configuration Parameters</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document describes ECU Configuration Parameters.</L-2>
+											</DESC>
+											<ABBR-NAME>ECUCP</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">EcuModeManagement</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">ECU Mode Management</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Relevant for ECU mode management.</L-2>
+											</DESC>
+											<ABBR-NAME>ECUMGMT</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>										
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ECUResourceTemplate</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Specification of ECU Resource Template</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This specifies how to describe Resources of an ECU</L-2>
+											</DESC>
+											<ABBR-NAME>ECUR</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ErrorDescription</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Error Description</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document explains the Error Description.</L-2>
+											</DESC>
+											<ABBR-NAME>ED</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ExecutionManagement</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Execution Management</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Adaptive Platform - to be filled correclty</L-2>
+											</DESC>
+											<ABBR-NAME>EM</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>										
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ErrataSheet</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Errata Sheet</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document explains the Errata Sheet.</L-2>
+											</DESC>
+											<ABBR-NAME>ERSH</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">FrancaIntegration</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Franca Integration</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document describes the Franca Integration.</L-2>
+											</DESC>
+											<ABBR-NAME>FCAINT</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">Features</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Feature Specification Acceptance Tests</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Feature Specification of the acceptance tests.</L-2>
+											</DESC>
+											<ABBR-NAME>Feature</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">FeatureModelExchangeFormat</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Specification of Feature Model Exchange Format</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This specifies how to describe the Feature Model Exchange Format.</L-2>
+											</DESC>
+											<ABBR-NAME>FMDT</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">FreeRunningTimer</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Free Running Timer</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document describes the Free Running Timer.</L-2>
+											</DESC>
+											<ABBR-NAME>FRT</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">Glossary</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Glossary</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document lists all Glossary items.</L-2>
+											</DESC>
+											<ABBR-NAME>GLOS</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">GenericStructureTemplate</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Generic Structure Template</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This specifies common aspects applicable to all templates.</L-2>
+											</DESC>
+											<ABBR-NAME>GST</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">Gateway</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Gateway</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document explains the Gateway.</L-2>
+											</DESC>
+											<ABBR-NAME>GTW</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">HealthManagement</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Health Management</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Adaptive Platform - to be filled correclty</L-2>
+											</DESC>
+											<ABBR-NAME>HM</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>										
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">InteroperabilityOfAutosarTools</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Interoperability of AUTOSAR Tools</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document describes various aspects of interoperability of AUTOSAR tools.</L-2>
+											</DESC>
+											<ABBR-NAME>IOAT</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">InteroperabilityOfAutosarToolsSupplement</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Interoperability of AUTOSAR Tools Supplement</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document contains baseline profiles of data exchange points and examples.</L-2>
+											</DESC>
+											<ABBR-NAME>IOATS</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">IOHWAbstraction</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">IO Hardware Abstraction</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document describes the IO Hardware Abstraction.</L-2>
+											</DESC>
+											<ABBR-NAME>IOHWAB</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">InterruptHandlingExplanation</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Interrupt Handling Explanation</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document explains the Interrupt Handling.</L-2>
+											</DESC>
+											<ABBR-NAME>IRH</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">SRSLibraries</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Requirements on Libraries</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document specifies requirements on the AUTOSAR Libraries.</L-2>
+											</DESC>
+											<ABBR-NAME>LIBS</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AdaptiveLogAndTrace</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Adaptive Log and Trace</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Adaptive Platform - to be filled correclty</L-2>
+											</DESC>
+											<ABBR-NAME>LOG</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>										
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">LayeredSoftwareArchitecture</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Layered Software Architecture</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document describes the Layered Software Architecture.</L-2>
+											</DESC>
+											<ABBR-NAME>LSA</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">MainRequirements</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">AUTOSAR Main Requirements</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document specifies the AUTOSAR main requirements.</L-2>
+											</DESC>
+											<ABBR-NAME>Main</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AIMeasurementCalibrationDiagnostics</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Unique Names for Documentation, Measurement and Calibration: Modeling and Naming Aspects including Automatic Generation</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document discusses how to automatically generate display names for measurement, calibration and diagnostic tools (MCD). </L-2>
+											</DESC>
+											<ABBR-NAME>MCAI</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AIMeasurementCalibrationDiagnostics_Assumptions</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Assumptions in Unique Names for Documentation, Measurement and Calibration: Modeling and Naming Aspects including Automatic Generation</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This keyword reflects the assumptions how to automatically generate display names for measurement, calibration and diagnostic tools (MCD). The keyword is used for document internal tracing</L-2>
+											</DESC>
+											<ABBR-NAME>MCA</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AIMeasurementCalibrationDiagnostics_GenerationRules</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Generation Rules in Unique Names for Documentation, Measurement and Calibration: Modeling and Naming Aspects including Automatic Generation</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This keyword reflects the generation rules how to automatically generate display names for measurement, calibration and diagnostic tools (MCD). The keyword is used for document internal tracing.</L-2>
+											</DESC>
+											<ABBR-NAME>MCG</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AIMeasurementCalibrationDiagnostics_ModelingRules</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Modeling Rules in Unique Names for Documentation, Measurement and Calibration: Modeling and Naming Aspects including Automatic Generation</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This keyword reflects the modeling rules of how to automatically generate display names for measurement, calibration and diagnostic tools (MCD). The keyword is used for document internal tracing.</L-2>
+											</DESC>
+											<ABBR-NAME>MCM</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">AIMeasurementCalibrationDiagnostics_Requirements</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Requirements in Unique Names for Documentation, Measurement and Calibration: Modeling and Naming Aspects including Automatic Generation</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This keyword reflects the requirments of how to automatically generate display names for measurement, calibration and diagnostic tools (MCD). The keyword is used for document internal tracing.</L-2>
+											</DESC>
+											<ABBR-NAME>MCR</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">MemoryServices</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Requirements on Memory Services</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document specifies requirements on Basic Software Modules of the memory services.</L-2>
+											</DESC>
+											<ABBR-NAME>MEM</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">Methodology</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">AUTOSAR Methodology</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This describes the AUTOSAR Methodolgy.</L-2>
+											</DESC>
+											<ABBR-NAME>METH</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">MethodologyModelRules</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Methodology Model Rules</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document describes the Methodology Model Rules.</L-2>
+											</DESC>
+											<ABBR-NAME>MethModR</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">MiscSupport</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Miscellaneous Support</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document contains miscellaneous support items.</L-2>
+											</DESC>
+											<ABBR-NAME>MICS</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">MetaModel</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Meta Model</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document describes the Meta Model.</L-2>
+											</DESC>
+											<ABBR-NAME>MM</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">MemoryHWAbstractionLayer</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Memory Hardware Abstraction Layer</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document describes the Memory Hardware Abstraction Layer.</L-2>
+											</DESC>
+											<ABBR-NAME>MMHWABLY</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ModeManagementGuide</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Mode Management Guide</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This guideline describes the Mode Management.</L-2>
+											</DESC>
+											<ABBR-NAME>MMG</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ModeMgm</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Mode Management</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document specifies Mode Management in AUTOSAR.</L-2>
+											</DESC>
+											<ABBR-NAME>ModeMgm</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">MultiCoreGuide</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Multi Core Guide</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This guideline describes Multi Core.</L-2>
+											</DESC>
+											<ABBR-NAME>MTCG</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">MethodologyAndTemplatesGeneral</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">General Requirements on Methodology and Templates</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document has the purpose to collect requirements on Methodology and Templates which are relevant for more than one document.</L-2>
+											</DESC>
+											<ABBR-NAME>MTG</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">OperatingSystemInterface</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Operating System Interface</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Adaptive Platform - to be filled correclty</L-2>
+											</DESC>
+											<ABBR-NAME>OSI</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">Pesistency</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Persistency</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Adaptive Platform - to be filled correclty</L-2>
+											</DESC>
+											<ABBR-NAME>PER</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>																				
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">PredefinedNames</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">AUTOSAR PredefinedNames</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document describes various predefined names used in AUTOSAR.</L-2>
+											</DESC>
+											<ABBR-NAME>PDN</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ProjectObjectives</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">AUTOSAR Project Objectives</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document specifies the AUTOSAR Project Objectives.</L-2>
+											</DESC>
+											<ABBR-NAME>PO</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ReferenceBase</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Reference Base</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document contains Reference Base items.</L-2>
+											</DESC>
+											<ABBR-NAME>RefBase</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">Requirements</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Requirements Acceptance Tests</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Requirements for the acceptance tests.</L-2>
+											</DESC>
+											<ABBR-NAME>Requirement</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ReleaseOverviewAndRevHistory</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Release Overview And Rev History</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document provides a Release Overview and Rev History.</L-2>
+											</DESC>
+											<ABBR-NAME>RORH</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">RTE</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Runtime Environment</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document specifies the AUTOSAR Runtime Environment.</L-2>
+											</DESC>
+											<ABBR-NAME>RTE</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">SAE</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Society of Automotive Engineers</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document describes the network standard developed by the Society of Automotive Engineers.</L-2>
+											</DESC>
+											<ABBR-NAME>SAE</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">SafetyExtensions</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Specifcation of Safety Extensions</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document specifes how to describe the safety relevant properties and requirements of an AUTOSAR System.</L-2>
+											</DESC>
+											<ABBR-NAME>SAFEX</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">XMLSchemaSupplement</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">XML Schema Supplement</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document explains the XML Schema.</L-2>
+											</DESC>
+											<ABBR-NAME>SchemaSupp</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">SomeIpExample</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">SomeIp Example</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document contains SomeIp Examples.</L-2>
+											</DESC>
+											<ABBR-NAME>SIPEX</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">SPAL</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Standard Peripheral Abstraction Layer</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document describes the Standard Peripheral Abstraction Layer.</L-2>
+											</DESC>
+											<ABBR-NAME>SPAL</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">SafetyUseCase</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Safety Use Case</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document explains the Safety Use Cases.</L-2>
+											</DESC>
+											<ABBR-NAME>SUC</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">SWCModeling</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Software Component Modeling</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document describes the modeling of Software Components.</L-2>
+											</DESC>
+											<ABBR-NAME>SWCM</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">SoftwareComponentTemplate</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Software Component Template</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document specifies how to describe Software Components.</L-2>
+											</DESC>
+											<ABBR-NAME>SWCT</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">SWCModelingGuide</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">SW-C and System Modeling Guide</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document gives guidelines and conventions on using the AUTOSAR model elements in order to build AUTOSAR systems.</L-2>
+											</DESC>
+											<ABBR-NAME>SWMG</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">SWCModelingGuide_NamingRules</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Naming Rules in SW-C and System Modeling Guide</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document gives guidelines and conventions, in particular the naming rules on using the AUTOSAR model elements in order to build AUTOSAR systems.</L-2>
+											</DESC>
+											<ABBR-NAME>SWNR</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">StandardizationTemplate</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Standardization Template</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This specifies how AUTOSAR Standardization is represented as ARXML file.</L-2>
+											</DESC>
+											<ABBR-NAME>STDT</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">SystemTemplate</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">System Template</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document specifies how to describe AUTOSAR Systems.</L-2>
+											</DESC>
+											<ABBR-NAME>SYST</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">TimingAnalysis</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Specification of Timing Analysis</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document explains the Timing Analysis.</L-2>
+											</DESC>
+											<ABBR-NAME>TIMAY</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">TimingExtensions</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Specification of Timing Extensions</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document specifies how to describe the timing of an AUTOSAR System.</L-2>
+											</DESC>
+											<ABBR-NAME>TIMEX</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">TTCAN</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Requirements on TTCAN</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document specifies the additional TTCAN requirements for the CAN BSW stack.</L-2>
+											</DESC>
+											<ABBR-NAME>TTCAN</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">UtilizationOfCryptoServices</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Utilization Of Crypto Services</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document explains the Utilization of Crypto Services.</L-2>
+											</DESC>
+											<ABBR-NAME>UOC</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">VirtualFunctionalBus</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Virtual Functional Bus</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document describes the Virtual Functional Bus.</L-2>
+											</DESC>
+											<ABBR-NAME>VFB</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">XMLSchema</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">XML Schema</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document describes the XML Schema.</L-2>
+											</DESC>
+											<ABBR-NAME>XMLS</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">XMLSchemaProductionRules</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">XML Schema Production Rules</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This document describes how a W3C XML schema specification compliant XML schema can be compiled out of the AUTOSAR meta-model.</L-2>
+											</DESC>
+											<ABBR-NAME>XMLSPR</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>DocumentAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+									</KEYWORDS>
+								</KEYWORD-SET>
+                                <KEYWORD-SET>
+									<SHORT-NAME>NamespaceAbbreviations</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">AUTOSAR Name Spaces</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">These keywords represent the name space abbreviations of AUTOSAR Adaptive Platform Functional Cluster.</L-2>
+									</DESC>
+									<INTRODUCTION>
+										<TRACE>
+											<SHORT-NAME>TR_PDN_00004</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Document Abbreviations for Name Spaces</L-4>
+											</LONG-NAME>
+											<P>
+												<L-1 L="EN">This keyword set contains the name space definitions:</L-1>
+											</P>
+											<LIST>
+												<ITEM>
+													<P>
+														<L-1 L="EN">
+															<E TYPE="BOLD">NamespaceAbbreviation</E>: The <TT TYPE="ARMetaClassRole">Keyword.abbrName</TT> represents a valid name space abbreviation). </L-1>
+													</P>
+												</ITEM>
+											</LIST>
+										</TRACE>
+									</INTRODUCTION>
+									<KEYWORDS>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">com</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Communication Management</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">To be filled.</L-2>
+											</DESC>
+											<ABBR-NAME>com</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>NamespaceAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">exec</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Execution Management</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">To be filled.</L-2>
+											</DESC>
+											<ABBR-NAME>exec</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>NamespaceAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">not_available</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Operating System</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">To be filled.</L-2>
+											</DESC>
+											<ABBR-NAME>not_available</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>NamespaceAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">per</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Persistency</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">To be filled.</L-2>
+											</DESC>
+											<ABBR-NAME>per</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>NamespaceAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">diag</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Diagnostics</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">To be filled.</L-2>
+											</DESC>
+											<ABBR-NAME>diag</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>NamespaceAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">log</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Log and Trace</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">To be filled.</L-2>
+											</DESC>
+											<ABBR-NAME>log</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>NamespaceAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">time</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Time Synchronisation</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">To be filled.</L-2>
+											</DESC>
+											<ABBR-NAME>time</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>NamespaceAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">rest</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">REpresentational State Transfer </L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">To be filled.</L-2>
+											</DESC>
+											<ABBR-NAME>rest</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>NamespaceAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										<KEYWORD>
+											<SHORT-NAME NAME-PATTERN="{blueprintName}_{keyword}">ara</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Autosar API (in combination with a cluster name ex: ara::rest)</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">To be filled.</L-2>
+											</DESC>
+											<ABBR-NAME>ara</ABBR-NAME>
+											<CLASSIFICATIONS>
+												<CLASSIFICATION>NamespaceAbbreviation</CLASSIFICATION>
+											</CLASSIFICATIONS>
+										</KEYWORD>
+										</KEYWORDS>
+								</KEYWORD-SET>								
+							</ELEMENTS>
+						</AR-PACKAGE>
+					</AR-PACKAGES>
+				</AR-PACKAGE>
+			</AR-PACKAGES>
+		</AR-PACKAGE>
+	</AR-PACKAGES>
+</AUTOSAR>

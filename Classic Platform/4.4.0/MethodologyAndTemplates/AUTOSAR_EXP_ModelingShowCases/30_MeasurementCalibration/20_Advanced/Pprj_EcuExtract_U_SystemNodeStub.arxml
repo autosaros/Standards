@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="preserve">English</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>Tier1</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>ARPlatform1</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>System</SHORT-NAME>
+              <ELEMENTS>
+                <SYSTEM>
+                  <SHORT-NAME>SystemU_System</SHORT-NAME>
+                  <CATEGORY>ECU_EXTRACT</CATEGORY>
+                  <ROOT-SOFTWARE-COMPOSITIONS>
+                    <ROOT-SW-COMPOSITION-PROTOTYPE>
+                      <SHORT-NAME>SystemU</SHORT-NAME>
+                      <FLAT-MAP-REF DEST="FLAT-MAP">/Tier1/ARPlatform1/System/FlatMaps/FlatMap_SystemU_EcuExtract</FLAT-MAP-REF>
+                      <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root</SOFTWARE-COMPOSITION-TREF>
+                    </ROOT-SW-COMPOSITION-PROTOTYPE>
+                  </ROOT-SOFTWARE-COMPOSITIONS>
+                </SYSTEM>
+              </ELEMENTS>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>FlatMaps</SHORT-NAME>
+                  <ELEMENTS>
+                    <FLAT-MAP>
+                      <SHORT-NAME>FlatMap_SystemU_EcuExtract</SHORT-NAME>
+                    </FLAT-MAP>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                  <SHORT-NAME>EcucValueCollections</SHORT-NAME>
+                  <ELEMENTS>
+                    <ECUC-VALUE-COLLECTION>
+                      <SHORT-NAME>SystemU_EcuCValues</SHORT-NAME>
+                      <ECU-EXTRACT-REF DEST="SYSTEM">/Tier1/ARPlatform1/System/SystemU_System</ECU-EXTRACT-REF>
+                      <ECUC-VALUES>
+                        <ECUC-MODULE-CONFIGURATION-VALUES-REF-CONDITIONAL>
+                          <ECUC-MODULE-CONFIGURATION-VALUES-REF DEST="ECUC-MODULE-CONFIGURATION-VALUES">/Tier1/ARPlatform1/EMS3DIP/EcucModuleConfigurationValuess/EMS3DIP</ECUC-MODULE-CONFIGURATION-VALUES-REF>
+                        </ECUC-MODULE-CONFIGURATION-VALUES-REF-CONDITIONAL>
+                        <ECUC-MODULE-CONFIGURATION-VALUES-REF-CONDITIONAL>
+                          <ECUC-MODULE-CONFIGURATION-VALUES-REF DEST="ECUC-MODULE-CONFIGURATION-VALUES">/AUTOSAR_EcuC/EcucModuleConfigurationValuess/EcuC</ECUC-MODULE-CONFIGURATION-VALUES-REF>
+                        </ECUC-MODULE-CONFIGURATION-VALUES-REF-CONDITIONAL>
+                      </ECUC-VALUES>
+                    </ECUC-VALUE-COLLECTION>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

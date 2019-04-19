@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd" xmlns="http://autosar.org/schema/r4.0">
+  <!-- AUTOSAR General Blueprints -->
+  <!--
+    Document Owner:                 AUTOSAR
+    Document Responsibility:        AUTOSAR
+    Document Identification Number: 621
+    Document Status:                Final
+    Part of AUTOSAR Standard:       Classic Platform
+    Part of Standard Release:       4.4.0
+    Date:                           2018-10-31
+  -->
+  <!--
+    Disclaimer
+    
+    This work (specification and/or software implementation) and the material
+    contained in it, as released by AUTOSAR, is for the purpose of information
+    only. AUTOSAR and the companies that have contributed to it shall not be liable
+    for any use of the work.
+
+    The material contained in this work is protected by copyright and other types
+    of intellectual property rights. The commercial exploitation of the material
+    contained in this work requires a license to such intellectual property rights.
+
+    This work may be utilized or reproduced without any modification, in any form
+    or by any means, for informational purposes only. For any other purpose, no
+    part of the work may be utilized or reproduced, in any form or by any means,
+    without permission in writing from the publisher.
+
+    The work has been developed for automotive applications only. It has neither
+    been developed, nor tested for non-automotive applications.
+
+    The word AUTOSAR and the AUTOSAR logo are registered trademarks.
+  -->
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="preserve">EN</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>MemMap</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>SwAddrMethods_Blueprint</SHORT-NAME>
+              <DESC>
+                <L-2 L="EN">This ARPackage defines the blueprints for SwAddrMethods which are the basis for the standardized Memory Allocation Keywords in the document SWS_MemoryMapping</L-2>
+              </DESC>
+              <CATEGORY>BLUEPRINT</CATEGORY>
+              <INTRODUCTION>
+                <P>
+                  <L-1 L="EN">The derived SwAddrmethods shall reside at the qualified path /AUTOSAR_MemMap/SwAddrMethods/</L-1>
+                </P>
+              </INTRODUCTION>
+              <ELEMENTS>
+                <SW-ADDR-METHOD>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}_{initPolicy}(_{safety})?(_{coreScope})?">VAR</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">To be used for all global or static variables.</L-2>
+                  </DESC>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-SINGLE>
+                      <ATTRIBUTE-NAME>SHORT-NAME</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">The name part _{safety} shall contain the safety integrity level with at most one of the strings QM, ASIL_A, ASIL_B, ASIL_C, ASIL_D. In case of QM the name part may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">The name part _{coreScope} shall contain the core scope qualification with at most one of the strings GLOBAL, LOCAL. In case of GLOBAL the name part may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-SINGLE>
+                    <BLUEPRINT-POLICY-LIST>
+                      <ATTRIBUTE-NAME>OPTIONS/*</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the safety integrity level with the possible values {safetyQM, safetyAsilA, safetyAsilB, safetyAsilC, safetyAsilD}. In case of safetyQM the attribute may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the core scope qualification with at most one of the possible values {coreGlobal, coreLocal}. In case of coreGlobal the attribute may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-LIST>
+                  </BLUEPRINT-POLICYS>
+                  <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                  <SECTION-TYPE>VAR</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}_{initPolicy}(_{safety})?(_{coreScope})?">VAR_FAST</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">To be used for all global or static variables.</L-2>
+                  </DESC>
+                  <INTRODUCTION>
+                    <P>
+                      <L-1 L="EN">To be used for all global or static variables that have at least one of the following properties:</L-1>
+                    </P>
+                    <LIST TYPE="UNNUMBER">
+                      <ITEM>
+                        <P>
+                          <L-1 L="EN">accessed bitwise</L-1>
+                        </P>
+                      </ITEM>
+                      <ITEM>
+                        <P>
+                          <L-1 L="EN">frequently used</L-1>
+                        </P>
+                      </ITEM>
+                      <ITEM>
+                        <P>
+                          <L-1 L="EN">high number of accesses in source code</L-1>
+                        </P>
+                      </ITEM>
+                    </LIST>
+                    <P>
+                      <L-1 L="EN">Some platforms allow the use of bit instructions for variables located in this specific RAM area as well as shorter addressing instructions. This saves code and runtime.</L-1>
+                    </P>
+                  </INTRODUCTION>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-SINGLE>
+                      <ATTRIBUTE-NAME>SHORT-NAME</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">The name part _{safety} shall contain the safety integrity level with at most one of the strings QM, ASIL_A, ASIL_B, ASIL_C, ASIL_D. In case of QM the name part may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">The name part _{coreScope} shall contain the core scope qualification with at most one of the strings GLOBAL, LOCAL. In case of GLOBAL the name part may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-SINGLE>
+                    <BLUEPRINT-POLICY-LIST>
+                      <ATTRIBUTE-NAME>OPTIONS/*</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the safety integrity level with the possible values {safetyQM, safetyAsilA, safetyAsilB, safetyAsilC, safetyAsilD}. In case of safetyQM the attribute may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the core scope qualification with at most one of the possible values {coreGlobal, coreLocal}. In case of coreGlobal the attribute may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-LIST>
+                  </BLUEPRINT-POLICYS>
+                  <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                  <SECTION-TYPE>VAR</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}_{initPolicy}(_{safety})?(_{coreScope})?">VAR_SLOW</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">To be used for all infrequently accessed global or static variables.</L-2>
+                  </DESC>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-SINGLE>
+                      <ATTRIBUTE-NAME>SHORT-NAME</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">The name part _{safety} shall contain the safety integrity level with at most one of the strings QM, ASIL_A, ASIL_B, ASIL_C, ASIL_D. In case of QM the name part may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">The name part _{coreScope} shall contain the core scope qualification with at most one of the strings GLOBAL, LOCAL. In case of GLOBAL the name part may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-SINGLE>
+                    <BLUEPRINT-POLICY-LIST>
+                      <ATTRIBUTE-NAME>OPTIONS/*</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the safety integrity level with the possible values {safetyQM, safetyAsilA, safetyAsilB, safetyAsilC, safetyAsilD}. In case of safetyQM the attribute may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the core scope qualification with at most one of the possible values {coreGlobal, coreLocal}. In case of coreGlobal the attribute may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-LIST>
+                  </BLUEPRINT-POLICYS>
+                  <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                  <SECTION-TYPE>VAR</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}_{initPolicy}(_{safety})?(_{coreScope})?">INTERNAL_VAR</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">To be used for global or static variables those are accessible from a calibration tool.</L-2>
+                  </DESC>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-SINGLE>
+                      <ATTRIBUTE-NAME>SHORT-NAME</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">The name part _{safety} shall contain the safety integrity level with at most one of the strings QM, ASIL_A, ASIL_B, ASIL_C, ASIL_D. In case of QM the name part may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">The name part _{coreScope} shall contain the core scope qualification with at most one of the strings GLOBAL, LOCAL. In case of GLOBAL the name part may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-SINGLE>
+                    <BLUEPRINT-POLICY-LIST>
+                      <ATTRIBUTE-NAME>OPTIONS/*</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the safety integrity level with the possible values {safetyQM, safetyAsilA, safetyAsilB, safetyAsilC, safetyAsilD}. In case of safetyQM the attribute may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the core scope qualification with at most one of the possible values {coreGlobal, coreLocal}. In case of coreGlobal the attribute may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-LIST>
+                  </BLUEPRINT-POLICYS>
+                  <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                  <SECTION-TYPE>VAR</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}{anyNamePart}(_{safety})?">VAR_SAVED_ZONE</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">To be used for RAM buffers of variables saved in non volatile memory.</L-2>
+                  </DESC>
+                  <INTRODUCTION>
+                    <P>
+                      <L-1 L="EN">{anyNamePart} denotes the specific content of the saved zone.</L-1>
+                    </P>
+                    <P>
+                      <L-1 L="EN">In the related SwAddrMethod the sectionInitializationPolicy attribute shall be set to NO-INIT.</L-1>
+                    </P>
+                  </INTRODUCTION>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-SINGLE>
+                      <ATTRIBUTE-NAME>SHORT-NAME</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">The name part _{safety} shall contain the safety integrity level with at most one of the strings QM, ASIL_A, ASIL_B, ASIL_C, ASIL_D. In case of QM the name part may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-SINGLE>
+                    <BLUEPRINT-POLICY-LIST>
+                      <ATTRIBUTE-NAME>OPTIONS/*</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the safety integrity level with the possible values {safetyQM, safetyAsilA, safetyAsilB, safetyAsilC, safetyAsilD}. In case of safetyQM the attribute may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-LIST>
+                    <BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                      <ATTRIBUTE-NAME>SECTION-INITIALIZATION-POLICY</ATTRIBUTE-NAME>
+                    </BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                  </BLUEPRINT-POLICYS>
+                  <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                  <SECTION-INITIALIZATION-POLICY>NO-INIT</SECTION-INITIALIZATION-POLICY>
+                  <SECTION-TYPE>VAR</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}{anyNamePart}(_{safety})?">CONST_SAVED_RECOVERY_ZONE</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">To be used for ROM buffers of variables saved in non volatile memory.</L-2>
+                  </DESC>
+                  <INTRODUCTION>
+                    <P>
+                      <L-1 L="EN">{anyNamePart} denotes the specific content of the recovery zone.</L-1>
+                    </P>
+                  </INTRODUCTION>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-SINGLE>
+                      <ATTRIBUTE-NAME>SHORT-NAME</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">The name part _{safety} shall contain the safety integrity level with at most one of the strings QM, ASIL_A, ASIL_B, ASIL_C, ASIL_D. In case of QM the name part may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-SINGLE>
+                    <BLUEPRINT-POLICY-LIST>
+                      <ATTRIBUTE-NAME>OPTIONS/*</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the safety integrity level with the possible values {safetyQM, safetyAsilA, safetyAsilB, safetyAsilC, safetyAsilD}. In case of safetyQM the attribute may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-LIST>
+                  </BLUEPRINT-POLICYS>
+                  <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                  <SECTION-TYPE>CONST</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}(_{accessPeriod})?(_{safety})?">CONST</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">To be used for global or static constants.</L-2>
+                  </DESC>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-SINGLE>
+                      <ATTRIBUTE-NAME>SHORT-NAME</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">{accessPeriod} is the typical period time value and unit of the ExecutableEntitys in this MemorySection. The name part _{accessPeriod} is optional. Units are:</L-1>
+                        </P>
+                        <LIST TYPE="UNNUMBER">
+                          <ITEM>
+                            <P>
+                              <L-1 L="EN">US microseconds</L-1>
+                            </P>
+                          </ITEM>
+                          <ITEM>
+                            <P>
+                              <L-1 L="EN">MS milli second</L-1>
+                            </P>
+                          </ITEM>
+                          <ITEM>
+                            <P>
+                              <L-1 L="EN">S second  </L-1>
+                            </P>
+                          </ITEM>
+                        </LIST>
+                        <P>
+                          <L-1 L="EN">For example: 100US, 400US, 1MS, 5MS, 10MS, 20MS, 100MS, 1S</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">Please note that deviations from this typical period time are possible due to integration decisions (e.g. RTEEvent To Task Mapping). Further on in special modes of the ECU the code may be scheduled with a higher or lower period.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">The name part _{safety} shall contain the safety integrity level with at most one of the strings QM, ASIL_A, ASIL_B, ASIL_C, ASIL_D. In case of QM the name part may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-SINGLE>
+                    <BLUEPRINT-POLICY-LIST>
+                      <ATTRIBUTE-NAME>OPTIONS/*</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the safety integrity level with the possible values {safetyQM, safetyAsilA, safetyAsilB, safetyAsilC, safetyAsilD}. In case of safetyQM the attribute may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-LIST>
+                  </BLUEPRINT-POLICYS>
+                  <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                  <SECTION-TYPE>CONST</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}(_{safety})?">CALIB</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">To be used for calibration constants.</L-2>
+                  </DESC>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-SINGLE>
+                      <ATTRIBUTE-NAME>SHORT-NAME</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">The name part _{safety} shall contain the safety integrity level with at most one of the strings QM, ASIL_A, ASIL_B, ASIL_C, ASIL_D. In case of QM the name part may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-SINGLE>
+                    <BLUEPRINT-POLICY-LIST>
+                      <ATTRIBUTE-NAME>OPTIONS/*</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the safety integrity level with the possible values {safetyQM, safetyAsilA, safetyAsilB, safetyAsilC, safetyAsilD}. In case of safetyQM the attribute may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-LIST>
+                  </BLUEPRINT-POLICYS>
+                  <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                  <SECTION-TYPE>CALPRM</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}(_{codePeriod})?(_{safety})?(_{coreScope})?">CODE</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">To be used for mapping code to application block, boot block, external flash etc.</L-2>
+                  </DESC>
+                  <INTRODUCTION>
+                    <P>
+                      <L-1 L="EN">{codePeriod} is the typical period time value and unit of the ExecutableEntitys in this MemorySection. The name part _{codePeriod} is optional. Units are:</L-1>
+                    </P>
+                    <LIST TYPE="UNNUMBER">
+                      <ITEM>
+                        <P>
+                          <L-1 L="EN">US microseconds</L-1>
+                        </P>
+                      </ITEM>
+                      <ITEM>
+                        <P>
+                          <L-1 L="EN">MS milli second</L-1>
+                        </P>
+                      </ITEM>
+                      <ITEM>
+                        <P>
+                          <L-1 L="EN">S second  </L-1>
+                        </P>
+                      </ITEM>
+                    </LIST>
+                    <P>
+                      <L-1 L="EN">For example: 100US, 400US, 1MS, 5MS, 10MS, 20MS, 100MS, 1S</L-1>
+                    </P>
+                    <P>
+                      <L-1 L="EN">Please note that deviations from this typical period time are possible due to integration decisions (e.g. RTEEvent To Task Mapping). Further on in special modes of the ECU the code may be scheduled with a higher or lower period.</L-1>
+                    </P>
+                  </INTRODUCTION>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-SINGLE>
+                      <ATTRIBUTE-NAME>SHORT-NAME</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">The name part _{safety} shall contain the safety integrity level with at most one of the strings QM, ASIL_A, ASIL_B, ASIL_C, ASIL_D. In case of QM the name part may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">The name part _{coreScope} shall contain the core scope qualification with at most one of the strings GLOBAL, LOCAL. In case of GLOBAL the name part may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-SINGLE>
+                    <BLUEPRINT-POLICY-LIST>
+                      <ATTRIBUTE-NAME>OPTIONS/*</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the safety integrity level with the possible values {safetyQM, safetyAsilA, safetyAsilB, safetyAsilC, safetyAsilD}. In case of safetyQM the attribute may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the core scope qualification with at most one of the possible values {coreGlobal, coreLocal}. In case of coreGlobal the attribute may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-LIST>
+                  </BLUEPRINT-POLICYS>
+                  <SECTION-TYPE>CODE</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}_{configClass}(_{safety})?">CONFIG_DATA</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Constants with attributes that show that they reside in one segment for module configuration.</L-2>
+                  </DESC>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-SINGLE>
+                      <ATTRIBUTE-NAME>SHORT-NAME</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">The name part _{safety} shall contain the safety integrity level with at most one of the strings QM, ASIL_A, ASIL_B, ASIL_C, ASIL_D. In case of QM the name part may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">The name part {configClass} shall contain the configClass with one of the strings PREBUILD or POSTBUILD.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-SINGLE>
+                    <BLUEPRINT-POLICY-LIST>
+                      <ATTRIBUTE-NAME>OPTIONS/*</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the safety integrity level with the possible values {safetyQM, safetyAsilA, safetyAsilB, safetyAsilC, safetyAsilD}. In case of safetyQM the attribute may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the configClass with the possible values {configClassPreBuild, configClassPostBuild}.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-LIST>
+                  </BLUEPRINT-POLICYS>
+                  <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                  <SECTION-TYPE>CONFIG-DATA</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}(_{safety})?(_{coreScope})?">CALLOUT_CODE</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">To be used for mapping callouts of the BSW Modules which shall typically use the global linker settings for callouts.</L-2>
+                  </DESC>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-SINGLE>
+                      <ATTRIBUTE-NAME>SHORT-NAME</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">The name part _{safety} shall contain the safety integrity level with at most one of the strings QM, ASIL_A, ASIL_B, ASIL_C, ASIL_D. In case of QM the name part may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">The name part _{coreScope} shall contain the core scope qualification with at most one of the strings GLOBAL, LOCAL. In case of GLOBAL the name part may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-SINGLE>
+                    <BLUEPRINT-POLICY-LIST>
+                      <ATTRIBUTE-NAME>OPTIONS/*</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the safety integrity level with the possible values {safetyQM, safetyAsilA, safetyAsilB, safetyAsilC, safetyAsilD}. In case of safetyQM the attribute may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the core scope qualification with at most one of the possible values {coreGlobal, coreLocal}. In case of coreGlobal the attribute may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-LIST>
+                  </BLUEPRINT-POLICYS>
+                  <SECTION-TYPE>CODE</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD>
+                  <SHORT-NAME NAME-PATTERN="{capitalizedCallbackName}_{blueprintName}(_{safety})?(_{coreScope})?">CALLOUT_CODE2</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">To be used for mapping callouts of the BSW Modules.</L-2>
+                  </DESC>
+                  <INTRODUCTION>
+                    <P>
+                      <L-1 L="EN">{capitalizedCallbackName} is the Callback name, which shall have the same spelling of the Callback name, including module reference, but written in upper case.</L-1>
+                    </P>
+                  </INTRODUCTION>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-SINGLE>
+                      <ATTRIBUTE-NAME>SHORT-NAME</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">The name part _{safety} shall contain the safety integrity level with at most one of the strings QM, ASIL_A, ASIL_B, ASIL_C, ASIL_D. In case of QM the name part may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">The name part _{coreScope} shall contain the core scope qualification with at most one of the strings GLOBAL, LOCAL. In case of GLOBAL the name part may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-SINGLE>
+                    <BLUEPRINT-POLICY-LIST>
+                      <ATTRIBUTE-NAME>OPTIONS/*</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the safety integrity level with the possible values {safetyQM, safetyAsilA, safetyAsilB, safetyAsilC, safetyAsilD}. In case of safetyQM the attribute may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the core scope qualification with at most one of the possible values {coreGlobal, coreLocal}. In case of coreGlobal the attribute may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-LIST>
+                  </BLUEPRINT-POLICYS>
+                  <SECTION-TYPE>CODE</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}(_{safety})?(_{coreScope})?">CODE_FAST</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">To be used for code that shall go into fast code memory segments.</L-2>
+                  </DESC>
+                  <INTRODUCTION>
+                    <P>
+                      <L-1 L="EN">The FAST sections should be used when the execution does not happen in a well defined period times but with the knowledge of high frequent access and /or high execution time. For example, a callback for a frequent notification.</L-1>
+                    </P>
+                  </INTRODUCTION>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-SINGLE>
+                      <ATTRIBUTE-NAME>SHORT-NAME</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">The name part _{safety} shall contain the safety integrity level with at most one of the strings QM, ASIL_A, ASIL_B, ASIL_C, ASIL_D. In case of QM the name part may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">The name part _{coreScope} shall contain the core scope qualification with at most one of the strings GLOBAL, LOCAL. In case of GLOBAL the name part may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-SINGLE>
+                    <BLUEPRINT-POLICY-LIST>
+                      <ATTRIBUTE-NAME>OPTIONS/*</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the safety integrity level with the possible values {safetyQM, safetyAsilA, safetyAsilB, safetyAsilC, safetyAsilD}. In case of safetyQM the attribute may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the core scope qualification with at most one of the possible values {coreGlobal, coreLocal}. In case of coreGlobal the attribute may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-LIST>
+                  </BLUEPRINT-POLICYS>
+                  <SECTION-TYPE>CODE</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}(_{safety})?(_{coreScope})?">CODE_SLOW</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">To be used for code that shall go into slow code memory segments.</L-2>
+                  </DESC>
+                  <INTRODUCTION>
+                    <P>
+                      <L-1 L="EN">The SLOW sections should be used when the execution does not happen in a well defined period times but with the knowledge of low frequent access. For example, a callback in case of seldom error.</L-1>
+                    </P>
+                  </INTRODUCTION>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-SINGLE>
+                      <ATTRIBUTE-NAME>SHORT-NAME</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">The name part _{safety} shall contain the safety integrity level with at most one of the strings QM, ASIL_A, ASIL_B, ASIL_C, ASIL_D. In case of QM the name part may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">The name part _{coreScope} shall contain the core scope qualification with at most one of the strings GLOBAL, LOCAL. In case of GLOBAL the name part may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-SINGLE>
+                    <BLUEPRINT-POLICY-LIST>
+                      <ATTRIBUTE-NAME>OPTIONS/*</ATTRIBUTE-NAME>
+                      <BLUEPRINT-DERIVATION-GUIDE>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the safety integrity level with the possible values {safetyQM, safetyAsilA, safetyAsilB, safetyAsilC, safetyAsilD}. In case of safetyQM the attribute may be omitted.</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="EN">In the related SwAddrMethod one option attribute shall describe the core scope qualification with at most one of the possible values {coreGlobal, coreLocal}. In case of coreGlobal the attribute may be omitted.</L-1>
+                        </P>
+                      </BLUEPRINT-DERIVATION-GUIDE>
+                    </BLUEPRINT-POLICY-LIST>
+                  </BLUEPRINT-POLICYS>
+                  <SECTION-TYPE>CODE</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

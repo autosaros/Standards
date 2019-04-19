@@ -1,0 +1,1889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with AutoSAR.io (http://www.autosar.io) by PopcornSAR architecture (PopcornSAR Co.,Ltd.) -->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <!-- AUTOSAR General Blueprints -->
+  <!--
+    Document Owner:                 AUTOSAR
+    Document Responsibility:        AUTOSAR
+    Document Identification Number: 888
+    Document Status:                Draft
+    Part of AUTOSAR Standard:       Adaptive Platform
+    Part of AUTOSAR Release:        19-03
+-->
+  <!--
+	Disclaimer
+
+	This work (specification and/or software implementation) and the material
+	contained in it, as released by AUTOSAR, is for the purpose of information
+	only. AUTOSAR and the companies that have contributed to it shall not be liable
+	for any use of the work.
+
+	The material contained in this work is protected by copyright and other types
+	of intellectual property rights. The commercial exploitation of the material
+	contained in this work requires a license to such intellectual property rights.
+
+	This work may be utilized or reproduced without any modification, in any form
+	or by any means, for informational purposes only. For any other purpose, no
+	part of the work may be utilized or reproduced, in any form or by any means,
+	without permission in writing from the publisher.
+
+	The work has been developed for automotive applications only. It has neither
+	been developed, nor tested for non-automotive applications.
+
+	The word AUTOSAR and the AUTOSAR logo are registered trademarks.
+
+ -->
+  <ADMIN-DATA>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="preserve">English</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>UpdateAndConfigurationManagement</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>CompositionSwComponentTypes_Blueprint</SHORT-NAME>
+              <CATEGORY>BLUEPRINT</CATEGORY>
+              <ELEMENTS>
+                <COMPOSITION-SW-COMPONENT-TYPE>
+                  <SHORT-NAME>UCM</SHORT-NAME>
+                  <COMPONENTS>
+                    <SW-COMPONENT-PROTOTYPE>
+                      <SHORT-NAME>PKGMGR</SHORT-NAME>
+                      <TYPE-TREF DEST="ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/AdaptiveApplicationSwComponentTypes_Blueprint/PKGMGR</TYPE-TREF>
+                    </SW-COMPONENT-PROTOTYPE>
+                  </COMPONENTS>
+                </COMPOSITION-SW-COMPONENT-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+              <SHORT-NAME>AdaptiveApplicationSwComponentTypes_Blueprint</SHORT-NAME>
+              <CATEGORY>BLUEPRINT</CATEGORY>
+              <ELEMENTS>
+                <ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE>
+                  <SHORT-NAME>PKGMGR</SHORT-NAME>
+                  <PORTS>
+                    <P-PORT-PROTOTYPE>
+                      <SHORT-NAME>PackageManagement</SHORT-NAME>
+                    </P-PORT-PROTOTYPE>
+                  </PORTS>
+                </ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+              <SHORT-NAME>ServiceInterfaces_Blueprint</SHORT-NAME>
+              <CATEGORY>BLUEPRINT</CATEGORY>
+              <ELEMENTS>
+                <SERVICE-INTERFACE>
+                  <SHORT-NAME>PackageManagement</SHORT-NAME>
+                  <IS-SERVICE>true</IS-SERVICE>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <FIELDS>
+                    <FIELD>
+                      <SHORT-NAME>CurrentStatus</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">The current status of UCM.</L-2>
+                      </DESC>
+                      <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/PackageManagerStatusType</TYPE-TREF>
+                      <HAS-GETTER>true</HAS-GETTER>
+                      <HAS-NOTIFIER>true</HAS-NOTIFIER>
+                      <HAS-SETTER>false</HAS-SETTER>
+                    </FIELD>
+                  </FIELDS>
+                  <METHODS>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>GetSwClusterInfo</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">This method returns a list of SoftwareClusters that are in state kPresent.</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>SwInfo</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">List of installed SoftwareClusters that are in state kPresent.</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/SwClusterInfoVectorType</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                      <FIRE-AND-FORGET>false</FIRE-AND-FORGET>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>GetSwClusterChangeInfo</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">This method returns a list pending changes to the set of SoftwareClusters on the adaptive platform. The returned list includes all SoftwareClusters that are to be added, updated or removed. The list of changes is extended in the course of processing Software Packages.</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>SwInfo</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">List of SoftwareClusters  that are in state kAdded,kUpdated or kRemoved.</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/SwClusterInfoVectorType</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                      <FIRE-AND-FORGET>false</FIRE-AND-FORGET>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>GetSwPackages</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">This method returns the Software Packages that available in UCM.</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>Packages</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">List of Software Packages.</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/SwPackageInfoVectorType</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                      <FIRE-AND-FORGET>false</FIRE-AND-FORGET>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>TransferStart</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Start the transfer of a Software Package. The size of the Software Package to be transferred to UCM must be provided. UCM will generate a Transfer ID for subsequent calls to TransferData, TransferExit, ProcessSwPackage, DeleteTransfer, GetLog and SetLogLevel.</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>size</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Size (in bytes) of the Software Package to be transferred.</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/uint64_t</TYPE-TREF>
+                          <DIRECTION>IN</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>id</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Return TransferId.</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/TransferIdType</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                      <FIRE-AND-FORGET>false</FIRE-AND-FORGET>
+                      <POSSIBLE-AP-ERROR-REFS>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/InsufficientMemory</POSSIBLE-AP-ERROR-REF>
+                      </POSSIBLE-AP-ERROR-REFS>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>TransferData</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Block-wise transfer of a Software Package to UCM.</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>id</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Transfer ID.</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/TransferIdType</TYPE-TREF>
+                          <DIRECTION>IN</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>data</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Data block of the Software Package.</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/ByteVectorType</TYPE-TREF>
+                          <DIRECTION>IN</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>blockCounter</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Block counter value of the current block.</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/uint32_t</TYPE-TREF>
+                          <DIRECTION>IN</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                      <FIRE-AND-FORGET>false</FIRE-AND-FORGET>
+                      <POSSIBLE-AP-ERROR-REFS>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/IncorrectBlock</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/IncorrectSize</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/InsufficientMemory</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/InvalidTransferId</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/PackageInconsistent</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/AuthenticationFailed</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/OperationNotPermitted</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/AuthenticationFailed</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/PackageInconsistent</POSSIBLE-AP-ERROR-REF>
+                      </POSSIBLE-AP-ERROR-REFS>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>TransferExit</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Finish the transfer of a Software Package to UCM.</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>id</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Transfer ID of the currently running request.</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/TransferIdType</TYPE-TREF>
+                          <DIRECTION>IN</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                      <FIRE-AND-FORGET>false</FIRE-AND-FORGET>
+                      <POSSIBLE-AP-ERROR-REFS>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/InsufficientData</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/PackageInconsistent</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/AuthenticationFailed</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/OldVersion</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/InvalidTransferId</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/OperationNotPermitted</POSSIBLE-AP-ERROR-REF>
+                      </POSSIBLE-AP-ERROR-REFS>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>DeleteTransfer</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Delete a transferred Software Package.</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>id</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Transfer ID of the currently running request.</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/TransferIdType</TYPE-TREF>
+                          <DIRECTION>IN</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                      <FIRE-AND-FORGET>false</FIRE-AND-FORGET>
+                      <POSSIBLE-AP-ERROR-REFS>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/GeneralReject</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/GeneralMemoryError</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/InvalidTransferId</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/OperationNotPermitted</POSSIBLE-AP-ERROR-REF>
+                      </POSSIBLE-AP-ERROR-REFS>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>ProcessSwPackage</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Process a previously transferred Software Package.</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>id</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">The Transfer ID of this Software Package.</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/TransferIdType</TYPE-TREF>
+                          <DIRECTION>IN</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                      <FIRE-AND-FORGET>false</FIRE-AND-FORGET>
+                      <POSSIBLE-AP-ERROR-REFS>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/ServiceBusy</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/InvalidManifest</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/ProcessedSoftwarePackageInconsistent</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/InsufficientMemory</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/InvalidTransferId</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/OperationNotPermitted</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/ProcessSwPackageCancelled</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/AuthenticationFailed</POSSIBLE-AP-ERROR-REF>
+                      </POSSIBLE-AP-ERROR-REFS>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>RevertProcessedSwPackages</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Revert the changes done by processing (ProcessSwPackage) of one or several software packages.</L-2>
+                      </DESC>
+                      <FIRE-AND-FORGET>false</FIRE-AND-FORGET>
+                      <POSSIBLE-AP-ERROR-REFS>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/NothingToRevert</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/NotAbleToRevertPackages</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/OperationNotPermitted</POSSIBLE-AP-ERROR-REF>
+                      </POSSIBLE-AP-ERROR-REFS>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>GetSwProcessProgress</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Get the progress (0 - 100%) of the currently processed Software Package.</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>id</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">The Transfer ID of the Software Package.</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/TransferIdType</TYPE-TREF>
+                          <DIRECTION>IN</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>progress</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">The progress of the current package processing (0% - 100%). 0x00 ... 0x64, 0xFF for "‘No information available"’</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/uint8_t</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <VARIATION-POINT>
+                            <BLUEPRINT-CONDITION>
+                              <NOTE NOTE-TYPE="INSTRUCTION">
+                                <P SI="Variation">
+                                  <L-1 L="EN">Variation of Progress OUT parameter.</L-1>
+                                </P>
+                              </NOTE>
+                            </BLUEPRINT-CONDITION>
+                          </VARIATION-POINT>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                      <FIRE-AND-FORGET>false</FIRE-AND-FORGET>
+                      <POSSIBLE-AP-ERROR-REFS>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/InvalidTransferId</POSSIBLE-AP-ERROR-REF>
+                      </POSSIBLE-AP-ERROR-REFS>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>Cancel</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">This method aborts an ongoing processing of a Software Package.</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>id</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">The Transfer ID.</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/TransferIdType</TYPE-TREF>
+                          <DIRECTION>IN</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                      <FIRE-AND-FORGET>false</FIRE-AND-FORGET>
+                      <POSSIBLE-AP-ERROR-REFS>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/CancelFailed</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/OperationNotPermitted</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/InvalidTransferId</POSSIBLE-AP-ERROR-REF>
+                      </POSSIBLE-AP-ERROR-REFS>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>Rollback</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Rollback the system to the state before the packages were processed.</L-2>
+                      </DESC>
+                      <FIRE-AND-FORGET>false</FIRE-AND-FORGET>
+                      <POSSIBLE-AP-ERROR-REFS>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/NothingToRollback</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/NotAbleToRollback</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/OperationNotPermitted</POSSIBLE-AP-ERROR-REF>
+                      </POSSIBLE-AP-ERROR-REFS>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>Activate</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">This method activates the processed components.</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>option</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">The option of the activate.</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/ActivateOptionType</TYPE-TREF>
+                          <DIRECTION>IN</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                      <FIRE-AND-FORGET>false</FIRE-AND-FORGET>
+                      <POSSIBLE-AP-ERROR-REFS>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/ErrorDuringActivation</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/ErrorNoValidProcessing</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/MissingDependencies</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/OperationNotPermitted</POSSIBLE-AP-ERROR-REF>
+                      </POSSIBLE-AP-ERROR-REFS>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>Finish</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">This method finishes the processing for the current set of processed Software Packages. It does a cleanup of all data of the processing including the sources of the Software Packages.</L-2>
+                      </DESC>
+                      <FIRE-AND-FORGET>false</FIRE-AND-FORGET>
+                      <POSSIBLE-AP-ERROR-REFS>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/GeneralReject</POSSIBLE-AP-ERROR-REF>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/OperationNotPermitted</POSSIBLE-AP-ERROR-REF>
+                      </POSSIBLE-AP-ERROR-REFS>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>SetLogLevel</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">This method sets the log level for a package.</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>id</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">The Transfer ID.</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/TransferIdType</TYPE-TREF>
+                          <DIRECTION>IN</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>logLevel</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">The new log level to be used.</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/LogLevelType</TYPE-TREF>
+                          <DIRECTION>IN</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                      <FIRE-AND-FORGET>false</FIRE-AND-FORGET>
+                      <POSSIBLE-AP-ERROR-REFS>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/InvalidTransferId</POSSIBLE-AP-ERROR-REF>
+                      </POSSIBLE-AP-ERROR-REFS>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>GetLog</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Getter method to poll for the log messages of the current Session.</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>id</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">The Transfer ID.</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/TransferIdType</TYPE-TREF>
+                          <DIRECTION>IN</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>log</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">The log messages.</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/LogVectorType</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                      <FIRE-AND-FORGET>false</FIRE-AND-FORGET>
+                      <POSSIBLE-AP-ERROR-REFS>
+                        <POSSIBLE-AP-ERROR-REF DEST="AP-APPLICATION-ERROR">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/InvalidTransferId</POSSIBLE-AP-ERROR-REF>
+                      </POSSIBLE-AP-ERROR-REFS>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>GetHistory</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Getter method to retrieve all actions that have been performed by UCM.</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                        <SHORT-NAME>timestampGE</SHORT-NAME>
+                        <DESC>
+                          <L-2 L="EN">Earliest timestamp (inclusive)</L-2>
+                        </DESC>
+                        <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/uint64_t</TYPE-TREF>
+                        <DIRECTION>IN</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>timestampLT</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Latest timestamp (exclusive)</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/uint64_t</TYPE-TREF>
+                          <DIRECTION>IN</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>history</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">The history of all actions that have been performed by UCM.</L-2>
+                          </DESC>
+                          <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/GetHistoryVectorType</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                      <FIRE-AND-FORGET>false</FIRE-AND-FORGET>
+                    </CLIENT-SERVER-OPERATION>
+                  </METHODS>
+                </SERVICE-INTERFACE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+              <SHORT-NAME>ImplementationDataTypes_Blueprint</SHORT-NAME>
+              <ELEMENTS>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>TransferIdType</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Represents a handle identifier used to reference a particular transfer request.</L-2>
+                  </DESC>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/uint64_t</TYPE-REFERENCE-REF>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SwInfoName</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">SoftwareCluster name.</L-2>
+                  </DESC>
+                  <CATEGORY>STRING</CATEGORY>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>ByteVectorType</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Byte vector representing raw data.</L-2>
+                  </DESC>
+                  <CATEGORY>VECTOR</CATEGORY>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <TEMPLATE-ARGUMENTS>
+                    <CPP-TEMPLATE-ARGUMENT>
+                      <TEMPLATE-TYPE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/uint8_t</TEMPLATE-TYPE-REF>
+                    </CPP-TEMPLATE-ARGUMENT>
+                  </TEMPLATE-ARGUMENTS>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SwPackageStateType</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Represents the state of a Software Package on the Platform.</L-2>
+                  </DESC>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR/UpdateAndConfigurationManagement/CompuMethods_Blueprint/SwPackageStateType</COMPU-METHOD-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/UpdateAndConfigurationManagement/DataConstrs_Blueprint/SwPackageStateType</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/uint8_t</TYPE-REFERENCE-REF>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SwPackageInfoType</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Represents the information of a Software Package.</L-2>
+                  </DESC>
+                  <CATEGORY>STRUCTURE</CATEGORY>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <SUB-ELEMENTS>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      <SHORT-NAME>Name</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">SoftwareCluster name</L-2>
+                      </DESC>
+                      <TYPE-REFERENCE>
+                        <INPLACE>false</INPLACE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/SwInfoName</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      <SHORT-NAME>Version</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">SoftwareCluster version</L-2>
+                      </DESC>
+                      <TYPE-REFERENCE>
+                        <INPLACE>false</INPLACE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/StrongRevisionLabelString</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      <SHORT-NAME>TransferID</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">TransferID of the Software Package</L-2>
+                      </DESC>
+                      <TYPE-REFERENCE>
+                        <INPLACE>false</INPLACE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/TransferIdType</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      <SHORT-NAME>Size</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Software Package size (in bytes)</L-2>
+                      </DESC>
+                      <TYPE-REFERENCE>
+                        <INPLACE>false</INPLACE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/uint8_t</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      <SHORT-NAME>State</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">State of the Software Package</L-2>
+                      </DESC>
+                      <TYPE-REFERENCE>
+                        <INPLACE>false</INPLACE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/SwPackageStateType</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  </SUB-ELEMENTS>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SwPackageInfoVectorType</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Represents a dynamic size array of Software Packages</L-2>
+                  </DESC>
+                  <CATEGORY>VECTOR</CATEGORY>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <TEMPLATE-ARGUMENTS>
+                    <CPP-TEMPLATE-ARGUMENT>
+                      <TEMPLATE-TYPE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/SwPackageInfoType</TEMPLATE-TYPE-REF>
+                    </CPP-TEMPLATE-ARGUMENT>
+                  </TEMPLATE-ARGUMENTS>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SwClusterStateType</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Represents the state of a SoftwareCluster on the adaptive platform.</L-2>
+                  </DESC>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR/UpdateAndConfigurationManagement/CompuMethods_Blueprint/SwClusterStateType</COMPU-METHOD-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/UpdateAndConfigurationManagement/DataConstrs_Blueprint/SwClusterStateType</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/uint8_t</TYPE-REFERENCE-REF>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SwClusterInfoType</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Represents the information of a SoftwareCluster.</L-2>
+                  </DESC>
+                  <CATEGORY>STRUCTURE</CATEGORY>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <SUB-ELEMENTS>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      <SHORT-NAME>Name</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Name of the SoftwareCluster</L-2>
+                      </DESC>
+                      <TYPE-REFERENCE>
+                        <INPLACE>false</INPLACE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/SwInfoName</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      <SHORT-NAME>Version</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">SoftwareCluster version</L-2>
+                      </DESC>
+                      <TYPE-REFERENCE>
+                        <INPLACE>false</INPLACE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/StrongRevisionLabelString</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      <SHORT-NAME>State</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">State of the SoftwareCluster</L-2>
+                      </DESC>
+                      <TYPE-REFERENCE>
+                        <INPLACE>false</INPLACE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/SwClusterStateType</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  </SUB-ELEMENTS>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SwClusterInfoVectorType</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Represents a dynamic size array of SoftwareClusters</L-2>
+                  </DESC>
+                  <CATEGORY>VECTOR</CATEGORY>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <TEMPLATE-ARGUMENTS>
+                    <CPP-TEMPLATE-ARGUMENT>
+                      <TEMPLATE-TYPE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/SwClusterInfoType</TEMPLATE-TYPE-REF>
+                    </CPP-TEMPLATE-ARGUMENT>
+                  </TEMPLATE-ARGUMENTS>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>LogLevelType</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Represents the severity of the log messages.</L-2>
+                  </DESC>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR/UpdateAndConfigurationManagement/CompuMethods_Blueprint/LogLevelType</COMPU-METHOD-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/UpdateAndConfigurationManagement/DataConstrs_Blueprint/LogLevelType</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/uint8_t</TYPE-REFERENCE-REF>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>LogEntryType</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Represents a single log message with a log level.</L-2>
+                  </DESC>
+                  <CATEGORY>STRUCTURE</CATEGORY>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <SUB-ELEMENTS>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      <SHORT-NAME>LogLevel</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">The log level of the log message.</L-2>
+                      </DESC>
+                      <TYPE-REFERENCE>
+                        <INPLACE>false</INPLACE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/LogLevelType</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      <SHORT-NAME>Message</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">The log message.</L-2>
+                      </DESC>
+                      <TYPE-REFERENCE>
+                        <INPLACE>false</INPLACE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/LogMessageType</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  </SUB-ELEMENTS>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>LogVectorType</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Represents a list of log messages.</L-2>
+                  </DESC>
+                  <CATEGORY>VECTOR</CATEGORY>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <TEMPLATE-ARGUMENTS>
+                    <CPP-TEMPLATE-ARGUMENT>
+                      <TEMPLATE-TYPE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/LogEntryType</TEMPLATE-TYPE-REF>
+                    </CPP-TEMPLATE-ARGUMENT>
+                  </TEMPLATE-ARGUMENTS>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>PackageManagerStatusType</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Represents the state of UCM.</L-2>
+                  </DESC>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR/UpdateAndConfigurationManagement/CompuMethods_Blueprint/PackageManagerStatusType</COMPU-METHOD-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/UpdateAndConfigurationManagement/DataConstrs_Blueprint/PackageManagerStatusType</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/uint8_t</TYPE-REFERENCE-REF>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>ActivateOptionType</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Represents the option parameter type of the Activate method.</L-2>
+                  </DESC>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR/UpdateAndConfigurationManagement/CompuMethods_Blueprint/ActivateOptionType</COMPU-METHOD-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/UpdateAndConfigurationManagement/DataConstrs_Blueprint/ActivateOptionType</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/uint8_t</TYPE-REFERENCE-REF>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>ResultType</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Represents the result of UCM action.</L-2>
+                  </DESC>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR/UpdateAndConfigurationManagement/CompuMethods_Blueprint/ResultType</COMPU-METHOD-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/UpdateAndConfigurationManagement/DataConstrs_Blueprint/ResultType</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/uint8_t</TYPE-REFERENCE-REF>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>ActionType</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Represents the UCM action.</L-2>
+                  </DESC>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR/UpdateAndConfigurationManagement/CompuMethods_Blueprint/ActionType</COMPU-METHOD-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/UpdateAndConfigurationManagement/DataConstrs_Blueprint/ActionType</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/uint8_t</TYPE-REFERENCE-REF>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>GetHistoryType</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Time refers to the activation time of the software cluster. It is represented in milliseconds of UCM’s action resolution since 01.01.1970 (UTC).</L-2>
+                  </DESC>
+                  <CATEGORY>STRUCTURE</CATEGORY>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <SUB-ELEMENTS>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      <SHORT-NAME>Time</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Date and time of UCM’s action resolution.</L-2>
+                      </DESC>
+                      <TYPE-REFERENCE>
+                        <INPLACE>false</INPLACE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/uint64_t</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      <SHORT-NAME>Name</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Name of the SoftwareCluster</L-2>
+                      </DESC>
+                      <TYPE-REFERENCE>
+                        <INPLACE>false</INPLACE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/SwInfoName</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      <SHORT-NAME>Version</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Version of the SoftwareCluster</L-2>
+                      </DESC>
+                      <TYPE-REFERENCE>
+                        <INPLACE>false</INPLACE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/StrongRevisionLabelString</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      <SHORT-NAME>Action</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">What action was performed by UCM</L-2>
+                      </DESC>
+                      <TYPE-REFERENCE>
+                        <INPLACE>false</INPLACE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/ActionType</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      <SHORT-NAME>Resolution</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">What action was performed by UCM</L-2>
+                      </DESC>
+                      <TYPE-REFERENCE>
+                        <INPLACE>false</INPLACE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/ResultType</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  </SUB-ELEMENTS>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>GetHistoryVectorType</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Represents a list of UCM actions</L-2>
+                  </DESC>
+                  <CATEGORY>VECTOR</CATEGORY>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <TEMPLATE-ARGUMENTS>
+                    <CPP-TEMPLATE-ARGUMENT>
+                      <TEMPLATE-TYPE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/UpdateAndConfigurationManagement/ImplementationDataTypes_Blueprint/GetHistoryType</TEMPLATE-TYPE-REF>
+                    </CPP-TEMPLATE-ARGUMENT>
+                  </TEMPLATE-ARGUMENTS>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>StrongRevisionLabelString</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Represents a generic string data type</L-2>
+                  </DESC>
+                  <CATEGORY>STRING</CATEGORY>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>LogMessageType</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Represents a string data type for the log message</L-2>
+                  </DESC>
+                  <CATEGORY>STRING</CATEGORY>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ara</SHORT-NAME>
+                      <SYMBOL>ara</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ucm</SHORT-NAME>
+                      <SYMBOL>ucm</SYMBOL>
+                    </SYMBOL-PROPS>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>pkgmgr</SHORT-NAME>
+                      <SYMBOL>pkgmgr</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+              <SHORT-NAME>ApApplicationErrors_Blueprint</SHORT-NAME>
+              <CATEGORY>BLUEPRINT</CATEGORY>
+              <ELEMENTS>
+                <AP-APPLICATION-ERROR-DOMAIN>
+                  <SHORT-NAME>UCMErrorDomain</SHORT-NAME>
+                </AP-APPLICATION-ERROR-DOMAIN>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>InsufficientMemory</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Insufficient memory to perform operation.</L-2>
+                  </DESC>
+                  <ERROR-CODE>1</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>IncorrectBlock</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">The block counter value is not as expected.</L-2>
+                  </DESC>
+                  <ERROR-CODE>2</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>IncorrectSize</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">The size of the Software Package exceeds the provided size in TransferStart.</L-2>
+                  </DESC>
+                  <ERROR-CODE>3</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>InvalidTransferId</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">The Transfer ID is invalid.</L-2>
+                  </DESC>
+                  <ERROR-CODE>4</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>OperationNotPermitted</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">The operation is not supported in the current context.</L-2>
+                  </DESC>
+                  <ERROR-CODE>5</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>InsufficientData</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">TransferExit has been called but total transferred data size does not match expected data size provided with TransferStart call.</L-2>
+                  </DESC>
+                  <ERROR-CODE>6</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>PackageInconsistent</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Package integrity check failed.</L-2>
+                  </DESC>
+                  <ERROR-CODE>7</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>AuthenticationFailed</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Software Package authentication failed.</L-2>
+                  </DESC>
+                  <ERROR-CODE>8</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>OldVersion</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Software Package version is too old.</L-2>
+                  </DESC>
+                  <ERROR-CODE>9</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>GeneralReject</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">General reject.</L-2>
+                  </DESC>
+                  <ERROR-CODE>10</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>GeneralMemoryError</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">A general memory error occured.</L-2>
+                  </DESC>
+                  <ERROR-CODE>11</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>ServiceBusy</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Another processing is already ongoing and therefore the current processing request has to be rejected.</L-2>
+                  </DESC>
+                  <ERROR-CODE>12</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>InvalidManifest</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Package manifest could not be read.</L-2>
+                  </DESC>
+                  <ERROR-CODE>13</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>NothingToRevert</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">RevertProcessedSwPackages has been called without prior processing of a Software Package.</L-2>
+                  </DESC>
+                  <ERROR-CODE>14</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>NotAbleToRevertPackages</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">RevertProcessedSwPackages failed.</L-2>
+                  </DESC>
+                  <ERROR-CODE>15</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>CancelFailed</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Cancel failed.</L-2>
+                  </DESC>
+                  <ERROR-CODE>16</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>NothingToRollback</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Rollback cannot be performed due to no rollback data available.</L-2>
+                  </DESC>
+                  <ERROR-CODE>17</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>NotAbleToRollback</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Rollback failed.</L-2>
+                  </DESC>
+                  <ERROR-CODE>18</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>ErrorDuringActivation</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Activate failed.</L-2>
+                  </DESC>
+                  <ERROR-CODE>19</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>ErrorNoValidProcessing</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Activate cannot be performed because previous processing is invalid.</L-2>
+                  </DESC>
+                  <ERROR-CODE>20</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>MissingDependencies</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Activate cannot be performed because of missing dependencies.</L-2>
+                  </DESC>
+                  <ERROR-CODE>21</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>ProcessSwPackageCancelled</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">The processing operation has been interrupted by a Cancel() call.</L-2>
+                  </DESC>
+                  <ERROR-CODE>22</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+                <AP-APPLICATION-ERROR>
+                  <SHORT-NAME>ProcessedSoftwarePackageInconsistent</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">The processed Software Package integrity check has failed.</L-2>
+                  </DESC>
+                  <ERROR-CODE>23</ERROR-CODE>
+                  <ERROR-DOMAIN-REF DEST="AP-APPLICATION-ERROR-DOMAIN">/AUTOSAR/UpdateAndConfigurationManagement/ApApplicationErrors_Blueprint/UCMErrorDomain</ERROR-DOMAIN-REF>
+                </AP-APPLICATION-ERROR>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+              <SHORT-NAME>DataConstrs_Blueprint</SHORT-NAME>
+              <CATEGORY>BLUEPRINT</CATEGORY>
+              <ELEMENTS>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SwPackageStateType</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT>0x00</LOWER-LIMIT>
+                        <UPPER-LIMIT>0x03</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SwClusterStateType</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT>0x00</LOWER-LIMIT>
+                        <UPPER-LIMIT>0x03</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>LogLevelType</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT>0x00</LOWER-LIMIT>
+                        <UPPER-LIMIT>0x06</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>PackageManagerStatusType</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT>0x00</LOWER-LIMIT>
+                        <UPPER-LIMIT>0x08</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ActivateOptionType</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT>0x00</LOWER-LIMIT>
+                        <UPPER-LIMIT>0x02</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ResultType</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT>0x00</LOWER-LIMIT>
+                        <UPPER-LIMIT>0x01</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ActionType</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT>0x00</LOWER-LIMIT>
+                        <UPPER-LIMIT>0x02</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+              <SHORT-NAME>CompuMethods_Blueprint</SHORT-NAME>
+              <CATEGORY>BLUEPRINT</CATEGORY>
+              <ELEMENTS>
+                <COMPU-METHOD>
+                  <SHORT-NAME>SwPackageStateType</SHORT-NAME>
+                  <CATEGORY>TEXTTABLE</CATEGORY>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                      <ATTRIBUTE-NAME>COMPU-INTERNAL-TO-PHYS</ATTRIBUTE-NAME>
+                    </BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                  </BLUEPRINT-POLICYS>
+                  <COMPU-INTERNAL-TO-PHYS>
+                    <COMPU-SCALES>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">Software package is being transferred, i.e. not completely received.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x00</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x00</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kTransferring</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">Software package is completely transferred and ready to be processed.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x01</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x01</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kTransferred</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">Software package is currently being processed.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x02</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x02</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kProcessing</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">Software package processing finished.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x03</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x03</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kProcessed</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                    </COMPU-SCALES>
+                  </COMPU-INTERNAL-TO-PHYS>
+                </COMPU-METHOD>
+                <COMPU-METHOD>
+                  <SHORT-NAME>SwClusterStateType</SHORT-NAME>
+                  <CATEGORY>TEXTTABLE</CATEGORY>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                      <ATTRIBUTE-NAME>COMPU-INTERNAL-TO-PHYS</ATTRIBUTE-NAME>
+                    </BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                  </BLUEPRINT-POLICYS>
+                  <COMPU-INTERNAL-TO-PHYS>
+                    <COMPU-SCALES>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">State of a SoftwareCluster that is installed on the adaptive platform and installation has finished.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x00</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x00</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kPresent</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">State of a SoftwareCluster that has been newly installed.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x01</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x01</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kAdded</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">State of a SoftwareCluster that has been updated.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x02</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x02</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kUpdated</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">State of a SoftwareCluster that has been removed.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x03</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x03</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kRemoved</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                    </COMPU-SCALES>
+                  </COMPU-INTERNAL-TO-PHYS>
+                </COMPU-METHOD>
+                <COMPU-METHOD>
+                  <SHORT-NAME>LogLevelType</SHORT-NAME>
+                  <CATEGORY>TEXTTABLE</CATEGORY>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                      <ATTRIBUTE-NAME>COMPU-INTERNAL-TO-PHYS</ATTRIBUTE-NAME>
+                    </BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                  </BLUEPRINT-POLICYS>
+                  <COMPU-INTERNAL-TO-PHYS>
+                    <COMPU-SCALES>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">Logging is deactivated.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x00</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x00</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kOff</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">Only fatal messages are logged.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x01</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x01</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kFatal</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">Only messages up to error level are logged.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x02</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x02</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kError</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">Only messages up to warning level are logged.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x03</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x03</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kWarning</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">Only messages up to info level are logged.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x04</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x04</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kInfo</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">Only messages up to debug level are logged.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x05</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x05</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kDebug</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">Only messages up to verbose level are logged.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x06</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x06</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kVerbose</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                    </COMPU-SCALES>
+                  </COMPU-INTERNAL-TO-PHYS>
+                </COMPU-METHOD>
+                <COMPU-METHOD>
+                  <SHORT-NAME>PackageManagerStatusType</SHORT-NAME>
+                  <CATEGORY>TEXTTABLE</CATEGORY>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                      <ATTRIBUTE-NAME>COMPU-INTERNAL-TO-PHYS</ATTRIBUTE-NAME>
+                    </BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                  </BLUEPRINT-POLICYS>
+                  <COMPU-INTERNAL-TO-PHYS>
+                    <COMPU-SCALES>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">UCM is ready to start processing if software packages are present.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x00</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x00</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kIdle</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">UCM has processed one or several packages and waits for additional packages, activation or reversion of processed packages.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x01</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x01</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kReady</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">UCM is currently in the middle of processing a Software Package, i.e. a client has called ProcessSwPackage.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x02</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x02</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kBusy</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">UCM is performing the dependency check and preparing the activation of the processed Software packages.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x03</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x03</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kActivating</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">Software changes introduced with processed Software Packages has been activated and executed.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x04</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x04</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kActivated</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">UCM is reverting changes introduced with processed packages.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x05</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x05</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kRollingBack</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">Software changes introduced with processed Software Packages has been deactivated and original software is executed.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x06</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x06</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kRolledBack</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">Making sure that the system is in a clean state.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x07</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x07</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kCleaningUp</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">UCM (via State Management) is checking that the processed packages have been properly restarted.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x08</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x08</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kVerifying</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                    </COMPU-SCALES>
+                  </COMPU-INTERNAL-TO-PHYS>
+                </COMPU-METHOD>
+                <COMPU-METHOD>
+                  <SHORT-NAME>ActivateOptionType</SHORT-NAME>
+                  <CATEGORY>TEXTTABLE</CATEGORY>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                      <ATTRIBUTE-NAME>COMPU-INTERNAL-TO-PHYS</ATTRIBUTE-NAME>
+                    </BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                  </BLUEPRINT-POLICYS>
+                  <COMPU-INTERNAL-TO-PHYS>
+                    <COMPU-SCALES>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">No override, default behaviour.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x00</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x00</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kDefault</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">Request restart of the functional group.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x01</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x01</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kFunctionGroupRestart</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">Request reset of the system.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x02</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x02</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kSystemReset</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                    </COMPU-SCALES>
+                  </COMPU-INTERNAL-TO-PHYS>
+                </COMPU-METHOD>
+                <COMPU-METHOD>
+                  <SHORT-NAME>ResultType</SHORT-NAME>
+                  <CATEGORY>TEXTTABLE</CATEGORY>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                      <ATTRIBUTE-NAME>COMPU-INTERNAL-TO-PHYS</ATTRIBUTE-NAME>
+                    </BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                  </BLUEPRINT-POLICYS>
+                  <COMPU-INTERNAL-TO-PHYS>
+                    <COMPU-SCALES>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">UCM’s action was successful.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x00</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x00</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kSuccessfull</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">UCM’s action failed.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x01</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x01</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kFailed</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                    </COMPU-SCALES>
+                  </COMPU-INTERNAL-TO-PHYS>
+                </COMPU-METHOD>
+                <COMPU-METHOD>
+                  <SHORT-NAME>ActionType</SHORT-NAME>
+                  <CATEGORY>TEXTTABLE</CATEGORY>
+                  <BLUEPRINT-POLICYS>
+                    <BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                      <ATTRIBUTE-NAME>COMPU-INTERNAL-TO-PHYS</ATTRIBUTE-NAME>
+                    </BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                  </BLUEPRINT-POLICYS>
+                  <COMPU-INTERNAL-TO-PHYS>
+                    <COMPU-SCALES>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">Update of a SoftwareCluster.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x00</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x00</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kUpdate</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">Installation of a new SoftwareCluster.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x01</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x01</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kInstall</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <DESC>
+                          <L-2 L="EN">Removal of a SoftwareCluster.</L-2>
+                        </DESC>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0x02</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0x02</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>kRemove</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                    </COMPU-SCALES>
+                  </COMPU-INTERNAL-TO-PHYS>
+                </COMPU-METHOD>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

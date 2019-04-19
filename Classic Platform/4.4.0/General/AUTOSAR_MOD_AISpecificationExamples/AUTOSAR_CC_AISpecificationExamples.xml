@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<CATALOG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_V3_0_0.ml.xsd">
+  <SHORT-NAME>AUTOSAR_Documents</SHORT-NAME>
+  <ABLOCKS>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecificationExamples.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">AUTOSAR_MOD_AISpecificationExamples.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+	<ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_ApplicationDataType_Blueprint.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_ApplicationDataType_Blueprint.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_ApplicationDataType_LifeCycle_Standard.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_ApplicationDataType_LifeCycle_Standard.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_Collection_Body_Blueprint.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_Collection_Body_Blueprint.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_Collection_Chassis_Blueprint.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_Collection_Chassis_Blueprint.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_Collection_MmedTelmHmi_Blueprint.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_Collection_MmedTelmHmi_Blueprint.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_Collection_OccptPedSfty_Blueprint.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_Collection_OccptPedSfty_Blueprint.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_Collection_Pt_Blueprint.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_Collection_Pt_Blueprint.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_CompuMethod_Blueprint.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_CompuMethod_Blueprint.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_CompuMethod_LifeCycle_Standard.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_CompuMethod_LifeCycle_Standard.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_DataConstr_Blueprint.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_DataConstr_Blueprint.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_DataConstr_LifeCycle_Standard.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_DataConstr_LifeCycle_Standard.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_KeywordSet_Blueprint.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_KeywordSet_Blueprint.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_Keyword_LifeCycle_Standard.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_Keyword_LifeCycle_Standard.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_PhysicalDimension_LifeCycle_Standard.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_PhysicalDimension_LifeCycle_Standard.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_PhysicalDimension_Standard.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_PhysicalDimension_Standard.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_PortInterface_Blueprint.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_PortInterface_Blueprint.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_PortInterface_LifeCycle_Standard.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_PortInterface_LifeCycle_Standard.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_PortPrototypeBlueprint_Blueprint.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_PortPrototypeBlueprint_Blueprint.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_PortPrototypeBlueprint_LifeCycle_Standard.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_PortPrototypeBlueprint_LifeCycle_Standard.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_Unit_LifeCycle_Standard.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_Unit_LifeCycle_Standard.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+    <ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_AISpecification_Unit_Standard.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_AISpecification/AUTOSAR_MOD_AISpecification_Unit_Standard.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+	<ABLOCK>
+      <SHORT-NAME>AUTOSAR_MOD_GeneralDefinition_LifeCycle.arxml</SHORT-NAME>
+      <CATEGORY>MOD</CATEGORY>
+      <FILES>
+        <FILE TYPE="arxml">../AUTOSAR_MOD_GeneralDefinitions/AUTOSAR_MOD_GeneralDefinition_LifeCycle.arxml</FILE>
+      </FILES>
+    </ABLOCK>
+  </ABLOCKS>
+</CATALOG>

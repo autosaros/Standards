@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>McInt</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>System</SHORT-NAME>
+          <ELEMENTS>
+            <FLAT-MAP>
+              <SHORT-NAME>FlatMap</SHORT-NAME>
+              <INSTANCES>
+                <FLAT-INSTANCE-DESCRIPTOR>
+                  <SHORT-NAME>TPlant</SHORT-NAME>
+                  <ECU-EXTRACT-REFERENCE-IREF>
+                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/McInt/System/EcuExtract/RootSwCompositionPrototype</CONTEXT-ELEMENT-REF>
+                    <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/McInt/SwComponents/Composition/CPT_Plant</CONTEXT-ELEMENT-REF>
+                    <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/McInt/SwComponents/Plant/PlantTemperaturePPP</CONTEXT-ELEMENT-REF>
+                    <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/PortInterfaces/TemperatureSRIF/T</TARGET-REF>
+                  </ECU-EXTRACT-REFERENCE-IREF>
+                </FLAT-INSTANCE-DESCRIPTOR>
+                <FLAT-INSTANCE-DESCRIPTOR>
+                  <SHORT-NAME>I</SHORT-NAME>
+                  <ECU-EXTRACT-REFERENCE-IREF>
+                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/McInt/System/EcuExtract/RootSwCompositionPrototype</CONTEXT-ELEMENT-REF>
+                    <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/McInt/SwComponents/Composition/CPT_Controller</CONTEXT-ELEMENT-REF>
+                    <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/McInt/SwComponents/Controller/CurrentPPP</CONTEXT-ELEMENT-REF>
+                    <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/PortInterfaces/CurrentSRIF/I</TARGET-REF>
+                  </ECU-EXTRACT-REFERENCE-IREF>
+                </FLAT-INSTANCE-DESCRIPTOR>
+                <FLAT-INSTANCE-DESCRIPTOR>
+                  <SHORT-NAME>ctrl_ESum</SHORT-NAME>
+                  <ECU-EXTRACT-REFERENCE-IREF>
+                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/McInt/System/EcuExtract/RootSwCompositionPrototype</CONTEXT-ELEMENT-REF>
+                    <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/McInt/SwComponents/Composition/CPT_Controller</CONTEXT-ELEMENT-REF>
+                    <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/SwComponents/Controller/ControllerInternalBehavior/ESum</TARGET-REF>
+                  </ECU-EXTRACT-REFERENCE-IREF>
+                </FLAT-INSTANCE-DESCRIPTOR>
+                <FLAT-INSTANCE-DESCRIPTOR>
+                  <SHORT-NAME>plnt_QPlant</SHORT-NAME>
+                  <ECU-EXTRACT-REFERENCE-IREF>
+                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/McInt/System/EcuExtract/RootSwCompositionPrototype</CONTEXT-ELEMENT-REF>
+                    <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/McInt/SwComponents/Composition/CPT_Plant</CONTEXT-ELEMENT-REF>
+                    <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/SwComponents/Plant/PlantInternalBehavior/QPlant</TARGET-REF>
+                  </ECU-EXTRACT-REFERENCE-IREF>
+                </FLAT-INSTANCE-DESCRIPTOR>
+                <FLAT-INSTANCE-DESCRIPTOR>
+                  <SHORT-NAME>plnt_QEnv</SHORT-NAME>
+                  <ECU-EXTRACT-REFERENCE-IREF>
+                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/McInt/System/EcuExtract/RootSwCompositionPrototype</CONTEXT-ELEMENT-REF>
+                    <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/McInt/SwComponents/Composition/CPT_Plant</CONTEXT-ELEMENT-REF>
+                    <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/SwComponents/Plant/PlantInternalBehavior/QEnv</TARGET-REF>
+                  </ECU-EXTRACT-REFERENCE-IREF>
+                </FLAT-INSTANCE-DESCRIPTOR>
+                <FLAT-INSTANCE-DESCRIPTOR>
+                  <SHORT-NAME>plnt_QHeater</SHORT-NAME>
+                  <ECU-EXTRACT-REFERENCE-IREF>
+                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/McInt/System/EcuExtract/RootSwCompositionPrototype</CONTEXT-ELEMENT-REF>
+                    <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/McInt/SwComponents/Composition/CPT_Plant</CONTEXT-ELEMENT-REF>
+                    <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/SwComponents/Plant/PlantInternalBehavior/QHeater</TARGET-REF>
+                  </ECU-EXTRACT-REFERENCE-IREF>
+                </FLAT-INSTANCE-DESCRIPTOR>
+                <FLAT-INSTANCE-DESCRIPTOR>
+                  <SHORT-NAME>TEnv</SHORT-NAME>
+                  <ECU-EXTRACT-REFERENCE-IREF>
+                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/McInt/System/EcuExtract/RootSwCompositionPrototype</CONTEXT-ELEMENT-REF>
+                    <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/McInt/SwComponents/Composition/CPT_Environment</CONTEXT-ELEMENT-REF>
+                    <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/McInt/SwComponents/Environment/EnvTemperaturePPP</CONTEXT-ELEMENT-REF>
+                    <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/PortInterfaces/TemperatureSRIF/T</TARGET-REF>
+                  </ECU-EXTRACT-REFERENCE-IREF>
+                </FLAT-INSTANCE-DESCRIPTOR>
+                <FLAT-INSTANCE-DESCRIPTOR>
+                  <SHORT-NAME>ctrl_E</SHORT-NAME>
+                  <ECU-EXTRACT-REFERENCE-IREF>
+                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/McInt/System/EcuExtract/RootSwCompositionPrototype</CONTEXT-ELEMENT-REF>
+                    <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/McInt/SwComponents/Composition/CPT_Controller</CONTEXT-ELEMENT-REF>
+                    <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/SwComponents/Controller/ControllerInternalBehavior/E</TARGET-REF>
+                  </ECU-EXTRACT-REFERENCE-IREF>
+                </FLAT-INSTANCE-DESCRIPTOR>
+                <FLAT-INSTANCE-DESCRIPTOR>
+                  <SHORT-NAME>env_THighLimit</SHORT-NAME>
+                  <ECU-EXTRACT-REFERENCE-IREF>
+                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/McInt/System/EcuExtract/RootSwCompositionPrototype</CONTEXT-ELEMENT-REF>
+                    <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/McInt/SwComponents/Composition/CPT_Environment</CONTEXT-ELEMENT-REF>
+                    <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/SwComponents/Environment/EnvironmentInternalBehavior/THighLimit</TARGET-REF>
+                  </ECU-EXTRACT-REFERENCE-IREF>
+                </FLAT-INSTANCE-DESCRIPTOR>
+                <FLAT-INSTANCE-DESCRIPTOR>
+                  <SHORT-NAME>env_TEnv</SHORT-NAME>
+                  <ECU-EXTRACT-REFERENCE-IREF>
+                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/McInt/System/EcuExtract/RootSwCompositionPrototype</CONTEXT-ELEMENT-REF>
+                    <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/McInt/SwComponents/Composition/CPT_Environment</CONTEXT-ELEMENT-REF>
+                    <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/SwComponents/Environment/EnvironmentInternalBehavior/TEnv</TARGET-REF>
+                  </ECU-EXTRACT-REFERENCE-IREF>
+                </FLAT-INSTANCE-DESCRIPTOR>
+                <FLAT-INSTANCE-DESCRIPTOR>
+                  <SHORT-NAME>env_Seed</SHORT-NAME>
+                  <ECU-EXTRACT-REFERENCE-IREF>
+                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/McInt/System/EcuExtract/RootSwCompositionPrototype</CONTEXT-ELEMENT-REF>
+                    <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/McInt/SwComponents/Composition/CPT_Environment</CONTEXT-ELEMENT-REF>
+                    <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/SwComponents/Environment/EnvironmentInternalBehavior/Seed</TARGET-REF>
+                  </ECU-EXTRACT-REFERENCE-IREF>
+                </FLAT-INSTANCE-DESCRIPTOR>
+              </INSTANCES>
+            </FLAT-MAP>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

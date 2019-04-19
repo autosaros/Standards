@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>McInt</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>SwComponents</SHORT-NAME>
+          <ELEMENTS>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>Environment</SHORT-NAME>
+              <PORTS>
+                <P-PORT-PROTOTYPE>
+                  <SHORT-NAME>EnvTemperaturePPP</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Port to send out the temperature of the environment</L-2>
+                  </DESC>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/McInt/PortInterfaces/TemperatureSRIF</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE>
+                  <SHORT-NAME>EnvParamsRPP</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Port to get the parameters for the environment</L-2>
+                  </DESC>
+                  <REQUIRED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/McInt/PortInterfaces/EnvironmentPIF</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE>
+                  <SHORT-NAME>DtRPP</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Port to get delta t, i.e. time of one time step</L-2>
+                  </DESC>
+                  <REQUIRED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/McInt/PortInterfaces/DtPIF</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>EnvironmentInternalBehavior</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/McInt/DataTypeMappings/DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <AR-TYPED-PER-INSTANCE-MEMORYS>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>THighLimit</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Measurement point for the upper limit of the generated temperature profile</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/McInt/SwAddrMethods/CODE</SW-ADDR-METHOD-REF>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/McInt/ApplicationDataTypes/Temperature_C</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </AR-TYPED-PER-INSTANCE-MEMORYS>
+                  <EVENTS>
+                    <TIMING-EVENT>
+                      <SHORT-NAME>env100ms</SHORT-NAME>
+                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/McInt/SwComponents/Environment/EnvironmentInternalBehavior/envRE</START-ON-EVENT-REF>
+                      <PERIOD>0.1</PERIOD>
+                    </TIMING-EVENT>
+                  </EVENTS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <IMPLICIT-INTER-RUNNABLE-VARIABLES>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>Seed</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Internal state of the environment: the current seed for the (pseudo) random number generation</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/McInt/SwAddrMethods/CODE</SW-ADDR-METHOD-REF>
+                            <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint32</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>5323</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>TEnv</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Internal state of the environment: the temperture of the environment</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/McInt/SwAddrMethods/CODE</SW-ADDR-METHOD-REF>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/McInt/ApplicationDataTypes/Temperature_C</TYPE-TREF>
+                      <INIT-VALUE>
+                        <APPLICATION-VALUE-SPECIFICATION>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-VALUE-CONT>
+                            <UNIT-REF DEST="UNIT">/McInt/Units/DegreeCelsius</UNIT-REF>
+                            <SW-VALUES-PHYS>
+                              <V>20.0</V>
+                            </SW-VALUES-PHYS>
+                          </SW-VALUE-CONT>
+                        </APPLICATION-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </IMPLICIT-INTER-RUNNABLE-VARIABLES>
+                  <RUNNABLES>
+                    <RUNNABLE-ENTITY>
+                      <SHORT-NAME>envRE</SHORT-NAME>
+                      <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/McInt/SwAddrMethods/CODE</SW-ADDR-METHOD-REF>
+                      <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                      <DATA-WRITE-ACCESSS>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>DWA_T</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/McInt/SwComponents/Environment/EnvTemperaturePPP</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/PortInterfaces/TemperatureSRIF/T</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </DATA-WRITE-ACCESSS>
+                      <PARAMETER-ACCESSS>
+                        <PARAMETER-ACCESS>
+                          <SHORT-NAME>PA_Dt</SHORT-NAME>
+                          <ACCESSED-PARAMETER>
+                            <AUTOSAR-PARAMETER-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/McInt/SwComponents/Environment/DtRPP</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/McInt/PortInterfaces/DtPIF/Dt</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-PARAMETER-IREF>
+                          </ACCESSED-PARAMETER>
+                        </PARAMETER-ACCESS>
+                        <PARAMETER-ACCESS>
+                          <SHORT-NAME>PA_TLowLimit</SHORT-NAME>
+                          <ACCESSED-PARAMETER>
+                            <AUTOSAR-PARAMETER-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/McInt/SwComponents/Environment/EnvParamsRPP</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/McInt/PortInterfaces/EnvironmentPIF/env_TLowLimit</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-PARAMETER-IREF>
+                          </ACCESSED-PARAMETER>
+                        </PARAMETER-ACCESS>
+                        <PARAMETER-ACCESS>
+                          <SHORT-NAME>PA_TStepSize</SHORT-NAME>
+                          <ACCESSED-PARAMETER>
+                            <AUTOSAR-PARAMETER-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/McInt/SwComponents/Environment/EnvParamsRPP</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/McInt/PortInterfaces/EnvironmentPIF/env_TStepSize</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-PARAMETER-IREF>
+                          </ACCESSED-PARAMETER>
+                        </PARAMETER-ACCESS>
+                        <PARAMETER-ACCESS>
+                          <SHORT-NAME>PA_THighLimitDistance</SHORT-NAME>
+                          <ACCESSED-PARAMETER>
+                            <AUTOSAR-PARAMETER-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/McInt/SwComponents/Environment/EnvParamsRPP</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/McInt/PortInterfaces/EnvironmentPIF/env_THighLimitDistance</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-PARAMETER-IREF>
+                          </ACCESSED-PARAMETER>
+                        </PARAMETER-ACCESS>
+                      </PARAMETER-ACCESSS>
+                      <READ-LOCAL-VARIABLES>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>ReadLocalVariables_Seed</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/SwComponents/Environment/EnvironmentInternalBehavior/Seed</LOCAL-VARIABLE-REF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>ReadLocalVariables_TEnv</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/SwComponents/Environment/EnvironmentInternalBehavior/TEnv</LOCAL-VARIABLE-REF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </READ-LOCAL-VARIABLES>
+                      <SYMBOL>envRE_func</SYMBOL>
+                      <WRITTEN-LOCAL-VARIABLES>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>WrittenLocalVariables_Seed</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/SwComponents/Environment/EnvironmentInternalBehavior/Seed</LOCAL-VARIABLE-REF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>WrittenLocalVariables_TEnv</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/McInt/SwComponents/Environment/EnvironmentInternalBehavior/TEnv</LOCAL-VARIABLE-REF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </WRITTEN-LOCAL-VARIABLES>
+                    </RUNNABLE-ENTITY>
+                  </RUNNABLES>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

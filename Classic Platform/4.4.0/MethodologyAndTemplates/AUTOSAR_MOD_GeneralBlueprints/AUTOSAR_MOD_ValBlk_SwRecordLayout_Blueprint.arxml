@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+   <!-- AUTOSAR General Blueprints -->
+   <!--
+    Document Owner:                 AUTOSAR
+    Document Responsibility:        AUTOSAR
+    Document Identification Number: 621
+    Document Status:                Final
+    Part of AUTOSAR Standard:       Classic Platform
+    Part of AUTOSAR Release:        4.4.0
+-->
+   <!--
+	Disclaimer
+
+	This work (specification and/or software implementation) and the material
+	contained in it, as released by AUTOSAR, is for the purpose of information
+	only. AUTOSAR and the companies that have contributed to it shall not be liable
+	for any use of the work.
+
+	The material contained in this work is protected by copyright and other types
+	of intellectual property rights. The commercial exploitation of the material
+	contained in this work requires a license to such intellectual property rights.
+
+	This work may be utilized or reproduced without any modification, in any form
+	or by any means, for informational purposes only. For any other purpose, no
+	part of the work may be utilized or reproduced, in any form or by any means,
+	without permission in writing from the publisher.
+
+	The work has been developed for automotive applications only. It has neither
+	been developed, nor tested for non-automotive applications.
+
+	The word AUTOSAR and the AUTOSAR logo are registered trademarks.
+
+ -->
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="preserve">EN</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>GenDef</SHORT-NAME>
+          <REFERENCE-BASES>
+            <REFERENCE-BASE>
+              <IS-DEFAULT>true</IS-DEFAULT>
+              <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/GenDef</PACKAGE-REF>
+            </REFERENCE-BASE>
+          </REFERENCE-BASES>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>SwRecordLayouts_Blueprint</SHORT-NAME>
+              <CATEGORY>BLUEPRINT</CATEGORY>
+              <ELEMENTS>
+                <!-- SW-RECORD-LAYOUT: Val_b -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">Val_b</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/boolean</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>              
+                <!-- SW-RECORD-LAYOUT: Val_s8 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">Val_s8</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint8</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: Val_u8 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">Val_u8</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/uint8</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: Val_s16 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">Val_s16</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: Val_u16 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">Val_u16</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/uint16</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: Val_s32 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">Val_s32</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint32</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: Val_u32 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">Val_u32</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/uint32</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: Val_s64 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">Val_s64</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint64</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: Val_u64 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">Val_u64</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/uint64</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: Val_f32 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">Val_f32</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/float32</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: Val_f64 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">Val_f64</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/float64</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlk_s8 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlk_s8</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <CATEGORY>COLUMN_DIR</CATEGORY>
+                    <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                    <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint8</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlk_u8 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlk_u8</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <CATEGORY>COLUMN_DIR</CATEGORY>
+                    <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                    <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/uint8</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlk_s16 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlk_s16</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <CATEGORY>COLUMN_DIR</CATEGORY>
+                    <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                    <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlk_u16 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlk_u16</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <CATEGORY>COLUMN_DIR</CATEGORY>
+                    <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                    <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/uint16</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlk_s32 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlk_s32</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <CATEGORY>COLUMN_DIR</CATEGORY>
+                    <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                    <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint32</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlk_u32 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlk_u32</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <CATEGORY>COLUMN_DIR</CATEGORY>
+                    <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                    <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/uint32</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlk_s64 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlk_s64</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <CATEGORY>COLUMN_DIR</CATEGORY>
+                    <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                    <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint64</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlk_u64 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlk_u64</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <CATEGORY>COLUMN_DIR</CATEGORY>
+                    <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                    <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/uint64</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlk_f32 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlk_f32</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <CATEGORY>COLUMN_DIR</CATEGORY>
+                    <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                    <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/float32</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlk_f64 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlk_f64</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                    <CATEGORY>COLUMN_DIR</CATEGORY>
+                    <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                    <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                    <SW-RECORD-LAYOUT-V>
+                      <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/float64</BASE-TYPE-REF>
+                      <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                      <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                    </SW-RECORD-LAYOUT-V>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlkMDim_s8 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlkMDim_s8</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                      <CATEGORY>COLUMN_DIR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>i</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-GROUP>
+                        <SW-RECORD-LAYOUT-GROUP-INDEX>j</SW-RECORD-LAYOUT-GROUP-INDEX>
+                        <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                        <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                        <SW-RECORD-LAYOUT-V>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint8</BASE-TYPE-REF>
+                          <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                          <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                          <SW-RECORD-LAYOUT-V-INDEX>i j</SW-RECORD-LAYOUT-V-INDEX>
+                        </SW-RECORD-LAYOUT-V>
+                      </SW-RECORD-LAYOUT-GROUP>
+                    </SW-RECORD-LAYOUT-GROUP>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlkMDim_u8 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlkMDim_u8</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                      <CATEGORY>COLUMN_DIR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>i</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-GROUP>
+                        <SW-RECORD-LAYOUT-GROUP-INDEX>j</SW-RECORD-LAYOUT-GROUP-INDEX>
+                        <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                        <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                        <SW-RECORD-LAYOUT-V>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/uint8</BASE-TYPE-REF>
+                          <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                          <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                          <SW-RECORD-LAYOUT-V-INDEX>i j</SW-RECORD-LAYOUT-V-INDEX>
+                        </SW-RECORD-LAYOUT-V>
+                      </SW-RECORD-LAYOUT-GROUP>
+                    </SW-RECORD-LAYOUT-GROUP>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlkMDim_s16 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlkMDim_s16</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                      <CATEGORY>COLUMN_DIR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>i</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-GROUP>
+                        <SW-RECORD-LAYOUT-GROUP-INDEX>j</SW-RECORD-LAYOUT-GROUP-INDEX>
+                        <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                        <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                        <SW-RECORD-LAYOUT-V>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                          <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                          <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                          <SW-RECORD-LAYOUT-V-INDEX>i j</SW-RECORD-LAYOUT-V-INDEX>
+                        </SW-RECORD-LAYOUT-V>
+                      </SW-RECORD-LAYOUT-GROUP>
+                    </SW-RECORD-LAYOUT-GROUP>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlkMDim_u16 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlkMDim_u16</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                      <CATEGORY>COLUMN_DIR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>i</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-GROUP>
+                        <SW-RECORD-LAYOUT-GROUP-INDEX>j</SW-RECORD-LAYOUT-GROUP-INDEX>
+                        <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                        <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                        <SW-RECORD-LAYOUT-V>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/uint16</BASE-TYPE-REF>
+                          <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                          <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                          <SW-RECORD-LAYOUT-V-INDEX>i j</SW-RECORD-LAYOUT-V-INDEX>
+                        </SW-RECORD-LAYOUT-V>
+                      </SW-RECORD-LAYOUT-GROUP>
+                    </SW-RECORD-LAYOUT-GROUP>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlkMDim_s32 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlkMDim_s32</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                      <CATEGORY>COLUMN_DIR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>i</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-GROUP>
+                        <SW-RECORD-LAYOUT-GROUP-INDEX>j</SW-RECORD-LAYOUT-GROUP-INDEX>
+                        <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                        <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                        <SW-RECORD-LAYOUT-V>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint32</BASE-TYPE-REF>
+                          <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                          <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                          <SW-RECORD-LAYOUT-V-INDEX>i j</SW-RECORD-LAYOUT-V-INDEX>
+                        </SW-RECORD-LAYOUT-V>
+                      </SW-RECORD-LAYOUT-GROUP>
+                    </SW-RECORD-LAYOUT-GROUP>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlkMDim_u32 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlkMDim_u32</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                      <CATEGORY>COLUMN_DIR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>i</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-GROUP>
+                        <SW-RECORD-LAYOUT-GROUP-INDEX>j</SW-RECORD-LAYOUT-GROUP-INDEX>
+                        <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                        <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                        <SW-RECORD-LAYOUT-V>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/uint32</BASE-TYPE-REF>
+                          <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                          <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                          <SW-RECORD-LAYOUT-V-INDEX>i j</SW-RECORD-LAYOUT-V-INDEX>
+                        </SW-RECORD-LAYOUT-V>
+                      </SW-RECORD-LAYOUT-GROUP>
+                    </SW-RECORD-LAYOUT-GROUP>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlkMDim_s64 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlkMDim_s64</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                      <CATEGORY>COLUMN_DIR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>i</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-GROUP>
+                        <SW-RECORD-LAYOUT-GROUP-INDEX>j</SW-RECORD-LAYOUT-GROUP-INDEX>
+                        <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                        <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                        <SW-RECORD-LAYOUT-V>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint64</BASE-TYPE-REF>
+                          <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                          <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                          <SW-RECORD-LAYOUT-V-INDEX>i j</SW-RECORD-LAYOUT-V-INDEX>
+                        </SW-RECORD-LAYOUT-V>
+                      </SW-RECORD-LAYOUT-GROUP>
+                    </SW-RECORD-LAYOUT-GROUP>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlkMDim_u64 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlkMDim_u64</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                      <CATEGORY>COLUMN_DIR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>i</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-GROUP>
+                        <SW-RECORD-LAYOUT-GROUP-INDEX>j</SW-RECORD-LAYOUT-GROUP-INDEX>
+                        <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                        <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                        <SW-RECORD-LAYOUT-V>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/uint64</BASE-TYPE-REF>
+                          <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                          <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                          <SW-RECORD-LAYOUT-V-INDEX>i j</SW-RECORD-LAYOUT-V-INDEX>
+                        </SW-RECORD-LAYOUT-V>
+                      </SW-RECORD-LAYOUT-GROUP>
+                    </SW-RECORD-LAYOUT-GROUP>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlkMDim_f32 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlkMDim_f32</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                      <CATEGORY>COLUMN_DIR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>i</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-GROUP>
+                        <SW-RECORD-LAYOUT-GROUP-INDEX>j</SW-RECORD-LAYOUT-GROUP-INDEX>
+                        <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                        <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                        <SW-RECORD-LAYOUT-V>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/float32</BASE-TYPE-REF>
+                          <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                          <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                          <SW-RECORD-LAYOUT-V-INDEX>i j</SW-RECORD-LAYOUT-V-INDEX>
+                        </SW-RECORD-LAYOUT-V>
+                      </SW-RECORD-LAYOUT-GROUP>
+                    </SW-RECORD-LAYOUT-GROUP>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+                <!-- SW-RECORD-LAYOUT: ValBlkMDim_f64 -->
+                <SW-RECORD-LAYOUT>
+                  <SHORT-NAME NAME-PATTERN="{blueprintName}">ValBlkMDim_f64</SHORT-NAME>
+                  <SW-RECORD-LAYOUT-GROUP>
+                    <SW-RECORD-LAYOUT-GROUP>
+                      <SHORT-LABEL NAME-PATTERN="{blueprintName}">Val</SHORT-LABEL>
+                      <CATEGORY>COLUMN_DIR</CATEGORY>
+                      <SW-RECORD-LAYOUT-GROUP-INDEX>i</SW-RECORD-LAYOUT-GROUP-INDEX>
+                      <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                      <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                      <SW-RECORD-LAYOUT-GROUP>
+                        <SW-RECORD-LAYOUT-GROUP-INDEX>j</SW-RECORD-LAYOUT-GROUP-INDEX>
+                        <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                        <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                        <SW-RECORD-LAYOUT-V>
+                          <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/float64</BASE-TYPE-REF>
+                          <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                          <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                          <SW-RECORD-LAYOUT-V-INDEX>i j</SW-RECORD-LAYOUT-V-INDEX>
+                        </SW-RECORD-LAYOUT-V>
+                      </SW-RECORD-LAYOUT-GROUP>
+                    </SW-RECORD-LAYOUT-GROUP>
+                  </SW-RECORD-LAYOUT-GROUP>
+                </SW-RECORD-LAYOUT>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

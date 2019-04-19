@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="preserve">English</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>Tier1</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>ARPlatform1</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>System</SHORT-NAME>
+              <ELEMENTS>
+                <SYSTEM>
+                  <SHORT-NAME>SystemU_System</SHORT-NAME>
+                  <CATEGORY>ECU_EXTRACT</CATEGORY>
+                  <ROOT-SOFTWARE-COMPOSITIONS>
+                    <ROOT-SW-COMPOSITION-PROTOTYPE>
+                      <SHORT-NAME>SystemU</SHORT-NAME>
+                      <FLAT-MAP-REF DEST="FLAT-MAP">/Tier1/ARPlatform1/System/FlatMaps/FlatMap_SystemU_EcuExtract</FLAT-MAP-REF>
+                      <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root</SOFTWARE-COMPOSITION-TREF>
+                    </ROOT-SW-COMPOSITION-PROTOTYPE>
+                  </ROOT-SOFTWARE-COMPOSITIONS>
+                </SYSTEM>
+              </ELEMENTS>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>CompositionSwComponentTypes</SHORT-NAME>
+                  <ELEMENTS>
+                    <COMPOSITION-SW-COMPONENT-TYPE>
+                      <SHORT-NAME>SystemU_Root</SHORT-NAME>
+                      <COMPONENTS>
+                        <SW-COMPONENT-PROTOTYPE>
+                          <SHORT-NAME>CMscA</SHORT-NAME>
+                          <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA</TYPE-TREF>
+                        </SW-COMPONENT-PROTOTYPE>
+                        <SW-COMPONENT-PROTOTYPE>
+                          <SHORT-NAME>CMscA_par</SHORT-NAME>
+                          <TYPE-TREF DEST="PARAMETER-SW-COMPONENT-TYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA_par</TYPE-TREF>
+                        </SW-COMPONENT-PROTOTYPE>
+                        <SW-COMPONENT-PROTOTYPE>
+                          <SHORT-NAME>CMscB</SHORT-NAME>
+                          <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB</TYPE-TREF>
+                        </SW-COMPONENT-PROTOTYPE>
+                        <SW-COMPONENT-PROTOTYPE>
+                          <SHORT-NAME>CMscB_par</SHORT-NAME>
+                          <TYPE-TREF DEST="PARAMETER-SW-COMPONENT-TYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_par</TYPE-TREF>
+                        </SW-COMPONENT-PROTOTYPE>
+                        <SW-COMPONENT-PROTOTYPE>
+                          <SHORT-NAME>CMscC_nvm</SHORT-NAME>
+                          <TYPE-TREF DEST="NV-BLOCK-SW-COMPONENT-TYPE">/Tier1/ARPlatform1/Pcpt_CMscC/CMscC_nvm</TYPE-TREF>
+                        </SW-COMPONENT-PROTOTYPE>
+                        <SW-COMPONENT-PROTOTYPE>
+                          <SHORT-NAME>CMscD</SHORT-NAME>
+                          <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD</TYPE-TREF>
+                        </SW-COMPONENT-PROTOTYPE>
+                        <SW-COMPONENT-PROTOTYPE>
+                          <SHORT-NAME>CMscD_par</SHORT-NAME>
+                          <TYPE-TREF DEST="PARAMETER-SW-COMPONENT-TYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD_par</TYPE-TREF>
+                        </SW-COMPONENT-PROTOTYPE>
+                      </COMPONENTS>
+                      <CONNECTORS>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscA_P_ModeDirection_CMscA_R_ModeDirection</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscA</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_ModeDirection</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscA</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/R_ModeDirection</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscA_P_ModeDirection_CMscB_R_ModeDirection</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscA</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_ModeDirection</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_ModeDirection</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscA_P_PrimData_Mass_Lnr_Kg_uint8_CMscA_R_PrimData_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscA</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_PrimData_Mass_Lnr_Kg_uint8</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscA</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/R_PrimData_Mass_Lnr_Kg_uint8</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscA_P_PrimData_Mass_Lnr_Kg_uint8_CMscB_R_PrimData_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscA</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_PrimData_Mass_Lnr_Kg_uint8</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_Mass_Lnr_Kg_uint8</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscA_P_PrimData_StepsSpeed_Txt_sint8_CMscC_nvm_R_PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscA</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_PrimData_StepsSpeed_Txt_sint8</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscC_nvm</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscC/CMscC_nvm/R_PrimData_StepsSpeed_Txt_sint8</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscA_P_PrimData_Temperature_Lin_K_C_uint16_CMscA_R_PrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscA</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_PrimData_Temperature_Lin_K_C_uint16</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscA</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/R_PrimData_Temperature_Lin_K_C_uint16</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscA_P_PrimData_Temperature_Lin_K_C_uint16_CMscB_R_PrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscA</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_PrimData_Temperature_Lin_K_C_uint16</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_Temperature_Lin_K_C_uint16</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscA_par_P_PrimCal_Mass_Lnr_Kg_CMscA_R_PrimCal_Mass_Lnr_Kg</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscA_par</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA_par/P_PrimCal_Mass_Lnr_Kg</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscA</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/R_PrimCal_Mass_Lnr_Kg</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscB_P_PrimData_MassCorrected_Lnr_Kg_uint8_CMscB_R_PrimData_MassCorrected_Lnr_Kg_uint8</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/P_PrimData_MassCorrected_Lnr_Kg_uint8</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_MassCorrected_Lnr_Kg_uint8</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscB_P_PrimData_MassCorrected_Lnr_Kg_uint8_CMscD_R_PrimData_MassCorrected_Lnr_Kg_uint8</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/P_PrimData_MassCorrected_Lnr_Kg_uint8</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD/R_PrimData_MassCorrected_Lnr_Kg_uint8</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscB_P_PrimData_Time_Lnr_s_uint16_CMscB_R_PrimData_Time_Lnr_s_uint16</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/P_PrimData_Time_Lnr_s_uint16</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_Time_Lnr_s_uint16</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscB_P_PrimData_ValidState_Txt_noUnit_boolean_CMscB_R_PrimData_ValidState_Txt_noUnit_boolean</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/P_PrimData_ValidState_Txt_noUnit_boolean</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_ValidState_Txt_noUnit_boolean</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscB_par_P_ComAxis_Mass_Lnr_Kg_uint8_CMscB_R_ComAxis_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB_par</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_par/P_ComAxis_Mass_Lnr_Kg_uint8</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_ComAxis_Mass_Lnr_Kg_uint8</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscB_par_P_ComAxis_Mass_Lnr_Kg_uint8_CMscD_R_ComAxis_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB_par</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_par/P_ComAxis_Mass_Lnr_Kg_uint8</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD/R_ComAxis_Mass_Lnr_Kg_uint8</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscB_par_P_ComAxis_Steps_Txt_sint8_CMscB_R_ComAxis_Steps_Txt_sint8</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB_par</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_par/P_ComAxis_Steps_Txt_sint8</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_ComAxis_Steps_Txt_sint8</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscB_par_P_ComAxis_Temp_Lin_K_uint16_CMscB_R_ComAxis_Temp_Lin_K_uint16</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB_par</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_par/P_ComAxis_Temp_Lin_K_uint16</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_ComAxis_Temp_Lin_K_uint16</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscB_par_P_Curve_Mass_Lnr_Kg_uint8_CMscB_R_Curve_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB_par</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_par/P_Curve_Mass_Lnr_Kg_uint8</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_Curve_Mass_Lnr_Kg_uint8</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscB_par_P_Map_Time_Lnr_s_uint16_CMscB_R_Map_Time_Lnr_s_uint16</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB_par</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_par/P_Map_Time_Lnr_s_uint16</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_Map_Time_Lnr_s_uint16</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscC_nvm_P_PrimData_StepsSpeed_Txt_sint8_CMscA_R_PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscC_nvm</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscC/CMscC_nvm/P_PrimData_StepsSpeed_Txt_sint8</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscA</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/R_PrimData_StepsSpeed_Txt_sint8</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscC_nvm_P_PrimData_StepsSpeed_Txt_sint8_CMscB_R_PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscC_nvm</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscC/CMscC_nvm/P_PrimData_StepsSpeed_Txt_sint8</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscB</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_StepsSpeed_Txt_sint8</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscD_P_Arr1dPrimData_Temperature_Lin_K_C_uint16_CMscD_R_Arr1dPrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD/P_Arr1dPrimData_Temperature_Lin_K_C_uint16</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD/R_Arr1dPrimData_Temperature_Lin_K_C_uint16</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscD_par_P_Arr1dComAxis_Temp_Lin_K_uint16_CMscD_R_Arr1dComAxis_Temp_Lin_K_uint16</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD_par</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD_par/P_Arr1dComAxis_Temp_Lin_K_uint16</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD/R_Arr1dComAxis_Temp_Lin_K_uint16</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>CMscD_par_P_Arr1dMap_Time_Lnr_s_uint16_CMscD_R_Arr1dMap_Time_Lnr_s_uint16</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD_par</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD_par/P_Arr1dMap_Time_Lnr_s_uint16</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemU_Root/CMscD</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscD/CMscD/R_Arr1dMap_Time_Lnr_s_uint16</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                      </CONNECTORS>
+                    </COMPOSITION-SW-COMPONENT-TYPE>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

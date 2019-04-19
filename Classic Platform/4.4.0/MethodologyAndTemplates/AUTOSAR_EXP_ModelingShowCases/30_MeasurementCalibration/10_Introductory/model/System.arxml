@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>McInt</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>System</SHORT-NAME>
+          <ELEMENTS>
+            <SYSTEM>
+              <SHORT-NAME>EcuExtract</SHORT-NAME>
+              <CATEGORY>ECU_EXTRACT</CATEGORY>
+              <ECU-EXTRACT-VERSION>1.0.0</ECU-EXTRACT-VERSION>
+              <FIBEX-ELEMENTS>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="ECU-INSTANCE">/McInt/System/EcuInstance</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+              </FIBEX-ELEMENTS>
+              <MAPPINGS>
+                <SYSTEM-MAPPING>
+                  <SHORT-NAME>SystemMapping</SHORT-NAME>
+                  <SW-MAPPINGS>
+                    <SWC-TO-ECU-MAPPING>
+                      <SHORT-NAME>SwcToEcuMapping</SHORT-NAME>
+                      <COMPONENT-IREFS>
+                        <COMPONENT-IREF>
+                          <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/McInt/System/EcuExtract/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                          <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/McInt/SwComponents/Composition/CPT_Controller</TARGET-COMPONENT-REF>
+                        </COMPONENT-IREF>
+                        <COMPONENT-IREF>
+                          <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/McInt/System/EcuExtract/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                          <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/McInt/SwComponents/Composition/CPT_Parameters</TARGET-COMPONENT-REF>
+                        </COMPONENT-IREF>
+                        <COMPONENT-IREF>
+                          <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/McInt/System/EcuExtract/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                          <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/McInt/SwComponents/Composition/CPT_Plant</TARGET-COMPONENT-REF>
+                        </COMPONENT-IREF>
+                        <COMPONENT-IREF>
+                          <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/McInt/System/EcuExtract/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                          <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/McInt/SwComponents/Composition/CPT_Environment</TARGET-COMPONENT-REF>
+                        </COMPONENT-IREF>
+                      </COMPONENT-IREFS>
+                      <ECU-INSTANCE-REF DEST="ECU-INSTANCE">/McInt/System/EcuInstance</ECU-INSTANCE-REF>
+                    </SWC-TO-ECU-MAPPING>
+                  </SW-MAPPINGS>
+                </SYSTEM-MAPPING>
+              </MAPPINGS>
+              <ROOT-SOFTWARE-COMPOSITIONS>
+                <ROOT-SW-COMPOSITION-PROTOTYPE>
+                  <SHORT-NAME>RootSwCompositionPrototype</SHORT-NAME>
+                  <FLAT-MAP-REF DEST="FLAT-MAP">/McInt/System/FlatMap</FLAT-MAP-REF>
+                  <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/McInt/SwComponents/Composition</SOFTWARE-COMPOSITION-TREF>
+                </ROOT-SW-COMPOSITION-PROTOTYPE>
+              </ROOT-SOFTWARE-COMPOSITIONS>
+            </SYSTEM>
+            <ECU-INSTANCE>
+              <SHORT-NAME>EcuInstance</SHORT-NAME>
+            </ECU-INSTANCE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,1644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+	<ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="default">English</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+	<AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>Tier1</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>ARPlatform1</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>DataDictionary</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>CompuMethods</SHORT-NAME>
+                  <ELEMENTS>
+                    <COMPU-METHOD T="2016-04-27T13:27:26Z" UUID="405a17e0-7183-40de-a6d9-83723caff0b7">
+                      <SHORT-NAME>DataValidityType</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>Invalid</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>Valid</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD T="2016-04-27T09:29:15Z" UUID="ddf87973-74ea-4c85-b258-ea3cb0ad1a55">
+                      <SHORT-NAME>K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16</SHORT-NAME>
+                      <CATEGORY>LINEAR</CATEGORY>
+                      <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/K_Celsius/K</UNIT-REF>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <COMPU-RATIONAL-COEFFS>
+                              <COMPU-NUMERATOR>
+                                <V S="0">0</V>
+                                <V S="1065353216">0.0078125</V>
+                              </COMPU-NUMERATOR>
+                              <COMPU-DENOMINATOR>
+                                <V S="1072693248">1</V>
+                              </COMPU-DENOMINATOR>
+                            </COMPU-RATIONAL-COEFFS>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD T="2016-04-27T11:15:24Z" UUID="7fb12c67-ec3f-4192-8647-1210359ed7e7">
+                      <SHORT-NAME>kg_Lnr_0_0d25_0_C8_uint8</SHORT-NAME>
+                      <CATEGORY>LINEAR</CATEGORY>
+                      <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/kg/kg</UNIT-REF>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <COMPU-RATIONAL-COEFFS>
+                              <COMPU-NUMERATOR>
+                                <V S="0">0</V>
+                                <V S="2029678234">0.00125</V>
+                              </COMPU-NUMERATOR>
+                              <COMPU-DENOMINATOR>
+                                <V S="1072693248">1</V>
+                              </COMPU-DENOMINATOR>
+                            </COMPU-RATIONAL-COEFFS>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD T="2013-04-26T08:21:01Z" UUID="a1700e39-8353-4f0e-9389-1526b737d458">
+                      <SHORT-NAME>NoUnit_Lnr_1_4_1_4_uint8</SHORT-NAME>
+                      <CATEGORY>LINEAR</CATEGORY>
+                      <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <COMPU-RATIONAL-COEFFS>
+                              <COMPU-NUMERATOR>
+                                <V S="0">0</V>
+                                <V S="1072693248">1</V>
+                              </COMPU-NUMERATOR>
+                              <COMPU-DENOMINATOR>
+                                <V S="1072693248">1</V>
+                              </COMPU-DENOMINATOR>
+                            </COMPU-RATIONAL-COEFFS>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD T="2013-04-16T08:10:34Z" UUID="1636a73f-3d0f-481f-b4ec-bb64f86ca9e1">
+                      <SHORT-NAME>NoUnit_Lnr_1_65535_1_FFFF_uint16</SHORT-NAME>
+                      <CATEGORY>LINEAR</CATEGORY>
+                      <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <COMPU-RATIONAL-COEFFS>
+                              <COMPU-NUMERATOR>
+                                <V S="0">0</V>
+                                <V S="1072693248">1</V>
+                              </COMPU-NUMERATOR>
+                              <COMPU-DENOMINATOR>
+                                <V S="1072693248">1</V>
+                              </COMPU-DENOMINATOR>
+                            </COMPU-RATIONAL-COEFFS>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD T="2016-04-27T11:07:15Z" UUID="c34e31b2-07d3-4f2b-9a55-91bdcf127f42">
+                      <SHORT-NAME>s_Lnr_0_8191d875_0_FFFF_uint16</SHORT-NAME>
+                      <CATEGORY>LINEAR</CATEGORY>
+                      <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/s/s</UNIT-REF>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <COMPU-RATIONAL-COEFFS>
+                              <COMPU-NUMERATOR>
+                                <V S="0">0</V>
+                                <V S="1069547520">0.125</V>
+                              </COMPU-NUMERATOR>
+                              <COMPU-DENOMINATOR>
+                                <V S="1072693248">1</V>
+                              </COMPU-DENOMINATOR>
+                            </COMPU-RATIONAL-COEFFS>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD T="2016-04-27T09:46:33Z" UUID="66de4633-48af-486b-a188-b0ad58ec7197">
+                      <SHORT-NAME>speedSteps</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">-1</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>Stop</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>LightSpeed</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>RidiculousSpeed</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">2</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>LudicrousSpeed</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                    <COMPU-METHOD T="2016-07-11T13:43:08Z" UUID="36bf8bea-1d3b-4b75-86ae-56f45a5539f9">
+                      <SHORT-NAME>TxWheelNames</SHORT-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>FrontLeft</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>FrontRight</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">2</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>RearLeft</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">3</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>RearRight</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                  <SHORT-NAME>DataConstraints</SHORT-NAME>
+                  <ELEMENTS>
+                    <DATA-CONSTR>
+                      <SHORT-NAME>DataValidityType</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <PHYS-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                          </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR>
+                      <SHORT-NAME>K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <PHYS-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">511.9921875</UPPER-LIMIT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/K_Celsius/K</UNIT-REF>
+                          </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR>
+                      <SHORT-NAME>kg_Lnr_0_0d25_0_C8_uint8</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <PHYS-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0.25</UPPER-LIMIT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/kg/kg</UNIT-REF>
+                          </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR>
+                      <SHORT-NAME>NoUnit_Lnr_1_4_1_4_uint8</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <PHYS-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                          </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR>
+                      <SHORT-NAME>NoUnit_Lnr_1_65535_1_FFFF_uint16</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <PHYS-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535</UPPER-LIMIT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                          </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR>
+                      <SHORT-NAME>s_Lnr_0_8191d875_0_FFFF_uint16</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <PHYS-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">8191.875</UPPER-LIMIT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/s/s</UNIT-REF>
+                          </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR>
+                      <SHORT-NAME>speedSteps</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <PHYS-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                          </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR>
+                      <SHORT-NAME>TxWheelNames</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <PHYS-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                          </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                  <SHORT-NAME>Units</SHORT-NAME>
+                  <AR-PACKAGES>
+                    <AR-PACKAGE>
+                      <SHORT-NAME>K_Celsius</SHORT-NAME>
+                      <ELEMENTS>
+                        <UNIT T="2014-11-10T09:07:10Z">
+                          <SHORT-NAME>Celsius</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Degrees Celsius</L-2>
+                          </DESC>
+                          <DISPLAY-NAME>°C</DISPLAY-NAME>
+                          <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                          <OFFSET-SI-TO-UNIT>-273.15</OFFSET-SI-TO-UNIT>
+                          <PHYSICAL-DIMENSION-REF DEST="PHYSICAL-DIMENSION">/Tier1/ARPlatform1/DataDictionary/Units/K_Celsius/PD_K</PHYSICAL-DIMENSION-REF>
+                        </UNIT>
+                        <UNIT T="2013-04-16T08:10:13Z">
+                          <SHORT-NAME>K</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Temperature</L-2>
+                          </DESC>
+                          <DISPLAY-NAME>K</DISPLAY-NAME>
+                          <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                          <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                          <PHYSICAL-DIMENSION-REF DEST="PHYSICAL-DIMENSION">/Tier1/ARPlatform1/DataDictionary/Units/K_Celsius/PD_K</PHYSICAL-DIMENSION-REF>
+                        </UNIT>
+                        <PHYSICAL-DIMENSION T="2016-02-17T06:28:37Z">
+                          <SHORT-NAME>PD_K</SHORT-NAME>
+                          <LENGTH-EXP>0</LENGTH-EXP>
+                          <MASS-EXP>0</MASS-EXP>
+                          <TIME-EXP>0</TIME-EXP>
+                          <CURRENT-EXP>0</CURRENT-EXP>
+                          <TEMPERATURE-EXP>1</TEMPERATURE-EXP>
+                          <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                          <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                        </PHYSICAL-DIMENSION>
+                      </ELEMENTS>
+                    </AR-PACKAGE>
+                    <AR-PACKAGE>
+                      <SHORT-NAME>kg</SHORT-NAME>
+                      <ELEMENTS>
+                        <UNIT T="2013-04-16T08:10:13Z">
+                          <SHORT-NAME>kg</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Mass</L-2>
+                          </DESC>
+                          <DISPLAY-NAME>kg</DISPLAY-NAME>
+                          <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                          <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                          <PHYSICAL-DIMENSION-REF DEST="PHYSICAL-DIMENSION">/Tier1/ARPlatform1/DataDictionary/Units/kg/PD_kg</PHYSICAL-DIMENSION-REF>
+                        </UNIT>
+                        <PHYSICAL-DIMENSION T="2016-02-17T06:28:37Z">
+                          <SHORT-NAME>PD_kg</SHORT-NAME>
+                          <LENGTH-EXP>0</LENGTH-EXP>
+                          <MASS-EXP>1</MASS-EXP>
+                          <TIME-EXP>0</TIME-EXP>
+                          <CURRENT-EXP>0</CURRENT-EXP>
+                          <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                          <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                          <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                        </PHYSICAL-DIMENSION>
+                      </ELEMENTS>
+                    </AR-PACKAGE>
+                    <AR-PACKAGE>
+                      <SHORT-NAME>NoUnit</SHORT-NAME>
+                      <ELEMENTS>
+                        <UNIT T="2013-04-16T08:10:13Z">
+                          <SHORT-NAME>NoUnit</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">No Unit</L-2>
+                          </DESC>
+                          <DISPLAY-NAME>-</DISPLAY-NAME>
+                          <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                          <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                          <PHYSICAL-DIMENSION-REF DEST="PHYSICAL-DIMENSION">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/PD_NoUnit</PHYSICAL-DIMENSION-REF>
+                        </UNIT>
+                        <PHYSICAL-DIMENSION T="2016-02-17T06:28:37Z">
+                          <SHORT-NAME>PD_NoUnit</SHORT-NAME>
+                          <LENGTH-EXP>0</LENGTH-EXP>
+                          <MASS-EXP>0</MASS-EXP>
+                          <TIME-EXP>0</TIME-EXP>
+                          <CURRENT-EXP>0</CURRENT-EXP>
+                          <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                          <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                          <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                        </PHYSICAL-DIMENSION>
+                      </ELEMENTS>
+                    </AR-PACKAGE>
+                    <AR-PACKAGE>
+                      <SHORT-NAME>s</SHORT-NAME>
+                      <ELEMENTS>
+                        <PHYSICAL-DIMENSION T="2016-02-17T06:28:37Z">
+                          <SHORT-NAME>PD_s</SHORT-NAME>
+                          <LENGTH-EXP>0</LENGTH-EXP>
+                          <MASS-EXP>0</MASS-EXP>
+                          <TIME-EXP>1</TIME-EXP>
+                          <CURRENT-EXP>0</CURRENT-EXP>
+                          <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                          <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                          <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                        </PHYSICAL-DIMENSION>
+                        <UNIT T="2013-04-16T08:10:13Z">
+                          <SHORT-NAME>s</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Time</L-2>
+                          </DESC>
+                          <DISPLAY-NAME>s</DISPLAY-NAME>
+                          <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                          <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                          <PHYSICAL-DIMENSION-REF DEST="PHYSICAL-DIMENSION">/Tier1/ARPlatform1/DataDictionary/Units/s/PD_s</PHYSICAL-DIMENSION-REF>
+                        </UNIT>
+                      </ELEMENTS>
+                    </AR-PACKAGE>
+                  </AR-PACKAGES>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                  <SHORT-NAME>DataTypeMappings</SHORT-NAME>
+                  <ELEMENTS>
+                    <DATA-TYPE-MAPPING-SET>
+                      <SHORT-NAME>DefaultDataTypeMapping</SHORT-NAME>
+                      <DATA-TYPE-MAPS>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-ARRAY-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/ComAxis_Temp_Lin_K_uint16_ScNoOfWheels</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ImplementationDataTypes/uint16_ScNoOfWheels_7_RL20_ME_Axis</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-ARRAY-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16_ScNoOfWheels</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ImplementationDataTypes/uint16_ScNoOfWheels</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/Curve_Mass_Lnr_Kg_uint8</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ImplementationDataTypes/uint8_4_RL20_ME_1DimMap</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/Map_Time_Lnr_s_uint16</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ImplementationDataTypes/uint16_6_4_RL20_ME_2DimMap</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/ComAxis_Temp_Lin_K_uint16</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ImplementationDataTypes/uint16_7_RL20_ME_Axis</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-ARRAY-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/Map_Time_Lnr_s_uint16_ScNoOfWheels</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ImplementationDataTypes/uint16_ScNoOfWheels_6_4_RL20_ME_2DimMap</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/ComAxis_Steps_Txt_sint8</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ImplementationDataTypes/sint8_5_RL20_ME_Axis</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/ComAxis_Mass_Lnr_Kg_uint8</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ImplementationDataTypes/uint8_5_RL20_ME_Axis</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-RECORD-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/CMscC_nvm_NvBlockATyp</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ImplementationDataTypes/CMscC_nvm_NvBlockATyp</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/DataValidityType</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/kg_Lnr_0_0d25_0_C8_uint8</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/NoUnit_Lnr_1_4_1_4_uint8</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/NoUnit_Lnr_1_65535_1_FFFF_uint16</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/s_Lnr_0_8191d875_0_FFFF_uint16</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/speedSteps</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/sint8</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/TxWheelNames</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                      </DATA-TYPE-MAPS>
+                      <MODE-REQUEST-TYPE-MAPS>
+                        <MODE-REQUEST-TYPE-MAP>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                          <MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP">/Tier1/ARPlatform1/DataDictionary/ModeDeclarationGroups/Direction</MODE-GROUP-REF>
+                        </MODE-REQUEST-TYPE-MAP>
+                      </MODE-REQUEST-TYPE-MAPS>
+                    </DATA-TYPE-MAPPING-SET>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                  <SHORT-NAME>SwRecordLayout</SHORT-NAME>
+                  <AR-PACKAGES>
+                    <AR-PACKAGE>
+                      <SHORT-NAME>RE20_ME</SHORT-NAME>
+                      <ELEMENTS>
+                        <SW-RECORD-LAYOUT>
+                          <SHORT-NAME>RL20_ME_1DimMap</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Record Layout for an 1dim Map according 20_ME</L-2>
+                          </DESC>
+                          <CATEGORY>CURVE</CATEGORY>
+                          <SW-RECORD-LAYOUT-GROUP>
+                            <CATEGORY>FNC_VALUES:COLUMN_DIR</CATEGORY>
+                            <SW-RECORD-LAYOUT-GROUP-AXIS>1</SW-RECORD-LAYOUT-GROUP-AXIS>
+                            <SW-RECORD-LAYOUT-GROUP-INDEX>X</SW-RECORD-LAYOUT-GROUP-INDEX>
+                            <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                            <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                            <SW-RECORD-LAYOUT-V>
+                              <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                              <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                              <SW-RECORD-LAYOUT-V-INDEX>X</SW-RECORD-LAYOUT-V-INDEX>
+                            </SW-RECORD-LAYOUT-V>
+                          </SW-RECORD-LAYOUT-GROUP>
+                        </SW-RECORD-LAYOUT>
+                        <SW-RECORD-LAYOUT>
+                          <SHORT-NAME>RL20_ME_2DimMap</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Record Layout for an 2dim Map according 20_ME</L-2>
+                          </DESC>
+                          <CATEGORY>MAP</CATEGORY>
+                          <SW-RECORD-LAYOUT-GROUP>
+                            <CATEGORY>FNC_VALUES:COLUMN_DIR</CATEGORY>
+                            <SW-RECORD-LAYOUT-GROUP-AXIS>1</SW-RECORD-LAYOUT-GROUP-AXIS>
+                            <SW-RECORD-LAYOUT-GROUP-INDEX>X</SW-RECORD-LAYOUT-GROUP-INDEX>
+                            <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                            <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                            <SW-RECORD-LAYOUT-GROUP>
+                              <SW-RECORD-LAYOUT-GROUP-AXIS>2</SW-RECORD-LAYOUT-GROUP-AXIS>
+                              <SW-RECORD-LAYOUT-GROUP-INDEX>Y</SW-RECORD-LAYOUT-GROUP-INDEX>
+                              <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                              <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                              <SW-RECORD-LAYOUT-V>
+                                <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                                <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                                <SW-RECORD-LAYOUT-V-INDEX>X Y</SW-RECORD-LAYOUT-V-INDEX>
+                              </SW-RECORD-LAYOUT-V>
+                            </SW-RECORD-LAYOUT-GROUP>
+                          </SW-RECORD-LAYOUT-GROUP>
+                        </SW-RECORD-LAYOUT>
+                        <SW-RECORD-LAYOUT>
+                          <SHORT-NAME>RL20_ME_Axis</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">This is a record layout for shared axis</L-2>
+                          </DESC>
+                          <CATEGORY>COM_AXIS</CATEGORY>
+                          <SW-RECORD-LAYOUT-GROUP>
+                            <SW-RECORD-LAYOUT-V>
+                              <SHORT-LABEL>noOfAxisPoints</SHORT-LABEL>
+                              <SW-RECORD-LAYOUT-V-PROP>COUNT</SW-RECORD-LAYOUT-V-PROP>
+                              <SW-RECORD-LAYOUT-V-INDEX>1</SW-RECORD-LAYOUT-V-INDEX>
+                            </SW-RECORD-LAYOUT-V>
+                            <SW-RECORD-LAYOUT-GROUP>
+                              <SHORT-LABEL>xAxis</SHORT-LABEL>
+                              <CATEGORY>AXIS_PTS_X:INDEX_INCR</CATEGORY>
+                              <SW-RECORD-LAYOUT-GROUP-AXIS>1</SW-RECORD-LAYOUT-GROUP-AXIS>
+                              <SW-RECORD-LAYOUT-GROUP-INDEX>x</SW-RECORD-LAYOUT-GROUP-INDEX>
+                              <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                              <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                              <SW-RECORD-LAYOUT-V>
+                                <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                                <SW-RECORD-LAYOUT-V-INDEX>x</SW-RECORD-LAYOUT-V-INDEX>
+                              </SW-RECORD-LAYOUT-V>
+                            </SW-RECORD-LAYOUT-GROUP>
+                          </SW-RECORD-LAYOUT-GROUP>
+                        </SW-RECORD-LAYOUT>
+                      </ELEMENTS>
+                    </AR-PACKAGE>
+                  </AR-PACKAGES>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                  <SHORT-NAME>SwSystemConsts</SHORT-NAME>
+                  <AR-PACKAGES>
+                    <AR-PACKAGE>
+                      <SHORT-NAME>V1_0_0</SHORT-NAME>
+                      <ELEMENTS>
+                        <SW-SYSTEMCONST T="2016-07-11T13:39:56Z" UUID="c799f4f6-2dc4-4662-95f8-4691691adf26">
+                          <SHORT-NAME>ScNoOfWheels</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Scalling the number of wheels plugged at the vehicle.</L-2>
+                          </DESC>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                                <COMPU-METHOD-REF DEST="COMPU-METHOD">/Tier1/ARPlatform1/DataDictionary/CompuMethods/NoUnit_Lnr_1_4_1_4_uint8</COMPU-METHOD-REF>
+                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/Tier1/ARPlatform1/DataDictionary/DataConstraints/NoUnit_Lnr_1_4_1_4_uint8</DATA-CONSTR-REF>
+                                <DISPLAY-FORMAT>%1.0f</DISPLAY-FORMAT>
+                                <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                        </SW-SYSTEMCONST>
+                      </ELEMENTS>
+                    </AR-PACKAGE>
+                  </AR-PACKAGES>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                  <SHORT-NAME>PortInterfaces</SHORT-NAME>
+                  <AR-PACKAGES>
+                    <AR-PACKAGE>
+                      <SHORT-NAME>V1_0_0</SHORT-NAME>
+                      <ELEMENTS>
+                        <PARAMETER-INTERFACE T="2016-07-11T13:43:34Z" UUID="481d4b23-76e8-4bfa-a6ce-ffd0fe218590">
+                          <SHORT-NAME>Arr1dComAxis_Temp_Lin_K_uint16</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Array of shared axis for temperature</L-2>
+                          </DESC>
+                          <IS-SERVICE>false</IS-SERVICE>
+                          <PARAMETERS>
+                            <PARAMETER-DATA-PROTOTYPE T="2016-07-11T13:43:34Z">
+                              <SHORT-NAME>Arr1dComAxis_Temp_Lin_K_uint16</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">Array of shared axis for temperature</L-2>
+                              </DESC>
+                              <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Tier1/ARPlatform1/MemMap/SwAddrMethods/CAL</SW-ADDR-METHOD-REF>
+                                    <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                              </SW-DATA-DEF-PROPS>
+                              <TYPE-TREF DEST="APPLICATION-ARRAY-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/ComAxis_Temp_Lin_K_uint16_ScNoOfWheels</TYPE-TREF>
+                            </PARAMETER-DATA-PROTOTYPE>
+                          </PARAMETERS>
+                        </PARAMETER-INTERFACE>
+                        <PARAMETER-INTERFACE T="2016-07-11T13:46:04Z" UUID="fd5f2d32-2a49-48cd-9e37-6623463fd3c8">
+                          <SHORT-NAME>Arr1dMap_Time_Lnr_s_uint16</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Map to get time dependent on temperature and mass.</L-2>
+                          </DESC>
+                          <IS-SERVICE>false</IS-SERVICE>
+                          <PARAMETERS>
+                            <PARAMETER-DATA-PROTOTYPE T="2016-07-11T13:46:04Z">
+                              <SHORT-NAME>Arr1dMap_Time_Lnr_s_uint16</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">Map to get time dependent on temperature and mass.</L-2>
+                              </DESC>
+                              <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Tier1/ARPlatform1/MemMap/SwAddrMethods/CAL</SW-ADDR-METHOD-REF>
+                                    <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                              </SW-DATA-DEF-PROPS>
+                              <TYPE-TREF DEST="APPLICATION-ARRAY-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/Map_Time_Lnr_s_uint16_ScNoOfWheels</TYPE-TREF>
+                            </PARAMETER-DATA-PROTOTYPE>
+                          </PARAMETERS>
+                        </PARAMETER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE T="2016-07-11T13:53:02Z" UUID="35ac91a7-f793-49ef-ace6-aaf87e6b9531">
+                          <SHORT-NAME>Arr1dPrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Temperature 1 in Kelvin but displayed as degree Celsius</L-2>
+                          </DESC>
+                          <IS-SERVICE>false</IS-SERVICE>
+                          <DATA-ELEMENTS>
+                            <VARIABLE-DATA-PROTOTYPE T="2016-07-11T13:53:02Z">
+                              <SHORT-NAME>Arr1dPrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">Temperature 1 in Kelvin but displayed as degree Celsius</L-2>
+                              </DESC>
+                              <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Tier1/ARPlatform1/MemMap/SwAddrMethods/DATA</SW-ADDR-METHOD-REF>
+                                    <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                              </SW-DATA-DEF-PROPS>
+                              <TYPE-TREF DEST="APPLICATION-ARRAY-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16_ScNoOfWheels</TYPE-TREF>
+                            </VARIABLE-DATA-PROTOTYPE>
+                          </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <PARAMETER-INTERFACE T="2016-07-11T07:28:29Z" UUID="e8f3b3cd-e6c9-45d0-a939-6711b9304e28">
+                          <SHORT-NAME>ComAxis_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Shared axis for mass</L-2>
+                          </DESC>
+                          <IS-SERVICE>false</IS-SERVICE>
+                          <PARAMETERS>
+                            <PARAMETER-DATA-PROTOTYPE T="2016-07-11T07:28:29Z">
+                              <SHORT-NAME>ComAxis_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">Shared axis for mass</L-2>
+                              </DESC>
+                              <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Tier1/ARPlatform1/MemMap/SwAddrMethods/CAL</SW-ADDR-METHOD-REF>
+                                    <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                              </SW-DATA-DEF-PROPS>
+                              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/ComAxis_Mass_Lnr_Kg_uint8</TYPE-TREF>
+                            </PARAMETER-DATA-PROTOTYPE>
+                          </PARAMETERS>
+                        </PARAMETER-INTERFACE>
+                        <PARAMETER-INTERFACE T="2016-07-11T07:33:17Z" UUID="b54b5049-e111-4407-990c-9ada4727c239">
+                          <SHORT-NAME>ComAxis_Steps_Txt_sint8</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Shared axis for speed steps</L-2>
+                          </DESC>
+                          <IS-SERVICE>false</IS-SERVICE>
+                          <PARAMETERS>
+                            <PARAMETER-DATA-PROTOTYPE T="2016-07-11T07:33:17Z">
+                              <SHORT-NAME>ComAxis_Steps_Txt_sint8</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">Shared axis for speed steps</L-2>
+                              </DESC>
+                              <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Tier1/ARPlatform1/MemMap/SwAddrMethods/CAL</SW-ADDR-METHOD-REF>
+                                    <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                              </SW-DATA-DEF-PROPS>
+                              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/ComAxis_Steps_Txt_sint8</TYPE-TREF>
+                            </PARAMETER-DATA-PROTOTYPE>
+                          </PARAMETERS>
+                        </PARAMETER-INTERFACE>
+                        <PARAMETER-INTERFACE T="2016-07-11T07:28:39Z" UUID="a296cfca-5f49-45ce-bbc5-060c34198ac6">
+                          <SHORT-NAME>ComAxis_Temp_Lin_K_uint16</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Shared axis for temperature</L-2>
+                          </DESC>
+                          <IS-SERVICE>false</IS-SERVICE>
+                          <PARAMETERS>
+                            <PARAMETER-DATA-PROTOTYPE T="2016-07-11T07:28:39Z">
+                              <SHORT-NAME>ComAxis_Temp_Lin_K_uint16</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">Shared axis for temperature</L-2>
+                              </DESC>
+                              <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Tier1/ARPlatform1/MemMap/SwAddrMethods/CAL</SW-ADDR-METHOD-REF>
+                                    <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                              </SW-DATA-DEF-PROPS>
+                              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/ComAxis_Temp_Lin_K_uint16</TYPE-TREF>
+                            </PARAMETER-DATA-PROTOTYPE>
+                          </PARAMETERS>
+                        </PARAMETER-INTERFACE>
+                        <PARAMETER-INTERFACE T="2016-07-11T06:59:46Z" UUID="5bbeaf01-2e01-4ba0-b400-ab10c5fd7599">
+                          <SHORT-NAME>Curve_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Curve to get mass according differnt speed steps.</L-2>
+                          </DESC>
+                          <IS-SERVICE>false</IS-SERVICE>
+                          <PARAMETERS>
+                            <PARAMETER-DATA-PROTOTYPE T="2016-07-11T06:59:46Z">
+                              <SHORT-NAME>Curve_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">Curve to get mass according differnt speed steps.</L-2>
+                              </DESC>
+                              <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Tier1/ARPlatform1/MemMap/SwAddrMethods/CAL</SW-ADDR-METHOD-REF>
+                                    <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                              </SW-DATA-DEF-PROPS>
+                              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/Curve_Mass_Lnr_Kg_uint8</TYPE-TREF>
+                            </PARAMETER-DATA-PROTOTYPE>
+                          </PARAMETERS>
+                        </PARAMETER-INTERFACE>
+                        <PARAMETER-INTERFACE T="2016-07-11T07:00:21Z" UUID="b41851d3-6546-42e3-83ce-b3d4fe35e699">
+                          <SHORT-NAME>Map_Time_Lnr_s_uint16</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Map to get time dependent on temperature and mass.</L-2>
+                          </DESC>
+                          <IS-SERVICE>false</IS-SERVICE>
+                          <PARAMETERS>
+                            <PARAMETER-DATA-PROTOTYPE T="2016-07-11T07:00:21Z">
+                              <SHORT-NAME>Map_Time_Lnr_s_uint16</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">Map to get time dependent on temperature and mass.</L-2>
+                              </DESC>
+                              <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Tier1/ARPlatform1/MemMap/SwAddrMethods/CAL</SW-ADDR-METHOD-REF>
+                                    <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                              </SW-DATA-DEF-PROPS>
+                              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/Map_Time_Lnr_s_uint16</TYPE-TREF>
+                            </PARAMETER-DATA-PROTOTYPE>
+                          </PARAMETERS>
+                        </PARAMETER-INTERFACE>
+                        <MODE-SWITCH-INTERFACE T="2016-07-11T07:22:15Z" UUID="b412e0c4-2fe8-4db5-ad41-a5cd45c3de20">
+                          <SHORT-NAME>ModeDirection</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Mode to indicate a direction</L-2>
+                          </DESC>
+                          <IS-SERVICE>false</IS-SERVICE>
+                          <MODE-GROUP T="2016-07-11T07:22:15Z" UUID="3394495a-bcf1-49d5-9bd3-4097b03a6903">
+                            <SHORT-NAME>ModeDirection</SHORT-NAME>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/Tier1/ARPlatform1/DataDictionary/ModeDeclarationGroups/Direction</TYPE-TREF>
+                          </MODE-GROUP>
+                        </MODE-SWITCH-INTERFACE>
+                        <PARAMETER-INTERFACE T="2016-07-11T06:55:13Z" UUID="9471dd94-dd3c-4ca0-b629-ca62238a8152">
+                          <SHORT-NAME>PrimCal_Mass_Lnr_Kg</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Primitive calibration parameter for minimum egg mass.</L-2>
+                          </DESC>
+                          <IS-SERVICE>false</IS-SERVICE>
+                          <PARAMETERS>
+                            <PARAMETER-DATA-PROTOTYPE T="2016-07-11T06:55:13Z">
+                              <SHORT-NAME>PrimCal_Mass_Lnr_Kg</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">Primitive calibration parameter for minimum egg mass.</L-2>
+                              </DESC>
+                              <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Tier1/ARPlatform1/MemMap/SwAddrMethods/CAL</SW-ADDR-METHOD-REF>
+                                    <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                              </SW-DATA-DEF-PROPS>
+                              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/kg_Lnr_0_0d25_0_C8_uint8</TYPE-TREF>
+                            </PARAMETER-DATA-PROTOTYPE>
+                          </PARAMETERS>
+                        </PARAMETER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE T="2016-07-11T06:54:45Z" UUID="74c468b7-0d21-4ffa-a9de-063584ab4d69">
+                          <SHORT-NAME>PrimData_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Mass in kilogram</L-2>
+                          </DESC>
+                          <IS-SERVICE>false</IS-SERVICE>
+                          <DATA-ELEMENTS>
+                            <VARIABLE-DATA-PROTOTYPE T="2016-07-11T06:54:45Z">
+                              <SHORT-NAME>PrimData_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">Mass in kilogram</L-2>
+                              </DESC>
+                              <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Tier1/ARPlatform1/MemMap/SwAddrMethods/DATA</SW-ADDR-METHOD-REF>
+                                    <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                              </SW-DATA-DEF-PROPS>
+                              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/kg_Lnr_0_0d25_0_C8_uint8</TYPE-TREF>
+                            </VARIABLE-DATA-PROTOTYPE>
+                          </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE T="2016-07-11T07:00:55Z" UUID="1c73c48c-9c87-4f2a-aa17-acaec75acf7b">
+                          <SHORT-NAME>PrimData_MassCorrected_Lnr_Kg_uint8</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Primitve data for the corrected mass in kg.</L-2>
+                          </DESC>
+                          <IS-SERVICE>false</IS-SERVICE>
+                          <DATA-ELEMENTS>
+                            <VARIABLE-DATA-PROTOTYPE T="2016-07-11T07:00:55Z">
+                              <SHORT-NAME>PrimData_MassCorrected_Lnr_Kg_uint8</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">Primitve data for the corrected mass in kg.</L-2>
+                              </DESC>
+                              <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Tier1/ARPlatform1/MemMap/SwAddrMethods/DATA</SW-ADDR-METHOD-REF>
+                                    <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                              </SW-DATA-DEF-PROPS>
+                              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/kg_Lnr_0_0d25_0_C8_uint8</TYPE-TREF>
+                            </VARIABLE-DATA-PROTOTYPE>
+                          </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <NV-DATA-INTERFACE T="2016-04-27T11:56:38Z" UUID="90517553-ce29-4f67-8f42-d04bf1c3f05a">
+                          <SHORT-NAME>PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Stepwise speed indication</L-2>
+                          </DESC>
+                          <IS-SERVICE>false</IS-SERVICE>
+                          <NV-DATAS>
+                            <VARIABLE-DATA-PROTOTYPE T="2016-04-27T11:56:38Z">
+                              <SHORT-NAME>PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">Stepwise speed indication</L-2>
+                              </DESC>
+                              <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Tier1/ARPlatform1/MemMap/SwAddrMethods/DATA_NVDAT</SW-ADDR-METHOD-REF>
+                                    <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                              </SW-DATA-DEF-PROPS>
+                              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/speedSteps</TYPE-TREF>
+                            </VARIABLE-DATA-PROTOTYPE>
+                          </NV-DATAS>
+                        </NV-DATA-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE T="2016-07-11T06:54:17Z" UUID="232a0136-31d8-4163-b5b6-89800c1e4c09">
+                          <SHORT-NAME>PrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Temperature 1 in Kelvin but displayed as degree Celsius</L-2>
+                          </DESC>
+                          <IS-SERVICE>false</IS-SERVICE>
+                          <DATA-ELEMENTS>
+                            <VARIABLE-DATA-PROTOTYPE T="2016-07-11T06:54:17Z">
+                              <SHORT-NAME>PrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">Temperature 1 in Kelvin but displayed as degree Celsius</L-2>
+                              </DESC>
+                              <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Tier1/ARPlatform1/MemMap/SwAddrMethods/DATA</SW-ADDR-METHOD-REF>
+                                    <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                              </SW-DATA-DEF-PROPS>
+                              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16</TYPE-TREF>
+                            </VARIABLE-DATA-PROTOTYPE>
+                          </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE T="2016-07-11T06:57:54Z" UUID="6fc1b150-0bd3-4370-8b67-1dc0d3871354">
+                          <SHORT-NAME>PrimData_Time_Lnr_s_uint16</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Primitve data holding a time value.</L-2>
+                          </DESC>
+                          <IS-SERVICE>false</IS-SERVICE>
+                          <DATA-ELEMENTS>
+                            <VARIABLE-DATA-PROTOTYPE T="2016-07-11T06:57:54Z">
+                              <SHORT-NAME>PrimData_Time_Lnr_s_uint16</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">Primitve data holding a time value.</L-2>
+                              </DESC>
+                              <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Tier1/ARPlatform1/MemMap/SwAddrMethods/DATA</SW-ADDR-METHOD-REF>
+                                    <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                              </SW-DATA-DEF-PROPS>
+                              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/s_Lnr_0_8191d875_0_FFFF_uint16</TYPE-TREF>
+                            </VARIABLE-DATA-PROTOTYPE>
+                          </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE T="2016-04-27T13:27:36Z" UUID="03e26ae5-512c-474b-ad17-1ddd8f63f877">
+                          <SHORT-NAME>PrimData_ValidState_Txt_noUnit_boolean</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Boolean representing the data validity</L-2>
+                          </DESC>
+                          <IS-SERVICE>false</IS-SERVICE>
+                          <DATA-ELEMENTS>
+                            <VARIABLE-DATA-PROTOTYPE T="2016-04-27T13:27:36Z">
+                              <SHORT-NAME>PrimData_ValidState_Txt_noUnit_boolean</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">Boolean representing the data validity</L-2>
+                              </DESC>
+                              <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Tier1/ARPlatform1/MemMap/SwAddrMethods/DATA</SW-ADDR-METHOD-REF>
+                                    <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                              </SW-DATA-DEF-PROPS>
+                              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/DataValidityType</TYPE-TREF>
+                            </VARIABLE-DATA-PROTOTYPE>
+                          </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                      </ELEMENTS>
+                    </AR-PACKAGE>
+                  </AR-PACKAGES>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                  <SHORT-NAME>ApplicationDataTypes</SHORT-NAME>
+                  <ELEMENTS>
+                    <APPLICATION-ARRAY-DATA-TYPE>
+                      <SHORT-NAME>ComAxis_Temp_Lin_K_uint16_ScNoOfWheels</SHORT-NAME>
+                      <CATEGORY>ARRAY</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <ELEMENT>
+                        <SHORT-NAME>ComAxis_Temp_Lin_K_uint16_ScNoOfWheels</SHORT-NAME>
+                        <CATEGORY>COM_AXIS</CATEGORY>
+                        <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/ComAxis_Temp_Lin_K_uint16</TYPE-TREF>
+                        <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                        <MAX-NUMBER-OF-ELEMENTS BINDING-TIME="CODE-GENERATION-TIME">
+													<SYSC-REF DEST="SW-SYSTEMCONST">/Tier1/ARPlatform1/DataDictionary/SwSystemConsts/V1_0_0/ScNoOfWheels</SYSC-REF>
+												</MAX-NUMBER-OF-ELEMENTS>
+                      </ELEMENT>
+                    </APPLICATION-ARRAY-DATA-TYPE>
+                    <APPLICATION-ARRAY-DATA-TYPE>
+                      <SHORT-NAME>K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16_ScNoOfWheels</SHORT-NAME>
+                      <CATEGORY>ARRAY</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <ELEMENT>
+                        <SHORT-NAME>K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16_ScNoOfWheels</SHORT-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16</TYPE-TREF>
+                        <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                        <MAX-NUMBER-OF-ELEMENTS BINDING-TIME="CODE-GENERATION-TIME">
+													<SYSC-REF DEST="SW-SYSTEMCONST">/Tier1/ARPlatform1/DataDictionary/SwSystemConsts/V1_0_0/ScNoOfWheels</SYSC-REF>
+												</MAX-NUMBER-OF-ELEMENTS>
+                      </ELEMENT>
+                    </APPLICATION-ARRAY-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE>
+                      <SHORT-NAME>Curve_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                      <CATEGORY>CURVE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                            <SW-CALPRM-AXIS-SET>
+                              <SW-CALPRM-AXIS>
+                                <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
+                                <CATEGORY>COM_AXIS</CATEGORY>
+                                <SW-AXIS-GROUPED>
+                                  <SHARED-AXIS-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/ComAxis_Steps_Txt_sint8</SHARED-AXIS-TYPE-REF>
+                                </SW-AXIS-GROUPED>
+                              </SW-CALPRM-AXIS>
+                            </SW-CALPRM-AXIS-SET>
+                            <SW-RECORD-LAYOUT-REF DEST="SW-RECORD-LAYOUT">/Tier1/ARPlatform1/DataDictionary/SwRecordLayout/RE20_ME/RL20_ME_1DimMap</SW-RECORD-LAYOUT-REF>
+                            <VALUE-AXIS-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/kg_Lnr_0_0d25_0_C8_uint8</VALUE-AXIS-DATA-TYPE-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE>
+                      <SHORT-NAME>Map_Time_Lnr_s_uint16</SHORT-NAME>
+                      <CATEGORY>MAP</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                            <SW-CALPRM-AXIS-SET>
+                              <SW-CALPRM-AXIS>
+                                <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
+                                <CATEGORY>COM_AXIS</CATEGORY>
+                                <SW-AXIS-GROUPED>
+                                  <SHARED-AXIS-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/ComAxis_Temp_Lin_K_uint16</SHARED-AXIS-TYPE-REF>
+                                </SW-AXIS-GROUPED>
+                              </SW-CALPRM-AXIS>
+                              <SW-CALPRM-AXIS>
+                                <SW-AXIS-INDEX>2</SW-AXIS-INDEX>
+                                <CATEGORY>COM_AXIS</CATEGORY>
+                                <SW-AXIS-GROUPED>
+                                  <SHARED-AXIS-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/ComAxis_Mass_Lnr_Kg_uint8</SHARED-AXIS-TYPE-REF>
+                                </SW-AXIS-GROUPED>
+                              </SW-CALPRM-AXIS>
+                            </SW-CALPRM-AXIS-SET>
+                            <SW-RECORD-LAYOUT-REF DEST="SW-RECORD-LAYOUT">/Tier1/ARPlatform1/DataDictionary/SwRecordLayout/RE20_ME/RL20_ME_2DimMap</SW-RECORD-LAYOUT-REF>
+                            <VALUE-AXIS-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/s_Lnr_0_8191d875_0_FFFF_uint16</VALUE-AXIS-DATA-TYPE-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE>
+                      <SHORT-NAME>ComAxis_Temp_Lin_K_uint16</SHORT-NAME>
+                      <CATEGORY>COM_AXIS</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                            <SW-CALPRM-AXIS-SET>
+                              <SW-CALPRM-AXIS>
+                                <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
+                                <CATEGORY>COM_AXIS</CATEGORY>
+                                <SW-AXIS-INDIVIDUAL>
+                                  <INPUT-VARIABLE-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16</INPUT-VARIABLE-TYPE-REF>
+                                  <SW-MAX-AXIS-POINTS>6</SW-MAX-AXIS-POINTS>
+                                  <SW-MIN-AXIS-POINTS>6</SW-MIN-AXIS-POINTS>
+                                </SW-AXIS-INDIVIDUAL>
+                              </SW-CALPRM-AXIS>
+                            </SW-CALPRM-AXIS-SET>
+                            <SW-RECORD-LAYOUT-REF DEST="SW-RECORD-LAYOUT">/Tier1/ARPlatform1/DataDictionary/SwRecordLayout/RE20_ME/RL20_ME_Axis</SW-RECORD-LAYOUT-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    <APPLICATION-ARRAY-DATA-TYPE>
+                      <SHORT-NAME>Map_Time_Lnr_s_uint16_ScNoOfWheels</SHORT-NAME>
+                      <CATEGORY>ARRAY</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <ELEMENT>
+                        <SHORT-NAME>Map_Time_Lnr_s_uint16_ScNoOfWheels</SHORT-NAME>
+                        <CATEGORY>MAP</CATEGORY>
+                        <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/Map_Time_Lnr_s_uint16</TYPE-TREF>
+                        <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                        <MAX-NUMBER-OF-ELEMENTS BINDING-TIME="CODE-GENERATION-TIME">
+													<SYSC-REF DEST="SW-SYSTEMCONST">/Tier1/ARPlatform1/DataDictionary/SwSystemConsts/V1_0_0/ScNoOfWheels</SYSC-REF>
+												</MAX-NUMBER-OF-ELEMENTS>
+                      </ELEMENT>
+                    </APPLICATION-ARRAY-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE>
+                      <SHORT-NAME>ComAxis_Steps_Txt_sint8</SHORT-NAME>
+                      <CATEGORY>COM_AXIS</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                            <SW-CALPRM-AXIS-SET>
+                              <SW-CALPRM-AXIS>
+                                <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
+                                <CATEGORY>COM_AXIS</CATEGORY>
+                                <SW-AXIS-INDIVIDUAL>
+                                  <INPUT-VARIABLE-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/speedSteps</INPUT-VARIABLE-TYPE-REF>
+                                  <SW-MAX-AXIS-POINTS>4</SW-MAX-AXIS-POINTS>
+                                  <SW-MIN-AXIS-POINTS>4</SW-MIN-AXIS-POINTS>
+                                </SW-AXIS-INDIVIDUAL>
+                              </SW-CALPRM-AXIS>
+                            </SW-CALPRM-AXIS-SET>
+                            <SW-RECORD-LAYOUT-REF DEST="SW-RECORD-LAYOUT">/Tier1/ARPlatform1/DataDictionary/SwRecordLayout/RE20_ME/RL20_ME_Axis</SW-RECORD-LAYOUT-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE>
+                      <SHORT-NAME>ComAxis_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                      <CATEGORY>COM_AXIS</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                            <SW-CALPRM-AXIS-SET>
+                              <SW-CALPRM-AXIS>
+                                <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
+                                <CATEGORY>COM_AXIS</CATEGORY>
+                                <SW-AXIS-INDIVIDUAL>
+                                  <INPUT-VARIABLE-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/kg_Lnr_0_0d25_0_C8_uint8</INPUT-VARIABLE-TYPE-REF>
+                                  <SW-MAX-AXIS-POINTS>4</SW-MAX-AXIS-POINTS>
+                                  <SW-MIN-AXIS-POINTS>4</SW-MIN-AXIS-POINTS>
+                                </SW-AXIS-INDIVIDUAL>
+                              </SW-CALPRM-AXIS>
+                            </SW-CALPRM-AXIS-SET>
+                            <SW-RECORD-LAYOUT-REF DEST="SW-RECORD-LAYOUT">/Tier1/ARPlatform1/DataDictionary/SwRecordLayout/RE20_ME/RL20_ME_Axis</SW-RECORD-LAYOUT-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    <APPLICATION-RECORD-DATA-TYPE>
+                      <SHORT-NAME>CMscC_nvm_NvBlockATyp</SHORT-NAME>
+                      <CATEGORY>STRUCTURE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <ELEMENTS>
+                        <APPLICATION-RECORD-ELEMENT>
+                          <SHORT-NAME>PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/speedSteps</TYPE-TREF>
+                        </APPLICATION-RECORD-ELEMENT>
+                      </ELEMENTS>
+                    </APPLICATION-RECORD-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE T="2016-04-27T13:27:26Z" UUID="1ec248c9-3681-45c1-8d0c-432818cd9f64">
+                      <SHORT-NAME>DataValidityType</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Boolean to represent the data validity</L-2>
+                      </DESC>
+                      <CATEGORY>BOOLEAN</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                            <COMPU-METHOD-REF DEST="COMPU-METHOD">/Tier1/ARPlatform1/DataDictionary/CompuMethods/DataValidityType</COMPU-METHOD-REF>
+                            <DATA-CONSTR-REF DEST="DATA-CONSTR">/Tier1/ARPlatform1/DataDictionary/DataConstraints/DataValidityType</DATA-CONSTR-REF>
+                            <DISPLAY-FORMAT>%s</DISPLAY-FORMAT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE T="2016-04-27T09:29:15Z" UUID="225328e3-cbcc-44ab-92fb-678da63c794d">
+                      <SHORT-NAME>K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Temperature</L-2>
+                      </DESC>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                            <COMPU-METHOD-REF DEST="COMPU-METHOD">/Tier1/ARPlatform1/DataDictionary/CompuMethods/K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16</COMPU-METHOD-REF>
+                            <DATA-CONSTR-REF DEST="DATA-CONSTR">/Tier1/ARPlatform1/DataDictionary/DataConstraints/K_Celsius_Lnr_0_511d9921875_0_FFFF_uint16</DATA-CONSTR-REF>
+                            <DISPLAY-FORMAT>%8.3f</DISPLAY-FORMAT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/K_Celsius/K</UNIT-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE T="2016-04-27T11:15:24Z" UUID="9443d962-8983-462b-adb0-b4f9429aaf91">
+                      <SHORT-NAME>kg_Lnr_0_0d25_0_C8_uint8</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mass</L-2>
+                      </DESC>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                            <COMPU-METHOD-REF DEST="COMPU-METHOD">/Tier1/ARPlatform1/DataDictionary/CompuMethods/kg_Lnr_0_0d25_0_C8_uint8</COMPU-METHOD-REF>
+                            <DATA-CONSTR-REF DEST="DATA-CONSTR">/Tier1/ARPlatform1/DataDictionary/DataConstraints/kg_Lnr_0_0d25_0_C8_uint8</DATA-CONSTR-REF>
+                            <DISPLAY-FORMAT>%5.3f</DISPLAY-FORMAT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/kg/kg</UNIT-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE T="2013-04-26T08:21:01Z" UUID="280f0565-1aeb-4da2-8c99-25a0f50a352b">
+                      <SHORT-NAME>NoUnit_Lnr_1_4_1_4_uint8</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                            <COMPU-METHOD-REF DEST="COMPU-METHOD">/Tier1/ARPlatform1/DataDictionary/CompuMethods/NoUnit_Lnr_1_4_1_4_uint8</COMPU-METHOD-REF>
+                            <DATA-CONSTR-REF DEST="DATA-CONSTR">/Tier1/ARPlatform1/DataDictionary/DataConstraints/NoUnit_Lnr_1_4_1_4_uint8</DATA-CONSTR-REF>
+                            <DISPLAY-FORMAT>%1.0f</DISPLAY-FORMAT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE T="2013-04-16T08:10:34Z" UUID="49923fe6-39a6-434f-9e7b-4d5d5b4d07a2">
+                      <SHORT-NAME>NoUnit_Lnr_1_65535_1_FFFF_uint16</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                            <COMPU-METHOD-REF DEST="COMPU-METHOD">/Tier1/ARPlatform1/DataDictionary/CompuMethods/NoUnit_Lnr_1_65535_1_FFFF_uint16</COMPU-METHOD-REF>
+                            <DATA-CONSTR-REF DEST="DATA-CONSTR">/Tier1/ARPlatform1/DataDictionary/DataConstraints/NoUnit_Lnr_1_65535_1_FFFF_uint16</DATA-CONSTR-REF>
+                            <DISPLAY-FORMAT>%1.0f</DISPLAY-FORMAT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE T="2016-04-27T11:07:15Z" UUID="09d01d45-380a-4ab7-9fac-a48bd7a147e4">
+                      <SHORT-NAME>s_Lnr_0_8191d875_0_FFFF_uint16</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">cooking time in seconds</L-2>
+                      </DESC>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                            <COMPU-METHOD-REF DEST="COMPU-METHOD">/Tier1/ARPlatform1/DataDictionary/CompuMethods/s_Lnr_0_8191d875_0_FFFF_uint16</COMPU-METHOD-REF>
+                            <DATA-CONSTR-REF DEST="DATA-CONSTR">/Tier1/ARPlatform1/DataDictionary/DataConstraints/s_Lnr_0_8191d875_0_FFFF_uint16</DATA-CONSTR-REF>
+                            <DISPLAY-FORMAT>%6.1f</DISPLAY-FORMAT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/s/s</UNIT-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE T="2016-04-27T09:46:33Z" UUID="ef5e1cd4-4aeb-440b-9388-1a5da2a42004">
+                      <SHORT-NAME>speedSteps</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Possible speed steps</L-2>
+                      </DESC>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                            <COMPU-METHOD-REF DEST="COMPU-METHOD">/Tier1/ARPlatform1/DataDictionary/CompuMethods/speedSteps</COMPU-METHOD-REF>
+                            <DATA-CONSTR-REF DEST="DATA-CONSTR">/Tier1/ARPlatform1/DataDictionary/DataConstraints/speedSteps</DATA-CONSTR-REF>
+                            <DISPLAY-FORMAT>%s</DISPLAY-FORMAT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE T="2016-07-11T13:43:08Z" UUID="18e6481a-c56e-4c1e-aff0-f0d572f77465">
+                      <SHORT-NAME>TxWheelNames</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Wheel names</L-2>
+                      </DESC>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                            <COMPU-METHOD-REF DEST="COMPU-METHOD">/Tier1/ARPlatform1/DataDictionary/CompuMethods/TxWheelNames</COMPU-METHOD-REF>
+                            <DATA-CONSTR-REF DEST="DATA-CONSTR">/Tier1/ARPlatform1/DataDictionary/DataConstraints/TxWheelNames</DATA-CONSTR-REF>
+                            <DISPLAY-FORMAT>%s</DISPLAY-FORMAT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                  <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+                  <ELEMENTS>
+                    <IMPLEMENTATION-DATA-TYPE>
+                      <SHORT-NAME>CMscC_nvm_NvBlockATyp</SHORT-NAME>
+                      <CATEGORY>STRUCTURE</CATEGORY>
+                      <SUB-ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <SHORT-NAME>PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+                          <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/sint8</IMPLEMENTATION-DATA-TYPE-REF>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      </SUB-ELEMENTS>
+                    </IMPLEMENTATION-DATA-TYPE>
+                    <IMPLEMENTATION-DATA-TYPE>
+                      <SHORT-NAME>sint8_5_RL20_ME_Axis</SHORT-NAME>
+                      <CATEGORY>ARRAY</CATEGORY>
+                      <SUB-ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <SHORT-NAME>DimX</SHORT-NAME>
+                          <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                          <ARRAY-SIZE>5</ARRAY-SIZE>
+                          <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/sint8</IMPLEMENTATION-DATA-TYPE-REF>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      </SUB-ELEMENTS>
+                    </IMPLEMENTATION-DATA-TYPE>
+                    <IMPLEMENTATION-DATA-TYPE>
+                      <SHORT-NAME>uint16_6_4_RL20_ME_2DimMap</SHORT-NAME>
+                      <CATEGORY>ARRAY</CATEGORY>
+                      <SUB-ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <SHORT-NAME>DimX</SHORT-NAME>
+                          <CATEGORY>ARRAY</CATEGORY>
+                          <ARRAY-SIZE>6</ARRAY-SIZE>
+                          <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                          <SUB-ELEMENTS>
+                            <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                              <SHORT-NAME>DimY</SHORT-NAME>
+                              <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                              <ARRAY-SIZE>4</ARRAY-SIZE>
+                              <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                              <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                              </SW-DATA-DEF-PROPS>
+                            </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          </SUB-ELEMENTS>
+                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      </SUB-ELEMENTS>
+                    </IMPLEMENTATION-DATA-TYPE>
+                    <IMPLEMENTATION-DATA-TYPE>
+                      <SHORT-NAME>uint16_7_RL20_ME_Axis</SHORT-NAME>
+                      <CATEGORY>ARRAY</CATEGORY>
+                      <SUB-ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <SHORT-NAME>DimX</SHORT-NAME>
+                          <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                          <ARRAY-SIZE>7</ARRAY-SIZE>
+                          <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      </SUB-ELEMENTS>
+                    </IMPLEMENTATION-DATA-TYPE>
+                    <IMPLEMENTATION-DATA-TYPE>
+                      <SHORT-NAME>uint16_ScNoOfWheels</SHORT-NAME>
+                      <CATEGORY>ARRAY</CATEGORY>
+                      <SUB-ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <SHORT-NAME>DimX</SHORT-NAME>
+                          <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                          <ARRAY-SIZE BINDING-TIME="CODE-GENERATION-TIME">
+														<SYSC-REF DEST="SW-SYSTEMCONST">/Tier1/ARPlatform1/DataDictionary/SwSystemConsts/V1_0_0/ScNoOfWheels</SYSC-REF>
+													</ARRAY-SIZE>
+                          <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      </SUB-ELEMENTS>
+                    </IMPLEMENTATION-DATA-TYPE>
+                    <IMPLEMENTATION-DATA-TYPE>
+                      <SHORT-NAME>uint16_ScNoOfWheels_6_4_RL20_ME_2DimMap</SHORT-NAME>
+                      <CATEGORY>ARRAY</CATEGORY>
+                      <SUB-ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <SHORT-NAME>DimX</SHORT-NAME>
+                          <CATEGORY>ARRAY</CATEGORY>
+                          <ARRAY-SIZE BINDING-TIME="CODE-GENERATION-TIME">
+														<SYSC-REF DEST="SW-SYSTEMCONST">/Tier1/ARPlatform1/DataDictionary/SwSystemConsts/V1_0_0/ScNoOfWheels</SYSC-REF>
+													</ARRAY-SIZE>
+                          <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                          <SUB-ELEMENTS>
+                            <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                              <SHORT-NAME>DimY</SHORT-NAME>
+                              <CATEGORY>ARRAY</CATEGORY>
+                              <ARRAY-SIZE>6</ARRAY-SIZE>
+                              <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                              <SUB-ELEMENTS>
+                                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                                  <SHORT-NAME>DimZ</SHORT-NAME>
+                                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                  <ARRAY-SIZE>4</ARRAY-SIZE>
+                                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                                  <SW-DATA-DEF-PROPS>
+                                    <SW-DATA-DEF-PROPS-VARIANTS>
+                                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    </SW-DATA-DEF-PROPS-VARIANTS>
+                                  </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                              </SUB-ELEMENTS>
+                            </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          </SUB-ELEMENTS>
+                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      </SUB-ELEMENTS>
+                    </IMPLEMENTATION-DATA-TYPE>
+                    <IMPLEMENTATION-DATA-TYPE>
+                      <SHORT-NAME>uint16_ScNoOfWheels_7_RL20_ME_Axis</SHORT-NAME>
+                      <CATEGORY>ARRAY</CATEGORY>
+                      <SUB-ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <SHORT-NAME>DimX</SHORT-NAME>
+                          <CATEGORY>ARRAY</CATEGORY>
+                          <ARRAY-SIZE BINDING-TIME="CODE-GENERATION-TIME">
+														<SYSC-REF DEST="SW-SYSTEMCONST">/Tier1/ARPlatform1/DataDictionary/SwSystemConsts/V1_0_0/ScNoOfWheels</SYSC-REF>
+													</ARRAY-SIZE>
+                          <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                          <SUB-ELEMENTS>
+                            <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                              <SHORT-NAME>DimY</SHORT-NAME>
+                              <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                              <ARRAY-SIZE>7</ARRAY-SIZE>
+                              <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                              <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                              </SW-DATA-DEF-PROPS>
+                            </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          </SUB-ELEMENTS>
+                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      </SUB-ELEMENTS>
+                    </IMPLEMENTATION-DATA-TYPE>
+                    <IMPLEMENTATION-DATA-TYPE>
+                      <SHORT-NAME>uint8_4_RL20_ME_1DimMap</SHORT-NAME>
+                      <CATEGORY>ARRAY</CATEGORY>
+                      <SUB-ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <SHORT-NAME>DimX</SHORT-NAME>
+                          <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                          <ARRAY-SIZE>4</ARRAY-SIZE>
+                          <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      </SUB-ELEMENTS>
+                    </IMPLEMENTATION-DATA-TYPE>
+                    <IMPLEMENTATION-DATA-TYPE>
+                      <SHORT-NAME>uint8_5_RL20_ME_Axis</SHORT-NAME>
+                      <CATEGORY>ARRAY</CATEGORY>
+                      <SUB-ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <SHORT-NAME>DimX</SHORT-NAME>
+                          <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                          <ARRAY-SIZE>5</ARRAY-SIZE>
+                          <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                      </SUB-ELEMENTS>
+                    </IMPLEMENTATION-DATA-TYPE>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                  <SHORT-NAME>ModeDeclarationGroups</SHORT-NAME>
+                  <ELEMENTS>
+                    <MODE-DECLARATION-GROUP T="2016-07-11T07:21:49Z" UUID="686730ce-a938-46e0-9544-51c5c0fd58bc">
+                      <SHORT-NAME>Direction</SHORT-NAME>
+                      <CATEGORY>EXPLICIT_ORDER</CATEGORY>
+                      <INITIAL-MODE-REF DEST="MODE-DECLARATION">/Tier1/ARPlatform1/DataDictionary/ModeDeclarationGroups/Direction/Halt</INITIAL-MODE-REF>
+                      <MODE-DECLARATIONS>
+                        <MODE-DECLARATION T="2016-07-11T07:21:49Z" UUID="5274e818-042d-43e2-8af4-b3163ba63b7f">
+                          <SHORT-NAME>Backward</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Backward direction</L-2>
+                          </DESC>
+                          <VALUE>2</VALUE>
+                        </MODE-DECLARATION>
+                        <MODE-DECLARATION T="2016-07-11T07:21:49Z" UUID="9c88e2d6-3bd7-41af-916e-7c306c5cd598">
+                          <SHORT-NAME>Forward</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Forward direction</L-2>
+                          </DESC>
+                          <VALUE>1</VALUE>
+                        </MODE-DECLARATION>
+                        <MODE-DECLARATION T="2016-07-11T07:21:49Z" UUID="748ac0f6-ca7c-450a-b885-283f03224c7f">
+                          <SHORT-NAME>Halt</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">Standstill</L-2>
+                          </DESC>
+                          <VALUE>0</VALUE>
+                        </MODE-DECLARATION>
+                      </MODE-DECLARATIONS>
+                      <ON-TRANSITION-VALUE>255</ON-TRANSITION-VALUE>
+                    </MODE-DECLARATION-GROUP>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                  <SHORT-NAME>UnitGroups</SHORT-NAME>
+                  <ELEMENTS>
+                    <UNIT-GROUP>
+                      <SHORT-NAME>CalculationUnits</SHORT-NAME>
+                      <CATEGORY>COUNTRY</CATEGORY>
+                      <UNIT-REFS>
+                        <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/K_Celsius/K</UNIT-REF>
+                        <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/kg/kg</UNIT-REF>
+                        <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                        <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/s/s</UNIT-REF>
+                      </UNIT-REFS>
+                    </UNIT-GROUP>
+                    <UNIT-GROUP>
+                      <SHORT-NAME>DisplayUnits</SHORT-NAME>
+                      <CATEGORY>COUNTRY</CATEGORY>
+                      <UNIT-REFS>
+                        <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/K_Celsius/Celsius</UNIT-REF>
+                        <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/kg/kg</UNIT-REF>
+                        <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                        <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/s/s</UNIT-REF>
+                      </UNIT-REFS>
+                    </UNIT-GROUP>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

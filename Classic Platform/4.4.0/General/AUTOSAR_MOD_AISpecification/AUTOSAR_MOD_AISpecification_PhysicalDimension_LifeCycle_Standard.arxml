@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="default">English</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR</SHORT-NAME>
+      <LONG-NAME>
+        <L-4 L="EN">AUTOSAR</L-4>
+      </LONG-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>AISpecification</SHORT-NAME>
+          <LONG-NAME>
+            <L-4 L="EN">AISpecification</L-4>
+          </LONG-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>LifeCycleInfoSets</SHORT-NAME>
+              <CATEGORY>STANDARD</CATEGORY>
+              <REFERENCE-BASES>
+                <REFERENCE-BASE>
+                  <SHORT-LABEL>PhysicalDimensions_obsolete</SHORT-LABEL>
+                  <IS-DEFAULT>false</IS-DEFAULT>
+                  <IS-GLOBAL>false</IS-GLOBAL>
+                  <BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+                  <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/AISpecification/PhysicalDimensions_obsolete</PACKAGE-REF>
+                </REFERENCE-BASE>
+                <REFERENCE-BASE>
+                  <SHORT-LABEL>PhysicalDimensions</SHORT-LABEL>
+                  <IS-DEFAULT>false</IS-DEFAULT>
+                  <IS-GLOBAL>false</IS-GLOBAL>
+                  <BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+                  <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/AUTOSAR_PhysicalUnits/PhysicalDimensions_Blueprints</PACKAGE-REF>
+                </REFERENCE-BASE>
+              </REFERENCE-BASES>
+              <ELEMENTS>
+                <LIFE-CYCLE-INFO-SET>
+                  <SHORT-NAME>PhysicalDimensionLifeCycles</SHORT-NAME>
+                  <LIFE-CYCLE-INFOS>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg4M1TiNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg3MNeg1Ti2I2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg3MNeg1Ti3I2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg3TiNeg1Amnt1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg3Amnt1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg3Ti1I1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg3Ti1I1_1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg3M1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg2MNeg1Ti3I2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg2MNeg1Ti4I2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg2Illmn1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg1M1TiNeg3</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg1M1TiNeg2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg1M1TiNeg2_1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg1M1TiNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1_1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1_2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1_3</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1Amnt1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1T1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1I1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">NoDimension</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">NoDimension_1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">NoDimension_2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">NoDimension_5</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">NoDimension_6</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Illmn1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Amnt1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">T1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">T1_1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">I1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Ti1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">T1I1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1TiNeg3TNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1TiNeg2INeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1TiNeg2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1TiNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1TiNeg1_1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1AmntNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1TiNeg3</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1TiNeg2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1TiNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1M1TiNeg3INeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1M1TiNeg3TNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1M1TiNeg2INeg2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1M1TiNeg2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1M1TiNeg2_1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2TiNeg2TNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2TiNeg2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2Ti1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2_1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg4INeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg4</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3INeg2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3INeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3_1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2INeg2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2INeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2TNeg1AmntNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2TNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2AmntNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2_1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len3MNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len3TiNeg2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len3TiNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len3</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/valid</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">Amnt1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Amnt1</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">I1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">I1</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">Illmn1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Illmn1</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">Len1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">Len1M1TiNeg2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1M1TiNeg2</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">Len1TiNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1TiNeg1</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">Len1TiNeg2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1TiNeg2</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">Len1TiNeg3</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1TiNeg3</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3INeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3INeg1</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">LenNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg1</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">LenNeg1M1TiNeg2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg1M1TiNeg2</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">M1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">M1TiNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1TiNeg1</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">M1TiNeg2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1TiNeg2</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">NoDimension</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">NoDimension</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">NoDimension_1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">NoDimension_1</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">NoDimension_2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">NoDimension_2</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">T1_1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">T1_1</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">T1_2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">Ti1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Ti1</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">TiNeg1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">TiNeg1_1</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1_1</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">TiNeg1_2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1_2</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                    <LIFE-CYCLE-INFO>
+                      <LC-OBJECT-REF BASE="PhysicalDimensions_obsolete" DEST="PHYSICAL-DIMENSION">TiNeg2</LC-OBJECT-REF>
+                      <LC-STATE-REF DEST="LIFE-CYCLE-STATE">/AUTOSAR/GenDef/LifeCycleStateDefinitionGroups/AutosarLifeCycleStates/obsolete</LC-STATE-REF>
+                      <PERIOD-BEGIN>
+                        <AR-RELEASE-VERSION>4.4.0</AR-RELEASE-VERSION>
+                      </PERIOD-BEGIN>
+                      <USE-INSTEAD-REFS>
+                        <USE-INSTEAD-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg2</USE-INSTEAD-REF>
+                      </USE-INSTEAD-REFS>
+                    </LIFE-CYCLE-INFO>
+                  </LIFE-CYCLE-INFOS>
+                </LIFE-CYCLE-INFO-SET>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>AUTOSAR_PhysicalUnits</SHORT-NAME>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,165 @@
+<!-- edited with XMLSpy v2016 sp1 (x64) (http://www.altova.com) by Joern Hentschel (Itemis AG) -->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+	<AR-PACKAGES>
+		<AR-PACKAGE>
+			<SHORT-NAME>AUTOSAR</SHORT-NAME>
+			<AR-PACKAGES>
+				<AR-PACKAGE>
+					<SHORT-NAME>DataExchangePoints</SHORT-NAME>
+					<CATEGORY>EXAMPLE</CATEGORY>
+					<REFERENCE-BASES>
+						<REFERENCE-BASE>
+							<SHORT-LABEL>default</SHORT-LABEL>
+							<IS-DEFAULT>true</IS-DEFAULT>
+							<IS-GLOBAL>false</IS-GLOBAL>
+							<BASE-IS-THIS-PACKAGE>true</BASE-IS-THIS-PACKAGE>
+						</REFERENCE-BASE>
+					</REFERENCE-BASES>
+					<ELEMENTS>
+						<DATA-EXCHANGE-POINT>
+							<SHORT-NAME>SafetyExtension</SHORT-NAME>
+							<DESC>
+								<L-2 L="EN">AUTOSAR Safety Extension</L-2>
+							</DESC>
+							<KIND>CONSUMER</KIND>
+							<REFERENCED-BASELINE>
+								<STANDARD-REVISIONS>
+									<STANDARD-REVISION>CP R4.2.2</STANDARD-REVISION>
+								</STANDARD-REVISIONS>
+								<CUSTOM-SDG-DEF-REFS>
+									<CUSTOM-SDG-DEF-REF DEST="SDG-DEF">SafetyExtensionSdgDef</CUSTOM-SDG-DEF-REF>
+								</CUSTOM-SDG-DEF-REFS>
+							</REFERENCED-BASELINE>
+							<DATA-FORMAT-TAILORING>
+								<CLASS-TAILORINGS>
+									<CONCRETE-CLASS-TAILORING>
+										<SHORT-NAME>StructuredReq</SHORT-NAME>
+										<IN-SCOPE>true</IN-SCOPE>
+										<CLASS-CONTENTS>
+											<CLASS-CONTENT-CONDITIONAL>
+												<SHORT-NAME>SafetyRequirement</SHORT-NAME>
+												<CONDITION>
+													<PRIMITIVE-ATTRIBUTE-CONDITION>
+														<PATTERN>SAFETY_GOAL|SAFETY_FUNCTIONAL|SAFETY_TECHNICAL|SAFETY_SOFTWARE|SAFETY_HARDWARE|SAFETY_EXTERNAL</PATTERN>
+														<ATTRIBUTE-REF DEST="PRIMITIVE-ATTRIBUTE-TAILORING">SafetyExtension/StructuredReq/SafetyRequirement/category</ATTRIBUTE-REF>
+													</PRIMITIVE-ATTRIBUTE-CONDITION>
+												</CONDITION>
+												<ATTRIBUTE-TAILORINGS>
+													<PRIMITIVE-ATTRIBUTE-TAILORING>
+														<SHORT-NAME>category</SHORT-NAME>
+														<IN-SCOPE>true</IN-SCOPE>
+													</PRIMITIVE-ATTRIBUTE-TAILORING>
+													<PRIMITIVE-ATTRIBUTE-TAILORING>
+														<SHORT-NAME>description</SHORT-NAME>
+														<DESC>
+															<L-2 L="EN">TPS_SAFEX_00101: Description of safety requirements.</L-2>
+														</DESC>
+														<IN-SCOPE>true</IN-SCOPE>
+														<MULTIPLICITY-RESTRICTION>
+															<SEVERITY>ERROR</SEVERITY>
+															<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+														</MULTIPLICITY-RESTRICTION>
+													</PRIMITIVE-ATTRIBUTE-TAILORING>
+													<PRIMITIVE-ATTRIBUTE-TAILORING>
+														<SHORT-NAME>uuid</SHORT-NAME>
+														<IN-SCOPE>false</IN-SCOPE>
+													</PRIMITIVE-ATTRIBUTE-TAILORING>
+												</ATTRIBUTE-TAILORINGS>
+												<SDG-TAILORINGS>
+													<SDG-TAILORING>
+														<SHORT-NAME>SAFEX</SHORT-NAME>
+														<DESC>
+															<L-2 L="EN">The Sdg that is represented by SdgClass SafetyExtension/SAFEX/Safex SHALL exist if the category starts with  "SAFETY_.*"</L-2>
+														</DESC>
+														<IN-SCOPE>true</IN-SCOPE>
+														<SEVERITY>ERROR</SEVERITY>
+														<SDG-CLASS-REF DEST="SDG-CLASS">SafetyExtensionSdgDef/SafetyRequirement</SDG-CLASS-REF>
+													</SDG-TAILORING>
+												</SDG-TAILORINGS>
+											</CLASS-CONTENT-CONDITIONAL>
+										</CLASS-CONTENTS>
+									</CONCRETE-CLASS-TAILORING>
+									<CONCRETE-CLASS-TAILORING>
+										<SHORT-NAME>XFile</SHORT-NAME>
+										<DESC>
+											<L-2 L="EN">[TPS_SAFEX_00105] External Safety Requirements</L-2>
+										</DESC>
+										<IN-SCOPE>true</IN-SCOPE>
+										<CLASS-CONTENTS>
+											<CLASS-CONTENT-CONDITIONAL>
+												<SHORT-NAME>ExternalSafetyRequirement</SHORT-NAME>
+												<CONDITION>
+													<PRIMITIVE-ATTRIBUTE-CONDITION>
+														<PATTERN>SAFETY_EXTERNAL</PATTERN>
+														<ATTRIBUTE-REF DEST="PRIMITIVE-ATTRIBUTE-TAILORING">SafetyExtension/Xfile/ExternalSafetyRequirement/category</ATTRIBUTE-REF>
+													</PRIMITIVE-ATTRIBUTE-CONDITION>
+												</CONDITION>
+												<ATTRIBUTE-TAILORINGS>
+													<PRIMITIVE-ATTRIBUTE-TAILORING>
+														<SHORT-NAME>category</SHORT-NAME>
+														<IN-SCOPE>true</IN-SCOPE>
+														<MULTIPLICITY-RESTRICTION/>
+													</PRIMITIVE-ATTRIBUTE-TAILORING>
+													<PRIMITIVE-ATTRIBUTE-TAILORING>
+														<SHORT-NAME>tool</SHORT-NAME>
+														<IN-SCOPE>true</IN-SCOPE>
+													</PRIMITIVE-ATTRIBUTE-TAILORING>
+													<PRIMITIVE-ATTRIBUTE-TAILORING>
+														<SHORT-NAME>toolVersion</SHORT-NAME>
+														<IN-SCOPE>true</IN-SCOPE>
+													</PRIMITIVE-ATTRIBUTE-TAILORING>
+													<PRIMITIVE-ATTRIBUTE-TAILORING>
+														<SHORT-NAME>url</SHORT-NAME>
+														<IN-SCOPE>true</IN-SCOPE>
+														<MULTIPLICITY-RESTRICTION>
+															<SEVERITY>ERROR</SEVERITY>
+															<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+														</MULTIPLICITY-RESTRICTION>
+													</PRIMITIVE-ATTRIBUTE-TAILORING>
+												</ATTRIBUTE-TAILORINGS>
+											</CLASS-CONTENT-CONDITIONAL>
+										</CLASS-CONTENTS>
+									</CONCRETE-CLASS-TAILORING>
+								</CLASS-TAILORINGS>
+							</DATA-FORMAT-TAILORING>
+						</DATA-EXCHANGE-POINT>
+						<SDG-DEF>
+							<SHORT-NAME>SafetyExtensionSdgDef</SHORT-NAME>
+							<DESC>
+								<L-2 L="EN">Sdgs used for safety extensions</L-2>
+							</DESC>
+							<SDG-CLASSES>
+								<SDG-CLASS>
+									<SHORT-NAME>SafetyRequirement</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">[TPS_SAFEX_00104] Status attribute</L-2>
+									</DESC>
+									<GID>SAFEX</GID>
+									<EXTENDS-META-CLASS>StructuredReq</EXTENDS-META-CLASS>
+									<ATTRIBUTES>
+										<SDG-PRIMITIVE-ATTRIBUTE>
+											<SHORT-NAME>asil</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">[TPS_SAFEX_00201] ASIL attribute of safety requirements</L-2>
+											</DESC>
+											<GID>ASIL</GID>
+											<!-- we should quote () use XML spy as a reference-->
+											<PATTERN>QM|A|B|C|D|QM(A)|QM(B)|QM(C)|QM(D)|A(B)|A\(C\)|A(D)|B(B)|B(C)|B(D)|C(C)|C(D)|D(D)</PATTERN>
+										</SDG-PRIMITIVE-ATTRIBUTE>
+										<SDG-PRIMITIVE-ATTRIBUTE>
+											<SHORT-NAME>status</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">[TPS_SAFEX_00104] Status attribute</L-2>
+											</DESC>
+											<GID>STATUS</GID>
+										</SDG-PRIMITIVE-ATTRIBUTE>
+									</ATTRIBUTES>
+								</SDG-CLASS>
+							</SDG-CLASSES>
+						</SDG-DEF>
+					</ELEMENTS>
+				</AR-PACKAGE>
+			</AR-PACKAGES>
+		</AR-PACKAGE>
+	</AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>McInt</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>CompuMethods</SHORT-NAME>
+          <ELEMENTS>
+            <COMPU-METHOD>
+              <SHORT-NAME>Temperature_C</SHORT-NAME>
+              <DESC>
+                <L-2 L="EN">Conversion from [°C] to [K]</L-2>
+              </DESC>
+              <CATEGORY>LINEAR</CATEGORY>
+              <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+              <UNIT-REF DEST="UNIT">/McInt/Units/DegreeCelsius</UNIT-REF>
+              <COMPU-INTERNAL-TO-PHYS>
+                <COMPU-SCALES>
+                  <COMPU-SCALE>
+                    <COMPU-RATIONAL-COEFFS>
+                      <COMPU-NUMERATOR>
+                        <V>-273.15</V>
+                        <V>1</V>
+                      </COMPU-NUMERATOR>
+                      <COMPU-DENOMINATOR>
+                        <V>1</V>
+                      </COMPU-DENOMINATOR>
+                    </COMPU-RATIONAL-COEFFS>
+                  </COMPU-SCALE>
+                </COMPU-SCALES>
+              </COMPU-INTERNAL-TO-PHYS>
+            </COMPU-METHOD>
+            <COMPU-METHOD>
+              <SHORT-NAME>Current_mA</SHORT-NAME>
+              <DESC>
+                <L-2 L="EN">Conversion to illustrate proportional scaling between interface and internal computations</L-2>
+              </DESC>
+              <CATEGORY>LINEAR</CATEGORY>
+              <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+              <UNIT-REF DEST="UNIT">/McInt/Units/MilliAmpere</UNIT-REF>
+              <COMPU-INTERNAL-TO-PHYS>
+                <COMPU-SCALES>
+                  <COMPU-SCALE>
+                    <COMPU-RATIONAL-COEFFS>
+                      <COMPU-NUMERATOR>
+                        <V>0</V>
+                        <V>1000</V>
+                      </COMPU-NUMERATOR>
+                      <COMPU-DENOMINATOR>
+                        <V>1</V>
+                      </COMPU-DENOMINATOR>
+                    </COMPU-RATIONAL-COEFFS>
+                  </COMPU-SCALE>
+                </COMPU-SCALES>
+              </COMPU-INTERNAL-TO-PHYS>
+            </COMPU-METHOD>
+            <COMPU-METHOD>
+              <SHORT-NAME>Identical</SHORT-NAME>
+              <DESC>
+                <L-2 L="EN">Identical conversion (Physical == Internal). Used for most data types here.</L-2>
+              </DESC>
+              <CATEGORY>IDENTICAL</CATEGORY>
+              <DISPLAY-FORMAT>%f</DISPLAY-FORMAT>
+            </COMPU-METHOD>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

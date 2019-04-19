@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <!--
+  Disclaimer
+  
+  This work (specification and/or software implementation) and the material
+  contained in it, as released by AUTOSAR, is for the purpose of information
+  only. AUTOSAR and the companies that have contributed to it shall not be liable
+  for any use of the work.
+  
+  The material contained in this work is protected by copyright and other types
+  of intellectual property rights. The commercial exploitation of the material
+  contained in this work requires a license to such intellectual property rights.
+  
+  This work may be utilized or reproduced without any modification, in any form
+  or by any means, for informational purposes only. For any other purpose, no
+  part of the work may be utilized or reproduced, in any form or by any means,
+  without permission in writing from the publisher.
+  
+  The work has been developed for automotive applications only. It has neither
+  been developed, nor tested for non-automotive applications.
+  
+  The word AUTOSAR and the AUTOSAR logo are registered trademarks.
+  -->
+   <ADMIN-DATA>
+      <USED-LANGUAGES>
+         <L-10 L="EN" xml:space="default">English</L-10>
+      </USED-LANGUAGES>
+   </ADMIN-DATA>
+   <AR-PACKAGES>
+      <AR-PACKAGE>
+         <SHORT-NAME>AUTOSAR</SHORT-NAME>
+         <AR-PACKAGES>
+            <AR-PACKAGE>
+               <SHORT-NAME>NvBlockSoftwareComponentType</SHORT-NAME>
+               <AR-PACKAGES>
+                  <AR-PACKAGE>
+                     <SHORT-NAME>ClientServerInterfaces_Blueprint</SHORT-NAME>
+                     <CATEGORY>BLUEPRINT</CATEGORY>
+                     <ELEMENTS>
+                        <CLIENT-SERVER-INTERFACE>
+                           <SHORT-NAME>NvMAdmin</SHORT-NAME>
+                           <IS-SERVICE>false</IS-SERVICE>
+                           <OPERATIONS>
+                              <CLIENT-SERVER-OPERATION>
+                                 <SHORT-NAME>SetBlockProtection</SHORT-NAME>
+                                 <INTRODUCTION>
+                                    <P>
+                                       <L-1 L="EN">Service for setting/resetting the write protection for a NV block.</L-1>
+                                    </P>
+                                 </INTRODUCTION>
+                                 <ARGUMENTS>
+                                    <ARGUMENT-DATA-PROTOTYPE>
+                                       <SHORT-NAME>ProtectionEnabled</SHORT-NAME>
+                                       <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Platform/ImplementationDataTypes_Blueprint/boolean</TYPE-TREF>
+                                       <DIRECTION>IN</DIRECTION>
+                                    </ARGUMENT-DATA-PROTOTYPE>
+                                 </ARGUMENTS>
+                                 <POSSIBLE-ERROR-REFS>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMAdmin/E_OK</POSSIBLE-ERROR-REF>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMAdmin/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                 </POSSIBLE-ERROR-REFS>
+                                 <VARIATION-POINT>
+                                    <BLUEPRINT-CONDITION>
+                                       <P>
+                                          <L-1 L="EN">{ecuc(NvM/NvMCommon/NvMApiConfigClass)} == NVM_API_CONFIG_CLASS_3</L-1>
+                                       </P>
+                                    </BLUEPRINT-CONDITION>
+                                 </VARIATION-POINT>
+                              </CLIENT-SERVER-OPERATION>
+                           </OPERATIONS>
+                           <POSSIBLE-ERRORS>
+                              <APPLICATION-ERROR>
+                                 <SHORT-NAME>E_OK</SHORT-NAME>
+                                 <DESC>
+                                    <L-2 L="EN">Operation successful</L-2>
+                                 </DESC>
+                                 <ERROR-CODE>0</ERROR-CODE>
+                              </APPLICATION-ERROR>
+                              <APPLICATION-ERROR>
+                                 <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                 <DESC>
+                                    <L-2 L="EN">Operation failed</L-2>
+                                 </DESC>
+                                 <ERROR-CODE>1</ERROR-CODE>
+                              </APPLICATION-ERROR>
+                           </POSSIBLE-ERRORS>
+                        </CLIENT-SERVER-INTERFACE>
+                        <CLIENT-SERVER-INTERFACE>
+                           <SHORT-NAME>NvMNotifyInitBlock</SHORT-NAME>
+                           <INTRODUCTION>
+                              <P>
+                                 <L-1 L="EN">Callback that is called by the NvM module when default data needs to be restored to the RAM image</L-1>
+                              </P>
+                           </INTRODUCTION>
+                           <IS-SERVICE>false</IS-SERVICE>
+                           <OPERATIONS>
+                              <CLIENT-SERVER-OPERATION>
+                                 <SHORT-NAME>InitBlock</SHORT-NAME>
+                                 <INTRODUCTION>
+                                    <P>
+                                       <L-1 L="EN">This callback is called if the initialization of a block has completed.</L-1>
+                                    </P>
+                                 </INTRODUCTION>
+                                 <ARGUMENTS>
+                                    <ARGUMENT-DATA-PROTOTYPE>
+                                       <SHORT-NAME>InitBlockRequest</SHORT-NAME>
+                                       <INTRODUCTION>
+                                          <P>
+                                             <L-1 L="EN">--</L-1>
+                                          </P>
+                                       </INTRODUCTION>
+                                       <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/NvM/ImplementationDataTypes_Blueprint/NvM_InitBlockRequestType</TYPE-TREF>
+                                       <DIRECTION>IN</DIRECTION>
+                                    </ARGUMENT-DATA-PROTOTYPE>
+                                 </ARGUMENTS>
+                                 <POSSIBLE-ERROR-REFS>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMNotifyInitBlock/E_OK</POSSIBLE-ERROR-REF>
+                                 </POSSIBLE-ERROR-REFS>
+                              </CLIENT-SERVER-OPERATION>
+                           </OPERATIONS>
+                           <POSSIBLE-ERRORS>
+                              <APPLICATION-ERROR>
+                                 <SHORT-NAME>E_OK</SHORT-NAME>
+                                 <DESC>
+                                    <L-2 L="EN">Operation successful</L-2>
+                                 </DESC>
+                                 <ERROR-CODE>0</ERROR-CODE>
+                              </APPLICATION-ERROR>
+                           </POSSIBLE-ERRORS>
+                        </CLIENT-SERVER-INTERFACE>
+                        <CLIENT-SERVER-INTERFACE>
+                           <SHORT-NAME>NvMNotifyJobFinished</SHORT-NAME>
+                           <INTRODUCTION>
+                              <P>
+                                 <L-1 L="EN">Callback that is called when a job has finished</L-1>
+                              </P>
+                           </INTRODUCTION>
+                           <IS-SERVICE>false</IS-SERVICE>
+                           <OPERATIONS>
+                              <CLIENT-SERVER-OPERATION>
+                                 <SHORT-NAME>JobFinished</SHORT-NAME>
+                                 <INTRODUCTION>
+                                    <P>
+                                       <L-1 L="EN">Callback that gets called if a job has finished</L-1>
+                                    </P>
+                                 </INTRODUCTION>
+                                 <ARGUMENTS>
+                                    <ARGUMENT-DATA-PROTOTYPE>
+                                       <SHORT-NAME>BlockRequest</SHORT-NAME>
+                                       <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/NvM/ImplementationDataTypes_Blueprint/NvM_BlockRequestType</TYPE-TREF>
+                                       <DIRECTION>IN</DIRECTION>
+                                    </ARGUMENT-DATA-PROTOTYPE>
+                                    <ARGUMENT-DATA-PROTOTYPE>
+                                       <SHORT-NAME>JobResult</SHORT-NAME>
+                                       <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/NvM/ImplementationDataTypes_Blueprint/NvM_RequestResultType</TYPE-TREF>
+                                       <DIRECTION>IN</DIRECTION>
+                                    </ARGUMENT-DATA-PROTOTYPE>
+                                 </ARGUMENTS>
+                                 <POSSIBLE-ERROR-REFS>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMNotifyJobFinished/E_OK</POSSIBLE-ERROR-REF>
+                                 </POSSIBLE-ERROR-REFS>
+                              </CLIENT-SERVER-OPERATION>
+                           </OPERATIONS>
+                           <POSSIBLE-ERRORS>
+                              <APPLICATION-ERROR>
+                                 <SHORT-NAME>E_OK</SHORT-NAME>
+                                 <DESC>
+                                    <L-2 L="EN">Operation successful</L-2>
+                                 </DESC>
+                                 <ERROR-CODE>0</ERROR-CODE>
+                              </APPLICATION-ERROR>
+                           </POSSIBLE-ERRORS>
+                        </CLIENT-SERVER-INTERFACE>
+                        <CLIENT-SERVER-INTERFACE>
+                           <SHORT-NAME>NvMService</SHORT-NAME>
+                           <IS-SERVICE>false</IS-SERVICE>
+                           <OPERATIONS>
+                              <CLIENT-SERVER-OPERATION>
+                                 <SHORT-NAME>EraseBlock</SHORT-NAME>
+                                 <INTRODUCTION>
+                                    <P>
+                                       <L-1 L="EN">Service to erase a NV block.</L-1>
+                                    </P>
+                                 </INTRODUCTION>
+                                 <POSSIBLE-ERROR-REFS>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                 </POSSIBLE-ERROR-REFS>
+                                 <VARIATION-POINT>
+                                    <BLUEPRINT-CONDITION>
+                                       <P>
+                                          <L-1 L="EN">{ecuc(NvM/NvMCommon/NvMApiConfigClass)} == NVM_API_CONFIG_CLASS_3</L-1>
+                                       </P>
+                                    </BLUEPRINT-CONDITION>
+                                 </VARIATION-POINT>
+                              </CLIENT-SERVER-OPERATION>
+                              <CLIENT-SERVER-OPERATION>
+                                 <SHORT-NAME>GetDataIndex</SHORT-NAME>
+                                 <INTRODUCTION>
+                                    <P>
+                                       <L-1 L="EN">Service for getting the currently set  DataIndex of a dataset NVRAM block</L-1>
+                                    </P>
+                                 </INTRODUCTION>
+                                 <ARGUMENTS>
+                                    <ARGUMENT-DATA-PROTOTYPE>
+                                       <SHORT-NAME>DataIndexPtr</SHORT-NAME>
+                                       <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Platform/ImplementationDataTypes_Blueprint/uint8</TYPE-TREF>
+                                       <DIRECTION>OUT</DIRECTION>
+                                    </ARGUMENT-DATA-PROTOTYPE>
+                                 </ARGUMENTS>
+                                 <POSSIBLE-ERROR-REFS>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                 </POSSIBLE-ERROR-REFS>
+                                 <VARIATION-POINT>
+                                    <BLUEPRINT-CONDITION>
+                                       <P>
+                                          <L-1 L="EN">(({ecuc(NvM/NvMCommon/NvMApiConfigClass)} == NVM_API_CONFIG_CLASS_2) || ({ecuc(NvM/NvMCommon/NvMApiConfigClass)} == NVM_API_CONFIG_CLASS_3)) &amp;&amp; (count({ecuc(NvM/NvMBlockDescriptor/NvMBlockManagementType)} == NVM_BLOCK_DATASET) &gt; 0)</L-1>
+                                       </P>
+                                    </BLUEPRINT-CONDITION>
+                                 </VARIATION-POINT>
+                              </CLIENT-SERVER-OPERATION>
+                              <CLIENT-SERVER-OPERATION>
+                                 <SHORT-NAME>GetErrorStatus</SHORT-NAME>
+                                 <INTRODUCTION>
+                                    <P>
+                                       <L-1 L="EN">Service to read the block dependent error/status information.</L-1>
+                                    </P>
+                                 </INTRODUCTION>
+                                 <ARGUMENTS>
+                                    <ARGUMENT-DATA-PROTOTYPE>
+                                       <SHORT-NAME>RequestResultPtr</SHORT-NAME>
+                                       <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/NvM/ImplementationDataTypes_Blueprint/NvM_RequestResultType</TYPE-TREF>
+                                       <DIRECTION>OUT</DIRECTION>
+                                    </ARGUMENT-DATA-PROTOTYPE>
+                                 </ARGUMENTS>
+                                 <POSSIBLE-ERROR-REFS>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                 </POSSIBLE-ERROR-REFS>
+                              </CLIENT-SERVER-OPERATION>
+                              <CLIENT-SERVER-OPERATION>
+                                 <SHORT-NAME>InvalidateNvBlock</SHORT-NAME>
+                                 <INTRODUCTION>
+                                    <P>
+                                       <L-1 L="EN">Service to invalidate a NV block.</L-1>
+                                    </P>
+                                 </INTRODUCTION>
+                                 <POSSIBLE-ERROR-REFS>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                 </POSSIBLE-ERROR-REFS>
+                                 <VARIATION-POINT>
+                                    <BLUEPRINT-CONDITION>
+                                       <P>
+                                          <L-1 L="EN">{ecuc(NvM/NvMCommon/NvMApiConfigClass)} == NVM_API_CONFIG_CLASS_3</L-1>
+                                       </P>
+                                    </BLUEPRINT-CONDITION>
+                                 </VARIATION-POINT>
+                              </CLIENT-SERVER-OPERATION>
+                              <CLIENT-SERVER-OPERATION>
+                                 <SHORT-NAME>ReadBlock</SHORT-NAME>
+                                 <INTRODUCTION>
+                                    <P>
+                                       <L-1 L="EN">Service to copy the data of the NV block to its corresponding RAM block.</L-1>
+                                    </P>
+                                 </INTRODUCTION>
+                                 <ARGUMENTS>
+                                    <ARGUMENT-DATA-PROTOTYPE>
+                                       <SHORT-NAME>DstPtr</SHORT-NAME>
+                                       <INTRODUCTION>
+                                          <P>
+                                             <L-1 L="EN">The parameter "DstPtr" shall be typed by an ImplementationDataType of category DATA_REFERENCE with the pointer target void to pass an address (pointer) to the RAM Block.</L-1>
+                                          </P>
+                                       </INTRODUCTION>
+                                       <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/GenDef/ImplementationDataTypes_Blueprint/VoidPtr</TYPE-TREF>
+                                       <DIRECTION>IN</DIRECTION>
+                                    </ARGUMENT-DATA-PROTOTYPE>
+                                 </ARGUMENTS>
+                                 <POSSIBLE-ERROR-REFS>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                 </POSSIBLE-ERROR-REFS>
+                                 <VARIATION-POINT>
+                                    <BLUEPRINT-CONDITION>
+                                       <P>
+                                          <L-1 L="EN">({ecuc(NvM/NvMCommon/NvMApiConfigClass)} == NVM_API_CONFIG_CLASS_2 || {ecuc(NvM/NvMCommon/NvMApiConfigClass)} == NVM_API_CONFIG_CLASS_3)</L-1>
+                                       </P>
+                                    </BLUEPRINT-CONDITION>
+                                 </VARIATION-POINT>
+                              </CLIENT-SERVER-OPERATION>
+                              <CLIENT-SERVER-OPERATION>
+                                 <SHORT-NAME>ReadPRAMBlock</SHORT-NAME>
+                                 <INTRODUCTION>
+                                    <P>
+                                       <L-1 L="EN"/>
+                                    </P>
+                                 </INTRODUCTION>
+                                 <POSSIBLE-ERROR-REFS>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                 </POSSIBLE-ERROR-REFS>
+                                 <VARIATION-POINT>
+                                    <BLUEPRINT-CONDITION>
+                                       <P>
+                                          <L-1 L="EN">({ecuc(NvM/NvMCommon/NvMApiConfigClass)} == NVM_API_CONFIG_CLASS_2 || {ecuc(NvM/NvMCommon/NvMApiConfigClass)} == NVM_API_CONFIG_CLASS_3)</L-1>
+                                       </P>
+                                    </BLUEPRINT-CONDITION>
+                                 </VARIATION-POINT>
+                              </CLIENT-SERVER-OPERATION>
+                              <CLIENT-SERVER-OPERATION>
+                                 <SHORT-NAME>RestoreBlockDefaults</SHORT-NAME>
+                                 <INTRODUCTION>
+                                    <P>
+                                       <L-1 L="EN">Service to restore the default data to its corresponding RAM block.</L-1>
+                                    </P>
+                                 </INTRODUCTION>
+                                 <ARGUMENTS>
+                                    <ARGUMENT-DATA-PROTOTYPE>
+                                       <SHORT-NAME>DstPtr</SHORT-NAME>
+                                       <INTRODUCTION>
+                                          <P>
+                                             <L-1 L="EN">The parameter "DstPtr" shall be typed by an ImplementationDataType of category DATA_REFERENCE with the pointer target void to pass an address (pointer) to the RAM Block.</L-1>
+                                          </P>
+                                       </INTRODUCTION>
+                                       <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/GenDef/ImplementationDataTypes_Blueprint/VoidPtr</TYPE-TREF>
+                                       <DIRECTION>IN</DIRECTION>
+                                    </ARGUMENT-DATA-PROTOTYPE>
+                                 </ARGUMENTS>
+                                 <POSSIBLE-ERROR-REFS>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                 </POSSIBLE-ERROR-REFS>
+                                 <VARIATION-POINT>
+                                    <BLUEPRINT-CONDITION>
+                                       <P>
+                                          <L-1 L="EN">({ecuc(NvM/NvMCommon/NvMApiConfigClass)} == NVM_API_CONFIG_CLASS_2 || {ecuc(NvM/NvMCommon/NvMApiConfigClass)} == NVM_API_CONFIG_CLASS_3)</L-1>
+                                       </P>
+                                    </BLUEPRINT-CONDITION>
+                                 </VARIATION-POINT>
+                              </CLIENT-SERVER-OPERATION>
+                              <CLIENT-SERVER-OPERATION>
+                                 <SHORT-NAME>RestorePRAMBlockDefaults</SHORT-NAME>
+                                 <INTRODUCTION>
+                                    <P>
+                                       <L-1 L="EN"/>
+                                    </P>
+                                 </INTRODUCTION>
+                                 <POSSIBLE-ERROR-REFS>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                 </POSSIBLE-ERROR-REFS>
+                                 <VARIATION-POINT>
+                                    <BLUEPRINT-CONDITION>
+                                       <P>
+                                          <L-1 L="EN">({ecuc(NvM/NvMCommon/NvMApiConfigClass)} == NVM_API_CONFIG_CLASS_2 || {ecuc(NvM/NvMCommon/NvMApiConfigClass)} == NVM_API_CONFIG_CLASS_3)</L-1>
+                                       </P>
+                                    </BLUEPRINT-CONDITION>
+                                 </VARIATION-POINT>
+                              </CLIENT-SERVER-OPERATION>
+                              <CLIENT-SERVER-OPERATION>
+                                 <SHORT-NAME>SetDataIndex</SHORT-NAME>
+                                 <INTRODUCTION>
+                                    <P>
+                                       <L-1 L="EN">Service for setting the DataIndex of a dataset NVRAM block.</L-1>
+                                    </P>
+                                 </INTRODUCTION>
+                                 <ARGUMENTS>
+                                    <ARGUMENT-DATA-PROTOTYPE>
+                                       <SHORT-NAME>DataIndex</SHORT-NAME>
+                                       <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Platform/ImplementationDataTypes_Blueprint/uint8</TYPE-TREF>
+                                       <DIRECTION>IN</DIRECTION>
+                                    </ARGUMENT-DATA-PROTOTYPE>
+                                 </ARGUMENTS>
+                                 <POSSIBLE-ERROR-REFS>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                 </POSSIBLE-ERROR-REFS>
+                                 <VARIATION-POINT>
+                                    <BLUEPRINT-CONDITION>
+                                       <P>
+                                          <L-1 L="EN">(({ecuc(NvM/NvMCommon/NvMApiConfigClass)} == NVM_API_CONFIG_CLASS_2) || ({ecuc(NvM/NvMCommon/NvMApiConfigClass)} == NVM_API_CONFIG_CLASS_3)) &amp;&amp; (count({ecuc(NvM/NvMBlockDescriptor/NvMBlockManagementType)} == NVM_BLOCK_DATASET) &gt; 0)</L-1>
+                                       </P>
+                                    </BLUEPRINT-CONDITION>
+                                 </VARIATION-POINT>
+                              </CLIENT-SERVER-OPERATION>
+                              <CLIENT-SERVER-OPERATION>
+                                 <SHORT-NAME>SetRamBlockStatus</SHORT-NAME>
+                                 <INTRODUCTION>
+                                    <P>
+                                       <L-1 L="EN">Service for setting the RAM block status of an NVRAM block.</L-1>
+                                    </P>
+                                 </INTRODUCTION>
+                                 <ARGUMENTS>
+                                    <ARGUMENT-DATA-PROTOTYPE>
+                                       <SHORT-NAME>BlockChanged</SHORT-NAME>
+                                       <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Platform/ImplementationDataTypes_Blueprint/boolean</TYPE-TREF>
+                                       <DIRECTION>IN</DIRECTION>
+                                    </ARGUMENT-DATA-PROTOTYPE>
+                                 </ARGUMENTS>
+                                 <POSSIBLE-ERROR-REFS>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                 </POSSIBLE-ERROR-REFS>
+                                 <VARIATION-POINT>
+                                    <BLUEPRINT-CONDITION>
+                                       <P>
+                                          <L-1 L="EN">{ecuc(NvM/NvMBlockDescriptor/NvMBlockUseSetRamBlockStatus)} == true</L-1>
+                                       </P>
+                                    </BLUEPRINT-CONDITION>
+                                 </VARIATION-POINT>
+                              </CLIENT-SERVER-OPERATION>
+                              <CLIENT-SERVER-OPERATION>
+                                 <SHORT-NAME>WriteBlock</SHORT-NAME>
+                                 <INTRODUCTION>
+                                    <P>
+                                       <L-1 L="EN">Service to copy the data of the RAM block to its corresponding NV block.</L-1>
+                                    </P>
+                                 </INTRODUCTION>
+                                 <ARGUMENTS>
+                                    <ARGUMENT-DATA-PROTOTYPE>
+                                       <SHORT-NAME>SrcPtr</SHORT-NAME>
+                                       <INTRODUCTION>
+                                          <P>
+                                             <L-1 L="EN">The parameter "SrcPtr" shall be typed by an ImplementationDataType of category DATA_REFERENCE with the pointer target void to pass an address (pointer) to the RAM Block.</L-1>
+                                          </P>
+                                       </INTRODUCTION>
+                                       <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/GenDef/ImplementationDataTypes_Blueprint/ConstVoidPtr</TYPE-TREF>
+                                       <DIRECTION>IN</DIRECTION>
+                                    </ARGUMENT-DATA-PROTOTYPE>
+                                 </ARGUMENTS>
+                                 <POSSIBLE-ERROR-REFS>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                 </POSSIBLE-ERROR-REFS>
+                                 <VARIATION-POINT>
+                                    <BLUEPRINT-CONDITION>
+                                       <P>
+                                          <L-1 L="EN">({ecuc(NvM/NvMCommon/NvMApiConfigClass)} == NVM_API_CONFIG_CLASS_2 || {ecuc(NvM/NvMCommon/NvMApiConfigClass)} == NVM_API_CONFIG_CLASS_3)</L-1>
+                                       </P>
+                                    </BLUEPRINT-CONDITION>
+                                 </VARIATION-POINT>
+                              </CLIENT-SERVER-OPERATION>
+                              <CLIENT-SERVER-OPERATION>
+                                 <SHORT-NAME>WritePRAMBlock</SHORT-NAME>
+                                 <INTRODUCTION>
+                                    <P>
+                                       <L-1 L="EN"/>
+                                    </P>
+                                 </INTRODUCTION>
+                                 <POSSIBLE-ERROR-REFS>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                                    <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/NvBlockSoftwareComponentType/ClientServerInterfaces_Blueprint/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                 </POSSIBLE-ERROR-REFS>
+                                 <VARIATION-POINT>
+                                    <BLUEPRINT-CONDITION>
+                                       <P>
+                                          <L-1 L="EN">({ecuc(NvM/NvMCommon/NvMApiConfigClass)} == NVM_API_CONFIG_CLASS_2 || {ecuc(NvM/NvMCommon/NvMApiConfigClass)} == NVM_API_CONFIG_CLASS_3)</L-1>
+                                       </P>
+                                    </BLUEPRINT-CONDITION>
+                                 </VARIATION-POINT>
+                              </CLIENT-SERVER-OPERATION>
+                           </OPERATIONS>
+                           <POSSIBLE-ERRORS>
+                              <APPLICATION-ERROR>
+                                 <SHORT-NAME>E_OK</SHORT-NAME>
+                                 <DESC>
+                                    <L-2 L="EN">Operation successful</L-2>
+                                 </DESC>
+                                 <ERROR-CODE>0</ERROR-CODE>
+                              </APPLICATION-ERROR>
+                              <APPLICATION-ERROR>
+                                 <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                 <DESC>
+                                    <L-2 L="EN">Operation failed</L-2>
+                                 </DESC>
+                                 <ERROR-CODE>1</ERROR-CODE>
+                              </APPLICATION-ERROR>
+                           </POSSIBLE-ERRORS>
+                        </CLIENT-SERVER-INTERFACE>
+                     </ELEMENTS>
+                  </AR-PACKAGE>
+               </AR-PACKAGES>
+            </AR-PACKAGE>
+         </AR-PACKAGES>
+      </AR-PACKAGE>
+   </AR-PACKAGES>
+</AUTOSAR>

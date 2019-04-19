@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+	<ADMIN-DATA>
+		<LANGUAGE>EN</LANGUAGE>
+		<USED-LANGUAGES>
+			<L-10 L="EN" xml:space="preserve">English</L-10>
+		</USED-LANGUAGES>
+	</ADMIN-DATA>
+	<AR-PACKAGES>
+		<AR-PACKAGE>
+			<SHORT-NAME>Tier1</SHORT-NAME>
+			<AR-PACKAGES>
+				<AR-PACKAGE>
+					<SHORT-NAME>ARPlatform1</SHORT-NAME>
+					<AR-PACKAGES>
+						<AR-PACKAGE>
+							<SHORT-NAME>System</SHORT-NAME>
+							<ELEMENTS>
+								<SYSTEM>
+									<SHORT-NAME>SystemU_EcuDescr</SHORT-NAME>
+									<CATEGORY>ECU_SYSTEM_DESCRIPTION</CATEGORY>
+									<ROOT-SOFTWARE-COMPOSITIONS>
+										<ROOT-SW-COMPOSITION-PROTOTYPE>
+											<SHORT-NAME>SystemU</SHORT-NAME>
+											<SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/Tier1/ARPlatform1/System/CompositionSwComponentTypes/SystemURootComposition_EcuDescr</SOFTWARE-COMPOSITION-TREF>
+										</ROOT-SW-COMPOSITION-PROTOTYPE>
+									</ROOT-SOFTWARE-COMPOSITIONS>
+								</SYSTEM>
+							</ELEMENTS>
+						</AR-PACKAGE>
+					</AR-PACKAGES>
+				</AR-PACKAGE>
+			</AR-PACKAGES>
+		</AR-PACKAGE>
+	</AR-PACKAGES>
+</AUTOSAR>

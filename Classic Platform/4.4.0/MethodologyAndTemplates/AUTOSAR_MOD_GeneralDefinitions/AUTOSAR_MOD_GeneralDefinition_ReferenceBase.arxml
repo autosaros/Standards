@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+   <!-- AUTOSAR General Definitions -->
+   <!--
+    Document Owner:                 AUTOSAR
+    Document Responsibility:        AUTOSAR
+    Document Identification Number: 230
+    Document Status:                Final
+    Part of AUTOSAR Standard:       Classic Platform
+    Part of AUTOSAR Release:        4.4.0
+    -->
+   <!--
+    Disclaimer
+
+    This work (specification and/or software implementation) and the material
+    contained in it, as released by AUTOSAR, is for the purpose of information
+    only. AUTOSAR and the companies that have contributed to it shall not be liable
+    for any use of the work.
+
+    The material contained in this work is protected by copyright and other types
+    of intellectual property rights. The commercial exploitation of the material
+    contained in this work requires a license to such intellectual property rights.
+
+    This work may be utilized or reproduced without any modification, in any form
+    or by any means, for informational purposes only. For any other purpose, no
+    part of the work may be utilized or reproduced, in any form or by any means,
+    without permission in writing from the publisher.
+
+    The work has been developed for automotive applications only. It has neither
+    been developed, nor tested for non-automotive applications.
+
+    The word AUTOSAR and the AUTOSAR logo are registered trademarks.
+ -->
+	<ADMIN-DATA>
+		<LANGUAGE>EN</LANGUAGE>
+		<USED-LANGUAGES>
+			<L-10 L="EN" xml:space="default">English</L-10>
+		</USED-LANGUAGES>
+	</ADMIN-DATA>
+	<AR-PACKAGES>
+		<AR-PACKAGE>
+			<SHORT-NAME>AUTOSAR</SHORT-NAME>
+			<REFERENCE-BASES>
+				<REFERENCE-BASE>
+					<SHORT-LABEL>ArTrace</SHORT-LABEL>
+					<IS-DEFAULT>false</IS-DEFAULT>
+					<IS-GLOBAL>true</IS-GLOBAL>
+					<BASE-IS-THIS-PACKAGE>true</BASE-IS-THIS-PACKAGE>
+					<GLOBAL-ELEMENTS>
+						<GLOBAL-ELEMENT>TRACEABLE</GLOBAL-ELEMENT>
+					</GLOBAL-ELEMENTS>
+				</REFERENCE-BASE>
+				<REFERENCE-BASE>
+					<SHORT-LABEL>Cite</SHORT-LABEL>
+					<IS-DEFAULT>false</IS-DEFAULT>
+					<IS-GLOBAL>true</IS-GLOBAL>
+					<BASE-IS-THIS-PACKAGE>true</BASE-IS-THIS-PACKAGE>
+					<GLOBAL-ELEMENTS>
+						<GLOBAL-ELEMENT>XDOC</GLOBAL-ELEMENT>
+					</GLOBAL-ELEMENTS>
+				</REFERENCE-BASE>
+				<REFERENCE-BASE>
+					<SHORT-LABEL>EnumMappingTables</SHORT-LABEL>
+					<IS-DEFAULT>false</IS-DEFAULT>
+					<IS-GLOBAL>false</IS-GLOBAL>
+					<BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+					<PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/DefaultEnumMappingTables</PACKAGE-REF>
+				</REFERENCE-BASE>
+			</REFERENCE-BASES>
+		</AR-PACKAGE>
+	</AR-PACKAGES>
+</AUTOSAR>

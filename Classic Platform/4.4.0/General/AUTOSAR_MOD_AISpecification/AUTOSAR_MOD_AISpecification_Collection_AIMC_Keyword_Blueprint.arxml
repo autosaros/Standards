@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <ADMIN-DATA>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="preserve">EN</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>AISpecification</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>Collections_Blueprint</SHORT-NAME>
+              <CATEGORY>BLUEPRINT</CATEGORY>
+              <REFERENCE-BASES>
+                <REFERENCE-BASE>
+                <SHORT-LABEL>ARKeywordSet</SHORT-LABEL>
+                <IS-DEFAULT>false</IS-DEFAULT>
+                  <IS-GLOBAL>false</IS-GLOBAL>
+                  <BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+                  <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/AISpecification/KeywordSets</PACKAGE-REF>
+                </REFERENCE-BASE>
+              </REFERENCE-BASES>
+              <ELEMENTS>
+                <COLLECTION>
+                  <SHORT-NAME>PL_List</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Keywords Phys/Log (P/L-List) for Powertrain</L-4>
+                  </LONG-NAME>
+                  <CATEGORY>SET</CATEGORY>
+                  <AUTO-COLLECT>REF-NONE</AUTO-COLLECT>
+                  <ELEMENT-ROLE>PART_OF_SUBSET</ELEMENT-ROLE>
+                  <ELEMENT-REFS>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/A</ELEMENT-REF>
+					<ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/Adr</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/Ag</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/Ar</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/Cntr</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/Fac</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/Flg</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/Frq</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/I</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/Idx</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/N</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/Nr</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/Posn</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/Pwr</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/P</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/Rat</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/R</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/St</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/T</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/Ti</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/Tq</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/V</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/U</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/Vol</ELEMENT-REF>
+                    <ELEMENT-REF DEST="KEYWORD" BASE="ARKeywordSet">KeywordList/W</ELEMENT-REF>
+                  </ELEMENT-REFS>
+                </COLLECTION>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

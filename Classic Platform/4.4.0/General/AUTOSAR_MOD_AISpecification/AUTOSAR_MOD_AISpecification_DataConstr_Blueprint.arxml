@@ -1,0 +1,3388 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="default">English</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR</SHORT-NAME>
+      <LONG-NAME>
+        <L-4 L="EN">AUTOSAR</L-4>
+      </LONG-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>AISpecification</SHORT-NAME>
+          <LONG-NAME>
+            <L-4 L="EN">AISpecification</L-4>
+          </LONG-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>DataConstrs_Blueprint</SHORT-NAME>
+              <CATEGORY>BLUEPRINT</CATEGORY>
+              <REFERENCE-BASES>
+                <REFERENCE-BASE>
+                  <SHORT-LABEL>Units_obsolete</SHORT-LABEL>
+                  <IS-DEFAULT>false</IS-DEFAULT>
+                  <IS-GLOBAL>false</IS-GLOBAL>
+                  <BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+                  <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/AISpecification/Units_obsolete</PACKAGE-REF>
+                </REFERENCE-BASE>
+                <REFERENCE-BASE>
+                  <SHORT-LABEL>Units</SHORT-LABEL>
+                  <IS-DEFAULT>false</IS-DEFAULT>
+                  <IS-GLOBAL>false</IS-GLOBAL>
+                  <BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+                  <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/AUTOSAR_PhysicalUnits/Units_Blueprints</PACKAGE-REF>
+                </REFERENCE-BASE>
+              </REFERENCE-BASES>
+              <ELEMENTS>
+                <DATA-CONSTR>
+                  <SHORT-NAME>A1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-18</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">18</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSecSqd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>A10</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-20.48</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">20.48</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSecSqd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>A11</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-99</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">99</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSecSqd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>A12</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-981</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">981</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSecSqd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>A13</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1962</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1962</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSecSqd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>A14</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-7848</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">7848</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSecSqd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>A2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-30</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">30</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSecSqd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>A3</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-8.5</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">8.5</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSecSqd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>A4</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-18</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">18</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSecSqd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>A5</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-200</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">200</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSecSqd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>A7</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2.55</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSecSqd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>A8</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1178</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1178</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSecSqd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>A9</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-4710</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4710</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSecSqd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>AckSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>AckSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Ag1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-0.5</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0.5</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Rad</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Ag2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1.5</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1.5</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Rad</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Ag3</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1.571</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1.571</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Rad</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Ag4</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-14.5</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">14.5</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Rad</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Ag5</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-870</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">870</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Rad</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Ag6</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1.57079632679489</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1.57079632679489</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Rad</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>AgA1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1000</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1000</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">RadPerSecSqd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>AgA2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-75</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">75</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">RadPerSecSqd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>AgSpd1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-50</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">50</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">RadPerSec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>AgSpd2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-5</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">5</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">RadPerSec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>AgSpd3</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-5</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">5</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">RadPerSec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>AgSpd4</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-10</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">10</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">RadPerSec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>AgSpd5</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-628</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">628</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">RadPerSec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>AgSpd6</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">500</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">RadPerSec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>AgSpd7</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">RadPerSec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>AgSpd8</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-8</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">8</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">RadPerSec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>AlrmSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>AlrmSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ArmingTyp2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ArmingTyp3</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>AvlSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>AvlSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>AxisTyp1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>BltLockSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>BltLockSt2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>BodyLvlCtrl1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>BodyLvlMod1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>BrkActrMod1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>BrkActrSatn1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>BrkMod1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>BrkReqTyp1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>BrkReqTyp2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>BucdSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>CalSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>CalSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ChdProtnCmd1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ChgInfo1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>CluSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>CornrMkr1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>CptInfo1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>CrashSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>CrashSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>CrsCtrlAndAccSwtSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>CrsCtrlAndAccSwtSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Crvt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-0.1</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0.1</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">PerMtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>CtrlSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>CtrlSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DamprCoeff1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-10000</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">10000</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NwtSecPerMtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Day1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">31</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DetnSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DetnSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DevErrSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DevErrSt2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DevErrSt3</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DevErrSt4</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DevErrSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DevErrSts2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DevErrSts3</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DevErrSts4</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DevSt4</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DevSt5</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DevSt6</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DevSt7</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DevSts4</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DevSts5</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DevSts6</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DevSts7</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DoorHndlSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DoorHndlSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DoorSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DoorSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>DynPpty1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">5</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>EgyMngtSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">10</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>EgyMngtSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">10</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>EnagSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>EngRunngDir1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>EngStrtRemReq1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>EntryEasy1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>EpbBtnCtrlSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>EpbBtnCtrlSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>F1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-2500</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2500</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Nwt</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>F2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-20000</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">20000</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Nwt</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>F3</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-150000</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">150000</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Nwt</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Fac1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-32</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">31.9990234375</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Fac3</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.7</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1.2</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Fac4</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Fac5</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">127.9921875</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Fac7</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Fixa1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Flg1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>FricCoeff1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Frq1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">100</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Hz</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Frq2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.5</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">20</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">KiloHz</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>GearShiftPrevn1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>GearSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-2</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">27</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>HldOnDmdSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>HomeCmngAndHomeLvngReq1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Hr1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">23</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ImobSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">6</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ImobSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">6</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ImobnWirelsReq1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ImpctSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ImpctSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>InOut1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>IndcrForStop1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>IndcrSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>IndcrSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>IndcrTypExt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>IntrLiReq1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>InvldVld1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>InvldVld2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Jerk1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-30</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">30</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSecCubd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>KeyCmd1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>KeyInsertSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>KeyInsertSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>KeySt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>KeySts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>LeRi1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Len1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-0.2</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0.2</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Mtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Len10</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-125</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">125</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Mtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Len11</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">40.96</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Mtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Len14</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">6</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Mtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Len3</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-0.3</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0.3</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Mtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Len4</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-0.3</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0.3</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Mtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Len5</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Mtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Len6</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1000000</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">KiloMtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Len7</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-500</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">500</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Mtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>LiOnWarn1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>LockActvn1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>LockSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>LockSt2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>LockStOfSteerCol1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>LockSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>LockSts2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>LockStsOfSteerCol1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>LockTrigSrc1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">11</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>LockUnlckReq1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>LockgCenReq1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">6</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>LockgCenReqSrc1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">10</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>M1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">10000</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">KiloGr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>M2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">250</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">KiloGr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>MemBtn1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">5</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Mins1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">59</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>MirrTyp1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>MoveSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>MoveSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>MovmtTyp1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Mth1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">12</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>N1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">16383.5</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Rpm</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>N2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-16384</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">16383.5</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Rpm</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>NGrdt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-30000</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">30000</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">RpmPerSec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Nr1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-16</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">15</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Nr10</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">512</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Nr2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Nr3</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Nr4</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-128</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">127</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Nr5</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">7</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Nr6</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">31</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Nr7</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Nr8</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4294967295</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Nr9</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-8</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">7</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ObjClassn1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ObstclDstInPrkgSegSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ObstclDstInPrkgSegSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>OccptClass1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">5</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>OccptOutOfPos1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>OccptPresSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>OnOff1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>OnOff2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>OpendClsd1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Oper1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>OperModSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">15</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>OperModSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">15</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>OutdBriSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">7</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>OutdBriSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">7</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>OvrdnSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>OvrdnSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>P1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">10</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Bar</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>P4</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1275</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">HectoPa</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>P5</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-536870912</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">536854528</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Pa</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>P6</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1048576</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1048544</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Pa</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>P7</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-536870912</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">536854528</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Pa</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Perc1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">100</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Perc</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Perc10</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-327.68</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">327.67</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Perc</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Perc11</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-327.68</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">327.67</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Perc</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Perc2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">100</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Perc</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Perc6</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-128</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">127</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Perc</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Perc7</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1001</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Perc</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Perc8</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-5</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">15</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Perc</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Perc9</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">100.1</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Perc</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>PercGrdt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1000</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1000</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">PercPerSec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>PitchovrMod1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>PrkgLiIndcn1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ProfPenSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">15</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ProfPenSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">15</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>PsdNotPsd1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>PtIntvModTqCluFastReqTyp1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">6</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>PtTqCluMaxFastIntvModTyp1</SHORT-NAME>
+                  <LONG-NAME/>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>PullAidCmd1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>RainSenSnvty1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">7</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Ramp1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">7</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ReqSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ReqSt2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ReqSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>ReqSts2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>RngUnlimd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Range Unlimited</L-4>
+                  </LONG-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-INF</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">+INF</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>RoadSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>RoadSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>RollovrMod1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SeatBltRmnWarnSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Sec1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">59</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Spd1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">125</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Spd2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-50</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">50</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Spd3</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">125</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Spd4</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">125</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Spd5</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-128</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">128</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Spd6</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-30</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">30</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">MtrPerSec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SprgCoeff1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-150000</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">150000</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NwtPerMtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>StOfObjMeasd1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>StabrSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>StabrSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SteerMod1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SteerVehStabyCtrlMod1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>StgOfSeatClima1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">6</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>StsOfObjMeasd1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SuspMod1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>T1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-70</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">125</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">DegCgrd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>T3</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-50</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">200</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">DegCgrd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>T4</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-40</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">213</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">DegCgrd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>T5</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-3276.8</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3276.7</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">KelvinAbslt</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>T6</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-3276.8</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3276.7</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">KelvinAbslt</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>T7</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-70</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">213</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">DegCgrd</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>TSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>TSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>TerminalPosnMod1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Ti2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3.1</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Sec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Ti3</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65.535</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Sec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Ti4</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0.01638375</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Sec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>TirePMonWarnSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>TirePMonWarnSt2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">5</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>TirePMonWarnSt3</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>TirePMonWarnSts1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>TirePMonWarnSts2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">5</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>TirePMonWarnSts3</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Tq1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-30</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">30</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NwtMtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Tq10</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">20000</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NwtMtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Tq12</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">60000</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NwtMtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Tq13</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-10000</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">10000</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NwtMtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Tq14</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">10000</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NwtMtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Tq15</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-10</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">10</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NwtMtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Tq16</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-2048</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2045</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NwtMtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Tq2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-20000</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">20000</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NwtMtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Tq3</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">20000</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NwtMtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Tq4</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">80000</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NwtMtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Tq5</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-2048</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2047.9375</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NwtMtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Tq6</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-2048</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NwtMtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Tq7</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-131072</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">131071.9375</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NwtMtr</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>TqGrdt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1000000</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NwtMtrPerSec</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>TrsmPosnGearLvr1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">7</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>TrsmPwrSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">6</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>TrsmTqReqMaxMinTyp1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>TrsmTqReqTyp1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">7</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>TrsmTqReqTyp2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>TrsmTyp1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>U1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">25.2</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">Volt</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UsrReqForWipg1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>VehHldSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>VehMod1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>VehMtnSt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>WhlRotlDirMeasd1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>WhlRotlDirStd1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Wipg1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">17</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>WipgSpdIntl1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">7</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>WiprPosnMeasd1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">5</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>WiprPosnReqd1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>WshrFldLvlLo1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>Yr1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">99</UPPER-LIMIT>
+                        <UNIT-REF BASE="Units" DEST="UNIT">NoUnit</UNIT-REF>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>AUTOSAR_PhysicalUnits</SHORT-NAME>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

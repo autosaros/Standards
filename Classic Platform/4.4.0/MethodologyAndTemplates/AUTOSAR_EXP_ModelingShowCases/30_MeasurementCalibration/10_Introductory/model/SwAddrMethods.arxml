@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>McInt</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>SwAddrMethods</SHORT-NAME>
+          <ELEMENTS>
+            <SW-ADDR-METHOD>
+              <SHORT-NAME>VAR</SHORT-NAME>
+              <DESC>
+                <L-2 L="EN">Memory section for variables</L-2>
+              </DESC>
+              <OPTIONS>
+                <OPTION>safetyQM</OPTION>
+              </OPTIONS>
+            </SW-ADDR-METHOD>
+            <SW-ADDR-METHOD>
+              <SHORT-NAME>CALIB</SHORT-NAME>
+              <DESC>
+                <L-2 L="EN">Memory section for calibration parameters</L-2>
+              </DESC>
+              <OPTIONS>
+                <OPTION>safetyQM</OPTION>
+              </OPTIONS>
+            </SW-ADDR-METHOD>
+            <SW-ADDR-METHOD>
+              <SHORT-NAME>CODE</SHORT-NAME>
+              <DESC>
+                <L-2 L="EN">Memory section for code</L-2>
+              </DESC>
+              <OPTIONS>
+                <OPTION>safetyQM</OPTION>
+              </OPTIONS>
+            </SW-ADDR-METHOD>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

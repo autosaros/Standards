@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+   <!-- AUTOSAR General Definitions -->
+   <!--
+    Document Owner:                 AUTOSAR
+    Document Responsibility:        AUTOSAR
+    Document Identification Number: 230
+    Document Status:                Final
+    Part of AUTOSAR Standard:       Classic Platform
+    Part of AUTOSAR Release:        4.4.0
+    -->
+   <!--
+    Disclaimer
+
+    This work (specification and/or software implementation) and the material
+    contained in it, as released by AUTOSAR, is for the purpose of information
+    only. AUTOSAR and the companies that have contributed to it shall not be liable
+    for any use of the work.
+
+    The material contained in this work is protected by copyright and other types
+    of intellectual property rights. The commercial exploitation of the material
+    contained in this work requires a license to such intellectual property rights.
+
+    This work may be utilized or reproduced without any modification, in any form
+    or by any means, for informational purposes only. For any other purpose, no
+    part of the work may be utilized or reproduced, in any form or by any means,
+    without permission in writing from the publisher.
+
+    The work has been developed for automotive applications only. It has neither
+    been developed, nor tested for non-automotive applications.
+
+    The word AUTOSAR and the AUTOSAR logo are registered trademarks.
+ -->
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="default">English</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+  <!-- AR-Package: AUTOSAR -->
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+      <!-- AR-Package: GenDef -->
+          <SHORT-NAME>GenDef</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+        <!-- AR-Package: LifeCycleStateDefinitionGroups -->
+              <SHORT-NAME>LifeCycleStateDefinitionGroups</SHORT-NAME>
+              <CATEGORY>STANDARD</CATEGORY>
+              <ELEMENTS>
+          <!-- LifeCycleStateDefinitionGroup: AutosarLifeCycleStates -->
+                <LIFE-CYCLE-STATE-DEFINITION-GROUP>
+                  <SHORT-NAME>AutosarLifeCycleStates</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Life Cycle Definitions used in AUTOSAR Standards</L-4>
+                  </LONG-NAME>
+                  <DESC>
+                    <L-2 L="EN">This set represents the life cycle definitions used by AUTOSAR on M1 and M2 level. See also [TPS_GST_00051] respectively [TPS_GST_00064].</L-2>
+                  </DESC>
+                  <LC-STATES>
+            <!-- LifeCycleState: valid -->
+                    <LIFE-CYCLE-STATE>
+                      <SHORT-NAME>valid</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">VALID</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">This indicates that the related entity is a valid part of the document. This is the default.</L-2>
+                      </DESC>
+                    </LIFE-CYCLE-STATE>
+          <!-- LifeCycleState: draft -->
+                    <LIFE-CYCLE-STATE>
+                      <SHORT-NAME>draft</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">DRAFT</L-4>
+                      </LONG-NAME>                      
+                      <DESC>
+                        <L-2 L="EN">This indicates that the related entity is introduced newly in the (meta) model but still experimental. This information is published but is subject to be changed without backward compatibility management.</L-2>
+                      </DESC>
+                    </LIFE-CYCLE-STATE>
+          <!-- LifeCycleState: obsolete -->
+                    <LIFE-CYCLE-STATE>
+                      <SHORT-NAME>obsolete</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">OBSOLETE</L-4>
+                      </LONG-NAME>                      
+                      <DESC>
+                        <L-2 L="EN">This indicates that the related entity is obsolete and kept in the (meta) model for compatibility reasons. </L-2>
+                      </DESC>
+                      <INTRODUCTION>
+                        <P>
+                          <L-1 L="EN">If this life cycle state is set, the 
+<TT TYPE="ARMetaClassRole">LifeCycleInfo.remark</TT> shall express the recommended alternative solution.</L-1>
+                        </P>
+                      </INTRODUCTION>
+                    </LIFE-CYCLE-STATE>
+          <!-- LifeCycleState: preliminary -->
+                    <LIFE-CYCLE-STATE>
+                      <SHORT-NAME>preliminary</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">PRELIMINARY</L-4>
+                      </LONG-NAME>                      
+                      <DESC>
+                        <L-2 L="EN">This indicates that the related entity is preliminary in the (meta) model. It is subject to be changed without backwards compatibility management. An AUTOSAR release does not contain such elements. It is intended for AUTOSAR internal development.</L-2>
+                      </DESC>
+                    </LIFE-CYCLE-STATE>
+          <!-- LifeCycleState: removed -->
+                    <LIFE-CYCLE-STATE>
+                      <SHORT-NAME>removed</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">REMOVED</L-4>
+                      </LONG-NAME>                      
+                      <DESC>
+                        <L-2 L="EN">This indicates that the related entity is still in the (meta) model for whatever reason. It shall not be used and should not even appear in documents. </L-2>
+                      </DESC>
+                      <INTRODUCTION>
+                        <P>
+                          <L-1 L="EN">An AUTOSAR release does not contain such elements. It is intended for AUTOSAR internal development. <BR /> Removed elements are not included in an .arxml delivery but can be referenced in a LifeCycleInformationSet by using the 
+<TT TYPE="ARStereotype">atpUriDef</TT> attributes of type 
+<TT TYPE="ARMetaClass">Referrable</TT>: 
+<TT TYPE="ARMetaClassRole">LifeCycleInfo.lcObject</TT>, respectively 
+<TT TYPE="ARMetaClassRole">LifeCycleInfo.useInstead</TT>.</L-1>
+                        </P>
+                      </INTRODUCTION>
+                    </LIFE-CYCLE-STATE>
+          <!-- LifeCycleState: shallBecomeMandatory -->
+                    <LIFE-CYCLE-STATE>
+                      <SHORT-NAME>shallBecomeMandatory</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">SHALL-BECOME-MANDATORY</L-4>
+                      </LONG-NAME>                      
+                      <DESC>
+                        <L-2 L="EN">This indicates that the related entity should be mandatory from the semantical perspective and will become mandatory in future. It is yet left optional to avoid backwards compatibility issues. Such elements should be provided whenever possible.</L-2>
+                      </DESC>
+                    </LIFE-CYCLE-STATE>
+                  </LC-STATES>
+                </LIFE-CYCLE-STATE-DEFINITION-GROUP>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

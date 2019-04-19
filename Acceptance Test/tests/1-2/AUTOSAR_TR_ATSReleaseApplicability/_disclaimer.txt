@@ -1,0 +1,36 @@
+Disclaimer
+
+This specification and the material contained in it, as released by AUTOSAR, is
+for the purpose of information only. AUTOSAR and the companies that have
+contributed to it shall not be liable for any use of the specification.
+
+The material contained in this specification is protected by copyright and
+other types of Intellectual Property Rights. The commercial exploitation of the
+material contained in this specification requires a license to such
+Intellectual Property Rights.
+
+This specification may be utilized or reproduced without any modification, in
+any form or by any means, for informational purposes only. For any other
+purpose, no part of the specification may be utilized or reproduced, in any
+form or by any means, without permission in writing from the publisher.
+
+The AUTOSAR specifications have been developed for automotive applications
+only. They have neither been developed, nor tested for non-automotive
+applications.
+
+The word AUTOSAR and the AUTOSAR logo are registered trademarks.
+
+
+
+Advice for users
+
+AUTOSAR specifications may contain exemplary items (exemplary reference models,
+"use cases", and/or references to exemplary technical solutions, devices,
+processes or software).
+
+Any such exemplary items are contained in the specifications for illustration
+purposes only, and they themselves are not part of the AUTOSAR Standard.
+Neither their presence in such specifications, nor any later documentation of
+AUTOSAR conformance of products actually implementing such exemplary items,
+imply that intellectual property rights covering such exemplary items are
+licensed under the same rules as applicable to the AUTOSAR Standard.

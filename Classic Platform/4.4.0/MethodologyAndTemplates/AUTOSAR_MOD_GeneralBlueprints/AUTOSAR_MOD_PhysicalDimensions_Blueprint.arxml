@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+   <!-- AUTOSAR General Blueprints -->
+   <!--
+    Document Owner:                 AUTOSAR
+    Document Responsibility:        AUTOSAR
+    Document Identification Number: 621
+    Document Status:                Final
+    Part of AUTOSAR Standard:       Classic Platform
+    Part of AUTOSAR Release:        4.4.0
+    -->
+   <!--
+    Disclaimer
+
+    This work (specification and/or software implementation) and the material
+    contained in it, as released by AUTOSAR, is for the purpose of information
+    only. AUTOSAR and the companies that have contributed to it shall not be liable
+    for any use of the work.
+
+    The material contained in this work is protected by copyright and other types
+    of intellectual property rights. The commercial exploitation of the material
+    contained in this work requires a license to such intellectual property rights.
+
+    This work may be utilized or reproduced without any modification, in any form
+    or by any means, for informational purposes only. For any other purpose, no
+    part of the work may be utilized or reproduced, in any form or by any means,
+    without permission in writing from the publisher.
+
+    The work has been developed for automotive applications only. It has neither
+    been developed, nor tested for non-automotive applications.
+
+    The word AUTOSAR and the AUTOSAR logo are registered trademarks.
+ -->
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="default">English</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR</SHORT-NAME>
+      <LONG-NAME>
+        <L-4 L="EN">AUTOSAR</L-4>
+      </LONG-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>AISpecification</SHORT-NAME>
+          <LONG-NAME>
+            <L-4 L="EN">AISpecification</L-4>
+          </LONG-NAME>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>AUTOSAR_PhysicalUnits</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>PhysicalDimensions_Blueprints</SHORT-NAME>
+              <CATEGORY>BLUEPRINT</CATEGORY>
+              <ELEMENTS>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Amnt1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Quantity of substance</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>1</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>I1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Electric Current</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>1</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Illmn1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Luminous intensity</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>1</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Length</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>1</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len1M1TiNeg2</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Force</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>1</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-2</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len1M1TiNeg2INeg2</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Permeability</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>1</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-2</TIME-EXP>
+                  <CURRENT-EXP>-2</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len1M1TiNeg2_1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Electrical Energy Consumption</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>1</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-2</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len1M1TiNeg3INeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Electric Field Strength / Electric intensity</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>1</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-3</TIME-EXP>
+                  <CURRENT-EXP>-1</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len1M1TiNeg3TNeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Thermal Conductivity</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>1</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-3</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>-1</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len1TiNeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Velocity</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>1</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>-1</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len1TiNeg2</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Acceleration</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>1</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>-2</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len1TiNeg3</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Acceleration Time Gradient</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>1</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>-3</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Area</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2M1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Moment of Inertia</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2M1TiNeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Angular Momentum</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-1</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2M1TiNeg2</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Torque</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-2</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2M1TiNeg2AmntNeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Molar Energy</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-2</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>-1</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2M1TiNeg2INeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Magnetic Flux</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-2</TIME-EXP>
+                  <CURRENT-EXP>-1</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2M1TiNeg2INeg2</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Inductance</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-2</TIME-EXP>
+                  <CURRENT-EXP>-2</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2M1TiNeg2TNeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Heat Capacity</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-2</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>-1</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2M1TiNeg2TNeg1AmntNeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Molar Heat Capacity</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-2</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>-1</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>-1</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2M1TiNeg2_1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Energy</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-2</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2M1TiNeg3</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Torque Time Gradient</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-3</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2M1TiNeg3INeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Voltage</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-3</TIME-EXP>
+                  <CURRENT-EXP>-1</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2M1TiNeg3INeg2</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Electric Resistance</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-3</TIME-EXP>
+                  <CURRENT-EXP>-2</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2M1TiNeg3_1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Power</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-3</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2M1TiNeg4</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Power Time Gradient</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-4</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2M1TiNeg4INeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Voltage Time Gradient</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-4</TIME-EXP>
+                  <CURRENT-EXP>-1</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2Ti1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kinematic Viscosity</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>-1</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2TiNeg2</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Specific Heat</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>-2</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2TiNeg2TNeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Specific Heat Capacity</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>-2</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>-1</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len2_1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Volume Per Distance / Fuel Consumption</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>2</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len3</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Volume</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>3</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len3MNeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Specific Volume</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>3</LENGTH-EXP>
+                  <MASS-EXP>-1</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len3TiNeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Volumetric Flow</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>3</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>-1</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Len3TiNeg2</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Volumetric Flow Gradient</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>3</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>-2</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>LenNeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Inverse Length</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>-1</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>LenNeg1M1TiNeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Dynamic Viscosity</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>-1</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-1</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>LenNeg1M1TiNeg2</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Pressure</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>-1</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-2</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>LenNeg1M1TiNeg2_1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Pressure by Angle</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>-1</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-2</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>LenNeg1M1TiNeg3</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Pressure Gradient</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>-1</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-3</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>LenNeg2Illmn1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Illuminance</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>-2</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>1</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>LenNeg2MNeg1Ti3I2</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Electrical Conductance</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>-2</LENGTH-EXP>
+                  <MASS-EXP>-1</MASS-EXP>
+                  <TIME-EXP>3</TIME-EXP>
+                  <CURRENT-EXP>2</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>LenNeg2MNeg1Ti4I2</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Capacitance</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>-2</LENGTH-EXP>
+                  <MASS-EXP>-1</MASS-EXP>
+                  <TIME-EXP>4</TIME-EXP>
+                  <CURRENT-EXP>2</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>LenNeg3Amnt1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Concentration</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>-3</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>1</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>LenNeg3M1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Mass Density</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>-3</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>LenNeg3MNeg1Ti2I2</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Electrical Conductivity Gradient</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>-3</LENGTH-EXP>
+                  <MASS-EXP>-1</MASS-EXP>
+                  <TIME-EXP>2</TIME-EXP>
+                  <CURRENT-EXP>2</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>LenNeg3MNeg1Ti3I2</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Electrical Conductivity</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>-3</LENGTH-EXP>
+                  <MASS-EXP>-1</MASS-EXP>
+                  <TIME-EXP>3</TIME-EXP>
+                  <CURRENT-EXP>2</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>LenNeg3Ti1I1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Electric Charge Density</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>-3</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>1</TIME-EXP>
+                  <CURRENT-EXP>1</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>LenNeg3Ti1I1_1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Pressure per Voltage</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>-3</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>1</TIME-EXP>
+                  <CURRENT-EXP>1</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>LenNeg3TiNeg1Amnt1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Reaction Rate</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>-3</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>-1</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>1</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>LenNeg4M1TiNeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Pressure per Volumetric Flow / Flow Resistance</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>-4</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-1</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>M1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Mass</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>M1AmntNeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Molar Mass</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>-1</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>M1TiNeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Mass Flow</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-1</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>M1TiNeg1_1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Translational Dumping</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-1</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>M1TiNeg2</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Surface Tension</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-2</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>M1TiNeg2INeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Magnetic Flux Density, Magnetic Induction</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-2</TIME-EXP>
+                  <CURRENT-EXP>-1</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>M1TiNeg3TNeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Heat Transfer Coefficient</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>1</MASS-EXP>
+                  <TIME-EXP>-3</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>-1</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>NoDimension</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Dimensionless</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>NoDimension_1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Ratio</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>NoDimension_2</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Angle</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>NoDimension_5</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Logarithmic Ratio</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>NoDimension_6</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Amount of Data</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>T1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Absolute Temperature</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>1</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>T1I1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Electric Charge</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>1</TIME-EXP>
+                  <CURRENT-EXP>1</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>T1_1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Relative Temperature, Temperature Difference</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>0</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>1</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>Ti1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Time</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>1</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>TiNeg1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Frequency</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>-1</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>TiNeg1Amnt1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Catalytic Activity</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>-1</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>1</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>TiNeg1I1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Electric Current Gradient</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>-1</TIME-EXP>
+                  <CURRENT-EXP>1</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>TiNeg1T1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Temperature Gradient</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>-1</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>1</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>TiNeg1_1</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Ratio Gradient</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>-1</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>TiNeg1_2</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Rotational Speed</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>-1</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>TiNeg1_3</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Transfer Rate</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>-1</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+                <PHYSICAL-DIMENSION>
+                  <SHORT-NAME>TiNeg2</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Rotational Speed Gradient</L-4>
+                  </LONG-NAME>
+                  <LENGTH-EXP>0</LENGTH-EXP>
+                  <MASS-EXP>0</MASS-EXP>
+                  <TIME-EXP>-2</TIME-EXP>
+                  <CURRENT-EXP>0</CURRENT-EXP>
+                  <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                  <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                  <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                </PHYSICAL-DIMENSION>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

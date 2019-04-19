@@ -1,0 +1,713 @@
+
+ASAP2_VERSION 1 60
+/begin PROJECT Example_Template
+ "Prototype Template layout"
+ /begin HEADER
+  ""
+  VERSION "000"  PROJECT_NO MCINT_A2L
+ /end HEADER
+ /begin MODULE A_MODULE
+    /begin A2ML
+      /include XCP_v1_0_definitions.aml
+        block "IF_DATA" taggedunion if_data {
+          /include XCP_v1_0.aml
+       };
+  /end A2ML
+     /begin MOD_PAR       "McInt ShowCase"
+      SUPPLIER  "AUTOSAR"
+      ECU  "McInt"
+      CPU_TYPE  "x86"
+    /begin MEMORY_SEGMENT  CALIB "CALIB"
+      DATA
+      FLASH
+      EXTERNAL
+       0xc0000000
+       0x24
+       -1 -1 -1 -1 -1
+    /begin IF_DATA       XCP
+
+       /begin SEGMENT
+        0x00       /* segment logical number */
+        0x02       /* number of pages */
+        0x00       /* address extension */
+        0x00       /* compression method */
+        0x00       /* encryption method */
+        /begin PAGE     /* Reference page */
+          0x00          /* page number */
+          ECU_ACCESS_WITH_XCP_ONLY
+          XCP_READ_ACCESS_WITH_ECU_ONLY
+          XCP_WRITE_ACCESS_NOT_ALLOWED
+          INIT_SEGMENT 0
+        /end PAGE
+        /begin PAGE     /* Working page */
+          0x01          /* page number */
+          ECU_ACCESS_WITH_XCP_ONLY
+          XCP_READ_ACCESS_WITH_ECU_ONLY
+          XCP_WRITE_ACCESS_WITH_ECU_ONLY
+          INIT_SEGMENT 0
+        /end PAGE
+      /end SEGMENT
+    /end IF_DATA
+
+
+    /end MEMORY_SEGMENT
+    /end MOD_PAR
+    /begin MOD_COMMON
+      "McInt ShowCase"
+      BYTE_ORDER      MSB_LAST
+	  ALIGNMENT_BYTE	  1
+	  ALIGNMENT_WORD      1
+      ALIGNMENT_LONG      1
+	  ALIGNMENT_INT64     1
+	  ALIGNMENT_FLOAT32_IEEE 1
+	  ALIGNMENT_FLOAT64_IEEE 1
+    /end MOD_COMMON
+
+ /begin IF_DATA XCP                      /* Insert this block within the MODULE block of the A2L file. */
+
+    /begin PROTOCOL_LAYER
+
+        0x0100                          /* XCP protocol layer 1.0 */
+
+        2000                  /* T1 [ms] */
+        2000                  /* T2 [ms] */
+        2000                  /* T3 [ms] */
+        2000                  /* T4 [ms] */
+        2000                  /* T5 [ms] */
+        0005                  /* T6 [ms] */
+        0005                  /* T7 [ms] */
+
+        0xff                     /* MAX_CTO */
+        0x05bc                     /* MAX_DTO */
+
+        BYTE_ORDER_MSB_LAST
+        ADDRESS_GRANULARITY_BYTE
+
+        OPTIONAL_CMD SET_REQUEST
+        OPTIONAL_CMD SET_MTA
+        OPTIONAL_CMD UPLOAD
+
+        OPTIONAL_CMD TRANSPORT_LAYER_CMD
+        OPTIONAL_CMD CLEAR_DAQ_LIST
+        OPTIONAL_CMD SET_DAQ_PTR
+        OPTIONAL_CMD WRITE_DAQ
+        OPTIONAL_CMD SET_DAQ_LIST_MODE
+        OPTIONAL_CMD START_STOP_DAQ_LIST
+        OPTIONAL_CMD START_STOP_SYNCH
+        OPTIONAL_CMD GET_DAQ_CLOCK
+
+
+
+        OPTIONAL_CMD MODIFY_BITS
+        OPTIONAL_CMD DOWNLOAD
+        OPTIONAL_CMD DOWNLOAD_NEXT
+        OPTIONAL_CMD SET_CAL_PAGE
+        OPTIONAL_CMD GET_CAL_PAGE
+        OPTIONAL_CMD COPY_CAL_PAGE
+        OPTIONAL_CMD SET_SEGMENT_MODE
+        OPTIONAL_CMD GET_SEGMENT_MODE
+
+
+
+        COMMUNICATION_MODE_SUPPORTED
+             BLOCK
+                 SLAVE
+                 MASTER
+                 0xff                               /* MAX_BS */
+                 100               /* MIN_ST */
+
+
+
+    /end PROTOCOL_LAYER
+
+    /begin DAQ
+
+        STATIC                         /* DAQ_CONFIG_TYPE */
+
+        8                                 /* MAX_DAQ */
+        8                       /* MAX_EVENT_CHANNEL */
+        0                                           /* MIN_DAQ, i.e. the number of predefined DAQ lists */
+
+        OPTIMISATION_TYPE_DEFAULT
+        ADDRESS_EXTENSION_DAQ                     /* ADDR_EXTENSION_TYPE */
+        IDENTIFICATION_FIELD_TYPE_ABSOLUTE
+
+        GRANULARITY_ODT_ENTRY_SIZE_DAQ_BYTE
+        127                  /* MAX_ODT_ENTRY_SIZE_DAQ */
+
+        NO_OVERLOAD_INDICATION
+
+
+
+
+        /begin TIMESTAMP_SUPPORTED
+            1                     /* TIMESTAMP_TICKS */
+            SIZE_WORD                      /* TIMESTAMP_SIZE */
+            UNIT_1MS                /* TIMESTAMP_RESOLUTION */
+        /end TIMESTAMP_SUPPORTED
+
+
+
+        /begin DAQ_LIST                             /* Event0 */
+            0                     /* DAQ_LIST_NUMBER */
+            DAQ_LIST_TYPE   DAQ
+            MAX_ODT         1
+            MAX_ODT_ENTRIES 255
+            FIRST_PID       0
+            EVENT_FIXED     0
+        /end DAQ_LIST
+        /begin DAQ_LIST                             /* Event1 */
+            1                     /* DAQ_LIST_NUMBER */
+            DAQ_LIST_TYPE   DAQ
+            MAX_ODT         1
+            MAX_ODT_ENTRIES 255
+            FIRST_PID       1
+            EVENT_FIXED     1
+        /end DAQ_LIST
+        /begin DAQ_LIST                             /* Event2 */
+            2                     /* DAQ_LIST_NUMBER */
+            DAQ_LIST_TYPE   DAQ
+            MAX_ODT         1
+            MAX_ODT_ENTRIES 255
+            FIRST_PID       2
+            EVENT_FIXED     2
+        /end DAQ_LIST
+        /begin DAQ_LIST                             /* Event3 */
+            3                     /* DAQ_LIST_NUMBER */
+            DAQ_LIST_TYPE   DAQ
+            MAX_ODT         1
+            MAX_ODT_ENTRIES 255
+            FIRST_PID       3
+            EVENT_FIXED     3
+        /end DAQ_LIST
+        /begin DAQ_LIST                             /* Event4 */
+            4                     /* DAQ_LIST_NUMBER */
+            DAQ_LIST_TYPE   DAQ
+            MAX_ODT         1
+            MAX_ODT_ENTRIES 255
+            FIRST_PID       4
+            EVENT_FIXED     4
+        /end DAQ_LIST
+        /begin DAQ_LIST                             /* Event5 */
+            5                     /* DAQ_LIST_NUMBER */
+            DAQ_LIST_TYPE   DAQ
+            MAX_ODT         1
+            MAX_ODT_ENTRIES 255
+            FIRST_PID       5
+            EVENT_FIXED     5
+        /end DAQ_LIST
+        /begin DAQ_LIST                             /* Event6 */
+            6                     /* DAQ_LIST_NUMBER */
+            DAQ_LIST_TYPE   DAQ
+            MAX_ODT         1
+            MAX_ODT_ENTRIES 255
+            FIRST_PID       6
+            EVENT_FIXED     6
+        /end DAQ_LIST
+        /begin DAQ_LIST                             /* Event7 */
+            7                     /* DAQ_LIST_NUMBER */
+            DAQ_LIST_TYPE   DAQ
+            MAX_ODT         1
+            MAX_ODT_ENTRIES 255
+            FIRST_PID       7
+            EVENT_FIXED     7
+        /end DAQ_LIST
+
+        /begin EVENT
+            "Event0"                /* EVENT_CHANNEL_NAME */
+            "Event0"          /* EVENT_CHANNEL_SHORT_NAME */
+            0                /* EVENT_CHANNEL_NUMBER */
+            DAQ_STIM                                /* EVENT_CHANNEL_DIRECTION */
+            0xff                                    /* MAX_DAQ_LIST */
+            0            /* TIME_CYCLE */
+            6             /* TIME_UNIT */
+            0                                       /* PRIORITY */
+        /end EVENT
+        /begin EVENT
+            "Event1"                /* EVENT_CHANNEL_NAME */
+            "Event1"          /* EVENT_CHANNEL_SHORT_NAME */
+            1                /* EVENT_CHANNEL_NUMBER */
+            DAQ_STIM                                /* EVENT_CHANNEL_DIRECTION */
+            0xff                                    /* MAX_DAQ_LIST */
+            0            /* TIME_CYCLE */
+            6             /* TIME_UNIT */
+            0                                       /* PRIORITY */
+        /end EVENT
+        /begin EVENT
+            "Event2"                /* EVENT_CHANNEL_NAME */
+            "Event2"          /* EVENT_CHANNEL_SHORT_NAME */
+            2                /* EVENT_CHANNEL_NUMBER */
+            DAQ_STIM                                /* EVENT_CHANNEL_DIRECTION */
+            0xff                                    /* MAX_DAQ_LIST */
+            0            /* TIME_CYCLE */
+            6             /* TIME_UNIT */
+            0                                       /* PRIORITY */
+        /end EVENT
+        /begin EVENT
+            "Event3"                /* EVENT_CHANNEL_NAME */
+            "Event3"          /* EVENT_CHANNEL_SHORT_NAME */
+            3                /* EVENT_CHANNEL_NUMBER */
+            DAQ_STIM                                /* EVENT_CHANNEL_DIRECTION */
+            0xff                                    /* MAX_DAQ_LIST */
+            0            /* TIME_CYCLE */
+            6             /* TIME_UNIT */
+            0                                       /* PRIORITY */
+        /end EVENT
+        /begin EVENT
+            "Event4"                /* EVENT_CHANNEL_NAME */
+            "Event4"          /* EVENT_CHANNEL_SHORT_NAME */
+            4                /* EVENT_CHANNEL_NUMBER */
+            DAQ_STIM                                /* EVENT_CHANNEL_DIRECTION */
+            0xff                                    /* MAX_DAQ_LIST */
+            0            /* TIME_CYCLE */
+            6             /* TIME_UNIT */
+            0                                       /* PRIORITY */
+        /end EVENT
+        /begin EVENT
+            "Event5"                /* EVENT_CHANNEL_NAME */
+            "Event5"          /* EVENT_CHANNEL_SHORT_NAME */
+            5                /* EVENT_CHANNEL_NUMBER */
+            DAQ_STIM                                /* EVENT_CHANNEL_DIRECTION */
+            0xff                                    /* MAX_DAQ_LIST */
+            0            /* TIME_CYCLE */
+            6             /* TIME_UNIT */
+            0                                       /* PRIORITY */
+        /end EVENT
+        /begin EVENT
+            "Event6"                /* EVENT_CHANNEL_NAME */
+            "Event6"          /* EVENT_CHANNEL_SHORT_NAME */
+            6                /* EVENT_CHANNEL_NUMBER */
+            DAQ_STIM                                /* EVENT_CHANNEL_DIRECTION */
+            0xff                                    /* MAX_DAQ_LIST */
+            0            /* TIME_CYCLE */
+            6             /* TIME_UNIT */
+            0                                       /* PRIORITY */
+        /end EVENT
+        /begin EVENT
+            "Event7"                /* EVENT_CHANNEL_NAME */
+            "Event7"          /* EVENT_CHANNEL_SHORT_NAME */
+            7                /* EVENT_CHANNEL_NUMBER */
+            DAQ_STIM                                /* EVENT_CHANNEL_DIRECTION */
+            0xff                                    /* MAX_DAQ_LIST */
+            0            /* TIME_CYCLE */
+            6             /* TIME_UNIT */
+            0                                       /* PRIORITY */
+        /end EVENT
+
+    /end DAQ
+
+    /begin PAG
+        2                            /* MAX_SEGMENTS */
+        FREEZE_SUPPORTED
+    /end PAG
+
+    /begin PGM
+        PGM_MODE_ABSOLUTE
+        0                             /* MAX_SECTORS */
+        0x08                                        /* MAX_CTO_PGM */
+
+
+        COMMUNICATION_MODE_SUPPORTED
+             BLOCK
+                 SLAVE
+                 MASTER
+                 0xff                               /* MAX_BS_PGM */
+                 100               /* MIN_ST_PGM */
+
+    /end PGM
+
+
+    /begin XCP_ON_UDP_IP
+        0x0100 /* XCP on IP 1.0 */
+        18041 /* Port */
+        ADDRESS "127.0.0.1"
+    /end XCP_ON_UDP_IP
+
+/end IF_DATA
+/begin CHARACTERISTIC ctrl_K
+       "ctrl_K"
+       VALUE
+       0xc0000000
+       Internal_Scalar_Float32Ieee
+       0
+       McInt_CompuMethods_Identical
+       -1E+32
+       1E+32
+       DISPLAY_IDENTIFIER  "ctrl_K"
+       FORMAT  "%.1f"
+       PHYS_UNIT "mA/Ks"
+/end CHARACTERISTIC
+/begin CHARACTERISTIC ctrl_MaxESum
+       "ctrl_MaxESum"
+       VALUE
+       0xc0000004
+       Internal_Scalar_Float32Ieee
+       0
+       McInt_CompuMethods_Identical
+       -1E+32
+       1E+32
+       DISPLAY_IDENTIFIER  "ctrl_MaxESum"
+       FORMAT  "%.1f"
+       PHYS_UNIT "Ks"
+/end CHARACTERISTIC
+/begin CHARACTERISTIC ctrl_SetPoint
+       "ctrl_SetPoint"
+       VALUE
+       0xc0000008
+       Internal_Scalar_Float32Ieee
+       0
+       McInt_CompuMethods_Temperature_C
+       -1E+32
+       1E+32
+       DISPLAY_IDENTIFIER  "ctrl_SetPoint"
+       FORMAT  "%.1f"
+       PHYS_UNIT "°C"
+/end CHARACTERISTIC
+/begin CHARACTERISTIC Dt
+       "Dt"
+       VALUE
+       0xc000000c
+       Internal_Scalar_Float32Ieee
+       0
+       McInt_CompuMethods_Identical
+       -1E+32
+       1E+32
+       DISPLAY_IDENTIFIER  "Dt"
+       FORMAT  "%.3f"
+       PHYS_UNIT "s"
+/end CHARACTERISTIC
+/begin CHARACTERISTIC env_THighLimitDistance
+       "env_THighLimitDistance"
+       VALUE
+       0xc0000010
+       Internal_Scalar_Float32Ieee
+       0
+       McInt_CompuMethods_Identical
+       -1E+32
+       1E+32
+       DISPLAY_IDENTIFIER  "env_THighLimitDistance"
+       FORMAT  "%.1f"
+       PHYS_UNIT "K"
+/end CHARACTERISTIC
+/begin CHARACTERISTIC env_TLowLimit
+       "env_TLowLimit"
+       VALUE
+       0xc0000014
+       Internal_Scalar_Float32Ieee
+       0
+       McInt_CompuMethods_Temperature_C
+       -1E+32
+       1E+32
+       DISPLAY_IDENTIFIER  "env_TLowLimit"
+       FORMAT  "%.1f"
+       PHYS_UNIT "°C"
+/end CHARACTERISTIC
+/begin CHARACTERISTIC env_TStepSize
+       "env_TStepSize"
+       VALUE
+       0xc0000018
+       Internal_Scalar_Float32Ieee
+       0
+       McInt_CompuMethods_Identical
+       -1E+32
+       1E+32
+       DISPLAY_IDENTIFIER  "env_TStepSize"
+       FORMAT  "%.1f"
+       PHYS_UNIT "K"
+/end CHARACTERISTIC
+/begin CHARACTERISTIC plnt_EnvFactor
+       "plnt_EnvFactor"
+       VALUE
+       0xc000001c
+       Internal_Scalar_Float32Ieee
+       0
+       McInt_CompuMethods_Identical
+       -1E+32
+       1E+32
+       DISPLAY_IDENTIFIER  "plnt_EnvFactor"
+       FORMAT  "%.1f"
+       PHYS_UNIT "J/Ks"
+/end CHARACTERISTIC
+/begin CHARACTERISTIC plnt_HeaterFactor
+       "plnt_HeaterFactor"
+       VALUE
+       0xc0000020
+       Internal_Scalar_Float32Ieee
+       0
+       McInt_CompuMethods_Identical
+       -1E+32
+       1E+32
+       DISPLAY_IDENTIFIER  "plnt_HeaterFactor"
+       FORMAT  "%.1f"
+       PHYS_UNIT "J/mAs"
+/end CHARACTERISTIC
+/begin MEASUREMENT I
+       "I"
+       FLOAT32_IEEE
+       McInt_CompuMethods_Current_mA
+       0
+       0
+       -1E+32
+       1E+32
+       DISPLAY_IDENTIFIER  "I"
+       ECU_ADDRESS 0xe0000000
+       FORMAT  "%.1f"
+       PHYS_UNIT "mA"
+/end MEASUREMENT
+/begin MEASUREMENT ctrl_E
+       "ctrl_E"
+       FLOAT32_IEEE
+       McInt_CompuMethods_Identical
+       0
+       0
+       -1E+32
+       1E+32
+       DISPLAY_IDENTIFIER  "ctrl_E"
+       ECU_ADDRESS 0xe0000004
+       FORMAT  "%.1f"
+       PHYS_UNIT "K"
+/end MEASUREMENT
+/begin MEASUREMENT ctrl_ESum
+       "ctrl_ESum"
+       FLOAT32_IEEE
+       McInt_CompuMethods_Identical
+       0
+       0
+       -1E+32
+       1E+32
+       DISPLAY_IDENTIFIER  "ctrl_ESum"
+       ECU_ADDRESS 0xe0000008
+       FORMAT  "%.1f"
+       PHYS_UNIT "Ks"
+/end MEASUREMENT
+/begin MEASUREMENT TEnv
+       "TEnv"
+       FLOAT32_IEEE
+       McInt_CompuMethods_Temperature_C
+       0
+       0
+       -1E+32
+       1E+32
+       DISPLAY_IDENTIFIER  "TEnv"
+       ECU_ADDRESS 0xe000000c
+       FORMAT  "%.1f"
+       PHYS_UNIT "°C"
+/end MEASUREMENT
+/begin MEASUREMENT env_THighLimit
+       "env_THighLimit"
+       FLOAT32_IEEE
+       McInt_CompuMethods_Temperature_C
+       0
+       0
+       -1E+32
+       1E+32
+       DISPLAY_IDENTIFIER  "env_THighLimit"
+       ECU_ADDRESS 0xe0000010
+       FORMAT  "%.1f"
+       PHYS_UNIT "°C"
+/end MEASUREMENT
+/begin MEASUREMENT env_TEnv
+       "env_TEnv"
+       FLOAT32_IEEE
+       McInt_CompuMethods_Temperature_C
+       0
+       0
+       -1E+32
+       1E+32
+       DISPLAY_IDENTIFIER  "env_TEnv"
+       ECU_ADDRESS 0xe0000014
+       FORMAT  "%.1f"
+       PHYS_UNIT "°C"
+/end MEASUREMENT
+/begin MEASUREMENT TPlant
+       "TPlant"
+       FLOAT32_IEEE
+       McInt_CompuMethods_Temperature_C
+       0
+       0
+       -1E+32
+       1E+32
+       DISPLAY_IDENTIFIER  "TPlant"
+       ECU_ADDRESS 0xe0000018
+       FORMAT  "%.1f"
+       PHYS_UNIT "°C"
+/end MEASUREMENT
+/begin MEASUREMENT plnt_QEnv
+       "plnt_QEnv"
+       FLOAT32_IEEE
+       McInt_CompuMethods_Identical
+       0
+       0
+       -1E+32
+       1E+32
+       DISPLAY_IDENTIFIER  "plnt_QEnv"
+       ECU_ADDRESS 0xe000001c
+       FORMAT  "%.1f"
+       PHYS_UNIT "J"
+/end MEASUREMENT
+/begin MEASUREMENT plnt_QHeater
+       "plnt_QHeater"
+       FLOAT32_IEEE
+       McInt_CompuMethods_Identical
+       0
+       0
+       -1E+32
+       1E+32
+       DISPLAY_IDENTIFIER  "plnt_QHeater"
+       ECU_ADDRESS 0xe0000020
+       FORMAT  "%.1f"
+       PHYS_UNIT "J"
+/end MEASUREMENT
+/begin MEASUREMENT plnt_QPlant
+       "plnt_QPlant"
+       FLOAT32_IEEE
+       McInt_CompuMethods_Identical
+       0
+       0
+       -1E+32
+       1E+32
+       DISPLAY_IDENTIFIER  "plnt_QPlant"
+       ECU_ADDRESS 0xe0000024
+       FORMAT  "%.1f"
+       PHYS_UNIT "J"
+/end MEASUREMENT
+/begin COMPU_METHOD McInt_CompuMethods_Identical
+       "McInt_CompuMethods_Identical"
+       IDENTICAL
+       "%f"
+       ""
+/end COMPU_METHOD
+/begin UNIT McInt_PhysicalDimensions_CurrentPerTemperatureTime
+       "McInt_PhysicalDimensions_CurrentPerTemperatureTime"
+       "McInt_PhysicalDimensions_CurrentPerTemperatureTime"
+       EXTENDED_SI
+       SI_EXPONENTS 0 0 -1 1 -1 0 0
+/end UNIT
+/begin UNIT McInt_Units_MilliAmperePerKelvinSecond
+       "McInt_Units_MilliAmperePerKelvinSecond"
+       "mA/Ks"
+       DERIVED
+       REF_UNIT McInt_PhysicalDimensions_CurrentPerTemperatureTime
+       UNIT_CONVERSION 1000 0
+/end UNIT
+/begin UNIT McInt_PhysicalDimensions_TemparatureTime
+       "McInt_PhysicalDimensions_TemparatureTime"
+       "McInt_PhysicalDimensions_TemparatureTime"
+       EXTENDED_SI
+       SI_EXPONENTS 0 0 1 0 1 0 0
+/end UNIT
+/begin UNIT McInt_Units_KelvinSecond
+       "McInt_Units_KelvinSecond"
+       "Ks"
+       DERIVED
+       REF_UNIT McInt_PhysicalDimensions_TemparatureTime
+       UNIT_CONVERSION 1 0
+/end UNIT
+/begin UNIT McInt_PhysicalDimensions_Temparature
+       "McInt_PhysicalDimensions_Temparature"
+       "McInt_PhysicalDimensions_Temparature"
+       EXTENDED_SI
+       SI_EXPONENTS 0 0 0 0 1 0 0
+/end UNIT
+/begin UNIT McInt_Units_DegreeCelsius
+       "McInt_Units_DegreeCelsius"
+       "°C"
+       DERIVED
+       REF_UNIT McInt_PhysicalDimensions_Temparature
+       UNIT_CONVERSION 1 -273.15
+/end UNIT
+/begin COMPU_METHOD McInt_CompuMethods_Temperature_C
+       "McInt_CompuMethods_Temperature_C"
+       LINEAR
+       "%.1f"
+       "°C"
+       COEFFS_LINEAR 1 -273.15
+       REF_UNIT McInt_Units_DegreeCelsius
+/end COMPU_METHOD
+/begin UNIT McInt_PhysicalDimensions_Time
+       "McInt_PhysicalDimensions_Time"
+       "McInt_PhysicalDimensions_Time"
+       EXTENDED_SI
+       SI_EXPONENTS 0 0 1 0 0 0 0
+/end UNIT
+/begin UNIT McInt_Units_Second
+       "McInt_Units_Second"
+       "s"
+       DERIVED
+       REF_UNIT McInt_PhysicalDimensions_Time
+       UNIT_CONVERSION 1 0
+/end UNIT
+/begin UNIT McInt_Units_Kelvin
+       "McInt_Units_Kelvin"
+       "K"
+       DERIVED
+       REF_UNIT McInt_PhysicalDimensions_Temparature
+       UNIT_CONVERSION 1 0
+/end UNIT
+/begin UNIT McInt_PhysicalDimensions_EnergyPerTemperatureTime
+       "McInt_PhysicalDimensions_EnergyPerTemperatureTime"
+       "McInt_PhysicalDimensions_EnergyPerTemperatureTime"
+       EXTENDED_SI
+       SI_EXPONENTS 2 1 -3 0 -1 0 0
+/end UNIT
+/begin UNIT McInt_Units_JoulePerKelvinSecond
+       "McInt_Units_JoulePerKelvinSecond"
+       "J/Ks"
+       DERIVED
+       REF_UNIT McInt_PhysicalDimensions_EnergyPerTemperatureTime
+       UNIT_CONVERSION 1 0
+/end UNIT
+/begin UNIT McInt_PhysicalDimensions_EnergyPerCurrentTime
+       "McInt_PhysicalDimensions_EnergyPerCurrentTime"
+       "McInt_PhysicalDimensions_EnergyPerCurrentTime"
+       EXTENDED_SI
+       SI_EXPONENTS 2 1 -3 -1 0 0 0
+/end UNIT
+/begin UNIT McInt_Units_JoulePerMilliAmpereSecond
+       "McInt_Units_JoulePerMilliAmpereSecond"
+       "J/mAs"
+       DERIVED
+       REF_UNIT McInt_PhysicalDimensions_EnergyPerCurrentTime
+       UNIT_CONVERSION 0.001 0
+/end UNIT
+/begin UNIT McInt_PhysicalDimensions_Current
+       "McInt_PhysicalDimensions_Current"
+       "McInt_PhysicalDimensions_Current"
+       EXTENDED_SI
+       SI_EXPONENTS 0 0 0 1 0 0 0
+/end UNIT
+/begin UNIT McInt_Units_MilliAmpere
+       "McInt_Units_MilliAmpere"
+       "mA"
+       DERIVED
+       REF_UNIT McInt_PhysicalDimensions_Current
+       UNIT_CONVERSION 1000 0
+/end UNIT
+/begin COMPU_METHOD McInt_CompuMethods_Current_mA
+       "McInt_CompuMethods_Current_mA"
+       LINEAR
+       "%.1f"
+       "mA"
+       COEFFS_LINEAR 1000 0
+       REF_UNIT McInt_Units_MilliAmpere
+/end COMPU_METHOD
+/begin UNIT McInt_PhysicalDimensions_Energy
+       "McInt_PhysicalDimensions_Energy"
+       "McInt_PhysicalDimensions_Energy"
+       EXTENDED_SI
+       SI_EXPONENTS 2 1 -2 0 0 0 0
+/end UNIT
+/begin UNIT McInt_Units_Joule
+       "McInt_Units_Joule"
+       "J"
+       DERIVED
+       REF_UNIT McInt_PhysicalDimensions_Energy
+       UNIT_CONVERSION 1 0
+/end UNIT
+/begin RECORD_LAYOUT Internal_Scalar_Float32Ieee
+       FNC_VALUES 1 FLOAT32_IEEE ROW_DIR DIRECT
+/end RECORD_LAYOUT
+
+
+ /end MODULE
+/end PROJECT

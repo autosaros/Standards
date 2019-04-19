@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+   <AR-PACKAGES>
+      <AR-PACKAGE>
+         <SHORT-NAME>AUTOSAR_Rte</SHORT-NAME>
+         <REFERENCE-BASES>
+            <!-- Note: ReferenceBases must be unique in a package according to
+                 constr_2509 in AUTOSAR_TPS_GenericStructureTemplate so these
+                 must have different shortLabels to their counterparts in the
+                 BSWMD.
+                 -->
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_ApplicationPrimitiveDataTypes</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/ApplicationPrimitiveDataTypes</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_BswImplementations</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/BswImplementations</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <!-- Note: This is package will actually be filled in the BSWMD -->
+               <SHORT-LABEL>Rte_MCSD_BswModuleDescriptions</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/BswModuleDescriptions</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_CompuMethods</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/CompuMethods</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_DataConstrs</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/DataConstrs</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_ImplementationDataTypes</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/ImplementationDataTypes</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_PhysicalDimensions</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/PhysicalDimensions</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_SwAddrMethods</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/SwAddrMethods</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_SwBaseTypes</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/SwBaseTypes</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_SwRecordLayouts</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/SwRecordLayouts</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_Units</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/Units</PACKAGE-REF>
+            </REFERENCE-BASE>
+         </REFERENCE-BASES>
+         <AR-PACKAGES>
+            <AR-PACKAGE>
+               <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+               <ELEMENTS>
+                 <!-- This package will actually be filled in the BSWMD -->
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>BswImplementations</SHORT-NAME>
+               <ELEMENTS>
+                  <BSW-IMPLEMENTATION>
+                     <!-- The name (and indeed path) of this BswImplementation
+                          must match that of the BswImplementation generated
+                          into the BSWMD report -->
+                     <SHORT-NAME>Rte</SHORT-NAME>
+                     <MC-SUPPORT>
+                        <EMULATION-SUPPORTS>
+                           <!--Emulation support common to all components on the ECU-->
+                           <MC-SW-EMULATION-METHOD-SUPPORT>
+                             <CATEGORY>NONE</CATEGORY>
+                           </MC-SW-EMULATION-METHOD-SUPPORT>
+                        </EMULATION-SUPPORTS>
+                        <MC-PARAMETER-INSTANCES>
+                           <!--Data instances common to all components on the ECU-->
+                           <!--Data instances for Application Software Component Type /McInt/SwComponents/Controller-->
+                           <!--Data instances for Application Software Component Instance /McInt/SwComponents/Composition/CPT_Controller-->
+                           <!--No McDataInstance for Calibration Parameter /McInt/PortInterfaces/ControllerPIF/ctrl_K in port ControllerParamsRPP on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Controller because it is connected to a provided calibration parameter in a provide port on the connected calibration parameter component-->
+                           <!--No McDataInstance for Calibration Parameter /McInt/PortInterfaces/ControllerPIF/ctrl_MaxESum in port ControllerParamsRPP on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Controller because it is connected to a provided calibration parameter in a provide port on the connected calibration parameter component-->
+                           <!--No McDataInstance for Calibration Parameter /McInt/PortInterfaces/ControllerPIF/ctrl_SetPoint in port ControllerParamsRPP on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Controller because it is connected to a provided calibration parameter in a provide port on the connected calibration parameter component-->
+                           <!--No McDataInstance for Calibration Parameter /McInt/PortInterfaces/DtPIF/Dt in port DtRPP on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Controller because it is connected to a provided calibration parameter in a provide port on the connected calibration parameter component-->
+                           <!--Data instances for Application Software Component Type /McInt/SwComponents/Environment-->
+                           <!--Data instances for Application Software Component Instance /McInt/SwComponents/Composition/CPT_Environment-->
+                           <!--No McDataInstance for Calibration Parameter /McInt/PortInterfaces/DtPIF/Dt in port DtRPP on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Environment because it is connected to a provided calibration parameter in a provide port on the connected calibration parameter component-->
+                           <!--No McDataInstance for Calibration Parameter /McInt/PortInterfaces/EnvironmentPIF/env_THighLimitDistance in port EnvParamsRPP on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Environment because it is connected to a provided calibration parameter in a provide port on the connected calibration parameter component-->
+                           <!--No McDataInstance for Calibration Parameter /McInt/PortInterfaces/EnvironmentPIF/env_TLowLimit in port EnvParamsRPP on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Environment because it is connected to a provided calibration parameter in a provide port on the connected calibration parameter component-->
+                           <!--No McDataInstance for Calibration Parameter /McInt/PortInterfaces/EnvironmentPIF/env_TStepSize in port EnvParamsRPP on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Environment because it is connected to a provided calibration parameter in a provide port on the connected calibration parameter component-->
+                           <!--Data instances for Calibration Parameter Component Type /McInt/SwComponents/Parameters-->
+                           <!--Data instances for Calibration Parameter Component Instance /McInt/SwComponents/Composition/CPT_Parameters-->
+                           <MC-DATA-INSTANCE>
+                             <!--This is Calibration Parameter /McInt/PortInterfaces/ControllerPIF/ctrl_K in port ControllerPPP on Calibration Parameter Component Instance /McInt/SwComponents/Composition/CPT_Parameters-->
+                             <!--Reported because it is a calibration parameter-->
+                             <SHORT-NAME>ctrl_K</SHORT-NAME>
+                             <DESC>
+                               <L-2 L="EN">Amplification factor for the I-controller</L-2>
+                             </DESC>
+                             <CATEGORY>VALUE</CATEGORY>
+                             <RESULTING-PROPERTIES>
+                               <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                   <BASE-TYPE-REF BASE="Rte_MCSD_SwBaseTypes" DEST="SW-BASE-TYPE">float32</BASE-TYPE-REF>
+                                   <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                   <COMPU-METHOD-REF BASE="Rte_MCSD_CompuMethods" DEST="COMPU-METHOD">McInt_CompuMethods_Identical</COMPU-METHOD-REF>
+                                   <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                                   <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_MilliAmperePerKelvinSecond</UNIT-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                               </SW-DATA-DEF-PROPS-VARIANTS>
+                             </RESULTING-PROPERTIES>
+                             <SYMBOL>ctrl_K</SYMBOL>
+                           </MC-DATA-INSTANCE>
+                           <MC-DATA-INSTANCE>
+                             <!--This is Calibration Parameter /McInt/PortInterfaces/ControllerPIF/ctrl_MaxESum in port ControllerPPP on Calibration Parameter Component Instance /McInt/SwComponents/Composition/CPT_Parameters-->
+                             <!--Reported because it is a calibration parameter-->
+                             <SHORT-NAME>ctrl_MaxESum</SHORT-NAME>
+                             <DESC>
+                               <L-2 L="EN">Upper limit of the integal part of the I-controller</L-2>
+                             </DESC>
+                             <CATEGORY>VALUE</CATEGORY>
+                             <RESULTING-PROPERTIES>
+                               <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                   <BASE-TYPE-REF BASE="Rte_MCSD_SwBaseTypes" DEST="SW-BASE-TYPE">float32</BASE-TYPE-REF>
+                                   <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                   <COMPU-METHOD-REF BASE="Rte_MCSD_CompuMethods" DEST="COMPU-METHOD">McInt_CompuMethods_Identical</COMPU-METHOD-REF>
+                                   <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                                   <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_KelvinSecond</UNIT-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                               </SW-DATA-DEF-PROPS-VARIANTS>
+                             </RESULTING-PROPERTIES>
+                             <SYMBOL>ctrl_MaxESum</SYMBOL>
+                           </MC-DATA-INSTANCE>
+                           <MC-DATA-INSTANCE>
+                             <!--This is Calibration Parameter /McInt/PortInterfaces/ControllerPIF/ctrl_SetPoint in port ControllerPPP on Calibration Parameter Component Instance /McInt/SwComponents/Composition/CPT_Parameters-->
+                             <!--Reported because it is a calibration parameter-->
+                             <SHORT-NAME>ctrl_SetPoint</SHORT-NAME>
+                             <DESC>
+                               <L-2 L="EN">Set point for the temperature of the plant</L-2>
+                             </DESC>
+                             <CATEGORY>VALUE</CATEGORY>
+                             <RESULTING-PROPERTIES>
+                               <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                   <BASE-TYPE-REF BASE="Rte_MCSD_SwBaseTypes" DEST="SW-BASE-TYPE">float32</BASE-TYPE-REF>
+                                   <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                   <COMPU-METHOD-REF BASE="Rte_MCSD_CompuMethods" DEST="COMPU-METHOD">McInt_CompuMethods_Temperature_C</COMPU-METHOD-REF>
+                                   <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                                   <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_DegreeCelsius</UNIT-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                               </SW-DATA-DEF-PROPS-VARIANTS>
+                             </RESULTING-PROPERTIES>
+                             <SYMBOL>ctrl_SetPoint</SYMBOL>
+                           </MC-DATA-INSTANCE>
+                           <MC-DATA-INSTANCE>
+                             <!--This is Calibration Parameter /McInt/PortInterfaces/DtPIF/Dt in port DtPPP on Calibration Parameter Component Instance /McInt/SwComponents/Composition/CPT_Parameters-->
+                             <!--Reported because it is a calibration parameter-->
+                             <SHORT-NAME>Dt</SHORT-NAME>
+                             <DESC>
+                               <L-2 L="EN">Scheduling time of the components</L-2>
+                             </DESC>
+                             <CATEGORY>VALUE</CATEGORY>
+                             <RESULTING-PROPERTIES>
+                               <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                   <BASE-TYPE-REF BASE="Rte_MCSD_SwBaseTypes" DEST="SW-BASE-TYPE">float32</BASE-TYPE-REF>
+                                   <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                   <COMPU-METHOD-REF BASE="Rte_MCSD_CompuMethods" DEST="COMPU-METHOD">McInt_CompuMethods_Identical</COMPU-METHOD-REF>
+                                   <DISPLAY-FORMAT>%.3f</DISPLAY-FORMAT>
+                                   <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_Second</UNIT-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                               </SW-DATA-DEF-PROPS-VARIANTS>
+                             </RESULTING-PROPERTIES>
+                             <SYMBOL>Dt</SYMBOL>
+                           </MC-DATA-INSTANCE>
+                           <MC-DATA-INSTANCE>
+                             <!--This is Calibration Parameter /McInt/PortInterfaces/EnvironmentPIF/env_THighLimitDistance in port EnvironmentPPP on Calibration Parameter Component Instance /McInt/SwComponents/Composition/CPT_Parameters-->
+                             <!--Reported because it is a calibration parameter-->
+                             <SHORT-NAME>env_THighLimitDistance</SHORT-NAME>
+                             <DESC>
+                               <L-2 L="EN">Distance of the upper limit from the lower limit for the generated temeprature profile.</L-2>
+                             </DESC>
+                             <CATEGORY>VALUE</CATEGORY>
+                             <RESULTING-PROPERTIES>
+                               <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                   <BASE-TYPE-REF BASE="Rte_MCSD_SwBaseTypes" DEST="SW-BASE-TYPE">float32</BASE-TYPE-REF>
+                                   <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                   <COMPU-METHOD-REF BASE="Rte_MCSD_CompuMethods" DEST="COMPU-METHOD">McInt_CompuMethods_Identical</COMPU-METHOD-REF>
+                                   <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                                   <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_Kelvin</UNIT-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                               </SW-DATA-DEF-PROPS-VARIANTS>
+                             </RESULTING-PROPERTIES>
+                             <SYMBOL>env_THighLimitDistance</SYMBOL>
+                           </MC-DATA-INSTANCE>
+                           <MC-DATA-INSTANCE>
+                             <!--This is Calibration Parameter /McInt/PortInterfaces/EnvironmentPIF/env_TLowLimit in port EnvironmentPPP on Calibration Parameter Component Instance /McInt/SwComponents/Composition/CPT_Parameters-->
+                             <!--Reported because it is a calibration parameter-->
+                             <SHORT-NAME>env_TLowLimit</SHORT-NAME>
+                             <DESC>
+                               <L-2 L="EN">Lower limit of the generated temeprature profile</L-2>
+                             </DESC>
+                             <CATEGORY>VALUE</CATEGORY>
+                             <RESULTING-PROPERTIES>
+                               <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                   <BASE-TYPE-REF BASE="Rte_MCSD_SwBaseTypes" DEST="SW-BASE-TYPE">float32</BASE-TYPE-REF>
+                                   <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                   <COMPU-METHOD-REF BASE="Rte_MCSD_CompuMethods" DEST="COMPU-METHOD">McInt_CompuMethods_Temperature_C</COMPU-METHOD-REF>
+                                   <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                                   <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_DegreeCelsius</UNIT-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                               </SW-DATA-DEF-PROPS-VARIANTS>
+                             </RESULTING-PROPERTIES>
+                             <SYMBOL>env_TLowLimit</SYMBOL>
+                           </MC-DATA-INSTANCE>
+                           <MC-DATA-INSTANCE>
+                             <!--This is Calibration Parameter /McInt/PortInterfaces/EnvironmentPIF/env_TStepSize in port EnvironmentPPP on Calibration Parameter Component Instance /McInt/SwComponents/Composition/CPT_Parameters-->
+                             <!--Reported because it is a calibration parameter-->
+                             <SHORT-NAME>env_TStepSize</SHORT-NAME>
+                             <DESC>
+                               <L-2 L="EN">The maximal temperature diffenrence of the environment in one time step</L-2>
+                             </DESC>
+                             <CATEGORY>VALUE</CATEGORY>
+                             <RESULTING-PROPERTIES>
+                               <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                   <BASE-TYPE-REF BASE="Rte_MCSD_SwBaseTypes" DEST="SW-BASE-TYPE">float32</BASE-TYPE-REF>
+                                   <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                   <COMPU-METHOD-REF BASE="Rte_MCSD_CompuMethods" DEST="COMPU-METHOD">McInt_CompuMethods_Identical</COMPU-METHOD-REF>
+                                   <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                                   <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_Kelvin</UNIT-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                               </SW-DATA-DEF-PROPS-VARIANTS>
+                             </RESULTING-PROPERTIES>
+                             <SYMBOL>env_TStepSize</SYMBOL>
+                           </MC-DATA-INSTANCE>
+                           <MC-DATA-INSTANCE>
+                             <!--This is Calibration Parameter /McInt/PortInterfaces/PlantPIF/plnt_EnvFactor in port PlantPPP on Calibration Parameter Component Instance /McInt/SwComponents/Composition/CPT_Parameters-->
+                             <!--Reported because it is a calibration parameter-->
+                             <SHORT-NAME>plnt_EnvFactor</SHORT-NAME>
+                             <DESC>
+                               <L-2 L="EN">Proportionality factor for the heat flow between plant and environment</L-2>
+                             </DESC>
+                             <CATEGORY>VALUE</CATEGORY>
+                             <RESULTING-PROPERTIES>
+                               <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                   <BASE-TYPE-REF BASE="Rte_MCSD_SwBaseTypes" DEST="SW-BASE-TYPE">float32</BASE-TYPE-REF>
+                                   <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                   <COMPU-METHOD-REF BASE="Rte_MCSD_CompuMethods" DEST="COMPU-METHOD">McInt_CompuMethods_Identical</COMPU-METHOD-REF>
+                                   <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                                   <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_JoulePerKelvinSecond</UNIT-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                               </SW-DATA-DEF-PROPS-VARIANTS>
+                             </RESULTING-PROPERTIES>
+                             <SYMBOL>plnt_EnvFactor</SYMBOL>
+                           </MC-DATA-INSTANCE>
+                           <MC-DATA-INSTANCE>
+                             <!--This is Calibration Parameter /McInt/PortInterfaces/PlantPIF/plnt_HeaterFactor in port PlantPPP on Calibration Parameter Component Instance /McInt/SwComponents/Composition/CPT_Parameters-->
+                             <!--Reported because it is a calibration parameter-->
+                             <SHORT-NAME>plnt_HeaterFactor</SHORT-NAME>
+                             <DESC>
+                               <L-2 L="EN">Proportionality factor for the heat flow between plant and the electrical heater</L-2>
+                             </DESC>
+                             <CATEGORY>VALUE</CATEGORY>
+                             <RESULTING-PROPERTIES>
+                               <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                   <BASE-TYPE-REF BASE="Rte_MCSD_SwBaseTypes" DEST="SW-BASE-TYPE">float32</BASE-TYPE-REF>
+                                   <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                   <COMPU-METHOD-REF BASE="Rte_MCSD_CompuMethods" DEST="COMPU-METHOD">McInt_CompuMethods_Identical</COMPU-METHOD-REF>
+                                   <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                                   <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_JoulePerMilliAmpereSecond</UNIT-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                               </SW-DATA-DEF-PROPS-VARIANTS>
+                             </RESULTING-PROPERTIES>
+                             <SYMBOL>plnt_HeaterFactor</SYMBOL>
+                           </MC-DATA-INSTANCE>
+                           <!--Data instances for Application Software Component Type /McInt/SwComponents/Plant-->
+                           <!--Data instances for Application Software Component Instance /McInt/SwComponents/Composition/CPT_Plant-->
+                           <!--No McDataInstance for Calibration Parameter /McInt/PortInterfaces/DtPIF/Dt in port DtRPP on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Plant because it is connected to a provided calibration parameter in a provide port on the connected calibration parameter component-->
+                           <!--No McDataInstance for Calibration Parameter /McInt/PortInterfaces/PlantPIF/plnt_EnvFactor in port PlantParamsRPP on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Plant because it is connected to a provided calibration parameter in a provide port on the connected calibration parameter component-->
+                           <!--No McDataInstance for Calibration Parameter /McInt/PortInterfaces/PlantPIF/plnt_HeaterFactor in port PlantParamsRPP on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Plant because it is connected to a provided calibration parameter in a provide port on the connected calibration parameter component-->
+                        </MC-PARAMETER-INSTANCES>
+                        <MC-VARIABLE-INSTANCES>
+                           <!--Data instances common to all components on the ECU-->
+                           <!--Data instances for Application Software Component Type /McInt/SwComponents/Controller-->
+                           <!--Data instances for Application Software Component Instance /McInt/SwComponents/Composition/CPT_Controller-->
+                           <MC-DATA-INSTANCE>
+                             <!--This is Sender-Receiver DataItem /McInt/PortInterfaces/CurrentSRIF/I in port CurrentPPP on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Controller-->
+                             <!--Reported because the data prototype is marked as measurable and is referenced by a FlatInstanceDescriptor and RTE measurement support is enabled-->
+                             <SHORT-NAME>I</SHORT-NAME>
+                             <DESC>
+                               <L-2 L="EN">Type for the current in [mA]</L-2>
+                             </DESC>
+                             <CATEGORY>VALUE</CATEGORY>
+                             <FLAT-MAP-ENTRY-REF DEST="FLAT-INSTANCE-DESCRIPTOR">/McInt/System/FlatMap/I</FLAT-MAP-ENTRY-REF>
+                             <RESULTING-PROPERTIES>
+                               <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                   <BASE-TYPE-REF BASE="Rte_MCSD_SwBaseTypes" DEST="SW-BASE-TYPE">float32</BASE-TYPE-REF>
+                                   <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                   <COMPU-METHOD-REF BASE="Rte_MCSD_CompuMethods" DEST="COMPU-METHOD">McInt_CompuMethods_Current_mA</COMPU-METHOD-REF>
+                                   <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                                   <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_MilliAmpere</UNIT-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                               </SW-DATA-DEF-PROPS-VARIANTS>
+                             </RESULTING-PROPERTIES>
+                             <SYMBOL>I</SYMBOL>
+                           </MC-DATA-INSTANCE>
+                           <!--No McDataInstance for Sender-Receiver DataItem /McInt/PortInterfaces/TemperatureSRIF/T in port TemperatureRPP on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Controller because measurement applies to the other end of the connection-->
+                           <MC-DATA-INSTANCE>
+                             <!--This is ArTyped Per-Instance Memory /McInt/SwComponents/Controller/ControllerInternalBehavior/E on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Controller-->
+                             <!--Reported because the ArTyped PIM is marked as measurable and RTE measurement support is enabled-->
+                             <SHORT-NAME>ctrl_E</SHORT-NAME>
+                             <DESC>
+                               <L-2 L="EN">Measurement point for the control error, the deviation between set point and acutal temperature of the plant,
+             				in the current time step</L-2>
+                             </DESC>
+                             <CATEGORY>VALUE</CATEGORY>
+                             <FLAT-MAP-ENTRY-REF DEST="FLAT-INSTANCE-DESCRIPTOR">/McInt/System/FlatMap/ctrl_E</FLAT-MAP-ENTRY-REF>
+                             <RESULTING-PROPERTIES>
+                               <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                   <BASE-TYPE-REF BASE="Rte_MCSD_SwBaseTypes" DEST="SW-BASE-TYPE">float32</BASE-TYPE-REF>
+                                   <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                   <COMPU-METHOD-REF BASE="Rte_MCSD_CompuMethods" DEST="COMPU-METHOD">McInt_CompuMethods_Identical</COMPU-METHOD-REF>
+                                   <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                                   <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_Kelvin</UNIT-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                               </SW-DATA-DEF-PROPS-VARIANTS>
+                             </RESULTING-PROPERTIES>
+                             <SYMBOL>ctrl_E</SYMBOL>
+                           </MC-DATA-INSTANCE>
+                           <MC-DATA-INSTANCE>
+                             <!--This is Implicit Inter Runnable Variable /McInt/SwComponents/Controller/ControllerInternalBehavior/ESum on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Controller-->
+                             <!--Reported because the IRV is marked as measurable and RTE measurement support is enabled-->
+                             <SHORT-NAME>ctrl_ESum</SHORT-NAME>
+                             <DESC>
+                               <L-2 L="EN">Internal state of the controller: the sum of control errors</L-2>
+                             </DESC>
+                             <CATEGORY>VALUE</CATEGORY>
+                             <FLAT-MAP-ENTRY-REF DEST="FLAT-INSTANCE-DESCRIPTOR">/McInt/System/FlatMap/ctrl_ESum</FLAT-MAP-ENTRY-REF>
+                             <RESULTING-PROPERTIES>
+                               <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                   <BASE-TYPE-REF BASE="Rte_MCSD_SwBaseTypes" DEST="SW-BASE-TYPE">float32</BASE-TYPE-REF>
+                                   <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                   <COMPU-METHOD-REF BASE="Rte_MCSD_CompuMethods" DEST="COMPU-METHOD">McInt_CompuMethods_Identical</COMPU-METHOD-REF>
+                                   <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                                   <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_KelvinSecond</UNIT-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                               </SW-DATA-DEF-PROPS-VARIANTS>
+                             </RESULTING-PROPERTIES>
+                             <SYMBOL>ctrl_ESum</SYMBOL>
+                           </MC-DATA-INSTANCE>
+                           <!--Data instances for Application Software Component Type /McInt/SwComponents/Environment-->
+                           <!--Data instances for Application Software Component Instance /McInt/SwComponents/Composition/CPT_Environment-->
+                           <MC-DATA-INSTANCE>
+                             <!--This is Sender-Receiver DataItem /McInt/PortInterfaces/TemperatureSRIF/T in port EnvTemperaturePPP on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Environment-->
+                             <!--Reported because the data prototype is marked as measurable and is referenced by a FlatInstanceDescriptor and RTE measurement support is enabled-->
+                             <SHORT-NAME>TEnv</SHORT-NAME>
+                             <DESC>
+                               <L-2 L="EN">Type for a temperature in [°C]</L-2>
+                             </DESC>
+                             <CATEGORY>VALUE</CATEGORY>
+                             <FLAT-MAP-ENTRY-REF DEST="FLAT-INSTANCE-DESCRIPTOR">/McInt/System/FlatMap/TEnv</FLAT-MAP-ENTRY-REF>
+                             <RESULTING-PROPERTIES>
+                               <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                   <BASE-TYPE-REF BASE="Rte_MCSD_SwBaseTypes" DEST="SW-BASE-TYPE">float32</BASE-TYPE-REF>
+                                   <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                   <COMPU-METHOD-REF BASE="Rte_MCSD_CompuMethods" DEST="COMPU-METHOD">McInt_CompuMethods_Temperature_C</COMPU-METHOD-REF>
+                                   <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                                   <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_DegreeCelsius</UNIT-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                               </SW-DATA-DEF-PROPS-VARIANTS>
+                             </RESULTING-PROPERTIES>
+                             <SYMBOL>TEnv</SYMBOL>
+                           </MC-DATA-INSTANCE>
+                           <MC-DATA-INSTANCE>
+                             <!--This is ArTyped Per-Instance Memory /McInt/SwComponents/Environment/EnvironmentInternalBehavior/THighLimit on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Environment-->
+                             <!--Reported because the ArTyped PIM is marked as measurable and RTE measurement support is enabled-->
+                             <SHORT-NAME>env_THighLimit</SHORT-NAME>
+                             <DESC>
+                               <L-2 L="EN">Measurement point for the upper limit of the generated temperature profile</L-2>
+                             </DESC>
+                             <CATEGORY>VALUE</CATEGORY>
+                             <FLAT-MAP-ENTRY-REF DEST="FLAT-INSTANCE-DESCRIPTOR">/McInt/System/FlatMap/env_THighLimit</FLAT-MAP-ENTRY-REF>
+                             <RESULTING-PROPERTIES>
+                               <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                   <BASE-TYPE-REF BASE="Rte_MCSD_SwBaseTypes" DEST="SW-BASE-TYPE">float32</BASE-TYPE-REF>
+                                   <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                   <COMPU-METHOD-REF BASE="Rte_MCSD_CompuMethods" DEST="COMPU-METHOD">McInt_CompuMethods_Temperature_C</COMPU-METHOD-REF>
+                                   <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                                   <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_DegreeCelsius</UNIT-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                               </SW-DATA-DEF-PROPS-VARIANTS>
+                             </RESULTING-PROPERTIES>
+                             <SYMBOL>env_THighLimit</SYMBOL>
+                           </MC-DATA-INSTANCE>
+                           <!--No McDataInstance for Implicit Inter Runnable Variable /McInt/SwComponents/Environment/EnvironmentInternalBehavior/Seed on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Environment because the IRV is not marked as measurable-->
+                           <MC-DATA-INSTANCE>
+                             <!--This is Implicit Inter Runnable Variable /McInt/SwComponents/Environment/EnvironmentInternalBehavior/TEnv on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Environment-->
+                             <!--Reported because the IRV is marked as measurable and RTE measurement support is enabled-->
+                             <SHORT-NAME>env_TEnv</SHORT-NAME>
+                             <DESC>
+                               <L-2 L="EN">Internal state of the environment: the temperture of the environment</L-2>
+                             </DESC>
+                             <CATEGORY>VALUE</CATEGORY>
+                             <FLAT-MAP-ENTRY-REF DEST="FLAT-INSTANCE-DESCRIPTOR">/McInt/System/FlatMap/env_TEnv</FLAT-MAP-ENTRY-REF>
+                             <RESULTING-PROPERTIES>
+                               <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                   <BASE-TYPE-REF BASE="Rte_MCSD_SwBaseTypes" DEST="SW-BASE-TYPE">float32</BASE-TYPE-REF>
+                                   <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                   <COMPU-METHOD-REF BASE="Rte_MCSD_CompuMethods" DEST="COMPU-METHOD">McInt_CompuMethods_Temperature_C</COMPU-METHOD-REF>
+                                   <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                                   <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_DegreeCelsius</UNIT-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                               </SW-DATA-DEF-PROPS-VARIANTS>
+                             </RESULTING-PROPERTIES>
+                             <SYMBOL>env_TEnv</SYMBOL>
+                           </MC-DATA-INSTANCE>
+                           <!--Data instances for Calibration Parameter Component Type /McInt/SwComponents/Parameters-->
+                           <!--Data instances for Calibration Parameter Component Instance /McInt/SwComponents/Composition/CPT_Parameters-->
+                           <!--Data instances for Application Software Component Type /McInt/SwComponents/Plant-->
+                           <!--Data instances for Application Software Component Instance /McInt/SwComponents/Composition/CPT_Plant-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /McInt/PortInterfaces/CurrentSRIF/I in port CurrentRPP on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Plant because measurement applies to the other end of the connection-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /McInt/PortInterfaces/TemperatureSRIF/T in port EnvTemperatureRPP on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Plant because measurement applies to the other end of the connection-->
+                           <MC-DATA-INSTANCE>
+                             <!--This is Sender-Receiver DataItem /McInt/PortInterfaces/TemperatureSRIF/T in port PlantTemperaturePPP on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Plant-->
+                             <!--Reported because the data prototype is marked as measurable and is referenced by a FlatInstanceDescriptor and RTE measurement support is enabled-->
+                             <SHORT-NAME>TPlant</SHORT-NAME>
+                             <DESC>
+                               <L-2 L="EN">Type for a temperature in [°C]</L-2>
+                             </DESC>
+                             <CATEGORY>VALUE</CATEGORY>
+                             <FLAT-MAP-ENTRY-REF DEST="FLAT-INSTANCE-DESCRIPTOR">/McInt/System/FlatMap/TPlant</FLAT-MAP-ENTRY-REF>
+                             <RESULTING-PROPERTIES>
+                               <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                   <BASE-TYPE-REF BASE="Rte_MCSD_SwBaseTypes" DEST="SW-BASE-TYPE">float32</BASE-TYPE-REF>
+                                   <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                   <COMPU-METHOD-REF BASE="Rte_MCSD_CompuMethods" DEST="COMPU-METHOD">McInt_CompuMethods_Temperature_C</COMPU-METHOD-REF>
+                                   <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                                   <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_DegreeCelsius</UNIT-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                               </SW-DATA-DEF-PROPS-VARIANTS>
+                             </RESULTING-PROPERTIES>
+                             <SYMBOL>TPlant</SYMBOL>
+                           </MC-DATA-INSTANCE>
+                           <MC-DATA-INSTANCE>
+                             <!--This is ArTyped Per-Instance Memory /McInt/SwComponents/Plant/PlantInternalBehavior/QEnv on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Plant-->
+                             <!--Reported because the ArTyped PIM is marked as measurable and RTE measurement support is enabled-->
+                             <SHORT-NAME>plnt_QEnv</SHORT-NAME>
+                             <DESC>
+                               <L-2 L="EN">Measurement point for heat flow between the plant and the environment in the current time step.</L-2>
+                             </DESC>
+                             <CATEGORY>VALUE</CATEGORY>
+                             <FLAT-MAP-ENTRY-REF DEST="FLAT-INSTANCE-DESCRIPTOR">/McInt/System/FlatMap/plnt_QEnv</FLAT-MAP-ENTRY-REF>
+                             <RESULTING-PROPERTIES>
+                               <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                   <BASE-TYPE-REF BASE="Rte_MCSD_SwBaseTypes" DEST="SW-BASE-TYPE">float32</BASE-TYPE-REF>
+                                   <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                   <COMPU-METHOD-REF BASE="Rte_MCSD_CompuMethods" DEST="COMPU-METHOD">McInt_CompuMethods_Identical</COMPU-METHOD-REF>
+                                   <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                                   <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_Joule</UNIT-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                               </SW-DATA-DEF-PROPS-VARIANTS>
+                             </RESULTING-PROPERTIES>
+                             <SYMBOL>plnt_QEnv</SYMBOL>
+                           </MC-DATA-INSTANCE>
+                           <MC-DATA-INSTANCE>
+                             <!--This is ArTyped Per-Instance Memory /McInt/SwComponents/Plant/PlantInternalBehavior/QHeater on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Plant-->
+                             <!--Reported because the ArTyped PIM is marked as measurable and RTE measurement support is enabled-->
+                             <SHORT-NAME>plnt_QHeater</SHORT-NAME>
+                             <DESC>
+                               <L-2 L="EN">Measurement point for heat flow between the electrical heater and the plant in the current time step.</L-2>
+                             </DESC>
+                             <CATEGORY>VALUE</CATEGORY>
+                             <FLAT-MAP-ENTRY-REF DEST="FLAT-INSTANCE-DESCRIPTOR">/McInt/System/FlatMap/plnt_QHeater</FLAT-MAP-ENTRY-REF>
+                             <RESULTING-PROPERTIES>
+                               <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                   <BASE-TYPE-REF BASE="Rte_MCSD_SwBaseTypes" DEST="SW-BASE-TYPE">float32</BASE-TYPE-REF>
+                                   <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                   <COMPU-METHOD-REF BASE="Rte_MCSD_CompuMethods" DEST="COMPU-METHOD">McInt_CompuMethods_Identical</COMPU-METHOD-REF>
+                                   <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                                   <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_Joule</UNIT-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                               </SW-DATA-DEF-PROPS-VARIANTS>
+                             </RESULTING-PROPERTIES>
+                             <SYMBOL>plnt_QHeater</SYMBOL>
+                           </MC-DATA-INSTANCE>
+                           <MC-DATA-INSTANCE>
+                             <!--This is Implicit Inter Runnable Variable /McInt/SwComponents/Plant/PlantInternalBehavior/QPlant on Application Software Component Instance /McInt/SwComponents/Composition/CPT_Plant-->
+                             <!--Reported because the IRV is marked as measurable and RTE measurement support is enabled-->
+                             <SHORT-NAME>plnt_QPlant</SHORT-NAME>
+                             <DESC>
+                               <L-2 L="EN">Internal state of the plant: the stored eneregy quantity in the current time step</L-2>
+                             </DESC>
+                             <CATEGORY>VALUE</CATEGORY>
+                             <FLAT-MAP-ENTRY-REF DEST="FLAT-INSTANCE-DESCRIPTOR">/McInt/System/FlatMap/plnt_QPlant</FLAT-MAP-ENTRY-REF>
+                             <RESULTING-PROPERTIES>
+                               <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                   <BASE-TYPE-REF BASE="Rte_MCSD_SwBaseTypes" DEST="SW-BASE-TYPE">float32</BASE-TYPE-REF>
+                                   <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                   <COMPU-METHOD-REF BASE="Rte_MCSD_CompuMethods" DEST="COMPU-METHOD">McInt_CompuMethods_Identical</COMPU-METHOD-REF>
+                                   <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                                   <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_Joule</UNIT-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                               </SW-DATA-DEF-PROPS-VARIANTS>
+                             </RESULTING-PROPERTIES>
+                             <SYMBOL>plnt_QPlant</SYMBOL>
+                           </MC-DATA-INSTANCE>
+                        </MC-VARIABLE-INSTANCES>
+                     </MC-SUPPORT>
+                  </BSW-IMPLEMENTATION>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>ApplicationPrimitiveDataTypes</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>Units</SHORT-NAME>
+               <ELEMENTS>
+                  <UNIT>
+                    <!--Was /McInt/Units/MilliAmpere-->
+                    <!--Referenced by /McInt/CompuMethods/Current_mA-->
+                    <!--Referenced by McDataInstance Rte/I-->
+                    <SHORT-NAME>McInt_Units_MilliAmpere</SHORT-NAME>
+                    <DISPLAY-NAME>mA</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1000.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">McInt_PhysicalDimensions_Current</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /McInt/Units/Kelvin-->
+                    <!--Referenced by McDataInstance Rte/ctrl_E-->
+                    <!--Referenced by McDataInstance Rte/env_THighLimitDistance-->
+                    <!--Referenced by McDataInstance Rte/env_TStepSize-->
+                    <SHORT-NAME>McInt_Units_Kelvin</SHORT-NAME>
+                    <DISPLAY-NAME>K</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">McInt_PhysicalDimensions_Temparature</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /McInt/Units/KelvinSecond-->
+                    <!--Referenced by McDataInstance Rte/ctrl_ESum-->
+                    <!--Referenced by McDataInstance Rte/ctrl_MaxESum-->
+                    <SHORT-NAME>McInt_Units_KelvinSecond</SHORT-NAME>
+                    <DISPLAY-NAME>Ks</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">McInt_PhysicalDimensions_TemparatureTime</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /McInt/Units/DegreeCelsius-->
+                    <!--Referenced by /McInt/CompuMethods/Temperature_C-->
+                    <!--Referenced by McDataInstance Rte/TEnv-->
+                    <!--Referenced by McDataInstance Rte/env_THighLimit-->
+                    <!--Referenced by McDataInstance Rte/env_TEnv-->
+                    <!--Referenced by McDataInstance Rte/ctrl_SetPoint-->
+                    <!--Referenced by McDataInstance Rte/env_TLowLimit-->
+                    <!--Referenced by McDataInstance Rte/TPlant-->
+                    <SHORT-NAME>McInt_Units_DegreeCelsius</SHORT-NAME>
+                    <DISPLAY-NAME>°C</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>-273.15</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">McInt_PhysicalDimensions_Temparature</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /McInt/Units/MilliAmperePerKelvinSecond-->
+                    <!--Referenced by McDataInstance Rte/ctrl_K-->
+                    <SHORT-NAME>McInt_Units_MilliAmperePerKelvinSecond</SHORT-NAME>
+                    <DISPLAY-NAME>mA/Ks</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1000.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">McInt_PhysicalDimensions_CurrentPerTemperatureTime</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /McInt/Units/Second-->
+                    <!--Referenced by McDataInstance Rte/Dt-->
+                    <SHORT-NAME>McInt_Units_Second</SHORT-NAME>
+                    <DISPLAY-NAME>s</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">McInt_PhysicalDimensions_Time</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /McInt/Units/JoulePerKelvinSecond-->
+                    <!--Referenced by McDataInstance Rte/plnt_EnvFactor-->
+                    <SHORT-NAME>McInt_Units_JoulePerKelvinSecond</SHORT-NAME>
+                    <DISPLAY-NAME>J/Ks</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">McInt_PhysicalDimensions_EnergyPerTemperatureTime</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /McInt/Units/JoulePerMilliAmpereSecond-->
+                    <!--Referenced by McDataInstance Rte/plnt_HeaterFactor-->
+                    <SHORT-NAME>McInt_Units_JoulePerMilliAmpereSecond</SHORT-NAME>
+                    <DISPLAY-NAME>J/mAs</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>0.001</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">McInt_PhysicalDimensions_EnergyPerCurrentTime</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /McInt/Units/Joule-->
+                    <!--Referenced by McDataInstance Rte/plnt_QEnv-->
+                    <!--Referenced by McDataInstance Rte/plnt_QHeater-->
+                    <!--Referenced by McDataInstance Rte/plnt_QPlant-->
+                    <SHORT-NAME>McInt_Units_Joule</SHORT-NAME>
+                    <DISPLAY-NAME>J</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">McInt_PhysicalDimensions_Energy</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>CompuMethods</SHORT-NAME>
+               <ELEMENTS>
+                  <COMPU-METHOD>
+                    <!--Was /McInt/CompuMethods/Current_mA-->
+                    <!--Referenced by McDataInstance Rte/I-->
+                    <SHORT-NAME>McInt_CompuMethods_Current_mA</SHORT-NAME>
+                    <DESC>
+                      <L-2 L="EN">Conversion to illustrate proportional scaling between interface and internal computations</L-2>
+                    </DESC>
+                    <CATEGORY>LINEAR</CATEGORY>
+                    <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                    <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_MilliAmpere</UNIT-REF>
+                    <COMPU-INTERNAL-TO-PHYS>
+                      <COMPU-SCALES>
+                        <COMPU-SCALE>
+                          <COMPU-RATIONAL-COEFFS>
+                            <COMPU-NUMERATOR>
+                              <V>0</V>
+                              <V>1000</V>
+                            </COMPU-NUMERATOR>
+                            <COMPU-DENOMINATOR>
+                              <V>1</V>
+                            </COMPU-DENOMINATOR>
+                          </COMPU-RATIONAL-COEFFS>
+                        </COMPU-SCALE>
+                      </COMPU-SCALES>
+                    </COMPU-INTERNAL-TO-PHYS>
+                  </COMPU-METHOD>
+                  <COMPU-METHOD>
+                    <!--Was /McInt/CompuMethods/Identical-->
+                    <!--Referenced by McDataInstance Rte/ctrl_E-->
+                    <!--Referenced by McDataInstance Rte/ctrl_ESum-->
+                    <!--Referenced by McDataInstance Rte/ctrl_K-->
+                    <!--Referenced by McDataInstance Rte/ctrl_MaxESum-->
+                    <!--Referenced by McDataInstance Rte/Dt-->
+                    <!--Referenced by McDataInstance Rte/env_THighLimitDistance-->
+                    <!--Referenced by McDataInstance Rte/env_TStepSize-->
+                    <!--Referenced by McDataInstance Rte/plnt_EnvFactor-->
+                    <!--Referenced by McDataInstance Rte/plnt_HeaterFactor-->
+                    <!--Referenced by McDataInstance Rte/plnt_QEnv-->
+                    <!--Referenced by McDataInstance Rte/plnt_QHeater-->
+                    <!--Referenced by McDataInstance Rte/plnt_QPlant-->
+                    <SHORT-NAME>McInt_CompuMethods_Identical</SHORT-NAME>
+                    <DESC>
+                      <L-2 L="EN">Identical conversion (Physical == Internal). Used for most data types here.</L-2>
+                    </DESC>
+                    <CATEGORY>IDENTICAL</CATEGORY>
+                    <DISPLAY-FORMAT>%f</DISPLAY-FORMAT>
+                  </COMPU-METHOD>
+                  <COMPU-METHOD>
+                    <!--Was /McInt/CompuMethods/Temperature_C-->
+                    <!--Referenced by McDataInstance Rte/TEnv-->
+                    <!--Referenced by McDataInstance Rte/env_THighLimit-->
+                    <!--Referenced by McDataInstance Rte/env_TEnv-->
+                    <!--Referenced by McDataInstance Rte/ctrl_SetPoint-->
+                    <!--Referenced by McDataInstance Rte/env_TLowLimit-->
+                    <!--Referenced by McDataInstance Rte/TPlant-->
+                    <SHORT-NAME>McInt_CompuMethods_Temperature_C</SHORT-NAME>
+                    <DESC>
+                      <L-2 L="EN">Conversion from [°C] to [K]</L-2>
+                    </DESC>
+                    <CATEGORY>LINEAR</CATEGORY>
+                    <DISPLAY-FORMAT>%.1f</DISPLAY-FORMAT>
+                    <UNIT-REF BASE="Rte_MCSD_Units" DEST="UNIT">McInt_Units_DegreeCelsius</UNIT-REF>
+                    <COMPU-INTERNAL-TO-PHYS>
+                      <COMPU-SCALES>
+                        <COMPU-SCALE>
+                          <COMPU-RATIONAL-COEFFS>
+                            <COMPU-NUMERATOR>
+                              <V>-273.15</V>
+                              <V>1</V>
+                            </COMPU-NUMERATOR>
+                            <COMPU-DENOMINATOR>
+                              <V>1</V>
+                            </COMPU-DENOMINATOR>
+                          </COMPU-RATIONAL-COEFFS>
+                        </COMPU-SCALE>
+                      </COMPU-SCALES>
+                    </COMPU-INTERNAL-TO-PHYS>
+                  </COMPU-METHOD>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>DataConstrs</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>PhysicalDimensions</SHORT-NAME>
+               <ELEMENTS>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /McInt/PhysicalDimensions/Current-->
+                    <!--Referenced by /McInt/Units/MilliAmpere-->
+                    <SHORT-NAME>McInt_PhysicalDimensions_Current</SHORT-NAME>
+                    <LENGTH-EXP>0</LENGTH-EXP>
+                    <MASS-EXP>0</MASS-EXP>
+                    <TIME-EXP>0</TIME-EXP>
+                    <CURRENT-EXP>1</CURRENT-EXP>
+                    <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                    <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                    <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /McInt/PhysicalDimensions/Temparature-->
+                    <!--Referenced by /McInt/Units/Kelvin-->
+                    <!--Referenced by /McInt/Units/DegreeCelsius-->
+                    <SHORT-NAME>McInt_PhysicalDimensions_Temparature</SHORT-NAME>
+                    <LENGTH-EXP>0</LENGTH-EXP>
+                    <MASS-EXP>0</MASS-EXP>
+                    <TIME-EXP>0</TIME-EXP>
+                    <CURRENT-EXP>0</CURRENT-EXP>
+                    <TEMPERATURE-EXP>1</TEMPERATURE-EXP>
+                    <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                    <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /McInt/PhysicalDimensions/TemparatureTime-->
+                    <!--Referenced by /McInt/Units/KelvinSecond-->
+                    <SHORT-NAME>McInt_PhysicalDimensions_TemparatureTime</SHORT-NAME>
+                    <LENGTH-EXP>0</LENGTH-EXP>
+                    <MASS-EXP>0</MASS-EXP>
+                    <TIME-EXP>1</TIME-EXP>
+                    <CURRENT-EXP>0</CURRENT-EXP>
+                    <TEMPERATURE-EXP>1</TEMPERATURE-EXP>
+                    <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                    <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /McInt/PhysicalDimensions/CurrentPerTemperatureTime-->
+                    <!--Referenced by /McInt/Units/MilliAmperePerKelvinSecond-->
+                    <SHORT-NAME>McInt_PhysicalDimensions_CurrentPerTemperatureTime</SHORT-NAME>
+                    <LENGTH-EXP>0</LENGTH-EXP>
+                    <MASS-EXP>0</MASS-EXP>
+                    <TIME-EXP>-1</TIME-EXP>
+                    <CURRENT-EXP>1</CURRENT-EXP>
+                    <TEMPERATURE-EXP>-1</TEMPERATURE-EXP>
+                    <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                    <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /McInt/PhysicalDimensions/Time-->
+                    <!--Referenced by /McInt/Units/Second-->
+                    <SHORT-NAME>McInt_PhysicalDimensions_Time</SHORT-NAME>
+                    <LENGTH-EXP>0</LENGTH-EXP>
+                    <MASS-EXP>0</MASS-EXP>
+                    <TIME-EXP>1</TIME-EXP>
+                    <CURRENT-EXP>0</CURRENT-EXP>
+                    <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                    <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                    <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /McInt/PhysicalDimensions/EnergyPerTemperatureTime-->
+                    <!--Referenced by /McInt/Units/JoulePerKelvinSecond-->
+                    <SHORT-NAME>McInt_PhysicalDimensions_EnergyPerTemperatureTime</SHORT-NAME>
+                    <LENGTH-EXP>2</LENGTH-EXP>
+                    <MASS-EXP>1</MASS-EXP>
+                    <TIME-EXP>-3</TIME-EXP>
+                    <CURRENT-EXP>0</CURRENT-EXP>
+                    <TEMPERATURE-EXP>-1</TEMPERATURE-EXP>
+                    <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                    <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /McInt/PhysicalDimensions/EnergyPerCurrentTime-->
+                    <!--Referenced by /McInt/Units/JoulePerMilliAmpereSecond-->
+                    <SHORT-NAME>McInt_PhysicalDimensions_EnergyPerCurrentTime</SHORT-NAME>
+                    <LENGTH-EXP>2</LENGTH-EXP>
+                    <MASS-EXP>1</MASS-EXP>
+                    <TIME-EXP>-3</TIME-EXP>
+                    <CURRENT-EXP>-1</CURRENT-EXP>
+                    <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                    <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                    <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /McInt/PhysicalDimensions/Energy-->
+                    <!--Referenced by /McInt/Units/Joule-->
+                    <SHORT-NAME>McInt_PhysicalDimensions_Energy</SHORT-NAME>
+                    <LENGTH-EXP>2</LENGTH-EXP>
+                    <MASS-EXP>1</MASS-EXP>
+                    <TIME-EXP>-2</TIME-EXP>
+                    <CURRENT-EXP>0</CURRENT-EXP>
+                    <TEMPERATURE-EXP>0</TEMPERATURE-EXP>
+                    <MOLAR-AMOUNT-EXP>0</MOLAR-AMOUNT-EXP>
+                    <LUMINOUS-INTENSITY-EXP>0</LUMINOUS-INTENSITY-EXP>
+                  </PHYSICAL-DIMENSION>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>SwAddrMethods</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>SwBaseTypes</SHORT-NAME>
+               <ELEMENTS>
+                  <SW-BASE-TYPE>
+                    <!--Was /AUTOSAR_PlatformTypes/SwBaseTypes/float32-->
+                    <!--Referenced by McDataInstance Rte/I-->
+                    <!--Referenced by McDataInstance Rte/ctrl_E-->
+                    <!--Referenced by McDataInstance Rte/ctrl_ESum-->
+                    <!--Referenced by McDataInstance Rte/TEnv-->
+                    <!--Referenced by McDataInstance Rte/env_THighLimit-->
+                    <!--Referenced by McDataInstance Rte/env_TEnv-->
+                    <!--Referenced by McDataInstance Rte/ctrl_K-->
+                    <!--Referenced by McDataInstance Rte/ctrl_MaxESum-->
+                    <!--Referenced by McDataInstance Rte/ctrl_SetPoint-->
+                    <!--Referenced by McDataInstance Rte/Dt-->
+                    <!--Referenced by McDataInstance Rte/env_THighLimitDistance-->
+                    <!--Referenced by McDataInstance Rte/env_TLowLimit-->
+                    <!--Referenced by McDataInstance Rte/env_TStepSize-->
+                    <!--Referenced by McDataInstance Rte/plnt_EnvFactor-->
+                    <!--Referenced by McDataInstance Rte/plnt_HeaterFactor-->
+                    <!--Referenced by McDataInstance Rte/TPlant-->
+                    <!--Referenced by McDataInstance Rte/plnt_QEnv-->
+                    <!--Referenced by McDataInstance Rte/plnt_QHeater-->
+                    <!--Referenced by McDataInstance Rte/plnt_QPlant-->
+                    <SHORT-NAME>float32</SHORT-NAME>
+                    <CATEGORY>FIXED_LENGTH</CATEGORY>
+                    <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                    <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+                  </SW-BASE-TYPE>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>SwRecordLayouts</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+         </AR-PACKAGES>
+      </AR-PACKAGE>
+   </AR-PACKAGES>
+</AUTOSAR>
+

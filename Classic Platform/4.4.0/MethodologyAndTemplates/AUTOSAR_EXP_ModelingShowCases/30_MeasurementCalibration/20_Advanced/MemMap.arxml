@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+	<ADMIN-DATA>
+		<LANGUAGE>EN</LANGUAGE>
+		<USED-LANGUAGES>
+			<L-10 L="EN" xml:space="preserve">English</L-10>
+		</USED-LANGUAGES>
+	</ADMIN-DATA>
+	<AR-PACKAGES>
+		<AR-PACKAGE>
+			<SHORT-NAME>Tier1</SHORT-NAME>
+			<AR-PACKAGES>
+				<AR-PACKAGE>
+					<SHORT-NAME>ARPlatform1</SHORT-NAME>
+					<AR-PACKAGES>
+						<AR-PACKAGE>
+							<SHORT-NAME>MemMap</SHORT-NAME>
+							<AR-PACKAGES>
+								<AR-PACKAGE>
+									<SHORT-NAME>SwAddrMethods</SHORT-NAME>
+									<ELEMENTS>
+										<SW-ADDR-METHOD>
+											<SHORT-NAME>CAL</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Calibratable constants; safety level QM. Constants will be located in different memory sections depending on the alignment of the constant.</L-2>
+											</DESC>
+											<MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+											<OPTIONS>
+												<OPTION>safetyQM</OPTION>
+											</OPTIONS>
+											<SECTION-TYPE>CALPRM</SECTION-TYPE>
+										</SW-ADDR-METHOD>
+										<SW-ADDR-METHOD>
+											<SHORT-NAME>CODE_10MS</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Code of ECU-functions called every 10 ms; safety level QM.</L-2>
+											</DESC>
+											<MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME</MEMORY-ALLOCATION-KEYWORD-POLICY>
+											<OPTIONS>
+												<OPTION>safetyQM</OPTION>
+											</OPTIONS>
+											<SECTION-TYPE>CODE</SECTION-TYPE>
+										</SW-ADDR-METHOD>
+										<SW-ADDR-METHOD>
+											<SHORT-NAME>CONST_SLOW</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Non calibratable constants of ECU-functions called seldom; safety level QM. </L-2>
+											</DESC>
+											<MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME</MEMORY-ALLOCATION-KEYWORD-POLICY>
+											<OPTIONS>
+												<OPTION>safetyQM</OPTION>
+											</OPTIONS>
+											<SECTION-TYPE>CONST</SECTION-TYPE>
+										</SW-ADDR-METHOD>
+										<SW-ADDR-METHOD>
+											<SHORT-NAME>DATA</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Variables of ECU-functions; safety level QM. Variables will be located in different memory sections depending on the alignment of the variable.</L-2>
+											</DESC>
+											<MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+											<OPTIONS>
+												<OPTION>safetyQM</OPTION>
+											</OPTIONS>
+											<SECTION-INITIALIZATION-POLICY>INIT</SECTION-INITIALIZATION-POLICY>
+											<SECTION-TYPE>VAR</SECTION-TYPE>
+										</SW-ADDR-METHOD>
+										<SW-ADDR-METHOD>
+											<SHORT-NAME>DATA_NVDAT</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Variables stored in non-volatile memory; safety level QM.</L-2>
+											</DESC>
+											<MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME</MEMORY-ALLOCATION-KEYWORD-POLICY>
+											<OPTIONS>
+												<OPTION>nvData</OPTION>
+												<OPTION>safetyQM</OPTION>
+											</OPTIONS>
+											<SECTION-INITIALIZATION-POLICY>NO-INIT</SECTION-INITIALIZATION-POLICY>
+											<SECTION-TYPE>VAR</SECTION-TYPE>
+										</SW-ADDR-METHOD>
+									</ELEMENTS>
+								</AR-PACKAGE>
+							</AR-PACKAGES>
+						</AR-PACKAGE>
+					</AR-PACKAGES>
+				</AR-PACKAGE>
+			</AR-PACKAGES>
+		</AR-PACKAGE>
+	</AR-PACKAGES>
+</AUTOSAR>

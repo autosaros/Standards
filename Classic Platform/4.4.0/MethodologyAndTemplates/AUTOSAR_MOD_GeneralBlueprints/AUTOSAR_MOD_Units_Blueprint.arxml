@@ -1,0 +1,1716 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+   <!-- AUTOSAR General Blueprints -->
+   <!--
+    Document Owner:                 AUTOSAR
+    Document Responsibility:        AUTOSAR
+    Document Identification Number: 621
+    Document Status:                Final
+    Part of AUTOSAR Standard:       Classic Platform
+    Part of AUTOSAR Release:        4.4.0
+    -->
+   <!--
+    Disclaimer
+
+    This work (specification and/or software implementation) and the material
+    contained in it, as released by AUTOSAR, is for the purpose of information
+    only. AUTOSAR and the companies that have contributed to it shall not be liable
+    for any use of the work.
+
+    The material contained in this work is protected by copyright and other types
+    of intellectual property rights. The commercial exploitation of the material
+    contained in this work requires a license to such intellectual property rights.
+
+    This work may be utilized or reproduced without any modification, in any form
+    or by any means, for informational purposes only. For any other purpose, no
+    part of the work may be utilized or reproduced, in any form or by any means,
+    without permission in writing from the publisher.
+
+    The work has been developed for automotive applications only. It has neither
+    been developed, nor tested for non-automotive applications.
+
+    The word AUTOSAR and the AUTOSAR logo are registered trademarks.
+ -->
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="default">English</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR</SHORT-NAME>
+      <LONG-NAME>
+        <L-4 L="EN">AUTOSAR</L-4>
+      </LONG-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>AISpecification</SHORT-NAME>
+          <LONG-NAME>
+            <L-4 L="EN">AISpecification</L-4>
+          </LONG-NAME>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>AUTOSAR_PhysicalUnits</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>Units_Blueprints</SHORT-NAME>
+              <CATEGORY>BLUEPRINT</CATEGORY>
+              <REFERENCE-BASES>
+                <REFERENCE-BASE>
+                  <SHORT-LABEL>PhysicalDimensions</SHORT-LABEL>
+                  <IS-DEFAULT>false</IS-DEFAULT>
+                  <IS-GLOBAL>false</IS-GLOBAL>
+                  <BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+                  <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/AUTOSAR_PhysicalUnits/PhysicalDimensions_Blueprints</PACKAGE-REF>
+                </REFERENCE-BASE>
+              </REFERENCE-BASES>
+              <ELEMENTS>
+                <UNIT>
+                  <SHORT-NAME>Ampr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Ampere</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>A</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">I1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>AmprPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Ampere Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>A/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1I1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>AmprSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Amperesecond</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>As</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">T1I1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Bar</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Bar</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>bar</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0E-5</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg1M1TiNeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>BarPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Bar Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>bar/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0E-5</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg1M1TiNeg3</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Bel</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Bel</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>B</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">NoDimension_5</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Bit</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Bit</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>bit</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">NoDimension_6</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>BitPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Bit Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>bit/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1_3</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>BytPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Byte Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>Byte/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.125</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1_3</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Byte</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Byte</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>Byte</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.125</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">NoDimension_6</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Cd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Candela</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>cd</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Illmn1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>CentiMtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Centimeter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>cm</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>100.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>CentiMtrSqd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Squarecentimeter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>cm^2</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>10000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Coulomb</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Coulomb</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>C</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">T1I1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Day</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Day</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>d</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.15740740740741E-5</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Ti1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>DeciBel</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Decibel</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>dB</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>10.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">NoDimension_5</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Deg</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Degree</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>°</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>360.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">NoDimension_2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>DegCgrd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Degree Celsius (Absolute Temperature)</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>°C</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>-273.15</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">T1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>DegPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Degree Per Sec</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>°/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>360.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1_2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Frd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Farad</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>F</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg2MNeg1Ti4I2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Gr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Gram</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>g</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>GrPerLtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Gram Per Liter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>g/l</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg3M1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>GrPerMol</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Gram Per Mole</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>g/mol</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1AmntNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>GrPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Gram Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>g/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1TiNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>HectoPa</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Hectopascal</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>hPa</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.01</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg1M1TiNeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>HectoPaPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Hecto-Pascal Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>hPa/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.01</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg1M1TiNeg3</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>HectoPaPerVolt</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Hecto Pascal Per Volt</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>hPa/V</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.01</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg3Ti1I1_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>HectoPaSecPerMtrCubd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Hectopascal Second Per Cubicmeter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>hPa/((m^3)/s)</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.01</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg4M1TiNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Henry</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Henry</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>H</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2INeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>HenryPerMtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Henry Per Meter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>H/m</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1M1TiNeg2INeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Hr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Hour</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>h</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>2.77777777777778E-4</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Ti1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Hz</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Hertz</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>Hz</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Jou</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Joule</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>J</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>JouPerKelvin</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Joule Per Kelvin</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>J/K</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2TNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>JouPerKiloGr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Joule Per Kilogram</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>J/kg</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2TiNeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>JouPerKiloGrPerKelvin</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Joule Per Kilogram PerKelvin</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>J/(kg*K)</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2TiNeg2TNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>JouPerMol</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Joule Per Mole</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>J/mol</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2AmntNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>JouPerMolPerKelvin</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Joule Per Mole Per Kelvin</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>J/(mol*K)</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2TNeg1AmntNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Kat</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Katal</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>kat</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1Amnt1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KelvinAbslt</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kelvin (Absolute Temperature)</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>K</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">T1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KelvinPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kelvin Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>K/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1T1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KelvinRel</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kelvin (Relative Temperature, Temperature Difference)</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>K</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">T1_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KiloBitPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kilobit Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>kbit/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.001</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1_3</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KiloGr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kilogram</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>kg</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KiloGrPerHr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kilogram Per Hour</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>kg/h</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>3600.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1TiNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KiloGrPerMtrCubd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kilo-Gram Per Cubic Meter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>kg/(m^3)</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg3M1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KiloGrPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kilogram Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>kg/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1TiNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KiloGrSqrMtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kilogram Squaremeter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>kg*(m^2)</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KiloHz</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kilohertz</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>kHz</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.001</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KiloJou</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kilojoule</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>kJ</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.001</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KiloMtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kilometer</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>km</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.001</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KiloMtrPerHr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kilometer Per Hour</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>km/h</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>3.6</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1TiNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KiloMtrPerHrPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kilometer Per Hour Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>(km/h)/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>3.6</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1TiNeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KiloNwt</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kilonewton</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>kN</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.001</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1M1TiNeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KiloNwtMtrPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kilonewtonmeter Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>(kN*m)/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.001</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KiloOhm</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kiloohm</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>kΩ</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.001</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3INeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KiloVolt</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kilovolt</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>kV</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.001</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3INeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KiloWatt</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kilowatt</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>kW</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.001</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KiloWattHr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kilowatthour</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>kWh</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>2.77777777777778E-7</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>KiloWattHrPer100KiloMtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Kilowatthour Per 100 Kilometer</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>kWh/(100*km)</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.0277777777777778</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1M1TiNeg2_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Ltr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Liter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>l</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len3</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>LtrPer100KiloMtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Liter Per 100 Kilometer</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>l/(100km)</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0E8</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>LtrPerHr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Liter Per Hour</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>l/h</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>3600000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len3TiNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>LtrPerKiloMtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Liter Per Kilometer</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>l/km</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MegaBitPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Megabit Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>Mbit/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0E-6</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1_3</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MegaHz</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Megahertz</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>MHz</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0E-6</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MegaJou</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Megajoule</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>MJ</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0E-6</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MegaOhm</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Megaohm</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>MΩ</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0E-6</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3INeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MegaPa</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Megapascal</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>MPa</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0E-6</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg1M1TiNeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MegaWatt</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Megawatt</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>MW</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0E-6</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MicroAmpr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Microampere</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>µA</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">I1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MicroFrd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Microfarad</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>µF</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg2MNeg1Ti4I2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MicroGr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Microgram</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>µg</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0E9</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MicroJou</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Microjoule</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>µJ</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MicroLtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Microliter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>µl</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0E9</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len3</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MicroLtrPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Microliter Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>µl/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0E9</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len3TiNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MicroMtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Micrometer</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>µm</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MicroSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Microsecond</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>µs</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Ti1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MicroTesla</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Microtesla</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>µT</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1TiNeg2INeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MilliAmpr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">MilliAmpere</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mA/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">I1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MilliAmprPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Milliampere Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mA/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1I1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MilliBar</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Millibar</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mbar</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.01</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg1M1TiNeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MilliFrd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Millifarad</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mF</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg2MNeg1Ti4I2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MilliGr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Milligram</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mg</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MilliGrPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Milligram Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mg/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1TiNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MilliJou</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Millijoule</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mJ</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MilliLtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Milliliter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>ml</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len3</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MilliMtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Millimeter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mm</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MilliMtrCubd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Cubicmillimeter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mm^3</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0E9</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len3</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MilliMtrCubdPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Cubicmillimeter Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>(mm^3)/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0E9</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len3TiNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MilliOhm</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Milliohm</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mΩ</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3INeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MilliSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Millisecond</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>ms</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Ti1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MilliTesla</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Millitesla</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mT</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1TiNeg2INeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MilliVolt</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Millivolt</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mV</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3INeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MilliVoltPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Millivolt Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mV/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg4INeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MilliWatt</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Milliwatt</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mW</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Mins</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Minute</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>min</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.0166666666666667</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Ti1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Ml</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Mile</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mile</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>6.21371192237333E-4</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MlPerHr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Miles Per Hour</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mph</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>2.2369362920544</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1TiNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Mol</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Mole</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mol</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Amnt1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MolPerLtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Mole Per Liter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mol/l</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.001</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg3Amnt1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MolPerLtrPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Mol Per Liter per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>(mol/l)/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.001</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg3TiNeg1Amnt1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MolPerMtrCubd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Mole Per Cubicmeter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mol/(m^3)</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg3Amnt1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MolPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Mole Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>mol/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1Amnt1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Mtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Meter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>m</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MtrCubd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Cubicmeter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>m^3</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len3</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MtrCubdPerHr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Cubicmeter Per Hour </L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>(m^3)/h</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>3600.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len3TiNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MtrCubdPerHrPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Cubicmeter Per Hour Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>(m^3)/(h*s)</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>3600.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len3TiNeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MtrCubdPerKiloGr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Cubicmeter Per Kilogram</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>(m^3)/kg</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len3MNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MtrPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Meter Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>m/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1TiNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MtrPerSecCubd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Meter Per Second Cubed</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>m/(s^3)</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1TiNeg3</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MtrPerSecSqd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Meter Per Second Squared</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>m/(s^2)</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1TiNeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MtrSqd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Squaremeter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>m^2</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>MtrSqdPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Squaremeter Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>(m^2)/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2Ti1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>NanoFrd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Nanofarad</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>nF</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0E9</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg2MNeg1Ti4I2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>NanoSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Nanosecond</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>ns</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0E9</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Ti1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>NoUnit</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Neither Physical nor Mathematical Unit</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>-</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">NoDimension</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Nwt</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Newton</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>N</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1M1TiNeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>NwtMtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Newtonmeter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>Nm</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>NwtMtrPerRpm</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Newtonmeter Per Rpm</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>Nm/rpm</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.0166666666666667</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>NwtMtrPerRpmPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Newtonmeter Per RPM Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>Nm/(rpm/s)</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.0166666666666667</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>NwtMtrPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Newtonmeter Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>(N*m)/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>NwtMtrSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Newton Meter Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>Nm*s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>NwtMtrSqrSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Newtonmeter Second Squared</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>Nm*(s^2)</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>NwtPerMtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Newton Per Meter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>N/m</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1TiNeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>NwtSecPerMtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Newtonsecond Per Meter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>Ns/m</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1TiNeg1_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Ohm</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Ohm</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>Ω</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3INeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Pa</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Pascal</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>Pa</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg1M1TiNeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>PaPerMtrCubdPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Pascal Second Per Cubicmeter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>Pa/((m^3)/s)</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg4M1TiNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>PaPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Pascal Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>Pa/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg1M1TiNeg3</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>PaSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Pascal Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>Pa*s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg1M1TiNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>PerMille</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Permille</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>‰</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">NoDimension_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>PerMin</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Per Minute</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>1/min</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>60.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1_2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>PerMtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Per Meter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>1/m</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>PerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>1/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1_2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>PerSecSqd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Per Second Squared</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>1/(s^2)</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Perc</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Percent</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>%</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>100.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">NoDimension_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>PercPerMilliSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Percent Per Millisecond</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>%/ms</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.1</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>PercPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Percent Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>%/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>100.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>PicoFrd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Picofarad</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>pF</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0E12</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg2MNeg1Ti4I2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>PicoSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Picosecond</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>ps</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0E12</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Ti1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Ppm</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Parts Per Million</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>ppm</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1000000.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">NoDimension_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Rad</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Radian</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>rad</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>6.28318530717958</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">NoDimension_2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>RadPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Radian Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>rad/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>6.28318530717958</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1_2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>RadPerSecSqd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Radian Per Second Squared</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>rad/(s^2)</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>6.28318530717958</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Rpm</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Revolutions Per Minute</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>rpm</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>60.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg1_2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>RpmPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Revolutions Per Minute Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>rpm/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>60.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">TiNeg2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>S</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Siemens</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>S</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg2MNeg1Ti3I2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>SPerMtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Siemens Per Meter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>S/m</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg3MNeg1Ti3I2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>SPerMtrPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Siemens Per Meter Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>S/(m*s)</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">LenNeg3MNeg1Ti2I2</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Sec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Ti1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Tesla</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Tesla</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>T</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1TiNeg2INeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Tonne</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Tonne</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>t</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.001</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Volt</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Volt</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>V</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3INeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>VoltPerMilliSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Volt Per Millisecond</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>V/ms</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>0.001</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg4INeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>VoltPerMtr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Volt Per Meter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>V/m</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1M1TiNeg3INeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>VoltPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Volt Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>V/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg4INeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Watt</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Watt</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>W</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg3_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>WattPerKelvinPerMtrSqd</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Watt Per Kelvin Per Squaremeter</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>W/(K*m^2)</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">M1TiNeg3TNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>WattPerMtrPerKelvin</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Watt Per Meter Per Kelvin</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>W/(m*K)</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len1M1TiNeg3TNeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>WattPerSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Watt Per Second</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>W/s</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg4</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>WattSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Wattsecond</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>Ws</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2_1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Wb</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Weber</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>Wb</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Len2M1TiNeg2INeg1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>Yr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Year</L-4>
+                  </LONG-NAME>
+                  <DISPLAY-NAME>a</DISPLAY-NAME>
+                  <FACTOR-SI-TO-UNIT>3.16880878140289E-8</FACTOR-SI-TO-UNIT>
+                  <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                  <PHYSICAL-DIMENSION-REF BASE="PhysicalDimensions" DEST="PHYSICAL-DIMENSION">Ti1</PHYSICAL-DIMENSION-REF>
+                </UNIT>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

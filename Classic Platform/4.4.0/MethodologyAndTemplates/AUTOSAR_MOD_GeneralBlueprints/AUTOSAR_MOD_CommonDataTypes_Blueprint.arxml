@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+   <!-- AUTOSAR General Blueprints -->
+   <!--
+    Document Owner:                 AUTOSAR
+    Document Responsibility:        AUTOSAR
+    Document Identification Number: 621
+    Document Status:                Final
+    Part of AUTOSAR Standard:       Classic Platform
+    Part of AUTOSAR Release:        4.4.0
+-->
+   <!--
+	Disclaimer
+
+	This work (specification and/or software implementation) and the material
+	contained in it, as released by AUTOSAR, is for the purpose of information
+	only. AUTOSAR and the companies that have contributed to it shall not be liable
+	for any use of the work.
+
+	The material contained in this work is protected by copyright and other types
+	of intellectual property rights. The commercial exploitation of the material
+	contained in this work requires a license to such intellectual property rights.
+
+	This work may be utilized or reproduced without any modification, in any form
+	or by any means, for informational purposes only. For any other purpose, no
+	part of the work may be utilized or reproduced, in any form or by any means,
+	without permission in writing from the publisher.
+
+	The work has been developed for automotive applications only. It has neither
+	been developed, nor tested for non-automotive applications.
+
+	The word AUTOSAR and the AUTOSAR logo are registered trademarks.
+
+ -->
+   <ADMIN-DATA>
+      <USED-LANGUAGES>
+         <L-10 L="EN" xml:space="default">English</L-10>
+      </USED-LANGUAGES>
+   </ADMIN-DATA>
+   <AR-PACKAGES>
+      <AR-PACKAGE>
+         <SHORT-NAME>AUTOSAR</SHORT-NAME>
+         <AR-PACKAGES>
+            <!-- Now follow packages which define AUTOSAR Standard and Platform
+        Types to remove validation problems -->
+            <AR-PACKAGE>
+               <SHORT-NAME>Platform</SHORT-NAME>
+               <AR-PACKAGES>
+                  <AR-PACKAGE>
+                     <SHORT-NAME>BaseTypes_Blueprint</SHORT-NAME>
+                     <CATEGORY>BLUEPRINT</CATEGORY>
+                     <ELEMENTS>
+                        <SW-BASE-TYPE>
+                           <SHORT-NAME>sint64</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">sint64</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>FIXED_LENGTH</CATEGORY>
+                           <BASE-TYPE-SIZE>64</BASE-TYPE-SIZE>
+                           <BASE-TYPE-ENCODING>2C</BASE-TYPE-ENCODING>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                           <SHORT-NAME>uint64</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">uint64</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>FIXED_LENGTH</CATEGORY>
+                           <BASE-TYPE-SIZE>64</BASE-TYPE-SIZE>
+                           <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                           <SHORT-NAME>boolean</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">boolean</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>FIXED_LENGTH</CATEGORY>
+                           <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                           <BASE-TYPE-ENCODING>BOOLEAN</BASE-TYPE-ENCODING>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                           <SHORT-NAME>uint8</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">uint8</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>FIXED_LENGTH</CATEGORY>
+                           <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                           <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                           <SHORT-NAME>uint16</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">uint16</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>FIXED_LENGTH</CATEGORY>
+                           <BASE-TYPE-SIZE>16</BASE-TYPE-SIZE>
+                           <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                           <SHORT-NAME>uint32</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">uint32</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>FIXED_LENGTH</CATEGORY>
+                           <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                           <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                           <SHORT-NAME>sint8</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">sint8</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>FIXED_LENGTH</CATEGORY>
+                           <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                           <BASE-TYPE-ENCODING>2C</BASE-TYPE-ENCODING>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                           <SHORT-NAME>sint16</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">sint16</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>FIXED_LENGTH</CATEGORY>
+                           <BASE-TYPE-SIZE>16</BASE-TYPE-SIZE>
+                           <BASE-TYPE-ENCODING>2C</BASE-TYPE-ENCODING>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                           <SHORT-NAME>sint32</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">sint32</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>FIXED_LENGTH</CATEGORY>
+                           <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                           <BASE-TYPE-ENCODING>2C</BASE-TYPE-ENCODING>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                           <SHORT-NAME>float32</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">float32</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>FIXED_LENGTH</CATEGORY>
+                           <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                           <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                           <SHORT-NAME>float64</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">float64</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>FIXED_LENGTH</CATEGORY>
+                           <BASE-TYPE-SIZE>64</BASE-TYPE-SIZE>
+                           <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+                        </SW-BASE-TYPE>
+                     </ELEMENTS>
+                  </AR-PACKAGE>
+                  <AR-PACKAGE>
+                     <SHORT-NAME>ImplementationDataTypes_Blueprint</SHORT-NAME>
+                     <CATEGORY>BLUEPRINT</CATEGORY>
+                     <ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>sint64</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">sint64</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>VALUE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint64</BASE-TYPE-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                           <TYPE-EMITTER>Platform_Types.h</TYPE-EMITTER>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>uint64</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">uint64</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>VALUE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/uint64</BASE-TYPE-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                           <TYPE-EMITTER>Platform_Types.h</TYPE-EMITTER>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>boolean</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">boolean</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>VALUE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/boolean</BASE-TYPE-REF>
+                                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR/Platform/CompuMethods_Blueprint/boolean</COMPU-METHOD-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                           <TYPE-EMITTER>Platform_Types.h</TYPE-EMITTER>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>uint8</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">uint8</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>VALUE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/uint8</BASE-TYPE-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                           <TYPE-EMITTER>Platform_Types.h</TYPE-EMITTER>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>uint16</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">uint16</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>VALUE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/uint16</BASE-TYPE-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                           <TYPE-EMITTER>Platform_Types.h</TYPE-EMITTER>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>uint32</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">uint32</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>VALUE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/uint32</BASE-TYPE-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                           <TYPE-EMITTER>Platform_Types.h</TYPE-EMITTER>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>sint8</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">sint8</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>VALUE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint8</BASE-TYPE-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                           <TYPE-EMITTER>Platform_Types.h</TYPE-EMITTER>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>sint16</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">sint16</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>VALUE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint16</BASE-TYPE-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                           <TYPE-EMITTER>Platform_Types.h</TYPE-EMITTER>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>sint32</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">sint32</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>VALUE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/sint32</BASE-TYPE-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                           <TYPE-EMITTER>Platform_Types.h</TYPE-EMITTER>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>uint8_least</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">uint8_least</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>VALUE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL/>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                           <TYPE-EMITTER>Platform_Types.h</TYPE-EMITTER>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>uint16_least</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">uint16_least</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>VALUE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL/>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                           <TYPE-EMITTER>Platform_Types.h</TYPE-EMITTER>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>uint32_least</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">uint32_least</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>VALUE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL/>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                           <TYPE-EMITTER>Platform_Types.h</TYPE-EMITTER>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>sint8_least</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">sint8_least</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>VALUE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL/>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                           <TYPE-EMITTER>Platform_Types.h</TYPE-EMITTER>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>sint16_least</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">sint16_least</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>VALUE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL/>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                           <TYPE-EMITTER>Platform_Types.h</TYPE-EMITTER>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>sint32_least</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">sint32_least</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>VALUE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL/>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                           <TYPE-EMITTER>Platform_Types.h</TYPE-EMITTER>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>float32</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">float32</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>VALUE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/float32</BASE-TYPE-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                           <TYPE-EMITTER>Platform_Types.h</TYPE-EMITTER>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>float64</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">float64</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>VALUE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/Platform/BaseTypes_Blueprint/float64</BASE-TYPE-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                           <TYPE-EMITTER>Platform_Types.h</TYPE-EMITTER>
+                        </IMPLEMENTATION-DATA-TYPE>
+                     </ELEMENTS>
+                  </AR-PACKAGE>
+                  <AR-PACKAGE>
+                     <SHORT-NAME>CompuMethods_Blueprint</SHORT-NAME>
+                     <CATEGORY>BLUEPRINT</CATEGORY>
+                     <ELEMENTS>
+                        <COMPU-METHOD>
+                           <SHORT-NAME>boolean</SHORT-NAME>
+                           <CATEGORY>TEXTTABLE</CATEGORY>
+                           <BLUEPRINT-POLICYS>
+                              <BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                                 <ATTRIBUTE-NAME>COMPU-INTERNAL-TO-PHYS</ATTRIBUTE-NAME>
+                              </BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                           </BLUEPRINT-POLICYS>
+                           <COMPU-INTERNAL-TO-PHYS>
+                              <COMPU-SCALES>
+                                 <COMPU-SCALE>
+                                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                                    <COMPU-CONST>
+                                       <VT>FALSE</VT>
+                                    </COMPU-CONST>
+                                 </COMPU-SCALE>
+                                 <COMPU-SCALE>
+                                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                                    <COMPU-CONST>
+                                       <VT>TRUE</VT>
+                                    </COMPU-CONST>
+                                 </COMPU-SCALE>
+                              </COMPU-SCALES>
+                           </COMPU-INTERNAL-TO-PHYS>
+                        </COMPU-METHOD>
+                     </ELEMENTS>
+                  </AR-PACKAGE>
+               </AR-PACKAGES>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>Std</SHORT-NAME>
+               <AR-PACKAGES>
+                  <AR-PACKAGE>
+                     <SHORT-NAME>ImplementationDataTypes_Blueprint</SHORT-NAME>
+                     <CATEGORY>BLUEPRINT</CATEGORY>
+                     <ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>Std_ReturnType</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">Standard Return Type</L-4>
+                           </LONG-NAME>
+                           <DESC>
+                              <L-2 L="EN">This type can be used as standard API return type which is shared between the RTE and the BSW modules.</L-2>
+                           </DESC>
+                           <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR/Std/CompuMethods_Blueprint/Std_ReturnType</COMPU-METHOD-REF>
+                                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Platform/ImplementationDataTypes_Blueprint/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                           <TYPE-EMITTER>Std_Types.h</TYPE-EMITTER>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>Std_VersionInfoType</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">Standard Version Info Type</L-4>
+                           </LONG-NAME>
+                           <DESC>
+                              <L-2 L="EN">This type shall be used to request the version of a BSW module using the &lt;Module name&gt;_GetVersionInfo() function.</L-2>
+                           </DESC>
+                           <CATEGORY>STRUCTURE</CATEGORY>
+                           <SUB-ELEMENTS>
+                              <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                                 <SHORT-NAME>vendorID</SHORT-NAME>
+                                 <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                 <SW-DATA-DEF-PROPS>
+                                    <SW-DATA-DEF-PROPS-VARIANTS>
+                                       <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Platform/ImplementationDataTypes_Blueprint/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                                       </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    </SW-DATA-DEF-PROPS-VARIANTS>
+                                 </SW-DATA-DEF-PROPS>
+                              </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                              <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                                 <SHORT-NAME>moduleID</SHORT-NAME>
+                                 <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                 <SW-DATA-DEF-PROPS>
+                                    <SW-DATA-DEF-PROPS-VARIANTS>
+                                       <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Platform/ImplementationDataTypes_Blueprint/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                                       </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    </SW-DATA-DEF-PROPS-VARIANTS>
+                                 </SW-DATA-DEF-PROPS>
+                              </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                              <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                                 <SHORT-NAME>sw_major_version</SHORT-NAME>
+                                 <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                 <SW-DATA-DEF-PROPS>
+                                    <SW-DATA-DEF-PROPS-VARIANTS>
+                                       <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Platform/ImplementationDataTypes_Blueprint/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                                       </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    </SW-DATA-DEF-PROPS-VARIANTS>
+                                 </SW-DATA-DEF-PROPS>
+                              </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                              <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                                 <SHORT-NAME>sw_minor_version</SHORT-NAME>
+                                 <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                 <SW-DATA-DEF-PROPS>
+                                    <SW-DATA-DEF-PROPS-VARIANTS>
+                                       <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Platform/ImplementationDataTypes_Blueprint/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                                       </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    </SW-DATA-DEF-PROPS-VARIANTS>
+                                 </SW-DATA-DEF-PROPS>
+                              </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                              <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                                 <SHORT-NAME>sw_patch_version</SHORT-NAME>
+                                 <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                 <SW-DATA-DEF-PROPS>
+                                    <SW-DATA-DEF-PROPS-VARIANTS>
+                                       <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Platform/ImplementationDataTypes_Blueprint/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                                       </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    </SW-DATA-DEF-PROPS-VARIANTS>
+                                 </SW-DATA-DEF-PROPS>
+                              </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                           </SUB-ELEMENTS>
+                           <TYPE-EMITTER>Std_Types.h</TYPE-EMITTER>
+                        </IMPLEMENTATION-DATA-TYPE>
+                     </ELEMENTS>
+                  </AR-PACKAGE>
+                  <AR-PACKAGE>
+                     <SHORT-NAME>CompuMethods_Blueprint</SHORT-NAME>
+                     <CATEGORY>BLUEPRINT</CATEGORY>
+                     <ELEMENTS>
+                        <COMPU-METHOD>
+                           <SHORT-NAME>Std_ReturnType</SHORT-NAME>
+                           <CATEGORY>TEXTTABLE</CATEGORY>
+                           <BLUEPRINT-POLICYS>
+                              <BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                                 <ATTRIBUTE-NAME>COMPU-INTERNAL-TO-PHYS</ATTRIBUTE-NAME>
+                              </BLUEPRINT-POLICY-NOT-MODIFIABLE>
+                           </BLUEPRINT-POLICYS>
+                           <COMPU-INTERNAL-TO-PHYS>
+                              <COMPU-SCALES>
+                                 <COMPU-SCALE>
+                                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                                    <COMPU-CONST>
+                                       <VT>E_OK</VT>
+                                    </COMPU-CONST>
+                                 </COMPU-SCALE>
+                                 <COMPU-SCALE>
+                                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                                    <COMPU-CONST>
+                                       <VT>E_NOT_OK</VT>
+                                    </COMPU-CONST>
+                                 </COMPU-SCALE>
+                              </COMPU-SCALES>
+                           </COMPU-INTERNAL-TO-PHYS>
+                        </COMPU-METHOD>
+                     </ELEMENTS>
+                  </AR-PACKAGE>
+               </AR-PACKAGES>
+            </AR-PACKAGE>
+            <!-- Types from the General Definitions package -->
+            <AR-PACKAGE>
+               <SHORT-NAME>GenDef</SHORT-NAME>
+               <AR-PACKAGES>
+                  <AR-PACKAGE>
+                     <SHORT-NAME>BaseTypes_Blueprint</SHORT-NAME>
+                     <CATEGORY>BLUEPRINT</CATEGORY>
+                     <ELEMENTS>
+                        <SW-BASE-TYPE>
+                           <SHORT-NAME>void</SHORT-NAME>
+                           <LONG-NAME>
+                              <L-4 L="EN">void</L-4>
+                           </LONG-NAME>
+                           <CATEGORY>VOID</CATEGORY>
+                           <BASE-TYPE-ENCODING>VOID</BASE-TYPE-ENCODING>
+                           <NATIVE-DECLARATION>void</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                     </ELEMENTS>
+                  </AR-PACKAGE>
+                  <AR-PACKAGE>
+                     <SHORT-NAME>ImplementationDataTypes_Blueprint</SHORT-NAME>
+                     <CATEGORY>BLUEPRINT</CATEGORY>
+                     <ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>ConstVoidPtr</SHORT-NAME>
+                           <CATEGORY>DATA_REFERENCE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <SW-POINTER-TARGET-PROPS>
+                                       <TARGET-CATEGORY>VALUE</TARGET-CATEGORY>
+                                       <SW-DATA-DEF-PROPS>
+                                          <SW-DATA-DEF-PROPS-VARIANTS>
+                                             <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/GenDef/BaseTypes_Blueprint/void</BASE-TYPE-REF>
+                                                <SW-IMPL-POLICY>CONST</SW-IMPL-POLICY>
+                                             </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                          </SW-DATA-DEF-PROPS-VARIANTS>
+                                       </SW-DATA-DEF-PROPS>
+                                    </SW-POINTER-TARGET-PROPS>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                           <SHORT-NAME>VoidPtr</SHORT-NAME>
+                           <CATEGORY>DATA_REFERENCE</CATEGORY>
+                           <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                 <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <SW-POINTER-TARGET-PROPS>
+                                       <TARGET-CATEGORY>VALUE</TARGET-CATEGORY>
+                                       <SW-DATA-DEF-PROPS>
+                                          <SW-DATA-DEF-PROPS-VARIANTS>
+                                             <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR/GenDef/BaseTypes_Blueprint/void</BASE-TYPE-REF>
+                                             </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                          </SW-DATA-DEF-PROPS-VARIANTS>
+                                       </SW-DATA-DEF-PROPS>
+                                    </SW-POINTER-TARGET-PROPS>
+                                 </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                           </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                     </ELEMENTS>
+                  </AR-PACKAGE>
+               </AR-PACKAGES>
+            </AR-PACKAGE>
+         </AR-PACKAGES>
+      </AR-PACKAGE>
+   </AR-PACKAGES>
+</AUTOSAR>

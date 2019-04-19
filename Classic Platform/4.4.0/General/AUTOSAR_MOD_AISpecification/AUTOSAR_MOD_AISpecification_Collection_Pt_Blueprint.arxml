@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="default">English</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR</SHORT-NAME>
+      <LONG-NAME>
+        <L-4 L="EN">AUTOSAR</L-4>
+      </LONG-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>AISpecification</SHORT-NAME>
+          <LONG-NAME>
+            <L-4 L="EN">AISpecification</L-4>
+          </LONG-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>Collections_Blueprint</SHORT-NAME>
+              <CATEGORY>BLUEPRINT</CATEGORY>
+              <REFERENCE-BASES>
+                <REFERENCE-BASE>
+                  <SHORT-LABEL>PortPrototypeBlueprints</SHORT-LABEL>
+                  <IS-DEFAULT>false</IS-DEFAULT>
+                  <IS-GLOBAL>false</IS-GLOBAL>
+                  <BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+                  <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/AISpecification/PortPrototypeBlueprints_Blueprint</PACKAGE-REF>
+                </REFERENCE-BASE>
+                <REFERENCE-BASE>
+                  <SHORT-LABEL>ApplicationDataTypes</SHORT-LABEL>
+                  <IS-DEFAULT>false</IS-DEFAULT>
+                  <IS-GLOBAL>false</IS-GLOBAL>
+                  <BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+                  <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/AISpecification/ApplicationDataTypes_Blueprint</PACKAGE-REF>
+                </REFERENCE-BASE>
+                <REFERENCE-BASE>
+                  <SHORT-LABEL>ARKeywordSet</SHORT-LABEL>
+                  <IS-DEFAULT>false</IS-DEFAULT>
+                  <IS-GLOBAL>false</IS-GLOBAL>
+                  <BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+                  <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/AISpecification/KeywordSets_Blueprint</PACKAGE-REF>
+                </REFERENCE-BASE>
+                <REFERENCE-BASE>
+                  <SHORT-LABEL>PortInterfaces_Example</SHORT-LABEL>
+                  <IS-DEFAULT>false</IS-DEFAULT>
+                  <IS-GLOBAL>false</IS-GLOBAL>
+                  <BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+                  <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/AISpecification/PortInterfaces_Example</PACKAGE-REF>
+                </REFERENCE-BASE>
+                <REFERENCE-BASE>
+                  <SHORT-LABEL>SwComponentTypes_Example</SHORT-LABEL>
+                  <IS-DEFAULT>false</IS-DEFAULT>
+                  <IS-GLOBAL>false</IS-GLOBAL>
+                  <BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+                  <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/AISpecification/SwComponentTypes_Example</PACKAGE-REF>
+                </REFERENCE-BASE>
+                <REFERENCE-BASE>
+                  <SHORT-LABEL>Collections_Blueprint</SHORT-LABEL>
+                  <IS-DEFAULT>false</IS-DEFAULT>
+                  <IS-GLOBAL>false</IS-GLOBAL>
+                  <BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+                  <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/AISpecification/Collections_Blueprint</PACKAGE-REF>
+                </REFERENCE-BASE>
+                <REFERENCE-BASE>
+                  <SHORT-LABEL>DataConstrs_Example</SHORT-LABEL>
+                  <IS-DEFAULT>false</IS-DEFAULT>
+                  <IS-GLOBAL>false</IS-GLOBAL>
+                  <BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+                  <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/AISpecification/DataConstrs_Example</PACKAGE-REF>
+                </REFERENCE-BASE>
+                <REFERENCE-BASE>
+                  <SHORT-LABEL>PortInterfaces_Blueprint</SHORT-LABEL>
+                  <IS-DEFAULT>false</IS-DEFAULT>
+                  <IS-GLOBAL>false</IS-GLOBAL>
+                  <BASE-IS-THIS-PACKAGE>false</BASE-IS-THIS-PACKAGE>
+                  <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR/AISpecification/PortInterfaces_Blueprint</PACKAGE-REF>
+                </REFERENCE-BASE>
+              </REFERENCE-BASES>
+              <ELEMENTS>
+                <COLLECTION>
+                  <SHORT-NAME>PtRefAll</SHORT-NAME>
+                  <CATEGORY>SET</CATEGORY>
+                  <AUTO-COLLECT>REF-ALL</AUTO-COLLECT>
+                  <ELEMENT-ROLE>PART_OF_SUBSET</ELEMENT-ROLE>
+                  <ELEMENT-REFS>
+                    <ELEMENT-REF BASE="ApplicationDataTypes" DEST="APPLICATION-PRIMITIVE-DATA-TYPE">P5</ELEMENT-REF>
+                    <ELEMENT-REF BASE="ApplicationDataTypes" DEST="APPLICATION-PRIMITIVE-DATA-TYPE">P6</ELEMENT-REF>
+                    <ELEMENT-REF BASE="ApplicationDataTypes" DEST="APPLICATION-PRIMITIVE-DATA-TYPE">P7</ELEMENT-REF>
+                    <ELEMENT-REF BASE="ApplicationDataTypes" DEST="APPLICATION-PRIMITIVE-DATA-TYPE">Perc10</ELEMENT-REF>
+                    <ELEMENT-REF BASE="ApplicationDataTypes" DEST="APPLICATION-PRIMITIVE-DATA-TYPE">Perc11</ELEMENT-REF>
+                    <ELEMENT-REF BASE="ApplicationDataTypes" DEST="APPLICATION-PRIMITIVE-DATA-TYPE">T5</ELEMENT-REF>
+                    <ELEMENT-REF BASE="ApplicationDataTypes" DEST="APPLICATION-PRIMITIVE-DATA-TYPE">T6</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AbsCtrlIntvg</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccrPedlRat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccrPedlRatGrdt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcTq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcTqReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmStAxleFrntActr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmStAxleReActr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BrkActrVehSpdMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BrkPedlPsd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BrkPedlVal</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CluPedlRat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CoorrStActAtAxleFrnt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CoorrStActAtAxleRe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CoorrStActAtDftlForTqTrf</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">Crash</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DftlTqReqAtAxleFrnt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DftlTqReqAtAxleRe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DftlTqReqAtDftlForTqTrf</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtAccrPedlPosnVirt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EgyMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngN</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngNGrdt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqDecAtCluReqByEscSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksft</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqIncAtCluReqByEsc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmFlgParkLockEngd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">GearParkReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmRatGearAct</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">GearShiftDwnReqFromDrvr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">GearShiftPrevnCmftReqByVlc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">GearShiftPrevnStaby</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">GearShiftUpReqFromDrvr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmNrGearTar</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">NoFuCutOffReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">OperMod</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">OutdT</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgDrvOvrdVlc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgTqIncPsbl</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqDistbnToWhlsReqdByDtd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqTotMaxAtWhlsReqdByVlc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqTotMinAtWhlsReqdByVlc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqWhl</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqWhlInd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqWhlMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqWhlMin</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqWhlMinWoCutOff</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqWhlReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqWhlReqDrvVlc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SteerLoadHyd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SteerLoadHydReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmRatTqPtAct</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmStTrfCaseDftl</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmFlgCtrsftActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmFlgDtOpen</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmFlgShiftProgs</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmNrGearAct</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqDftlAxleFrntAct</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqDftlAxleFrntMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqDftlAxleReAct</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqDftlAxleReMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqDftlTrfAct</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqDftlTrfMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BattU</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VehSpdLgt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VlcA</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WhlSpdCircumlStd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DrvReqTqCluFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgTqDecPsbl</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqDecAtCluReqByEscFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqIncAtWhlsReqByEscSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqDecAtWhlsReqByEscSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqDecAtWhlsReqByEscFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqClu</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DrvReqTqCluSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqWhlMinDrv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmFlgSptMod</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmFlgWntrMod</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgEngRun</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgEngStop</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqIncAtWhlsReqByEscFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AbsFlgActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AxleFrntCoorrSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AxleReCoorrSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BrkPedlFlgPsd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BrkPedlRat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DrvFlgGearShiftDwnReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DrvFlgGearShiftUpReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DtdRatTqDistbnReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DtdTqDftlAxleFrntReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DtdTqDftlAxleReReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DtdTqDftlTrfReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EgyMngtSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscFlgNoFuCutOff</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscTqCluPtMaxFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscTqCluPtMaxSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscTqCluPtMin</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscTqWhlPtMaxSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscTqWhlPtMinFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscTqWhlPtMinSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscTqWhlPtMaxFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscVMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SsmFlgGearParkReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SteerTq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SteerTqReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrfCaseCoorrSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VehStOper</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VehVLgt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VlcStShiftPrevnCmft</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VlcTqWhlPtMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VlcTqWhlPtMin</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscVWhlInd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscStShiftPrevnStaby</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngRunngDirSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AltTq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AltTqReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DrvReqTqWhlFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DrvReqTqWhlSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngNGearTar</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngNMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngNMin</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngPAmbAir</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngT</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqDynJ</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksftMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksftMaxFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksftMaxOptmCdn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksftMaxProtn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksftMin</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksftMinBasc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksftMinFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksftMinWoCutOff</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqResvPt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgAcDeactvt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgAltDeactvt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgEngStopReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgEngStopReqAllwd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgEngStrtReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgEngStrtReqAllwd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgNoTqWhlReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtNClu</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtNEngSp</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtRatTqDistbnReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCluDyn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCluMaxDrv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCluMinDrv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCluReqWoTrsmIntv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCluTarGear</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCluWoTrsmIntv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCrksftReqFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCrksftReqSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqMaxAc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqMaxAlt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqMaxSteer</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqMaxTrsmOilPmp</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqResvEng</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqWhlMaxDrv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmCluStAct</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmCluStTar</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmNrGearReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmNrTyp</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqOilPmp</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqOilPmpReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmStGearLvr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmRatGear</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmRatGearReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmRatGearTar</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmNInp</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTOil</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqCluMaxFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqCluMaxProtn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqCluMaxSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqCluMinFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqCluMinSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqWhlIndDistbn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VehTqWhlMaxSftyLimn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccrPedlRatFild</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BodyPitchAgAbsltEstimd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">RoadWhlAgEstimdFrnt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">RoadWhlAgSpdEstimdFrnt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">RoadWhlAgEstimdRe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SwtIndcr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SetSpdIndcn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DtOpend</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">RoadWhlAgSpdEstimdFrntWishdByDrvr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">RoadWhlAgEstimdFrntWishdByDrvr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">ALatStdWithRollCmpByEsc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">ALatStdByEsc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">ALgtStdFromWhlSpd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PrkgBrkActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SteerWhlAgStd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">YawRateBas</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">YawRateOffsStdByEsc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TracCtrlIntvg</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VehMtnSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WhlBrkOvrheatd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WhlRdTolrCoeff</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WhlDirRotlStd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">YawStabyCtrlIntvg</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">YawStabyInfoByEsc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccCtrlActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlCtrlActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccVehDetdIndcn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VehSpdDispd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SetSpdInc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SetSpdDec</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlAndAccSwtStEngd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlAndAccSetTiGapInc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VehCourseCrvtPred</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AArbnRes</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlAndAccSetTiGapDec</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AReqForCmftByCrsCtrlFree</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccYawRateSpc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlAndAccVehSpdLgt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlAndAccDrvrOvrd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlAndAccSetTiGap</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SetSpd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmCluSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmNrGearConsold</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmRatGearConsold</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmCluSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtFlgHvacDeactvt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AcTq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AcTqReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtFlgAcDeactvt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">HvacTq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">HvacTqReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqMaxAc1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Example" DEST="SENDER-RECEIVER-INTERFACE">AcTq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Example" DEST="SENDER-RECEIVER-INTERFACE">AcTqReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Example" DEST="SENDER-RECEIVER-INTERFACE">PtFlgAcDeactvtReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Example" DEST="SENDER-RECEIVER-INTERFACE">PtTqMaxAc1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">HvacTq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">HvacTqReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgHvacDeactvt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqMaxHvac</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqDftlAxleReConsold1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqDftlTrfConsold1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqDftlAxleFrntConsold1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmNrGearConsold1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmCluStConsold1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmCluStConsold</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtNClu1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">CrashSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqCrksft1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqCluWoTrsmIntv1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqClu1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqCluReqWoTrsmIntv1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqCluDynJ1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCluDynJ</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqCrksftMaxSpdCur1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksftMaxSpdCur</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="COMPOSITION-SW-COMPONENT-TYPE">CmbEng</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="COMPOSITION-SW-COMPONENT-TYPE">EngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">DrvReqTqCluFast1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqDynJ1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqCluMaxFast1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqCluMinFast1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqCrksftMin1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqCluMaxSpdCluCur1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCluMaxSpdCluCur</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtEngTqCrksftMinFast1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtEngTqCrksftMinFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqCluMin1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCluMin</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EmTqDynJ1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EmTqDynJ</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqCluFast1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqCluFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtDrvReqTqCluVirtEngSpd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtDrvReqTqCluVirtEngSpd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmReqTypTqCluFast1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmReqTypTqCluFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngN1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngNGearTar1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngNMax1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngNMin1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtNEngSp1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmNInp1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngNGrdt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AccrPedlMeasd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccrPedlMeasd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtAccrPedlPosn1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AccrPedlGrdt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AccrPedlRat1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AccrPedlRatFild1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AccrPedlRatGrdt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtAccrPedlPosn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccrPedlGrdt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqResvReqPt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Example" DEST="SENDER-RECEIVER-INTERFACE">EngTqResvReqPt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqResvReqPt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtFlgAcDeactvtReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgAcDeactvtReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgAltDeactvtReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtFlgAltDeactvt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqResvReqEng1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqResvReqEng</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmFlgSptModReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmFlgSptModReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmFlgWntrModReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmFlgWntrModReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="DataConstrs_Example" DEST="DATA-CONSTR">N2</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmRatTqPtConsold1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmRatTqPtConsold</ELEMENT-REF>
+                  </ELEMENT-REFS>
+                </COLLECTION>
+                <COLLECTION>
+                  <SHORT-NAME>Pt</SHORT-NAME>
+                  <CATEGORY>SET</CATEGORY>
+                  <AUTO-COLLECT>REF-NONE</AUTO-COLLECT>
+                  <ELEMENT-ROLE>PART_OF_SUBSET</ELEMENT-ROLE>
+                  <ELEMENT-REFS>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AArbnRes</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AArbnRes1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">ALat1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">ALatStdByEsc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">ALatStdWithRollCmpByEsc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">ALgt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">ALgt2</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">ALgtStdFromWhlSpd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AReqForCmft1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AReqForCmftByCrsCtrlFree</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AbsCtrlIntvg</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AbsCtrlIntvg1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AbsFlgActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcTq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AcTq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Example" DEST="SENDER-RECEIVER-INTERFACE">AcTq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AcTqReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AcTqReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Example" DEST="SENDER-RECEIVER-INTERFACE">AcTqReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccCtrlActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AccCtrlActv1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AccVehDetd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccVehDetdIndcn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccYawRateSpc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccrPedlGrdt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AccrPedlGrdt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">AccrPedlMeasd1/AccrPedlMeasd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccrPedlMeasd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AccrPedlMeasd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccrPedlRat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AccrPedlRat1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccrPedlRatFild</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AccrPedlRatFild1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AccrPedlRatGrdt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AccrPedlRatGrdt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AltTq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AltTq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AltTqReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AltTqReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">AmbAirT1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AxleFrntCoorrSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">AxleReCoorrSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BattU</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="R-PORT-PROTOTYPE">CmbEng/BattU</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">BattU1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/BattUToBattUOfCmbEngMisc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">BodyPitchAg1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BodyPitchAgAbsltEstimd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BrkActrVehSpdMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BrkPedlFlgPsd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BrkPedlPsd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">BrkPedlPsd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BrkPedlRat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">BrkPedlVal</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">BrkPedlVal1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CluPedlRat</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">CluPedlRat1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="COMPOSITION-SW-COMPONENT-TYPE">CmbEng</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="SW-COMPONENT-PROTOTYPE">CmbEng/CmbEngMisc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CoorrStActAtAxleFrnt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CoorrStActAtAxleRe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CoorrStActAtDftlForTqTrf</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">Crash</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="R-PORT-PROTOTYPE">CmbEng/Crash</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">CrashSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/CrashToCrashOfCmbEngMisc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">CrsCtrlActv1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlAndAccDrvrOvrd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">CrsCtrlAndAccDrvrOvrd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlAndAccSetTiGap</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlAndAccSetTiGapDec</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlAndAccSetTiGapInc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlAndAccSwtStEngd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">CrsCtrlAndAccSwtStEngd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlAndAccVehSpdLgt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">CrsCtrlAndAccVehSpdLgt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">CrsCtrlCtrlActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">CrsCtrlCtrlActv1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">DftlCoorrSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">DftlCoorrSts1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">DftlTqReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DftlTqReqAtAxleFrnt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DftlTqReqAtAxleRe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DftlTqReqAtDftlForTqTrf</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DrvFlgGearShiftDwnReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DrvFlgGearShiftUpReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DrvReqTqCluFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">DrvReqTqCluFast1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DrvReqTqCluSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">DrvReqTqCluSlow1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DrvReqTqWhlFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">DrvReqTqWhlFast1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DrvReqTqWhlSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">DrvReqTqWhlSlow1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DtOpend</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DtdRatTqDistbnReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DtdTqDftlAxleFrntReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DtdTqDftlAxleReReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">DtdTqDftlTrfReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EgyMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EgyMngtSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EgyMngtSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EgyMngtSts1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">EmTqDynJ1/EmTqDynJ</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EmTqDynJ</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EmTqDynJ1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngN</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/EngN</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngN1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngNGearTar</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngNGearTar1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngNGrdt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/EngNGrdt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngNGrdt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/EngNGrdtToEngNGrdtOfEngSpdAndPosn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngNMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/EngNMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">EngTqModMngt/EngNMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngNMax1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/EngNMaxToEngNMaxOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngNMin</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/EngNMin</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">EngTqModMngt/EngNMin</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngNMin1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/EngNMinToEngNMinOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/EngNToEngNOfEngSpdAndPosn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngPAmbAir</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/EngPAmbAir</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngPAmbAir1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/EngPAmbAirToEngPAmbAirOfCmbEngMisc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngRunngDirSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/EngRunngDirSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngRunngDirSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/EngRunngDirStToEngRunngDirStOfEngSpdAndPosn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="SW-COMPONENT-PROTOTYPE">CmbEng/EngSpdAndPosn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngT</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/EngT</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngT1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/EngTToEngTOfCmbEngMisc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">EngTqCluMin1/EngTqCluMin</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCluMin</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqCluMin1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksft</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/EngTqCrksft</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">EngTqModMngt/EngTqCrksft</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqCrksft1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksftMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/EngTqCrksftMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">EngTqModMngt/EngTqCrksftMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqCrksftMax1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksftMaxFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/EngTqCrksftMaxFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">EngTqModMngt/EngTqCrksftMaxFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqCrksftMaxFast1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/EngTqCrksftMaxFastToEngTqCrksftMaxFastOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksftMaxOptmCdn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/EngTqCrksftMaxOptmCdn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">EngTqModMngt/EngTqCrksftMaxOptmCdn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqCrksftMaxOptmCdn1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/EngTqCrksftMaxOptmCdnToEngTqCrksftMaxOptmCdnOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksftMaxProtn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/EngTqCrksftMaxProtn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">EngTqModMngt/EngTqCrksftMaxProtn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqCrksftMaxProtn1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/EngTqCrksftMaxProtnToEngTqCrksftMaxProtnOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">EngTqCrksftMaxSpdCur1/EngTqCrksftMaxSpdCur</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksftMaxSpdCur</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqCrksftMaxSpdCur1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/EngTqCrksftMaxToEngTqCrksftMaxOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksftMin</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/EngTqCrksftMin</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">EngTqModMngt/EngTqCrksftMin</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqCrksftMin1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksftMinBasc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/EngTqCrksftMinBasc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">EngTqModMngt/EngTqCrksftMinBasc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqCrksftMinBasc1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/EngTqCrksftMinBascToEngTqCrksftMinBascOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksftMinFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/EngTqCrksftMinFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">EngTqModMngt/EngTqCrksftMinFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqCrksftMinFast1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/EngTqCrksftMinFastToEngTqCrksftMinFastOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/EngTqCrksftMinToEngTqCrksftMinOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqCrksftMinWoCutOff</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/EngTqCrksftMinWoCutOff</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">EngTqModMngt/EngTqCrksftMinWoCutOff</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqCrksftMinWoCutOff1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/EngTqCrksftMinWoCutOffToEngTqCrksftMinWoCutOffOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/EngTqCrksftToEngTqCrksftOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqDecAtCluReqByEscFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqDecAtCluReqByEscFast1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqDecAtCluReqByEscSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqDecAtCluReqByEscSlow1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqDynJ</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/EngTqDynJ</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">EngTqModMngt/EngTqDynJ</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqDynJ1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/EngTqDynJToEngTqDynJOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqIncAtCluReqByEsc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqIncAtCluReqByEsc1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="SW-COMPONENT-PROTOTYPE">CmbEng/EngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="COMPOSITION-SW-COMPONENT-TYPE">EngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqResvPt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqResvPt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">EngTqResvReqPt1/EngTqResvReqPt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Example" DEST="VARIABLE-DATA-PROTOTYPE">EngTqResvReqPt1/EngTqResvReqPt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EngTqResvReqPt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/EngTqResvReqPt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">EngTqModMngt/EngTqResvReqPt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EngTqResvReqPt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Example" DEST="SENDER-RECEIVER-INTERFACE">EngTqResvReqPt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/EngTqResvReqPtToEngTqResvReqPtOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscFlgNoFuCutOff</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">EscSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscStShiftPrevnStaby</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscTqCluPtMaxFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscTqCluPtMaxSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscTqCluPtMin</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscTqWhlPtMaxFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscTqWhlPtMaxSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscTqWhlPtMinFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscTqWhlPtMinSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscVMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">EscVWhlInd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">GearParkReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">GearParkReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">GearShiftDwnReqFromDrvr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">GearShiftDwnReqFromDrvr1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">GearShiftPrevn1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">GearShiftPrevnCmftReqByVlc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">GearShiftPrevnStaby</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">GearShiftUpReqFromDrvr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">GearShiftUpReqFromDrvr1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">HvacTq1/HvacTq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">HvacTq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">HvacTq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">HvacTqReq1/HvacTqReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">HvacTqReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">HvacTqReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">IndcrTurnReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="DataConstrs_Example" DEST="DATA-CONSTR">N2</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">NoFuCutOffReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">NoFuCutOffReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">OperMod</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">OperModSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">OutdT</ELEMENT-REF>
+                    <ELEMENT-REF BASE="ApplicationDataTypes" DEST="APPLICATION-PRIMITIVE-DATA-TYPE">P5</ELEMENT-REF>
+                    <ELEMENT-REF BASE="ApplicationDataTypes" DEST="APPLICATION-PRIMITIVE-DATA-TYPE">P6</ELEMENT-REF>
+                    <ELEMENT-REF BASE="ApplicationDataTypes" DEST="APPLICATION-PRIMITIVE-DATA-TYPE">P7</ELEMENT-REF>
+                    <ELEMENT-REF BASE="ApplicationDataTypes" DEST="APPLICATION-PRIMITIVE-DATA-TYPE">Perc10</ELEMENT-REF>
+                    <ELEMENT-REF BASE="ApplicationDataTypes" DEST="APPLICATION-PRIMITIVE-DATA-TYPE">Perc11</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PrkgBrkActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PrkgBrkActv1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">PtAccrPedlPosn1/PtAccrPedlPosn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtAccrPedlPosn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtAccrPedlPosn1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtAccrPedlPosnVirt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtAccrPedlPosnVirt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">PtDrvReqTqCluVirtEngSpd1/PtDrvReqTqCluVirtEngSpd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtDrvReqTqCluVirtEngSpd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtDrvReqTqCluVirtEngSpd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="R-PORT-PROTOTYPE">CmbEng/PtEngNSp</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="R-PORT-PROTOTYPE">EngTqModMngt/PtEngNSp</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/PtEngNSpToPtEngNSpOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">PtEngTqCrksftMinFast1/PtEngTqCrksftMinFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtEngTqCrksftMinFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtEngTqCrksftMinFast1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgAcDeactvt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtFlgAcDeactvt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">PtFlgAcDeactvtReq1/PtFlgAcDeactvtReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Example" DEST="VARIABLE-DATA-PROTOTYPE">PtFlgAcDeactvtReq1/PtFlgAcDeactvtReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgAcDeactvtReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtFlgAcDeactvtReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Example" DEST="SENDER-RECEIVER-INTERFACE">PtFlgAcDeactvtReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgAltDeactvt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtFlgAltDeactvt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgAltDeactvtReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgDrvOvrdVlc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtFlgDrvOvrdVlc1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgEngRun</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/PtFlgEngRun</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">EngTqModMngt/PtFlgEngRun</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtFlgEngRun1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/PtFlgEngRunToPtFlgEngRunOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgEngStop</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/PtFlgEngStop</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">EngTqModMngt/PtFlgEngStop</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtFlgEngStop1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgEngStopReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="R-PORT-PROTOTYPE">CmbEng/PtFlgEngStopReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="R-PORT-PROTOTYPE">EngTqModMngt/PtFlgEngStopReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtFlgEngStopReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgEngStopReqAllwd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/PtFlgEngStopReqAllwd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">EngTqModMngt/PtFlgEngStopReqAllwd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtFlgEngStopReqAllwd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/PtFlgEngStopReqAllwdToPtFlgEngStopReqAllwdOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/PtFlgEngStopReqToPtFlgEngStopReqOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/PtFlgEngStopToPtFlgEngStopOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgEngStrtReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="R-PORT-PROTOTYPE">CmbEng/PtFlgEngStrtReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="R-PORT-PROTOTYPE">EngTqModMngt/PtFlgEngStrtReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtFlgEngStrtReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgEngStrtReqAllwd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">CmbEng/PtFlgEngStrtReqAllwd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="P-PORT-PROTOTYPE">EngTqModMngt/PtFlgEngStrtReqAllwd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtFlgEngStrtReqAllwd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/PtFlgEngStrtReqAllwdToPtFlgEngStrtReqAllwdOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/PtFlgEngStrtReqToPtFlgEngStrtReqOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">PtFlgHvacDeactvt1/PtFlgHvacDeactvt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgHvacDeactvt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtFlgHvacDeactvt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgNoTqWhlReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtFlgNoTqWhlReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgTqDecPsbl</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtFlgTqDecPsbl1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtFlgTqIncPsbl</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtFlgTqIncPsbl1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtNClu</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtNClu1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtNEngSp</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtNEngSp1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtRatTqDistbnReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtRatTqDistbnReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqClu</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqClu1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCluDyn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqCluDyn1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">PtTqCluDynJ1/PtTqCluDynJ</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCluDynJ</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqCluDynJ1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCluMaxDrv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqCluMaxDrv1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">PtTqCluMaxSpdCluCur1/PtTqCluMaxSpdCluCur</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCluMaxSpdCluCur</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqCluMaxSpdCluCur1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCluMinDrv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqCluMinDrv1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCluReqWoTrsmIntv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqCluReqWoTrsmIntv1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCluTarGear</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqCluTarGear1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCluWoTrsmIntv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqCluWoTrsmIntv1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCrksftReqFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="R-PORT-PROTOTYPE">CmbEng/PtTqCrksftReqFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="R-PORT-PROTOTYPE">EngTqModMngt/PtTqCrksftReqFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqCrksftReqFast1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/PtTqCrksftReqFastToPtTqCrksftReqFastOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqCrksftReqSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="R-PORT-PROTOTYPE">CmbEng/PtTqCrksftReqSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="R-PORT-PROTOTYPE">EngTqModMngt/PtTqCrksftReqSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqCrksftReqSlow1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/PtTqCrksftReqSlowToPtTqCrksftReqSlowOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqDecAtWhlsReqByEscFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqDecAtWhlsReqByEscSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqDistbnToWhls1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqDistbnToWhlsReqdByDtd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqIncAtWhlsReqByEscFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqIncAtWhlsReqByEscSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqMaxAc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqMaxAc1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Example" DEST="SENDER-RECEIVER-INTERFACE">PtTqMaxAc1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqMaxAlt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqMaxAlt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqMaxHvac</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqMaxHvac1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqMaxSteer</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqMaxSteer1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqMaxTrsmOilPmp</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqMaxTrsmOilPmp1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqResvEng</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqResvEng1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">PtTqResvReqEng1/PtTqResvReqEng</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqResvReqEng</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="R-PORT-PROTOTYPE">CmbEng/PtTqResvReqEng</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="R-PORT-PROTOTYPE">EngTqModMngt/PtTqResvReqEng</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqResvReqEng1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="SwComponentTypes_Example" DEST="DELEGATION-SW-CONNECTOR">CmbEng/PtTqResvReqEngToPtTqResvReqEngOfEngTqModMngt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqTotAtWhls1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqTotMaxAtWhlsReqdByVlc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqTotMinAtWhlsReqdByVlc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqWhl</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqWhl1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqWhlInd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqWhlInd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqWhlMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqWhlMax1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqWhlMaxDrv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqWhlMaxDrv1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqWhlMin</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqWhlMin1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqWhlMinDrv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqWhlMinDrv1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqWhlMinWoCutOff</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqWhlMinWoCutOff1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqWhlReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqWhlReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">PtTqWhlReqDrvVlc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">PtTqWhlReqDrvVlc1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">RoadWhlAg1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">RoadWhlAgEstimdFrnt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">RoadWhlAgEstimdFrntWishdByDrvr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">RoadWhlAgEstimdRe</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">RoadWhlAgSpd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">RoadWhlAgSpdEstimdFrnt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">RoadWhlAgSpdEstimdFrntWishdByDrvr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SetSpd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">SetSpd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SetSpdDec</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">SetSpdDec1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SetSpdInc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">SetSpdInc1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SetSpdIndcn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">SetSpdIndcn1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">SetTiGap1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SsmFlgGearParkReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SteerLoadHyd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">SteerLoadHyd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SteerLoadHydReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SteerTq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SteerTqReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">SteerWhlAg1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SteerWhlAgStd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">SwtIndcr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="ApplicationDataTypes" DEST="APPLICATION-PRIMITIVE-DATA-TYPE">T5</ELEMENT-REF>
+                    <ELEMENT-REF BASE="ApplicationDataTypes" DEST="APPLICATION-PRIMITIVE-DATA-TYPE">T6</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TiGapDec1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TiGapInc1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TracCtrlIntvg</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TracCtrlIntvg1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrfCaseCoorrSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmAxleActrSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmCluSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmCluSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmCluStAct</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmCluStAct1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">TrsmCluStConsold1/TrsmCluStConsold</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmCluStConsold</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmCluStConsold1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmCluStTar</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmCluStTar1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmFlgCtrsftActv</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmFlgCtrsftActv1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmFlgDtOpen</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmFlgDtOpen1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmFlgParkLockEngd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmFlgParkLockEngd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmFlgShiftProgs</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmFlgShiftProgs1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmFlgSptMod</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmFlgSptMod1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">TrsmFlgSptModReq1/TrsmFlgSptModReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmFlgSptModReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmFlgSptModReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmFlgWntrMod</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmFlgWntrMod1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">TrsmFlgWntrModReq1/TrsmFlgWntrModReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmFlgWntrModReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmFlgWntrModReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmNInp</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmNInp1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmNrGearAct</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmNrGearAct1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmNrGearConsold</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmNrGearConsold1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmNrGearReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmNrGearReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmNrGearTar</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmNrGearTar1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmNrTyp</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmNrTyp1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmRatGear</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="CLIENT-SERVER-INTERFACE">TrsmRatGear1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmRatGearAct</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmRatGearAct1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmRatGearConsold</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmRatGearConsold1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmRatGearReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmRatGearReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmRatGearTar</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmRatGearTar1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmRatTqPtAct</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmRatTqPtAct1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">TrsmRatTqPtConsold1/TrsmRatTqPtConsold</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmRatTqPtConsold</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmRatTqPtConsold1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">TrsmReqTypTqCluFast1/TrsmReqTypTqCluFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmReqTypTqCluFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmReqTypTqCluFast1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmStAxleFrntActr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmStAxleReActr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmStGearLvr</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmStGearLvr1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmStTrfCaseDftl</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmStTrfCaseDftl1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTOil</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTOil1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">TrsmTqCluFast1/TrsmTqCluFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqCluFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqCluFast1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqCluMaxFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqCluMaxFast1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqCluMaxProtn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqCluMaxSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqCluMaxSlow1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqCluMinFast</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqCluMinFast1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqCluMinSlow</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqCluMinSlow1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqDftlAxleFrntAct</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqDftlAxleFrntAct1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">TrsmTqDftlAxleFrntConsold1/TrsmTqDftlAxleFrntConsold</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqDftlAxleFrntConsold1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqDftlAxleFrntMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqDftlAxleFrntMax1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqDftlAxleReAct</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqDftlAxleReAct1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">TrsmTqDftlAxleReConsold1/TrsmTqDftlAxleReConsold</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqDftlAxleReConsold1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqDftlAxleReMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqDftlAxleReMax1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqDftlTrfAct</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqDftlTrfAct1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="VARIABLE-DATA-PROTOTYPE">TrsmTqDftlTrfConsold1/TrsmTqDftlTrfConsold</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqDftlTrfConsold1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqDftlTrfMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqDftlTrfMax1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqOilPmp</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqOilPmp1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqOilPmpReq</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqOilPmpReq1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">TrsmTqWhlIndDistbn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">TrsmTqWhlIndDistbn1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VehCourseCrvtPred</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">VehCourseCrvtPred1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VehMtnSt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">VehMtnSt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">VehSpd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VehSpdDispd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">VehSpdDispd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VehSpdLgt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">VehSpdLgt1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VehStOper</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VehTqWhlMaxSftyLimn</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">VehTqWhlMaxSftyLimn1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VehVLgt</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VlcA</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VlcStShiftPrevnCmft</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VlcTqWhlPtMax</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">VlcTqWhlPtMin</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WhlBrkOvrheatd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">WhlBrkOvrheatd1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">WhlDirRotl1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WhlDirRotlStd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WhlRdTolrCoeff</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">WhlRdTolrCoeff1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">WhlSpdCircuml1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">WhlSpdCircumlStd</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">YawRate1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">YawRateBas</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">YawRateOffsStdByEsc</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">YawStabyCtrlIntvg</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">YawStabyCtrlIntvg1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortInterfaces_Blueprint" DEST="SENDER-RECEIVER-INTERFACE">YawStabyInfo1</ELEMENT-REF>
+                    <ELEMENT-REF BASE="PortPrototypeBlueprints" DEST="PORT-PROTOTYPE-BLUEPRINT">YawStabyInfoByEsc</ELEMENT-REF>
+                  </ELEMENT-REFS>
+                </COLLECTION>
+                <COLLECTION>
+                  <SHORT-NAME>PtRefAllToPt</SHORT-NAME>
+                  <CATEGORY>RELATION</CATEGORY>
+                  <ELEMENT-ROLE>AUTO_COLLECTED_FROM</ELEMENT-ROLE>
+                  <ELEMENT-REFS>
+                    <ELEMENT-REF BASE="Collections_Blueprint" DEST="COLLECTION">Pt</ELEMENT-REF>
+                  </ELEMENT-REFS>
+                  <SOURCE-ELEMENT-REFS>
+                    <SOURCE-ELEMENT-REF BASE="Collections_Blueprint" DEST="COLLECTION">PtRefAll</SOURCE-ELEMENT-REF>
+                  </SOURCE-ELEMENT-REFS>
+                </COLLECTION>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>AUTOSAR_PhysicalUnits</SHORT-NAME>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

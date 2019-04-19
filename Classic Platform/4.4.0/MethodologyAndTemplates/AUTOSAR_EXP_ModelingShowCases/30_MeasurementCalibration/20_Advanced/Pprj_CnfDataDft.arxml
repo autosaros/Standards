@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+	<ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="default">English</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+	<AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>Tier1</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>ARPlatform1</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>ConfigData</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>SwSystemConstantValueSets</SHORT-NAME>
+                  <ELEMENTS>
+                    <SW-SYSTEMCONSTANT-VALUE-SET>
+                      <SHORT-NAME>DefaultSwSystemconstantValueSet</SHORT-NAME>
+                      <SW-SYSTEMCONSTANT-VALUES>
+                        <SW-SYSTEMCONST-VALUE>
+                          <SW-SYSTEMCONST-REF DEST="SW-SYSTEMCONST">/Tier1/ARPlatform1/DataDictionary/SwSystemConsts/V1_0_0/ScNoOfWheels</SW-SYSTEMCONST-REF>
+                          <VALUE S="1072693248">1</VALUE>
+                        </SW-SYSTEMCONST-VALUE>
+                      </SW-SYSTEMCONSTANT-VALUES>
+                    </SW-SYSTEMCONSTANT-VALUE-SET>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+	<ADMIN-DATA>
+		<LANGUAGE>EN</LANGUAGE>
+		<USED-LANGUAGES>
+			<L-10 L="EN" xml:space="preserve">English</L-10>
+		</USED-LANGUAGES>
+	</ADMIN-DATA>
+	<AR-PACKAGES>
+		<AR-PACKAGE>
+			<SHORT-NAME>Tier1</SHORT-NAME>
+			<AR-PACKAGES>
+				<AR-PACKAGE>
+					<SHORT-NAME>ARPlatform1</SHORT-NAME>
+					<AR-PACKAGES>
+						<AR-PACKAGE T="2016-04-27T13:39:52Z">
+							<SHORT-NAME>Pcpt_CMscA</SHORT-NAME>
+							<DESC>
+								<L-2 L="EN">Modeling show case for primitive measurement and calculation.</L-2>
+							</DESC>
+							<ELEMENTS>
+								<SENSOR-ACTUATOR-SW-COMPONENT-TYPE T="2016-04-27T13:39:52Z">
+									<SHORT-NAME>CMscA</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">Modeling show case for primitive measurement and calculation.</L-2>
+									</DESC>
+									<PORTS>
+										<P-PORT-PROTOTYPE T="2016-07-11T07:22:15Z">
+											<SHORT-NAME>P_ModeDirection</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Mode to indicate a direction</L-2>
+											</DESC>
+											<PROVIDED-COM-SPECS>
+												<MODE-SWITCH-SENDER-COM-SPEC>
+													<MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ModeDirection/ModeDirection</MODE-GROUP-REF>
+													<QUEUE-LENGTH>1</QUEUE-LENGTH>
+												</MODE-SWITCH-SENDER-COM-SPEC>
+											</PROVIDED-COM-SPECS>
+											<PROVIDED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ModeDirection</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+										<P-PORT-PROTOTYPE T="2016-07-11T06:54:45Z">
+											<SHORT-NAME>P_PrimData_Mass_Lnr_Kg_uint8</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Mass in kilogram</L-2>
+											</DESC>
+											<PROVIDED-COM-SPECS>
+												<NONQUEUED-SENDER-COM-SPEC>
+													<DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Mass_Lnr_Kg_uint8/PrimData_Mass_Lnr_Kg_uint8</DATA-ELEMENT-REF>
+													<INIT-VALUE>
+														<APPLICATION-VALUE-SPECIFICATION>
+															<CATEGORY>VALUE</CATEGORY>
+															<SW-VALUE-CONT>
+																<UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/kg/kg</UNIT-REF>
+																<SW-VALUES-PHYS>
+																	<V>0</V>
+																</SW-VALUES-PHYS>
+															</SW-VALUE-CONT>
+														</APPLICATION-VALUE-SPECIFICATION>
+													</INIT-VALUE>
+												</NONQUEUED-SENDER-COM-SPEC>
+											</PROVIDED-COM-SPECS>
+											<PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Mass_Lnr_Kg_uint8</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+										<P-PORT-PROTOTYPE T="2016-04-27T11:56:38Z">
+											<SHORT-NAME>P_PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Stepwise speed indication</L-2>
+											</DESC>
+											<PROVIDED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_StepsSpeed_Txt_sint8</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+										<P-PORT-PROTOTYPE T="2016-07-11T06:54:17Z">
+											<SHORT-NAME>P_PrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Temperature 1 in Kelvin but displayed as degree Celsius</L-2>
+											</DESC>
+											<PROVIDED-COM-SPECS>
+												<NONQUEUED-SENDER-COM-SPEC>
+													<DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Temperature_Lin_K_C_uint16/PrimData_Temperature_Lin_K_C_uint16</DATA-ELEMENT-REF>
+													<INIT-VALUE>
+														<APPLICATION-VALUE-SPECIFICATION>
+															<CATEGORY>VALUE</CATEGORY>
+															<SW-VALUE-CONT>
+																<UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/K_Celsius/K</UNIT-REF>
+																<SW-VALUES-PHYS>
+																	<V>273.1484375</V>
+																</SW-VALUES-PHYS>
+															</SW-VALUE-CONT>
+														</APPLICATION-VALUE-SPECIFICATION>
+													</INIT-VALUE>
+												</NONQUEUED-SENDER-COM-SPEC>
+											</PROVIDED-COM-SPECS>
+											<PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Temperature_Lin_K_C_uint16</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+										<R-PORT-PROTOTYPE T="2016-07-11T07:22:15Z">
+											<SHORT-NAME>R_ModeDirection</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Mode to indicate a direction</L-2>
+											</DESC>
+											<REQUIRED-COM-SPECS>
+												<MODE-SWITCH-RECEIVER-COM-SPEC>
+													<ENHANCED-MODE-API>true</ENHANCED-MODE-API>
+													<SUPPORTS-ASYNCHRONOUS-MODE-SWITCH>false</SUPPORTS-ASYNCHRONOUS-MODE-SWITCH>
+												</MODE-SWITCH-RECEIVER-COM-SPEC>
+											</REQUIRED-COM-SPECS>
+											<REQUIRED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ModeDirection</REQUIRED-INTERFACE-TREF>
+										</R-PORT-PROTOTYPE>
+										<R-PORT-PROTOTYPE T="2016-07-11T06:55:13Z">
+											<SHORT-NAME>R_PrimCal_Mass_Lnr_Kg</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Primitive calibration parameter for minimum egg mass.</L-2>
+											</DESC>
+											<REQUIRED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimCal_Mass_Lnr_Kg</REQUIRED-INTERFACE-TREF>
+										</R-PORT-PROTOTYPE>
+										<R-PORT-PROTOTYPE T="2016-07-11T06:54:45Z">
+											<SHORT-NAME>R_PrimData_Mass_Lnr_Kg_uint8</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Mass in kilogram</L-2>
+											</DESC>
+											<REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Mass_Lnr_Kg_uint8</REQUIRED-INTERFACE-TREF>
+										</R-PORT-PROTOTYPE>
+										<R-PORT-PROTOTYPE T="2016-04-27T11:56:38Z">
+											<SHORT-NAME>R_PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Stepwise speed indication</L-2>
+											</DESC>
+											<REQUIRED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_StepsSpeed_Txt_sint8</REQUIRED-INTERFACE-TREF>
+										</R-PORT-PROTOTYPE>
+										<R-PORT-PROTOTYPE T="2016-07-11T06:54:17Z">
+											<SHORT-NAME>R_PrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Temperature 1 in Kelvin but displayed as degree Celsius</L-2>
+											</DESC>
+											<REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Temperature_Lin_K_C_uint16</REQUIRED-INTERFACE-TREF>
+										</R-PORT-PROTOTYPE>
+									</PORTS>
+									<INTERNAL-BEHAVIORS>
+										<SWC-INTERNAL-BEHAVIOR>
+											<SHORT-NAME>CMscA</SHORT-NAME>
+											<CONSTANT-VALUE-MAPPING-REFS>
+												<CONSTANT-VALUE-MAPPING-REF DEST="CONSTANT-SPECIFICATION-MAPPING-SET">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA_DefaultConstantMapping</CONSTANT-VALUE-MAPPING-REF>
+											</CONSTANT-VALUE-MAPPING-REFS>
+											<DATA-TYPE-MAPPING-REFS>
+												<DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/Tier1/ARPlatform1/DataDictionary/DataTypeMappings/DefaultDataTypeMapping</DATA-TYPE-MAPPING-REF>
+											</DATA-TYPE-MAPPING-REFS>
+											<HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+											<INCLUDED-DATA-TYPE-SETS>
+												<INCLUDED-DATA-TYPE-SET>
+													<DATA-TYPE-REFS>
+														<DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/speedSteps</DATA-TYPE-REF>
+													</DATA-TYPE-REFS>
+													<LITERAL-PREFIX>speedSteps_</LITERAL-PREFIX>
+												</INCLUDED-DATA-TYPE-SET>
+											</INCLUDED-DATA-TYPE-SETS>
+											<RUNNABLES>
+												<RUNNABLE-ENTITY T="2016-07-11T07:25:24Z" UUID="e2849ebf-4208-4f78-b4d7-a9acd27b6ec8">
+													<SHORT-NAME>CMscA_Process</SHORT-NAME>
+													<DESC>
+														<L-2 L="EN">cyclic process</L-2>
+													</DESC>
+													<MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+													<SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Tier1/ARPlatform1/MemMap/SwAddrMethods/CODE_10MS</SW-ADDR-METHOD-REF>
+													<CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+													<DATA-READ-ACCESSS>
+														<VARIABLE-ACCESS T="2016-07-11T07:25:24Z">
+															<SHORT-NAME>R_PrimData_Mass_Lnr_Kg_uint8_PrimData_Mass_Lnr_Kg_uint8</SHORT-NAME>
+															<ACCESSED-VARIABLE>
+																<AUTOSAR-VARIABLE-IREF>
+																	<PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/R_PrimData_Mass_Lnr_Kg_uint8</PORT-PROTOTYPE-REF>
+																	<TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Mass_Lnr_Kg_uint8/PrimData_Mass_Lnr_Kg_uint8</TARGET-DATA-PROTOTYPE-REF>
+																</AUTOSAR-VARIABLE-IREF>
+															</ACCESSED-VARIABLE>
+														</VARIABLE-ACCESS>
+														<VARIABLE-ACCESS T="2016-07-11T07:25:24Z">
+															<SHORT-NAME>R_PrimData_StepsSpeed_Txt_sint8_PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+															<ACCESSED-VARIABLE>
+																<AUTOSAR-VARIABLE-IREF>
+																	<PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/R_PrimData_StepsSpeed_Txt_sint8</PORT-PROTOTYPE-REF>
+																	<TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_StepsSpeed_Txt_sint8/PrimData_StepsSpeed_Txt_sint8</TARGET-DATA-PROTOTYPE-REF>
+																</AUTOSAR-VARIABLE-IREF>
+															</ACCESSED-VARIABLE>
+														</VARIABLE-ACCESS>
+														<VARIABLE-ACCESS T="2016-07-11T07:25:24Z">
+															<SHORT-NAME>R_PrimData_Temperature_Lin_K_C_uint16_PrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+															<ACCESSED-VARIABLE>
+																<AUTOSAR-VARIABLE-IREF>
+																	<PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/R_PrimData_Temperature_Lin_K_C_uint16</PORT-PROTOTYPE-REF>
+																	<TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Temperature_Lin_K_C_uint16/PrimData_Temperature_Lin_K_C_uint16</TARGET-DATA-PROTOTYPE-REF>
+																</AUTOSAR-VARIABLE-IREF>
+															</ACCESSED-VARIABLE>
+														</VARIABLE-ACCESS>
+													</DATA-READ-ACCESSS>
+													<DATA-WRITE-ACCESSS>
+														<VARIABLE-ACCESS T="2016-07-11T07:25:24Z">
+															<SHORT-NAME>P_PrimData_Mass_Lnr_Kg_uint8_PrimData_Mass_Lnr_Kg_uint8</SHORT-NAME>
+															<ACCESSED-VARIABLE>
+																<AUTOSAR-VARIABLE-IREF>
+																	<PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_PrimData_Mass_Lnr_Kg_uint8</PORT-PROTOTYPE-REF>
+																	<TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Mass_Lnr_Kg_uint8/PrimData_Mass_Lnr_Kg_uint8</TARGET-DATA-PROTOTYPE-REF>
+																</AUTOSAR-VARIABLE-IREF>
+															</ACCESSED-VARIABLE>
+														</VARIABLE-ACCESS>
+														<VARIABLE-ACCESS T="2016-07-11T07:25:24Z">
+															<SHORT-NAME>P_PrimData_StepsSpeed_Txt_sint8_PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+															<ACCESSED-VARIABLE>
+																<AUTOSAR-VARIABLE-IREF>
+																	<PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_PrimData_StepsSpeed_Txt_sint8</PORT-PROTOTYPE-REF>
+																	<TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_StepsSpeed_Txt_sint8/PrimData_StepsSpeed_Txt_sint8</TARGET-DATA-PROTOTYPE-REF>
+																</AUTOSAR-VARIABLE-IREF>
+															</ACCESSED-VARIABLE>
+														</VARIABLE-ACCESS>
+														<VARIABLE-ACCESS T="2016-07-11T07:25:24Z">
+															<SHORT-NAME>P_PrimData_Temperature_Lin_K_C_uint16_PrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+															<ACCESSED-VARIABLE>
+																<AUTOSAR-VARIABLE-IREF>
+																	<PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_PrimData_Temperature_Lin_K_C_uint16</PORT-PROTOTYPE-REF>
+																	<TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Temperature_Lin_K_C_uint16/PrimData_Temperature_Lin_K_C_uint16</TARGET-DATA-PROTOTYPE-REF>
+																</AUTOSAR-VARIABLE-IREF>
+															</ACCESSED-VARIABLE>
+														</VARIABLE-ACCESS>
+													</DATA-WRITE-ACCESSS>
+													<MODE-ACCESS-POINTS>
+														<MODE-ACCESS-POINT T="2016-07-11T07:25:24Z">
+															<MODE-GROUP-IREF>
+																<R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+																	<CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/R_ModeDirection</CONTEXT-R-PORT-REF>
+																	<TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ModeDirection/ModeDirection</TARGET-MODE-GROUP-REF>
+																</R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+															</MODE-GROUP-IREF>
+														</MODE-ACCESS-POINT>
+													</MODE-ACCESS-POINTS>
+													<MODE-SWITCH-POINTS>
+														<MODE-SWITCH-POINT T="2016-07-11T07:25:24Z">
+															<SHORT-NAME>P_ModeDirection_ModeDirection</SHORT-NAME>
+															<MODE-GROUP-IREF>
+																<CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_ModeDirection</CONTEXT-P-PORT-REF>
+																<TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ModeDirection/ModeDirection</TARGET-MODE-GROUP-REF>
+															</MODE-GROUP-IREF>
+														</MODE-SWITCH-POINT>
+													</MODE-SWITCH-POINTS>
+													<PARAMETER-ACCESSS>
+														<PARAMETER-ACCESS T="2016-07-11T07:25:24Z">
+															<SHORT-NAME>R_PrimCal_Mass_Lnr_Kg_PrimCal_Mass_Lnr_Kg</SHORT-NAME>
+															<ACCESSED-PARAMETER>
+																<AUTOSAR-PARAMETER-IREF>
+																	<PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/R_PrimCal_Mass_Lnr_Kg</PORT-PROTOTYPE-REF>
+																	<TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimCal_Mass_Lnr_Kg/PrimCal_Mass_Lnr_Kg</TARGET-DATA-PROTOTYPE-REF>
+																</AUTOSAR-PARAMETER-IREF>
+															</ACCESSED-PARAMETER>
+														</PARAMETER-ACCESS>
+													</PARAMETER-ACCESSS>
+													<SYMBOL>CMscA_Process</SYMBOL>
+												</RUNNABLE-ENTITY>
+											</RUNNABLES>
+											<SERVICE-DEPENDENCYS>
+												<SWC-SERVICE-DEPENDENCY T="2016-04-27T13:39:42Z" UUID="1a31cf79-e6a3-4bda-b76e-fdda316bef8b">
+													<SHORT-NAME>CMscA_NvBlock0</SHORT-NAME>
+													<DESC>
+														<L-2 L="EN">Nv data of egg cooking time determination</L-2>
+													</DESC>
+													<ASSIGNED-PORTS>
+														<ROLE-BASED-PORT-ASSIGNMENT T="2016-04-27T13:39:42Z">
+															<PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_PrimData_StepsSpeed_Txt_sint8</PORT-PROTOTYPE-REF>
+															<ROLE>NvDataPort</ROLE>
+														</ROLE-BASED-PORT-ASSIGNMENT>
+													</ASSIGNED-PORTS>
+													<SERVICE-NEEDS>
+														<NV-BLOCK-NEEDS T="2016-04-27T13:39:42Z">
+															<SHORT-NAME>CMscA_NvBlock0</SHORT-NAME>
+															<CALC-RAM-BLOCK-CRC>true</CALC-RAM-BLOCK-CRC>
+															<CHECK-STATIC-BLOCK-ID>false</CHECK-STATIC-BLOCK-ID>
+															<N-DATA-SETS>0</N-DATA-SETS>
+															<READONLY>false</READONLY>
+															<RELIABILITY>ERROR-DETECTION</RELIABILITY>
+															<RESISTANT-TO-CHANGED-SW>false</RESISTANT-TO-CHANGED-SW>
+															<RESTORE-AT-START>true</RESTORE-AT-START>
+															<STORE-AT-SHUTDOWN>true</STORE-AT-SHUTDOWN>
+															<WRITE-ONLY-ONCE>false</WRITE-ONLY-ONCE>
+															<WRITING-FREQUENCY>1000</WRITING-FREQUENCY>
+															<WRITING-PRIORITY>LOW</WRITING-PRIORITY>
+														</NV-BLOCK-NEEDS>
+													</SERVICE-NEEDS>
+												</SWC-SERVICE-DEPENDENCY>
+											</SERVICE-DEPENDENCYS>
+											<SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+										</SWC-INTERNAL-BEHAVIOR>
+									</INTERNAL-BEHAVIORS>
+								</SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+								<CONSTANT-SPECIFICATION-MAPPING-SET>
+									<SHORT-NAME>CMscA_DefaultConstantMapping</SHORT-NAME>
+								</CONSTANT-SPECIFICATION-MAPPING-SET>
+								<SWC-IMPLEMENTATION>
+									<SHORT-NAME>CMscA_impl</SHORT-NAME>
+									<CODE-DESCRIPTORS>
+										<CODE>
+											<SHORT-NAME>CMscA</SHORT-NAME>
+											<ARTIFACT-DESCRIPTORS>
+												<AUTOSAR-ENGINEERING-OBJECT>
+													<SHORT-LABEL>CMscA</SHORT-LABEL>
+													<CATEGORY>SWSRC</CATEGORY>
+													<DOMAIN>ARPlatform1</DOMAIN>
+												</AUTOSAR-ENGINEERING-OBJECT>
+											</ARTIFACT-DESCRIPTORS>
+										</CODE>
+									</CODE-DESCRIPTORS>
+									<PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+									<RESOURCE-CONSUMPTION>
+										<SHORT-NAME>CMscA_rc</SHORT-NAME>
+										<MEMORY-SECTIONS>
+											<MEMORY-SECTION>
+												<SHORT-NAME>CODE_10MS</SHORT-NAME>
+												<SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/Tier1/ARPlatform1/MemMap/SwAddrMethods/CODE_10MS</SW-ADDRMETHOD-REF>
+											</MEMORY-SECTION>
+										</MEMORY-SECTIONS>
+									</RESOURCE-CONSUMPTION>
+									<VENDOR-ID>8</VENDOR-ID>
+									<BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/CMscA</BEHAVIOR-REF>
+								</SWC-IMPLEMENTATION>
+								<PARAMETER-SW-COMPONENT-TYPE T="2016-04-27T13:39:52Z">
+									<SHORT-NAME>CMscA_par</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">Modeling show case for primitive measurement and calculation.</L-2>
+									</DESC>
+									<PORTS>
+										<P-PORT-PROTOTYPE T="2016-07-11T06:55:13Z">
+											<SHORT-NAME>P_PrimCal_Mass_Lnr_Kg</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Primitive calibration parameter for minimum egg mass.</L-2>
+											</DESC>
+											<PROVIDED-COM-SPECS>
+												<PARAMETER-PROVIDE-COM-SPEC>
+													<INIT-VALUE>
+														<APPLICATION-VALUE-SPECIFICATION>
+															<CATEGORY>VALUE</CATEGORY>
+															<SW-VALUE-CONT>
+																<UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/kg/kg</UNIT-REF>
+																<SW-VALUES-PHYS>
+																	<V>0</V>
+																</SW-VALUES-PHYS>
+															</SW-VALUE-CONT>
+														</APPLICATION-VALUE-SPECIFICATION>
+													</INIT-VALUE>
+													<PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimCal_Mass_Lnr_Kg/PrimCal_Mass_Lnr_Kg</PARAMETER-REF>
+												</PARAMETER-PROVIDE-COM-SPEC>
+											</PROVIDED-COM-SPECS>
+											<PROVIDED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimCal_Mass_Lnr_Kg</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+									</PORTS>
+									<CONSTANT-MAPPING-REFS>
+										<CONSTANT-MAPPING-REF DEST="CONSTANT-SPECIFICATION-MAPPING-SET">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA_DefaultConstantMapping</CONSTANT-MAPPING-REF>
+									</CONSTANT-MAPPING-REFS>
+									<DATA-TYPE-MAPPING-REFS>
+										<DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/Tier1/ARPlatform1/DataDictionary/DataTypeMappings/DefaultDataTypeMapping</DATA-TYPE-MAPPING-REF>
+									</DATA-TYPE-MAPPING-REFS>
+								</PARAMETER-SW-COMPONENT-TYPE>
+								<COMPOSITION-SW-COMPONENT-TYPE T="2016-04-27T13:39:52Z" UUID="41c00211-4bcb-46e2-a0a3-429ec8a05ae8">
+									<SHORT-NAME>Pcpt_CMscA</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">Modeling show case for primitive measurement and calculation.</L-2>
+									</DESC>
+									<PORTS>
+										<P-PORT-PROTOTYPE T="2016-07-11T07:22:15Z">
+											<SHORT-NAME>P_ModeDirection</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Mode to indicate a direction</L-2>
+											</DESC>
+											<PROVIDED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ModeDirection</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+										<P-PORT-PROTOTYPE T="2016-07-11T06:55:13Z">
+											<SHORT-NAME>P_PrimCal_Mass_Lnr_Kg</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Primitive calibration parameter for minimum egg mass.</L-2>
+											</DESC>
+											<PROVIDED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimCal_Mass_Lnr_Kg</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+										<P-PORT-PROTOTYPE T="2016-07-11T06:54:45Z">
+											<SHORT-NAME>P_PrimData_Mass_Lnr_Kg_uint8</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Mass in kilogram</L-2>
+											</DESC>
+											<PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Mass_Lnr_Kg_uint8</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+										<P-PORT-PROTOTYPE T="2016-04-27T11:56:38Z">
+											<SHORT-NAME>P_PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Stepwise speed indication</L-2>
+											</DESC>
+											<PROVIDED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_StepsSpeed_Txt_sint8</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+										<P-PORT-PROTOTYPE T="2016-07-11T06:54:17Z">
+											<SHORT-NAME>P_PrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Temperature 1 in Kelvin but displayed as degree Celsius</L-2>
+											</DESC>
+											<PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Temperature_Lin_K_C_uint16</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+										<R-PORT-PROTOTYPE T="2016-04-27T11:56:38Z">
+											<SHORT-NAME>R_PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Stepwise speed indication</L-2>
+											</DESC>
+											<REQUIRED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_StepsSpeed_Txt_sint8</REQUIRED-INTERFACE-TREF>
+										</R-PORT-PROTOTYPE>
+									</PORTS>
+									<COMPONENTS>
+										<SW-COMPONENT-PROTOTYPE T="2016-04-27T13:39:52Z">
+											<SHORT-NAME>CMscA</SHORT-NAME>
+											<TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA</TYPE-TREF>
+										</SW-COMPONENT-PROTOTYPE>
+										<SW-COMPONENT-PROTOTYPE T="2016-04-27T13:39:52Z">
+											<SHORT-NAME>CMscA_par</SHORT-NAME>
+											<TYPE-TREF DEST="PARAMETER-SW-COMPONENT-TYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA_par</TYPE-TREF>
+										</SW-COMPONENT-PROTOTYPE>
+									</COMPONENTS>
+									<CONNECTORS>
+										<ASSEMBLY-SW-CONNECTOR>
+											<SHORT-NAME>CMscA_P_ModeDirection_CMscA_R_ModeDirection</SHORT-NAME>
+											<PROVIDER-IREF>
+												<CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/CMscA</CONTEXT-COMPONENT-REF>
+												<TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_ModeDirection</TARGET-P-PORT-REF>
+											</PROVIDER-IREF>
+											<REQUESTER-IREF>
+												<CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/CMscA</CONTEXT-COMPONENT-REF>
+												<TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/R_ModeDirection</TARGET-R-PORT-REF>
+											</REQUESTER-IREF>
+										</ASSEMBLY-SW-CONNECTOR>
+										<DELEGATION-SW-CONNECTOR>
+											<SHORT-NAME>CMscA_P_ModeDirection_P_ModeDirection</SHORT-NAME>
+											<INNER-PORT-IREF>
+												<P-PORT-IN-COMPOSITION-INSTANCE-REF>
+													<CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/CMscA</CONTEXT-COMPONENT-REF>
+													<TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_ModeDirection</TARGET-P-PORT-REF>
+												</P-PORT-IN-COMPOSITION-INSTANCE-REF>
+											</INNER-PORT-IREF>
+											<OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/P_ModeDirection</OUTER-PORT-REF>
+										</DELEGATION-SW-CONNECTOR>
+										<ASSEMBLY-SW-CONNECTOR>
+											<SHORT-NAME>CMscA_P_PrimData_Mass_Lnr_Kg_uint8_CMscA_R_PrimData_Mass_Lnr_Kg_uint8</SHORT-NAME>
+											<PROVIDER-IREF>
+												<CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/CMscA</CONTEXT-COMPONENT-REF>
+												<TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_PrimData_Mass_Lnr_Kg_uint8</TARGET-P-PORT-REF>
+											</PROVIDER-IREF>
+											<REQUESTER-IREF>
+												<CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/CMscA</CONTEXT-COMPONENT-REF>
+												<TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/R_PrimData_Mass_Lnr_Kg_uint8</TARGET-R-PORT-REF>
+											</REQUESTER-IREF>
+										</ASSEMBLY-SW-CONNECTOR>
+										<DELEGATION-SW-CONNECTOR>
+											<SHORT-NAME>CMscA_P_PrimData_Mass_Lnr_Kg_uint8_P_PrimData_Mass_Lnr_Kg_uint8</SHORT-NAME>
+											<INNER-PORT-IREF>
+												<P-PORT-IN-COMPOSITION-INSTANCE-REF>
+													<CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/CMscA</CONTEXT-COMPONENT-REF>
+													<TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_PrimData_Mass_Lnr_Kg_uint8</TARGET-P-PORT-REF>
+												</P-PORT-IN-COMPOSITION-INSTANCE-REF>
+											</INNER-PORT-IREF>
+											<OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/P_PrimData_Mass_Lnr_Kg_uint8</OUTER-PORT-REF>
+										</DELEGATION-SW-CONNECTOR>
+										<DELEGATION-SW-CONNECTOR>
+											<SHORT-NAME>CMscA_P_PrimData_StepsSpeed_Txt_sint8_P_PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+											<INNER-PORT-IREF>
+												<P-PORT-IN-COMPOSITION-INSTANCE-REF>
+													<CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/CMscA</CONTEXT-COMPONENT-REF>
+													<TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_PrimData_StepsSpeed_Txt_sint8</TARGET-P-PORT-REF>
+												</P-PORT-IN-COMPOSITION-INSTANCE-REF>
+											</INNER-PORT-IREF>
+											<OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/P_PrimData_StepsSpeed_Txt_sint8</OUTER-PORT-REF>
+										</DELEGATION-SW-CONNECTOR>
+										<ASSEMBLY-SW-CONNECTOR>
+											<SHORT-NAME>CMscA_P_PrimData_Temperature_Lin_K_C_uint16_CMscA_R_PrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+											<PROVIDER-IREF>
+												<CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/CMscA</CONTEXT-COMPONENT-REF>
+												<TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_PrimData_Temperature_Lin_K_C_uint16</TARGET-P-PORT-REF>
+											</PROVIDER-IREF>
+											<REQUESTER-IREF>
+												<CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/CMscA</CONTEXT-COMPONENT-REF>
+												<TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/R_PrimData_Temperature_Lin_K_C_uint16</TARGET-R-PORT-REF>
+											</REQUESTER-IREF>
+										</ASSEMBLY-SW-CONNECTOR>
+										<DELEGATION-SW-CONNECTOR>
+											<SHORT-NAME>CMscA_P_PrimData_Temperature_Lin_K_C_uint16_P_PrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+											<INNER-PORT-IREF>
+												<P-PORT-IN-COMPOSITION-INSTANCE-REF>
+													<CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/CMscA</CONTEXT-COMPONENT-REF>
+													<TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/P_PrimData_Temperature_Lin_K_C_uint16</TARGET-P-PORT-REF>
+												</P-PORT-IN-COMPOSITION-INSTANCE-REF>
+											</INNER-PORT-IREF>
+											<OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/P_PrimData_Temperature_Lin_K_C_uint16</OUTER-PORT-REF>
+										</DELEGATION-SW-CONNECTOR>
+										<ASSEMBLY-SW-CONNECTOR>
+											<SHORT-NAME>CMscA_par_P_PrimCal_Mass_Lnr_Kg_CMscA_R_PrimCal_Mass_Lnr_Kg</SHORT-NAME>
+											<PROVIDER-IREF>
+												<CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/CMscA_par</CONTEXT-COMPONENT-REF>
+												<TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA_par/P_PrimCal_Mass_Lnr_Kg</TARGET-P-PORT-REF>
+											</PROVIDER-IREF>
+											<REQUESTER-IREF>
+												<CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/CMscA</CONTEXT-COMPONENT-REF>
+												<TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/R_PrimCal_Mass_Lnr_Kg</TARGET-R-PORT-REF>
+											</REQUESTER-IREF>
+										</ASSEMBLY-SW-CONNECTOR>
+										<DELEGATION-SW-CONNECTOR>
+											<SHORT-NAME>CMscA_par_P_PrimCal_Mass_Lnr_Kg_P_PrimCal_Mass_Lnr_Kg</SHORT-NAME>
+											<INNER-PORT-IREF>
+												<P-PORT-IN-COMPOSITION-INSTANCE-REF>
+													<CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/CMscA_par</CONTEXT-COMPONENT-REF>
+													<TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA_par/P_PrimCal_Mass_Lnr_Kg</TARGET-P-PORT-REF>
+												</P-PORT-IN-COMPOSITION-INSTANCE-REF>
+											</INNER-PORT-IREF>
+											<OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/P_PrimCal_Mass_Lnr_Kg</OUTER-PORT-REF>
+										</DELEGATION-SW-CONNECTOR>
+										<DELEGATION-SW-CONNECTOR>
+											<SHORT-NAME>CMscA_R_PrimData_StepsSpeed_Txt_sint8_R_PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+											<INNER-PORT-IREF>
+												<R-PORT-IN-COMPOSITION-INSTANCE-REF>
+													<CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/CMscA</CONTEXT-COMPONENT-REF>
+													<TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/CMscA/R_PrimData_StepsSpeed_Txt_sint8</TARGET-R-PORT-REF>
+												</R-PORT-IN-COMPOSITION-INSTANCE-REF>
+											</INNER-PORT-IREF>
+											<OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscA/Pcpt_CMscA/R_PrimData_StepsSpeed_Txt_sint8</OUTER-PORT-REF>
+										</DELEGATION-SW-CONNECTOR>
+									</CONNECTORS>
+									<DATA-TYPE-MAPPING-REFS>
+										<DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/Tier1/ARPlatform1/DataDictionary/DataTypeMappings/DefaultDataTypeMapping</DATA-TYPE-MAPPING-REF>
+									</DATA-TYPE-MAPPING-REFS>
+								</COMPOSITION-SW-COMPONENT-TYPE>
+							</ELEMENTS>
+						</AR-PACKAGE>
+					</AR-PACKAGES>
+				</AR-PACKAGE>
+			</AR-PACKAGES>
+		</AR-PACKAGE>
+	</AR-PACKAGES>
+</AUTOSAR>

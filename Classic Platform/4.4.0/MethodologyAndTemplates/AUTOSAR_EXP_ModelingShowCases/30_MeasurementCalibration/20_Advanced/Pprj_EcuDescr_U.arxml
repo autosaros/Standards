@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+ <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="preserve">English</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA> 
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>Tier1</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>ARPlatform1</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>System</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>CompositionSwComponentTypes</SHORT-NAME>
+                  <ELEMENTS>
+                    <COMPOSITION-SW-COMPONENT-TYPE>
+                      <SHORT-NAME>SystemURootComposition_EcuDescr</SHORT-NAME>
+                      <COMPONENTS>
+                        <SW-COMPONENT-PROTOTYPE>
+                          <SHORT-NAME>CMscC</SHORT-NAME>
+                          <TYPE-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/Tier1/ARPlatform1/Pcpt_CMscC/Pcpt_CMscC</TYPE-TREF>
+                        </SW-COMPONENT-PROTOTYPE>
+                      </COMPONENTS>
+                    </COMPOSITION-SW-COMPONENT-TYPE>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,1253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+	<ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="default">English</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+	<AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>Tier1</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>ARPlatform1</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE T="2016-04-27T11:30:24Z">
+              <SHORT-NAME>Pcpt_CMscB</SHORT-NAME>
+              <DESC>
+                <L-2 L="EN">Modeling show case for axes, curves  and mapes. </L-2>
+              </DESC>
+              <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE T="2016-04-27T11:30:24Z">
+                  <SHORT-NAME>CMscB</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Modeling show case for axes, curves  and mapes. </L-2>
+                  </DESC>
+                  <PORTS>
+                    <P-PORT-PROTOTYPE T="2016-07-11T13:50:15Z">
+                      <SHORT-NAME>P_PrimData_MassCorrected_Lnr_Kg_uint8</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Primitve data for the corrected mass in kg.</L-2>
+                      </DESC>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_MassCorrected_Lnr_Kg_uint8/PrimData_MassCorrected_Lnr_Kg_uint8</DATA-ELEMENT-REF>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/kg/kg</UNIT-REF>
+                                <SW-VALUES-PHYS>
+                                  <V>0</V>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_MassCorrected_Lnr_Kg_uint8</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE T="2016-07-11T06:57:54Z">
+                      <SHORT-NAME>P_PrimData_Time_Lnr_s_uint16</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Primitve data holding a time value.</L-2>
+                      </DESC>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Time_Lnr_s_uint16/PrimData_Time_Lnr_s_uint16</DATA-ELEMENT-REF>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/s/s</UNIT-REF>
+                                <SW-VALUES-PHYS>
+                                  <V>0</V>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Time_Lnr_s_uint16</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE T="2016-04-27T13:27:36Z">
+                      <SHORT-NAME>P_PrimData_ValidState_Txt_noUnit_boolean</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Boolean representing the data validity</L-2>
+                      </DESC>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_ValidState_Txt_noUnit_boolean/PrimData_ValidState_Txt_noUnit_boolean</DATA-ELEMENT-REF>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                                <SW-VALUES-PHYS>
+                                  <VT>Invalid</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_ValidState_Txt_noUnit_boolean</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE T="2016-07-11T13:50:06Z">
+                      <SHORT-NAME>R_ComAxis_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Shared axis for mass</L-2>
+                      </DESC>
+                      <REQUIRED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Mass_Lnr_Kg_uint8</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE T="2016-07-11T07:33:49Z">
+                      <SHORT-NAME>R_ComAxis_Steps_Txt_sint8</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Shared axis for speed steps</L-2>
+                      </DESC>
+                      <REQUIRED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Steps_Txt_sint8</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE T="2016-07-11T07:32:01Z">
+                      <SHORT-NAME>R_ComAxis_Temp_Lin_K_uint16</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Shared axis for temperature</L-2>
+                      </DESC>
+                      <REQUIRED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Temp_Lin_K_uint16</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE T="2016-07-11T07:37:17Z">
+                      <SHORT-NAME>R_Curve_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Curve to get mass according differnt speed steps.</L-2>
+                      </DESC>
+                      <REQUIRED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Curve_Mass_Lnr_Kg_uint8</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE T="2016-07-11T07:39:51Z">
+                      <SHORT-NAME>R_Map_Time_Lnr_s_uint16</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Map to get time dependent on temperature and mass.</L-2>
+                      </DESC>
+                      <REQUIRED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Map_Time_Lnr_s_uint16</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE T="2016-07-11T07:23:02Z">
+                      <SHORT-NAME>R_ModeDirection</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mode to indicate a direction</L-2>
+                      </DESC>
+                      <REQUIRED-COM-SPECS>
+                        <MODE-SWITCH-RECEIVER-COM-SPEC>
+                          <ENHANCED-MODE-API>true</ENHANCED-MODE-API>
+                          <SUPPORTS-ASYNCHRONOUS-MODE-SWITCH>false</SUPPORTS-ASYNCHRONOUS-MODE-SWITCH>
+                        </MODE-SWITCH-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ModeDirection</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE T="2016-07-11T06:54:45Z">
+                      <SHORT-NAME>R_PrimData_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mass in kilogram</L-2>
+                      </DESC>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Mass_Lnr_Kg_uint8</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE T="2016-07-11T13:50:15Z">
+                      <SHORT-NAME>R_PrimData_MassCorrected_Lnr_Kg_uint8</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Primitve data for the corrected mass in kg.</L-2>
+                      </DESC>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_MassCorrected_Lnr_Kg_uint8</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE T="2016-04-27T11:56:38Z">
+                      <SHORT-NAME>R_PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Stepwise speed indication</L-2>
+                      </DESC>
+                      <REQUIRED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_StepsSpeed_Txt_sint8</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE T="2016-07-11T06:54:17Z">
+                      <SHORT-NAME>R_PrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Temperature 1 in Kelvin but displayed as degree Celsius</L-2>
+                      </DESC>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Temperature_Lin_K_C_uint16</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE T="2016-07-11T06:57:54Z">
+                      <SHORT-NAME>R_PrimData_Time_Lnr_s_uint16</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Primitve data holding a time value.</L-2>
+                      </DESC>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Time_Lnr_s_uint16</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE T="2016-04-27T13:27:36Z">
+                      <SHORT-NAME>R_PrimData_ValidState_Txt_noUnit_boolean</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Boolean representing the data validity</L-2>
+                      </DESC>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_ValidState_Txt_noUnit_boolean</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                  </PORTS>
+                  <INTERNAL-BEHAVIORS>
+                    <SWC-INTERNAL-BEHAVIOR>
+                      <SHORT-NAME>CMscB</SHORT-NAME>
+                      <CONSTANT-VALUE-MAPPING-REFS>
+                        <CONSTANT-VALUE-MAPPING-REF DEST="CONSTANT-SPECIFICATION-MAPPING-SET">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_DefaultConstantMapping</CONSTANT-VALUE-MAPPING-REF>
+                      </CONSTANT-VALUE-MAPPING-REFS>
+                      <DATA-TYPE-MAPPING-REFS>
+                        <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/Tier1/ARPlatform1/DataDictionary/DataTypeMappings/DefaultDataTypeMapping</DATA-TYPE-MAPPING-REF>
+                      </DATA-TYPE-MAPPING-REFS>
+                      <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                      <INCLUDED-DATA-TYPE-SETS>
+                        <INCLUDED-DATA-TYPE-SET>
+                          <DATA-TYPE-REFS>
+                            <DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/DataValidityType</DATA-TYPE-REF>
+                          </DATA-TYPE-REFS>
+                          <LITERAL-PREFIX>DataValidityType_</LITERAL-PREFIX>
+                        </INCLUDED-DATA-TYPE-SET>
+                        <INCLUDED-DATA-TYPE-SET>
+                          <DATA-TYPE-REFS>
+                            <DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Tier1/ARPlatform1/DataDictionary/ApplicationDataTypes/speedSteps</DATA-TYPE-REF>
+                          </DATA-TYPE-REFS>
+                          <LITERAL-PREFIX>speedSteps_</LITERAL-PREFIX>
+                        </INCLUDED-DATA-TYPE-SET>
+                      </INCLUDED-DATA-TYPE-SETS>
+                      <INSTANTIATION-DATA-DEF-PROPSS>
+                        <INSTANTIATION-DATA-DEF-PROPS>
+                          <PARAMETER-INSTANCE>
+                            <AUTOSAR-PARAMETER-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_ComAxis_Mass_Lnr_Kg_uint8</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Mass_Lnr_Kg_uint8/ComAxis_Mass_Lnr_Kg_uint8</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-PARAMETER-IREF>
+                          </PARAMETER-INSTANCE>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALPRM-AXIS-SET>
+                                  <SW-CALPRM-AXIS>
+                                    <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
+                                    <SW-AXIS-INDIVIDUAL>
+                                      <SW-VARIABLE-REFS>
+                                        <AUTOSAR-VARIABLE>
+                                          <AUTOSAR-VARIABLE-IREF>
+                                            <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_MassCorrected_Lnr_Kg_uint8</PORT-PROTOTYPE-REF>
+                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_MassCorrected_Lnr_Kg_uint8/PrimData_MassCorrected_Lnr_Kg_uint8</TARGET-DATA-PROTOTYPE-REF>
+                                          </AUTOSAR-VARIABLE-IREF>
+                                        </AUTOSAR-VARIABLE>
+                                      </SW-VARIABLE-REFS>
+                                    </SW-AXIS-INDIVIDUAL>
+                                  </SW-CALPRM-AXIS>
+                                </SW-CALPRM-AXIS-SET>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                        </INSTANTIATION-DATA-DEF-PROPS>
+                        <INSTANTIATION-DATA-DEF-PROPS>
+                          <PARAMETER-INSTANCE>
+                            <AUTOSAR-PARAMETER-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_ComAxis_Steps_Txt_sint8</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Steps_Txt_sint8/ComAxis_Steps_Txt_sint8</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-PARAMETER-IREF>
+                          </PARAMETER-INSTANCE>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALPRM-AXIS-SET>
+                                  <SW-CALPRM-AXIS>
+                                    <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
+                                    <SW-AXIS-INDIVIDUAL>
+                                      <SW-VARIABLE-REFS>
+                                        <AUTOSAR-VARIABLE>
+                                          <AUTOSAR-VARIABLE-IREF>
+                                            <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_StepsSpeed_Txt_sint8</PORT-PROTOTYPE-REF>
+                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_StepsSpeed_Txt_sint8/PrimData_StepsSpeed_Txt_sint8</TARGET-DATA-PROTOTYPE-REF>
+                                          </AUTOSAR-VARIABLE-IREF>
+                                        </AUTOSAR-VARIABLE>
+                                      </SW-VARIABLE-REFS>
+                                    </SW-AXIS-INDIVIDUAL>
+                                  </SW-CALPRM-AXIS>
+                                </SW-CALPRM-AXIS-SET>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                        </INSTANTIATION-DATA-DEF-PROPS>
+                        <INSTANTIATION-DATA-DEF-PROPS>
+                          <PARAMETER-INSTANCE>
+                            <AUTOSAR-PARAMETER-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_ComAxis_Temp_Lin_K_uint16</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Temp_Lin_K_uint16/ComAxis_Temp_Lin_K_uint16</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-PARAMETER-IREF>
+                          </PARAMETER-INSTANCE>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALPRM-AXIS-SET>
+                                  <SW-CALPRM-AXIS>
+                                    <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
+                                    <SW-AXIS-INDIVIDUAL>
+                                      <SW-VARIABLE-REFS>
+                                        <AUTOSAR-VARIABLE>
+                                          <AUTOSAR-VARIABLE-IREF>
+                                            <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_Temperature_Lin_K_C_uint16</PORT-PROTOTYPE-REF>
+                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Temperature_Lin_K_C_uint16/PrimData_Temperature_Lin_K_C_uint16</TARGET-DATA-PROTOTYPE-REF>
+                                          </AUTOSAR-VARIABLE-IREF>
+                                        </AUTOSAR-VARIABLE>
+                                      </SW-VARIABLE-REFS>
+                                    </SW-AXIS-INDIVIDUAL>
+                                  </SW-CALPRM-AXIS>
+                                </SW-CALPRM-AXIS-SET>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                        </INSTANTIATION-DATA-DEF-PROPS>
+                        <INSTANTIATION-DATA-DEF-PROPS>
+                          <PARAMETER-INSTANCE>
+                            <AUTOSAR-PARAMETER-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_Curve_Mass_Lnr_Kg_uint8</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Curve_Mass_Lnr_Kg_uint8/Curve_Mass_Lnr_Kg_uint8</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-PARAMETER-IREF>
+                          </PARAMETER-INSTANCE>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALPRM-AXIS-SET>
+                                  <SW-CALPRM-AXIS>
+                                    <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
+                                    <SW-AXIS-GROUPED>
+                                      <AR-PARAMETER>
+                                        <AUTOSAR-PARAMETER-IREF>
+                                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_ComAxis_Steps_Txt_sint8</PORT-PROTOTYPE-REF>
+                                          <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Steps_Txt_sint8/ComAxis_Steps_Txt_sint8</TARGET-DATA-PROTOTYPE-REF>
+                                        </AUTOSAR-PARAMETER-IREF>
+                                      </AR-PARAMETER>
+                                    </SW-AXIS-GROUPED>
+                                  </SW-CALPRM-AXIS>
+                                </SW-CALPRM-AXIS-SET>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                        </INSTANTIATION-DATA-DEF-PROPS>
+                        <INSTANTIATION-DATA-DEF-PROPS>
+                          <PARAMETER-INSTANCE>
+                            <AUTOSAR-PARAMETER-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_Map_Time_Lnr_s_uint16</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Map_Time_Lnr_s_uint16/Map_Time_Lnr_s_uint16</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-PARAMETER-IREF>
+                          </PARAMETER-INSTANCE>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALPRM-AXIS-SET>
+                                  <SW-CALPRM-AXIS>
+                                    <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
+                                    <SW-AXIS-GROUPED>
+                                      <AR-PARAMETER>
+                                        <AUTOSAR-PARAMETER-IREF>
+                                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_ComAxis_Temp_Lin_K_uint16</PORT-PROTOTYPE-REF>
+                                          <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Temp_Lin_K_uint16/ComAxis_Temp_Lin_K_uint16</TARGET-DATA-PROTOTYPE-REF>
+                                        </AUTOSAR-PARAMETER-IREF>
+                                      </AR-PARAMETER>
+                                    </SW-AXIS-GROUPED>
+                                  </SW-CALPRM-AXIS>
+                                  <SW-CALPRM-AXIS>
+                                    <SW-AXIS-INDEX>2</SW-AXIS-INDEX>
+                                    <SW-AXIS-GROUPED>
+                                      <AR-PARAMETER>
+                                        <AUTOSAR-PARAMETER-IREF>
+                                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_ComAxis_Mass_Lnr_Kg_uint8</PORT-PROTOTYPE-REF>
+                                          <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Mass_Lnr_Kg_uint8/ComAxis_Mass_Lnr_Kg_uint8</TARGET-DATA-PROTOTYPE-REF>
+                                        </AUTOSAR-PARAMETER-IREF>
+                                      </AR-PARAMETER>
+                                    </SW-AXIS-GROUPED>
+                                  </SW-CALPRM-AXIS>
+                                </SW-CALPRM-AXIS-SET>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                        </INSTANTIATION-DATA-DEF-PROPS>
+                      </INSTANTIATION-DATA-DEF-PROPSS>
+                      <RUNNABLES>
+                        <RUNNABLE-ENTITY T="2016-07-11T07:25:52Z" UUID="0775f9b8-8c33-49fe-9d7e-e06952258ea9">
+                          <SHORT-NAME>CMscB_Process</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">cyclic process for calculation</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                          <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Tier1/ARPlatform1/MemMap/SwAddrMethods/CODE_10MS</SW-ADDR-METHOD-REF>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-READ-ACCESSS>
+                            <VARIABLE-ACCESS T="2016-07-11T07:25:52Z">
+                              <SHORT-NAME>R_PrimData_Mass_Lnr_Kg_uint8_PrimData_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_Mass_Lnr_Kg_uint8</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Mass_Lnr_Kg_uint8/PrimData_Mass_Lnr_Kg_uint8</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS T="2016-07-11T07:25:52Z">
+                              <SHORT-NAME>R_PrimData_MassCorrected_Lnr_Kg_uint8_PrimData_MassCorrected_Lnr_Kg_uint8</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_MassCorrected_Lnr_Kg_uint8</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_MassCorrected_Lnr_Kg_uint8/PrimData_MassCorrected_Lnr_Kg_uint8</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS T="2016-07-11T07:25:52Z">
+                              <SHORT-NAME>R_PrimData_StepsSpeed_Txt_sint8_PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_StepsSpeed_Txt_sint8</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_StepsSpeed_Txt_sint8/PrimData_StepsSpeed_Txt_sint8</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS T="2016-07-11T07:25:52Z">
+                              <SHORT-NAME>R_PrimData_Temperature_Lin_K_C_uint16_PrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_Temperature_Lin_K_C_uint16</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Temperature_Lin_K_C_uint16/PrimData_Temperature_Lin_K_C_uint16</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS T="2016-07-11T07:25:52Z">
+                              <SHORT-NAME>R_PrimData_Time_Lnr_s_uint16_PrimData_Time_Lnr_s_uint16</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_Time_Lnr_s_uint16</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Time_Lnr_s_uint16/PrimData_Time_Lnr_s_uint16</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-READ-ACCESSS>
+                          <DATA-WRITE-ACCESSS>
+                            <VARIABLE-ACCESS T="2016-07-11T07:25:52Z">
+                              <SHORT-NAME>P_PrimData_MassCorrected_Lnr_Kg_uint8_PrimData_MassCorrected_Lnr_Kg_uint8</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/P_PrimData_MassCorrected_Lnr_Kg_uint8</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_MassCorrected_Lnr_Kg_uint8/PrimData_MassCorrected_Lnr_Kg_uint8</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS T="2016-07-11T07:25:52Z">
+                              <SHORT-NAME>P_PrimData_Time_Lnr_s_uint16_PrimData_Time_Lnr_s_uint16</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/P_PrimData_Time_Lnr_s_uint16</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Time_Lnr_s_uint16/PrimData_Time_Lnr_s_uint16</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-WRITE-ACCESSS>
+                          <MODE-ACCESS-POINTS>
+                            <MODE-ACCESS-POINT T="2016-07-11T07:25:52Z">
+                              <MODE-GROUP-IREF>
+                                <R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                                  <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_ModeDirection</CONTEXT-R-PORT-REF>
+                                  <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ModeDirection/ModeDirection</TARGET-MODE-GROUP-REF>
+                                </R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                              </MODE-GROUP-IREF>
+                            </MODE-ACCESS-POINT>
+                          </MODE-ACCESS-POINTS>
+                          <PARAMETER-ACCESSS>
+                            <PARAMETER-ACCESS T="2016-07-11T07:25:52Z">
+                              <SHORT-NAME>R_ComAxis_Mass_Lnr_Kg_uint8_ComAxis_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                              <ACCESSED-PARAMETER>
+                                <AUTOSAR-PARAMETER-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_ComAxis_Mass_Lnr_Kg_uint8</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Mass_Lnr_Kg_uint8/ComAxis_Mass_Lnr_Kg_uint8</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-PARAMETER-IREF>
+                              </ACCESSED-PARAMETER>
+                            </PARAMETER-ACCESS>
+                            <PARAMETER-ACCESS T="2016-07-11T07:25:52Z">
+                              <SHORT-NAME>R_ComAxis_Steps_Txt_sint8_ComAxis_Steps_Txt_sint8</SHORT-NAME>
+                              <ACCESSED-PARAMETER>
+                                <AUTOSAR-PARAMETER-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_ComAxis_Steps_Txt_sint8</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Steps_Txt_sint8/ComAxis_Steps_Txt_sint8</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-PARAMETER-IREF>
+                              </ACCESSED-PARAMETER>
+                            </PARAMETER-ACCESS>
+                            <PARAMETER-ACCESS T="2016-07-11T07:25:52Z">
+                              <SHORT-NAME>R_ComAxis_Temp_Lin_K_uint16_ComAxis_Temp_Lin_K_uint16</SHORT-NAME>
+                              <ACCESSED-PARAMETER>
+                                <AUTOSAR-PARAMETER-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_ComAxis_Temp_Lin_K_uint16</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Temp_Lin_K_uint16/ComAxis_Temp_Lin_K_uint16</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-PARAMETER-IREF>
+                              </ACCESSED-PARAMETER>
+                            </PARAMETER-ACCESS>
+                            <PARAMETER-ACCESS T="2016-07-11T07:25:52Z">
+                              <SHORT-NAME>R_Curve_Mass_Lnr_Kg_uint8_Curve_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                              <ACCESSED-PARAMETER>
+                                <AUTOSAR-PARAMETER-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_Curve_Mass_Lnr_Kg_uint8</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Curve_Mass_Lnr_Kg_uint8/Curve_Mass_Lnr_Kg_uint8</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-PARAMETER-IREF>
+                              </ACCESSED-PARAMETER>
+                            </PARAMETER-ACCESS>
+                            <PARAMETER-ACCESS T="2016-07-11T07:25:52Z">
+                              <SHORT-NAME>R_Map_Time_Lnr_s_uint16_Map_Time_Lnr_s_uint16</SHORT-NAME>
+                              <ACCESSED-PARAMETER>
+                                <AUTOSAR-PARAMETER-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_Map_Time_Lnr_s_uint16</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Map_Time_Lnr_s_uint16/Map_Time_Lnr_s_uint16</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-PARAMETER-IREF>
+                              </ACCESSED-PARAMETER>
+                            </PARAMETER-ACCESS>
+                          </PARAMETER-ACCESSS>
+                          <SYMBOL>CMscB_Process</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                      </RUNNABLES>
+                      <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                    </SWC-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+                <CONSTANT-SPECIFICATION-MAPPING-SET>
+                  <SHORT-NAME>CMscB_DefaultConstantMapping</SHORT-NAME>
+                  <MAPPINGS>
+                    <CONSTANT-SPECIFICATION-MAPPING>
+                      <APPL-CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Tier1/ARPlatform1/Pcpt_CMscB/ConstantSpecifications/CMscB_par_P_ComAxis_Mass_Lnr_Kg_uint8_Phys</APPL-CONSTANT-REF>
+                      <IMPL-CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Tier1/ARPlatform1/Pcpt_CMscB/ConstantSpecifications/CMscB_par_P_ComAxis_Mass_Lnr_Kg_uint8_Impl</IMPL-CONSTANT-REF>
+                    </CONSTANT-SPECIFICATION-MAPPING>
+                    <CONSTANT-SPECIFICATION-MAPPING>
+                      <APPL-CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Tier1/ARPlatform1/Pcpt_CMscB/ConstantSpecifications/CMscB_par_P_ComAxis_Steps_Txt_sint8_Phys</APPL-CONSTANT-REF>
+                      <IMPL-CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Tier1/ARPlatform1/Pcpt_CMscB/ConstantSpecifications/CMscB_par_P_ComAxis_Steps_Txt_sint8_Impl</IMPL-CONSTANT-REF>
+                    </CONSTANT-SPECIFICATION-MAPPING>
+                    <CONSTANT-SPECIFICATION-MAPPING>
+                      <APPL-CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Tier1/ARPlatform1/Pcpt_CMscB/ConstantSpecifications/CMscB_par_P_ComAxis_Temp_Lin_K_uint16_Phys</APPL-CONSTANT-REF>
+                      <IMPL-CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Tier1/ARPlatform1/Pcpt_CMscB/ConstantSpecifications/CMscB_par_P_ComAxis_Temp_Lin_K_uint16_Impl</IMPL-CONSTANT-REF>
+                    </CONSTANT-SPECIFICATION-MAPPING>
+                    <CONSTANT-SPECIFICATION-MAPPING>
+                      <APPL-CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Tier1/ARPlatform1/Pcpt_CMscB/ConstantSpecifications/CMscB_par_P_Curve_Mass_Lnr_Kg_uint8_Phys</APPL-CONSTANT-REF>
+                      <IMPL-CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Tier1/ARPlatform1/Pcpt_CMscB/ConstantSpecifications/CMscB_par_P_Curve_Mass_Lnr_Kg_uint8_Impl</IMPL-CONSTANT-REF>
+                    </CONSTANT-SPECIFICATION-MAPPING>
+                    <CONSTANT-SPECIFICATION-MAPPING>
+                      <APPL-CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Tier1/ARPlatform1/Pcpt_CMscB/ConstantSpecifications/CMscB_par_P_Map_Time_Lnr_s_uint16_Phys</APPL-CONSTANT-REF>
+                      <IMPL-CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Tier1/ARPlatform1/Pcpt_CMscB/ConstantSpecifications/CMscB_par_P_Map_Time_Lnr_s_uint16_Impl</IMPL-CONSTANT-REF>
+                    </CONSTANT-SPECIFICATION-MAPPING>
+                  </MAPPINGS>
+                </CONSTANT-SPECIFICATION-MAPPING-SET>
+                <SWC-IMPLEMENTATION>
+                  <SHORT-NAME>CMscB_impl</SHORT-NAME>
+                  <CODE-DESCRIPTORS>
+                    <CODE>
+                      <SHORT-NAME>CMscB</SHORT-NAME>
+                      <ARTIFACT-DESCRIPTORS>
+                        <AUTOSAR-ENGINEERING-OBJECT>
+                          <SHORT-LABEL>CMscB</SHORT-LABEL>
+                          <CATEGORY>SWSRC</CATEGORY>
+                          <DOMAIN>ARPlatform1</DOMAIN>
+                        </AUTOSAR-ENGINEERING-OBJECT>
+                      </ARTIFACT-DESCRIPTORS>
+                    </CODE>
+                  </CODE-DESCRIPTORS>
+                  <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+                  <RESOURCE-CONSUMPTION>
+                    <SHORT-NAME>CMscB_rc</SHORT-NAME>
+                    <MEMORY-SECTIONS>
+                      <MEMORY-SECTION>
+                        <SHORT-NAME>CODE_10MS</SHORT-NAME>
+                        <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/Tier1/ARPlatform1/MemMap/SwAddrMethods/CODE_10MS</SW-ADDRMETHOD-REF>
+                      </MEMORY-SECTION>
+                    </MEMORY-SECTIONS>
+                  </RESOURCE-CONSUMPTION>
+                  <VENDOR-ID>8</VENDOR-ID>
+                  <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/CMscB</BEHAVIOR-REF>
+                </SWC-IMPLEMENTATION>
+                <PARAMETER-SW-COMPONENT-TYPE T="2016-04-27T11:30:24Z">
+                  <SHORT-NAME>CMscB_par</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Modeling show case for axes, curves  and mapes. </L-2>
+                  </DESC>
+                  <PORTS>
+                    <P-PORT-PROTOTYPE T="2016-07-11T13:50:06Z">
+                      <SHORT-NAME>P_ComAxis_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Shared axis for mass</L-2>
+                      </DESC>
+                      <PROVIDED-COM-SPECS>
+                        <PARAMETER-PROVIDE-COM-SPEC>
+                          <INIT-VALUE>
+                            <CONSTANT-REFERENCE>
+                              <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Tier1/ARPlatform1/Pcpt_CMscB/ConstantSpecifications/CMscB_par_P_ComAxis_Mass_Lnr_Kg_uint8_Phys</CONSTANT-REF>
+                            </CONSTANT-REFERENCE>
+                          </INIT-VALUE>
+                          <PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Mass_Lnr_Kg_uint8/ComAxis_Mass_Lnr_Kg_uint8</PARAMETER-REF>
+                        </PARAMETER-PROVIDE-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Mass_Lnr_Kg_uint8</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE T="2016-07-11T07:33:49Z">
+                      <SHORT-NAME>P_ComAxis_Steps_Txt_sint8</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Shared axis for speed steps</L-2>
+                      </DESC>
+                      <PROVIDED-COM-SPECS>
+                        <PARAMETER-PROVIDE-COM-SPEC>
+                          <INIT-VALUE>
+                            <CONSTANT-REFERENCE>
+                              <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Tier1/ARPlatform1/Pcpt_CMscB/ConstantSpecifications/CMscB_par_P_ComAxis_Steps_Txt_sint8_Phys</CONSTANT-REF>
+                            </CONSTANT-REFERENCE>
+                          </INIT-VALUE>
+                          <PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Steps_Txt_sint8/ComAxis_Steps_Txt_sint8</PARAMETER-REF>
+                        </PARAMETER-PROVIDE-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Steps_Txt_sint8</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE T="2016-07-11T07:32:01Z">
+                      <SHORT-NAME>P_ComAxis_Temp_Lin_K_uint16</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Shared axis for temperature</L-2>
+                      </DESC>
+                      <PROVIDED-COM-SPECS>
+                        <PARAMETER-PROVIDE-COM-SPEC>
+                          <INIT-VALUE>
+                            <CONSTANT-REFERENCE>
+                              <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Tier1/ARPlatform1/Pcpt_CMscB/ConstantSpecifications/CMscB_par_P_ComAxis_Temp_Lin_K_uint16_Phys</CONSTANT-REF>
+                            </CONSTANT-REFERENCE>
+                          </INIT-VALUE>
+                          <PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Temp_Lin_K_uint16/ComAxis_Temp_Lin_K_uint16</PARAMETER-REF>
+                        </PARAMETER-PROVIDE-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Temp_Lin_K_uint16</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE T="2016-07-11T07:37:17Z">
+                      <SHORT-NAME>P_Curve_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Curve to get mass according differnt speed steps.</L-2>
+                      </DESC>
+                      <PROVIDED-COM-SPECS>
+                        <PARAMETER-PROVIDE-COM-SPEC>
+                          <INIT-VALUE>
+                            <CONSTANT-REFERENCE>
+                              <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Tier1/ARPlatform1/Pcpt_CMscB/ConstantSpecifications/CMscB_par_P_Curve_Mass_Lnr_Kg_uint8_Phys</CONSTANT-REF>
+                            </CONSTANT-REFERENCE>
+                          </INIT-VALUE>
+                          <PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Curve_Mass_Lnr_Kg_uint8/Curve_Mass_Lnr_Kg_uint8</PARAMETER-REF>
+                        </PARAMETER-PROVIDE-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Curve_Mass_Lnr_Kg_uint8</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE T="2016-07-11T07:39:51Z">
+                      <SHORT-NAME>P_Map_Time_Lnr_s_uint16</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Map to get time dependent on temperature and mass.</L-2>
+                      </DESC>
+                      <PROVIDED-COM-SPECS>
+                        <PARAMETER-PROVIDE-COM-SPEC>
+                          <INIT-VALUE>
+                            <CONSTANT-REFERENCE>
+                              <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Tier1/ARPlatform1/Pcpt_CMscB/ConstantSpecifications/CMscB_par_P_Map_Time_Lnr_s_uint16_Phys</CONSTANT-REF>
+                            </CONSTANT-REFERENCE>
+                          </INIT-VALUE>
+                          <PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Map_Time_Lnr_s_uint16/Map_Time_Lnr_s_uint16</PARAMETER-REF>
+                        </PARAMETER-PROVIDE-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/Map_Time_Lnr_s_uint16</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                  </PORTS>
+                  <CONSTANT-MAPPING-REFS>
+                    <CONSTANT-MAPPING-REF DEST="CONSTANT-SPECIFICATION-MAPPING-SET">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_DefaultConstantMapping</CONSTANT-MAPPING-REF>
+                  </CONSTANT-MAPPING-REFS>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/Tier1/ARPlatform1/DataDictionary/DataTypeMappings/DefaultDataTypeMapping</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                </PARAMETER-SW-COMPONENT-TYPE>
+                <COMPOSITION-SW-COMPONENT-TYPE T="2016-04-27T11:30:24Z" UUID="07c254aa-df88-4cd1-a754-f1ae31cb6044">
+                  <SHORT-NAME>Pcpt_CMscB</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Modeling show case for axes, curves  and mapes. </L-2>
+                  </DESC>
+                  <PORTS>
+                    <P-PORT-PROTOTYPE T="2016-07-11T13:50:06Z">
+                      <SHORT-NAME>P_ComAxis_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Shared axis for mass</L-2>
+                      </DESC>
+                      <PROVIDED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ComAxis_Mass_Lnr_Kg_uint8</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE T="2016-07-11T13:50:15Z">
+                      <SHORT-NAME>P_PrimData_MassCorrected_Lnr_Kg_uint8</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Primitve data for the corrected mass in kg.</L-2>
+                      </DESC>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_MassCorrected_Lnr_Kg_uint8</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE T="2016-07-11T06:57:54Z">
+                      <SHORT-NAME>P_PrimData_Time_Lnr_s_uint16</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Primitve data holding a time value.</L-2>
+                      </DESC>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Time_Lnr_s_uint16</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE T="2016-04-27T13:27:36Z">
+                      <SHORT-NAME>P_PrimData_ValidState_Txt_noUnit_boolean</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Boolean representing the data validity</L-2>
+                      </DESC>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_ValidState_Txt_noUnit_boolean</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE T="2016-07-11T07:23:02Z">
+                      <SHORT-NAME>R_ModeDirection</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mode to indicate a direction</L-2>
+                      </DESC>
+                      <REQUIRED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/ModeDirection</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE T="2016-07-11T06:54:45Z">
+                      <SHORT-NAME>R_PrimData_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Mass in kilogram</L-2>
+                      </DESC>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Mass_Lnr_Kg_uint8</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE T="2016-04-27T11:56:38Z">
+                      <SHORT-NAME>R_PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Stepwise speed indication</L-2>
+                      </DESC>
+                      <REQUIRED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_StepsSpeed_Txt_sint8</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE T="2016-07-11T06:54:17Z">
+                      <SHORT-NAME>R_PrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Temperature 1 in Kelvin but displayed as degree Celsius</L-2>
+                      </DESC>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Tier1/ARPlatform1/DataDictionary/PortInterfaces/V1_0_0/PrimData_Temperature_Lin_K_C_uint16</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                  </PORTS>
+                  <COMPONENTS>
+                    <SW-COMPONENT-PROTOTYPE T="2016-04-27T11:30:24Z">
+                      <SHORT-NAME>CMscB</SHORT-NAME>
+                      <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB</TYPE-TREF>
+                    </SW-COMPONENT-PROTOTYPE>
+                    <SW-COMPONENT-PROTOTYPE T="2016-04-27T11:30:24Z">
+                      <SHORT-NAME>CMscB_par</SHORT-NAME>
+                      <TYPE-TREF DEST="PARAMETER-SW-COMPONENT-TYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_par</TYPE-TREF>
+                    </SW-COMPONENT-PROTOTYPE>
+                  </COMPONENTS>
+                  <CONNECTORS>
+                    <ASSEMBLY-SW-CONNECTOR>
+                      <SHORT-NAME>CMscB_P_PrimData_MassCorrected_Lnr_Kg_uint8_CMscB_R_PrimData_MassCorrected_Lnr_Kg_uint8</SHORT-NAME>
+                      <PROVIDER-IREF>
+                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB</CONTEXT-COMPONENT-REF>
+                        <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/P_PrimData_MassCorrected_Lnr_Kg_uint8</TARGET-P-PORT-REF>
+                      </PROVIDER-IREF>
+                      <REQUESTER-IREF>
+                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB</CONTEXT-COMPONENT-REF>
+                        <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_MassCorrected_Lnr_Kg_uint8</TARGET-R-PORT-REF>
+                      </REQUESTER-IREF>
+                    </ASSEMBLY-SW-CONNECTOR>
+                    <DELEGATION-SW-CONNECTOR>
+                      <SHORT-NAME>CMscB_P_PrimData_MassCorrected_Lnr_Kg_uint8_P_PrimData_MassCorrected_Lnr_Kg_uint8</SHORT-NAME>
+                      <INNER-PORT-IREF>
+                        <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                          <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB</CONTEXT-COMPONENT-REF>
+                          <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/P_PrimData_MassCorrected_Lnr_Kg_uint8</TARGET-P-PORT-REF>
+                        </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      </INNER-PORT-IREF>
+                      <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/P_PrimData_MassCorrected_Lnr_Kg_uint8</OUTER-PORT-REF>
+                    </DELEGATION-SW-CONNECTOR>
+                    <ASSEMBLY-SW-CONNECTOR>
+                      <SHORT-NAME>CMscB_P_PrimData_Time_Lnr_s_uint16_CMscB_R_PrimData_Time_Lnr_s_uint16</SHORT-NAME>
+                      <PROVIDER-IREF>
+                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB</CONTEXT-COMPONENT-REF>
+                        <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/P_PrimData_Time_Lnr_s_uint16</TARGET-P-PORT-REF>
+                      </PROVIDER-IREF>
+                      <REQUESTER-IREF>
+                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB</CONTEXT-COMPONENT-REF>
+                        <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_Time_Lnr_s_uint16</TARGET-R-PORT-REF>
+                      </REQUESTER-IREF>
+                    </ASSEMBLY-SW-CONNECTOR>
+                    <DELEGATION-SW-CONNECTOR>
+                      <SHORT-NAME>CMscB_P_PrimData_Time_Lnr_s_uint16_P_PrimData_Time_Lnr_s_uint16</SHORT-NAME>
+                      <INNER-PORT-IREF>
+                        <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                          <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB</CONTEXT-COMPONENT-REF>
+                          <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/P_PrimData_Time_Lnr_s_uint16</TARGET-P-PORT-REF>
+                        </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      </INNER-PORT-IREF>
+                      <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/P_PrimData_Time_Lnr_s_uint16</OUTER-PORT-REF>
+                    </DELEGATION-SW-CONNECTOR>
+                    <ASSEMBLY-SW-CONNECTOR>
+                      <SHORT-NAME>CMscB_P_PrimData_ValidState_Txt_noUnit_boolean_CMscB_R_PrimData_ValidState_Txt_noUnit_boolean</SHORT-NAME>
+                      <PROVIDER-IREF>
+                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB</CONTEXT-COMPONENT-REF>
+                        <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/P_PrimData_ValidState_Txt_noUnit_boolean</TARGET-P-PORT-REF>
+                      </PROVIDER-IREF>
+                      <REQUESTER-IREF>
+                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB</CONTEXT-COMPONENT-REF>
+                        <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_ValidState_Txt_noUnit_boolean</TARGET-R-PORT-REF>
+                      </REQUESTER-IREF>
+                    </ASSEMBLY-SW-CONNECTOR>
+                    <DELEGATION-SW-CONNECTOR>
+                      <SHORT-NAME>CMscB_P_PrimData_ValidState_Txt_noUnit_boolean_P_PrimData_ValidState_Txt_noUnit_boolean</SHORT-NAME>
+                      <INNER-PORT-IREF>
+                        <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                          <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB</CONTEXT-COMPONENT-REF>
+                          <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/P_PrimData_ValidState_Txt_noUnit_boolean</TARGET-P-PORT-REF>
+                        </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      </INNER-PORT-IREF>
+                      <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/P_PrimData_ValidState_Txt_noUnit_boolean</OUTER-PORT-REF>
+                    </DELEGATION-SW-CONNECTOR>
+                    <ASSEMBLY-SW-CONNECTOR>
+                      <SHORT-NAME>CMscB_par_P_ComAxis_Mass_Lnr_Kg_uint8_CMscB_R_ComAxis_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                      <PROVIDER-IREF>
+                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB_par</CONTEXT-COMPONENT-REF>
+                        <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_par/P_ComAxis_Mass_Lnr_Kg_uint8</TARGET-P-PORT-REF>
+                      </PROVIDER-IREF>
+                      <REQUESTER-IREF>
+                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB</CONTEXT-COMPONENT-REF>
+                        <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_ComAxis_Mass_Lnr_Kg_uint8</TARGET-R-PORT-REF>
+                      </REQUESTER-IREF>
+                    </ASSEMBLY-SW-CONNECTOR>
+                    <DELEGATION-SW-CONNECTOR>
+                      <SHORT-NAME>CMscB_par_P_ComAxis_Mass_Lnr_Kg_uint8_P_ComAxis_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                      <INNER-PORT-IREF>
+                        <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                          <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB_par</CONTEXT-COMPONENT-REF>
+                          <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_par/P_ComAxis_Mass_Lnr_Kg_uint8</TARGET-P-PORT-REF>
+                        </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      </INNER-PORT-IREF>
+                      <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/P_ComAxis_Mass_Lnr_Kg_uint8</OUTER-PORT-REF>
+                    </DELEGATION-SW-CONNECTOR>
+                    <ASSEMBLY-SW-CONNECTOR>
+                      <SHORT-NAME>CMscB_par_P_ComAxis_Steps_Txt_sint8_CMscB_R_ComAxis_Steps_Txt_sint8</SHORT-NAME>
+                      <PROVIDER-IREF>
+                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB_par</CONTEXT-COMPONENT-REF>
+                        <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_par/P_ComAxis_Steps_Txt_sint8</TARGET-P-PORT-REF>
+                      </PROVIDER-IREF>
+                      <REQUESTER-IREF>
+                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB</CONTEXT-COMPONENT-REF>
+                        <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_ComAxis_Steps_Txt_sint8</TARGET-R-PORT-REF>
+                      </REQUESTER-IREF>
+                    </ASSEMBLY-SW-CONNECTOR>
+                    <ASSEMBLY-SW-CONNECTOR>
+                      <SHORT-NAME>CMscB_par_P_ComAxis_Temp_Lin_K_uint16_CMscB_R_ComAxis_Temp_Lin_K_uint16</SHORT-NAME>
+                      <PROVIDER-IREF>
+                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB_par</CONTEXT-COMPONENT-REF>
+                        <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_par/P_ComAxis_Temp_Lin_K_uint16</TARGET-P-PORT-REF>
+                      </PROVIDER-IREF>
+                      <REQUESTER-IREF>
+                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB</CONTEXT-COMPONENT-REF>
+                        <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_ComAxis_Temp_Lin_K_uint16</TARGET-R-PORT-REF>
+                      </REQUESTER-IREF>
+                    </ASSEMBLY-SW-CONNECTOR>
+                    <ASSEMBLY-SW-CONNECTOR>
+                      <SHORT-NAME>CMscB_par_P_Curve_Mass_Lnr_Kg_uint8_CMscB_R_Curve_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                      <PROVIDER-IREF>
+                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB_par</CONTEXT-COMPONENT-REF>
+                        <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_par/P_Curve_Mass_Lnr_Kg_uint8</TARGET-P-PORT-REF>
+                      </PROVIDER-IREF>
+                      <REQUESTER-IREF>
+                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB</CONTEXT-COMPONENT-REF>
+                        <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_Curve_Mass_Lnr_Kg_uint8</TARGET-R-PORT-REF>
+                      </REQUESTER-IREF>
+                    </ASSEMBLY-SW-CONNECTOR>
+                    <ASSEMBLY-SW-CONNECTOR>
+                      <SHORT-NAME>CMscB_par_P_Map_Time_Lnr_s_uint16_CMscB_R_Map_Time_Lnr_s_uint16</SHORT-NAME>
+                      <PROVIDER-IREF>
+                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB_par</CONTEXT-COMPONENT-REF>
+                        <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB_par/P_Map_Time_Lnr_s_uint16</TARGET-P-PORT-REF>
+                      </PROVIDER-IREF>
+                      <REQUESTER-IREF>
+                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB</CONTEXT-COMPONENT-REF>
+                        <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_Map_Time_Lnr_s_uint16</TARGET-R-PORT-REF>
+                      </REQUESTER-IREF>
+                    </ASSEMBLY-SW-CONNECTOR>
+                    <DELEGATION-SW-CONNECTOR>
+                      <SHORT-NAME>CMscB_R_ModeDirection_R_ModeDirection</SHORT-NAME>
+                      <INNER-PORT-IREF>
+                        <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                          <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB</CONTEXT-COMPONENT-REF>
+                          <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_ModeDirection</TARGET-R-PORT-REF>
+                        </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      </INNER-PORT-IREF>
+                      <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/R_ModeDirection</OUTER-PORT-REF>
+                    </DELEGATION-SW-CONNECTOR>
+                    <DELEGATION-SW-CONNECTOR>
+                      <SHORT-NAME>CMscB_R_PrimData_Mass_Lnr_Kg_uint8_R_PrimData_Mass_Lnr_Kg_uint8</SHORT-NAME>
+                      <INNER-PORT-IREF>
+                        <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                          <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB</CONTEXT-COMPONENT-REF>
+                          <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_Mass_Lnr_Kg_uint8</TARGET-R-PORT-REF>
+                        </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      </INNER-PORT-IREF>
+                      <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/R_PrimData_Mass_Lnr_Kg_uint8</OUTER-PORT-REF>
+                    </DELEGATION-SW-CONNECTOR>
+                    <DELEGATION-SW-CONNECTOR>
+                      <SHORT-NAME>CMscB_R_PrimData_StepsSpeed_Txt_sint8_R_PrimData_StepsSpeed_Txt_sint8</SHORT-NAME>
+                      <INNER-PORT-IREF>
+                        <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                          <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB</CONTEXT-COMPONENT-REF>
+                          <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_StepsSpeed_Txt_sint8</TARGET-R-PORT-REF>
+                        </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      </INNER-PORT-IREF>
+                      <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/R_PrimData_StepsSpeed_Txt_sint8</OUTER-PORT-REF>
+                    </DELEGATION-SW-CONNECTOR>
+                    <DELEGATION-SW-CONNECTOR>
+                      <SHORT-NAME>CMscB_R_PrimData_Temperature_Lin_K_C_uint16_R_PrimData_Temperature_Lin_K_C_uint16</SHORT-NAME>
+                      <INNER-PORT-IREF>
+                        <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                          <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/CMscB</CONTEXT-COMPONENT-REF>
+                          <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/CMscB/R_PrimData_Temperature_Lin_K_C_uint16</TARGET-R-PORT-REF>
+                        </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      </INNER-PORT-IREF>
+                      <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/Tier1/ARPlatform1/Pcpt_CMscB/Pcpt_CMscB/R_PrimData_Temperature_Lin_K_C_uint16</OUTER-PORT-REF>
+                    </DELEGATION-SW-CONNECTOR>
+                  </CONNECTORS>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/Tier1/ARPlatform1/DataDictionary/DataTypeMappings/DefaultDataTypeMapping</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                </COMPOSITION-SW-COMPONENT-TYPE>
+              </ELEMENTS>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>ConstantSpecifications</SHORT-NAME>
+                  <ELEMENTS>
+                    <CONSTANT-SPECIFICATION>
+                      <SHORT-NAME>CMscB_par_P_ComAxis_Mass_Lnr_Kg_uint8_Impl</SHORT-NAME>
+                      <VALUE-SPEC>
+                        <ARRAY-VALUE-SPECIFICATION>
+                          <ELEMENTS>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="1074790400">4</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="0">0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="32">32</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="64">64</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="200">200</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </ELEMENTS>
+                        </ARRAY-VALUE-SPECIFICATION>
+                      </VALUE-SPEC>
+                    </CONSTANT-SPECIFICATION>
+                    <CONSTANT-SPECIFICATION>
+                      <SHORT-NAME>CMscB_par_P_ComAxis_Mass_Lnr_Kg_uint8_Phys</SHORT-NAME>
+                      <VALUE-SPEC>
+                        <APPLICATION-VALUE-SPECIFICATION>
+                          <CATEGORY>COM_AXIS</CATEGORY>
+                          <SW-VALUE-CONT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/kg/kg</UNIT-REF>
+                            <SW-ARRAYSIZE>
+                              <V>4</V>
+                            </SW-ARRAYSIZE>
+                            <SW-VALUES-PHYS>
+                              <V>0</V>
+                              <V>0.04</V>
+                              <V>0.08</V>
+                              <V>0.25</V>
+                            </SW-VALUES-PHYS>
+                          </SW-VALUE-CONT>
+                        </APPLICATION-VALUE-SPECIFICATION>
+                      </VALUE-SPEC>
+                    </CONSTANT-SPECIFICATION>
+                    <CONSTANT-SPECIFICATION>
+                      <SHORT-NAME>CMscB_par_P_ComAxis_Steps_Txt_sint8_Impl</SHORT-NAME>
+                      <VALUE-SPEC>
+                        <ARRAY-VALUE-SPECIFICATION>
+                          <ELEMENTS>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="1074790400">4</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="255">-1</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="0">0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="257">1</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="514">2</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </ELEMENTS>
+                        </ARRAY-VALUE-SPECIFICATION>
+                      </VALUE-SPEC>
+                    </CONSTANT-SPECIFICATION>
+                    <CONSTANT-SPECIFICATION>
+                      <SHORT-NAME>CMscB_par_P_ComAxis_Steps_Txt_sint8_Phys</SHORT-NAME>
+                      <VALUE-SPEC>
+                        <APPLICATION-VALUE-SPECIFICATION>
+                          <CATEGORY>COM_AXIS</CATEGORY>
+                          <SW-VALUE-CONT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/NoUnit/NoUnit</UNIT-REF>
+                            <SW-ARRAYSIZE>
+                              <V>4</V>
+                            </SW-ARRAYSIZE>
+                            <SW-VALUES-PHYS>
+                              <VT>STOP</VT>
+                              <VT>LIGHT_SPEED</VT>
+                              <VT>RIDICULOUS_SPEED</VT>
+                              <VT>LUDICROUS_SPEED</VT>
+                            </SW-VALUES-PHYS>
+                          </SW-VALUE-CONT>
+                        </APPLICATION-VALUE-SPECIFICATION>
+                      </VALUE-SPEC>
+                    </CONSTANT-SPECIFICATION>
+                    <CONSTANT-SPECIFICATION>
+                      <SHORT-NAME>CMscB_par_P_ComAxis_Temp_Lin_K_uint16_Impl</SHORT-NAME>
+                      <VALUE-SPEC>
+                        <ARRAY-VALUE-SPECIFICATION>
+                          <ELEMENTS>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="1075314688">6</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="0">0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="3200">3200</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="6400">6400</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="25600">25600</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="38400">38400</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="65408">65408</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </ELEMENTS>
+                        </ARRAY-VALUE-SPECIFICATION>
+                      </VALUE-SPEC>
+                    </CONSTANT-SPECIFICATION>
+                    <CONSTANT-SPECIFICATION>
+                      <SHORT-NAME>CMscB_par_P_ComAxis_Temp_Lin_K_uint16_Phys</SHORT-NAME>
+                      <VALUE-SPEC>
+                        <APPLICATION-VALUE-SPECIFICATION>
+                          <CATEGORY>COM_AXIS</CATEGORY>
+                          <SW-VALUE-CONT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/K_Celsius/K</UNIT-REF>
+                            <SW-ARRAYSIZE>
+                              <V>6</V>
+                            </SW-ARRAYSIZE>
+                            <SW-VALUES-PHYS>
+                              <V>0</V>
+                              <V>25</V>
+                              <V>50</V>
+                              <V>200</V>
+                              <V>300</V>
+                              <V>511</V>
+                            </SW-VALUES-PHYS>
+                          </SW-VALUE-CONT>
+                        </APPLICATION-VALUE-SPECIFICATION>
+                      </VALUE-SPEC>
+                    </CONSTANT-SPECIFICATION>
+                    <CONSTANT-SPECIFICATION>
+                      <SHORT-NAME>CMscB_par_P_Curve_Mass_Lnr_Kg_uint8_Impl</SHORT-NAME>
+                      <VALUE-SPEC>
+                        <ARRAY-VALUE-SPECIFICATION>
+                          <ELEMENTS>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="8">8</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="16">16</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="24">24</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <VALUE S="32">32</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </ELEMENTS>
+                        </ARRAY-VALUE-SPECIFICATION>
+                      </VALUE-SPEC>
+                    </CONSTANT-SPECIFICATION>
+                    <CONSTANT-SPECIFICATION>
+                      <SHORT-NAME>CMscB_par_P_Curve_Mass_Lnr_Kg_uint8_Phys</SHORT-NAME>
+                      <VALUE-SPEC>
+                        <APPLICATION-VALUE-SPECIFICATION>
+                          <CATEGORY>CURVE</CATEGORY>
+                          <SW-VALUE-CONT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/kg/kg</UNIT-REF>
+                            <SW-ARRAYSIZE>
+                              <V>4</V>
+                            </SW-ARRAYSIZE>
+                            <SW-VALUES-PHYS>
+                              <V>0.01</V>
+                              <V>0.02</V>
+                              <V>0.03</V>
+                              <V>0.04</V>
+                            </SW-VALUES-PHYS>
+                          </SW-VALUE-CONT>
+                        </APPLICATION-VALUE-SPECIFICATION>
+                      </VALUE-SPEC>
+                    </CONSTANT-SPECIFICATION>
+                    <CONSTANT-SPECIFICATION>
+                      <SHORT-NAME>CMscB_par_P_Map_Time_Lnr_s_uint16_Impl</SHORT-NAME>
+                      <VALUE-SPEC>
+                        <ARRAY-VALUE-SPECIFICATION>
+                          <ELEMENTS>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="0">0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="1">1</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="2">2</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="3">3</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="8">8</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="9">9</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="10">10</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="11">11</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="16">16</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="17">17</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="18">18</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="19">19</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="24">24</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="25">25</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="26">26</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="27">27</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="32">32</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="33">33</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="34">34</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="35">35</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="40">40</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="41">41</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="42">42</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE S="43">43</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                          </ELEMENTS>
+                        </ARRAY-VALUE-SPECIFICATION>
+                      </VALUE-SPEC>
+                    </CONSTANT-SPECIFICATION>
+                    <CONSTANT-SPECIFICATION>
+                      <SHORT-NAME>CMscB_par_P_Map_Time_Lnr_s_uint16_Phys</SHORT-NAME>
+                      <VALUE-SPEC>
+                        <APPLICATION-VALUE-SPECIFICATION>
+                          <CATEGORY>MAP</CATEGORY>
+                          <SW-VALUE-CONT>
+                            <UNIT-REF DEST="UNIT">/Tier1/ARPlatform1/DataDictionary/Units/s/s</UNIT-REF>
+                            <SW-ARRAYSIZE>
+                              <V>6</V>
+                              <V>4</V>
+                            </SW-ARRAYSIZE>
+                            <SW-VALUES-PHYS>
+                              <VG>
+                                <V>0</V>
+                                <V>1</V>
+                                <V>2</V>
+                                <V>3</V>
+                                <V>4</V>
+                                <V>5</V>
+                              </VG>
+                              <VG>
+                                <V>0.125</V>
+                                <V>1.125</V>
+                                <V>2.125</V>
+                                <V>3.125</V>
+                                <V>4.125</V>
+                                <V>5.125</V>
+                              </VG>
+                              <VG>
+                                <V>0.25</V>
+                                <V>1.25</V>
+                                <V>2.25</V>
+                                <V>3.25</V>
+                                <V>4.25</V>
+                                <V>5.25</V>
+                              </VG>
+                              <VG>
+                                <V>0.375</V>
+                                <V>1.375</V>
+                                <V>2.375</V>
+                                <V>3.375</V>
+                                <V>4.375</V>
+                                <V>5.375</V>
+                              </VG>
+                            </SW-VALUES-PHYS>
+                          </SW-VALUE-CONT>
+                        </APPLICATION-VALUE-SPECIFICATION>
+                      </VALUE-SPEC>
+                    </CONSTANT-SPECIFICATION>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
